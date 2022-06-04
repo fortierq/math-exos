@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 12: intégrales et matrices.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	MARTI (Cours: 7/10, Exo: 7/10, Note: 14/20): erreur dans le produit de deux matrices et dans les formules d'additions. \\
+	MIGOT (Cours: 6/10, exo: 7/10, note: 13/20): ne se souvient plus des formules d'additions. Lent, mais la récurrence est bien faite.\\
+	
+	\begin{exo}
+		Matrices inversibles et opérations :mq si $A$ et $B$ sont inversibles alors $AB$ est inversible
+	\end{exo}
+	
+	\begin{exo}
+		Formule du binôme de Newton pour les matrices?
+	\end{exo}
+	
+	\begin{exo}
+		$\begin{pmatrix}
+			\cos(\theta) & -\sin(\theta) \\ 
+			\sin(\theta) & \cos(\theta)
+		\end{pmatrix}^n ?$
+	\end{exo}
+	
+	\begin{exo}
+		$\int_{0}^{\pi} \exp(t) \sin(3t) dt$?
+	\end{exo}	
+	
+	\begin{exo}
+		Soit $I_{p, q} = \int_{0}^{1} t^p (1 - t)^q dt$. 
+		\begin{itemize}
+			\item Mq $$I_{p, q} = \frac{q}{p+1} I_{p+1, q-1}$$
+			\item Mq $$I_{p, q} = \frac{p! q!}{(p+q+1)!}$$
+			\item Calculer $$\sum_{k=0}^{q} \binom{q}{k} \frac{(-1)^k}{p+k+1}$$
+		\end{itemize}
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MARION Caroline (cours: 7/10, Exo: 5/10, note: 12/20): erreur dans la formule de Bernouilli. Perdue sur l'exercice.\\
+	MAMEDOV (cours: 6/10, exo: 5/10, note: 11/20) : erreur dans la formule de Bernouilli. Problèmes de logique. \\
+	
+	\begin{exo}
+		Propriétés calculatoires pour les puissances de matrices : démonstration pour les points 1 et 2 seulement
+	\end{exo}
+
+	\begin{exo}
+		Formule de Bernoulli pour les matrices?
+	\end{exo}
+
+	\begin{exo}
+		\begin{itemize}
+			\item Montrer que la somme et le produit de deux matrices nilpotentes qui commutent sont nilpotentes.
+			\item Soit $M \in \mathcal{M}_{n, n}$ nilpotente: $M^p = 0$, $p \in \mathbb{N}^*$. Montrer que $I_n$ - $M$ est inversible et déterminer son inverse. \\
+			Indice: formule de Bernouilli pour les matrices qui commutent? 
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\int_{-1}^{1} t^2 \sqrt{1 - t^2} dt$ (= $\frac{\pi}{8}$)
+	\end{exo}
+			
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	VICOMTE Romaric (cours: 3/10, Exo: 4/10, Note: 7/20): Perdu sur la démo de cours: ne sait pas ce qu'il faut démontrer, mélange un peu tout. Ecrit $\cos(1) = 1$. Ne sait pas appliquer la formule de chgt de variable.\\
+	Léa LUHRING (cours: 7, exo: 6, note: 13/20): assez bien.\\
+	
+	\begin{exo}
+		Inversibilité d'une matrice carrée de taille 2.
+	\end{exo}
+
+	\begin{exo}
+		Quelle est la transposée de $AB$?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $A^n$, où:
+		$$A = \begin{pmatrix}
+			1 & 1 & 1 \\ 
+			0 & 1 & 1 \\ 
+			0 & 0 & 1
+		\end{pmatrix}$$
+	\end{exo}
+	
+	\begin{exo}
+		Wallis:
+		$$I_n = \int_{0}^{\pi} \sin^n t dt$$
+		\begin{itemize}
+			\item Mq $I_n = \int \cos^n t dt$.
+			\item Mq $I_{n+2} = \frac{n+1}{n+2} I_n$.
+			\item $I_n = ?$
+			\item Mq $n I_n I_{n-1} = \frac{\pi}{2}$.
+		\end{itemize}
+	\end{exo}
+
+\end{document}

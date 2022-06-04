@@ -1,0 +1,44 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 13: suites}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	MONNIN Guillaume (12): moyen\\
+	EL Abbassi Myriam (12): ne connaît pas bien la méthode\\
+	
+	\begin{exo}
+		Limite d'une suite $u_{n+1} = f(u_n)$.
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Hugo MOTTET (17): très bien\\
+	FRANCOIS Léonard (11): ne connaît pas bien la méthode\\
+	
+	\begin{exo}
+		Limite d'une suite $u_{n+1} = f(u_n)$.
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	MONTHILLER Thibaud (15): bien\\
+	FERNANDEZ Henri (12): ne connaît pas bien la méthode\\
+	
+	\begin{exo}
+		Limite d'une suite $u_{n+1} = f(u_n)$.
+	\end{exo}	
+\end{document}

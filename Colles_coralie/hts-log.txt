@@ -1,0 +1,32 @@
+HTTrack3.48-21 launched on Fri, 13 Jan 2017 22:02:31 at https://perso.univ-rennes1.fr/coralie.renault/enseignement.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://perso.univ-rennes1.fr/coralie.renault/enseignement.html -O "~/ownCloud/CPGE/Colles/Colles_coralie" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:02:37	Warning: 	Moved Permanently for https://perso.univ-rennes1.fr/robots.txt
+22:02:37	Warning: 	File has moved from https://perso.univ-rennes1.fr/robots.txt to http://blogperso.univ-rennes1.fr/robots.txt
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet2bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet3bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet4bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet5bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet6bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet7bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet8bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:00	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet9bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:01	Warning: 	HTML file (2351 bytes) retransferred due to lack of cache: https://perso.univ-rennes1.fr/coralie.renault/index.html
+22:03:01	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle9.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:01	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle 5bis.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:01	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle 6bis.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:02	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle 7bis.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:02	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle 8bis.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:02	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/colle15bis.pdf (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:02	Warning: 	HTML file (1078 bytes) retransferred due to lack of cache: https://perso.univ-rennes1.fr/coralie.renault/sujet2bis.pdf"
+22:03:03	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sujet2bis.pdf" (from https://perso.univ-rennes1.fr/coralie.renault/enseignement.html)
+22:03:03	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/dev_magique.pdf (from https://perso.univ-rennes1.fr/coralie.renault/agreg.html)
+22:03:03	Error: 	"Not Found" (404) at link https://perso.univ-rennes1.fr/coralie.renault/sousgroupecompact.pdf (from https://perso.univ-rennes1.fr/coralie.renault/agreg.html)
+
+HTTrack Website Copier/3.48-21 mirror complete in 32 seconds : 88 links scanned, 72 files written (14906188 bytes overall) [14955717 bytes received at 467366 bytes/sec], 9.0 requests per connection
+(17 errors, 4 warnings, 0 messages)

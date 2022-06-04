@@ -1,0 +1,85 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP: EVN}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Mathilde (13): petites erreurs de quantificateurs\\
+	Adrien (14): petites erreurs de quantificateurs\\
+		
+	\begin{exo}
+	Cours: tout compact est fermé borné
+	\end{exo}
+	
+	\begin{exo}
+		Mq $GL_n(\mathbb{R})$ n'est pas connexe par arc. Mq $GL_n(\mathbb{C})$ est connexe par arc. Est-il fermé? Convexe?
+	\end{exo}
+		
+	\begin{exo}
+		Soit $E$ un ensemble fini de $\mathbb{R}^2$. Mq $\mathbb{R}^2 - E$ est connexe par arc.
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	GUALDI Baptiste (13): oubli du thm des bornes.\\
+	Bérenger (14): bien\\
+	
+	\begin{exo}
+		Cours: l'image d'un connexe par arc par une fonction continue est connexe par arc
+	\end{exo}
+
+%	\begin{exo}
+%		Soit $A$ un ensemble convexe d'un EVN. Mq son intérieur est convexe.
+%	\end{exo}
+	
+	\begin{exo}
+		Soit $f : K \longmapsto K$, $K$ compacte d'un EVN tq, $\forall x \neq y$:
+		$$\Arrowvert f(x) - f(y) \Arrowvert < \Arrowvert x - y \Arrowvert$$ 
+	\begin{enumerate}
+		\item (En considérant $x \longmapsto \Arrowvert f(x) - x \Arrowvert$), mq $f$ a un unique point fixe $c$.\\
+		\item Soit $x_n$ tq $x_{n+1} = f(x_n)$ et $x_0 \in K$. Montrer que $x_n \longrightarrow c$.
+	\end{enumerate}
+	\end{exo}
+
+	\begin{exo}
+		Mq l'intérieur d'un convexe est convexe. Est-ce vrai en remplaçant convexe par connexe par arc?
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Nathan (13): petites erreurs pour écrire la négation d'une proposition.\\
+	Théo (15): bien\\
+	
+	\begin{exo}
+		Thm de Heine.
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que l'union de deux connexes par arcs non disjoints est connexe par arcs. Et pour l'intersection?
+	\end{exo}
+
+	\begin{exo}
+		Mq $GL_n(\mathbb{C})$ est un ouvert dense dans $M_n(\mathbb{C})$.\\
+		
+		Mq $\chi(AB) = \chi(BA)$ pour $A\in GL_n(\mathbb{C})$ puis $A, B$ quelconque. 
+	\end{exo}
+		 
+\end{document}

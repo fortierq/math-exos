@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 17: Variables aléatoires et intégration}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}	
+	GUYOT Jeanne (13/20): assez bien\\
+	BEGEY Marion (13/20): reste bloquée sur des choses "faciles"\\
+	
+	\begin{exo}
+		dérivabilité sous le signe intégrale\\
+		intégration terme à terme d’une série de fonctions
+	\end{exo}
+
+	\begin{exo}
+		Fonctions génératrices des lois usuelles?
+	\end{exo}
+	
+	\begin{exo}
+		Soit $f(x) = \int_{0}^{x} e^{-t^2}$ et $g(x) = \int_{0}^{1} \frac{e^{-x^2 (1+t^2)}}{1+t^2}$.\\
+		Mq $g$ est dérivable et $g'(x) = -2f'(x) f(x)$.\\
+		En déduire $\lim_\infty f(x)$.
+	\end{exo}
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MAULET Louis (14/20): majore $f_n$ au lieu de $f$ par $g$. petites erreurs de calcul. Bien sinon.\\
+	ZOUGGARI Raphaël (12/20): majore $f_n$ au lieu de $f$ par $g$. se trompe dans l'aire d'un triangle.\\
+	
+	\begin{exo}
+		intégration terme à terme d’une série de fonctions\\
+		théorème de convergence dominée
+	\end{exo}
+
+%	\begin{exo}
+%		Une famille veut faire des enfants jusqu'à avoir un garçon. Combien auront-ils de
+%	\end{exo}
+
+	\begin{exo}
+		Somme de $n$ variables géométrique indépendantes: espérance, variance, fonction génératrice? 
+	\end{exo}	
+	
+	\begin{exo}
+		$\lim_\infty \int_{0}^{n} (1 - \frac{x^2}{n^2})^{n^2}$ = $\frac{\sqrt{\pi}}{2}$?
+	\end{exo}
+		
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	PONS Ariane (12/20): assez bien\\
+	Mehdy (16/20): Bien.\\
+	
+	\begin{exo}
+		théorème de convergence dominée\\
+		continuité sous le signe intégrale
+	\end{exo}
+
+	\begin{exo}
+		Limite puis équivalent de $\int_{1}^{\infty} e^{-x^n}$? (poser $t = x^n$)
+	\end{exo}
+
+	\begin{exo}
+		$\lim \int_{0}^{\infty} e^{-t} \sin^n(t) dt$?
+	\end{exo}
+
+\end{document}

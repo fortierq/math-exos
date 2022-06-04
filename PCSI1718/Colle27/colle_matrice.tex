@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+
+\title{Colle PCSI 27: applications linéaires}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+
+	\setcounter{exo}{0}
+	LEONARD (13): utilise $f^{-1}$ sans vérifier la bijectivité. Manque de rigueur.
+	BINET Mathilde (17): Très Bien, a bien compris comment raisonner avec ker, im...\\
+	
+	\begin{exo}
+		Définition de la matrice d'une application linéaire.
+	\end{exo}
+
+	\begin{exo}
+		Déterminer base du ker et im d'une application linéaire.
+	\end{exo}	
+
+	\begin{exo}
+		Mq $Ker f \cap Im f = \lbrace 0 \rbrace$ $\Longleftrightarrow$ $Ker f^2 = Ker f$
+	\end{exo}
+	
+	\section*{Colle 2}
+
+	\setcounter{exo}{0}
+	DERET Simon (10): ne connaît pas la définition de Ker, ni la définition mathématique de l'injectivité.\\
+	BASTIEN Cléo (13): ne se souvient pas de la définition mathématique de l'injectivité.\\
+	
+	\begin{exo}
+		Définition et propriétés du noyau.
+	\end{exo}
+		
+	\begin{exo}
+		Déterminer base du ker et im d'une application linéaire.		
+	\end{exo}	
+	
+	\begin{exo}
+		En utilisant la formule de Grassman, mq $rg(f + g) \leq rg(f) + rg(g)$.		
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	PRIORESCHI Armand (16): Bien.
+	BONNOT Alex (12): manque de rigueur.\\
+	
+	\begin{exo}
+		Thm du rang.
+	\end{exo}
+
+	\begin{exo}
+		Déterminer base du ker et im d'une application linéaire.
+	\end{exo}	
+
+	\begin{exo}
+		Mq $E = Ker f + Im f$ $\Longleftrightarrow$ $Im f^2 = Im f$
+	\end{exo}
+\end{document}

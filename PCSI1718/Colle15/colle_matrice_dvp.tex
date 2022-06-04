@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 13: matrices et développements limités.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	BONNOT (cours: 6, exo: 7, note: 13/20): erreur dans la formule du binôme
+	LAABI Amine (cours: 8, exo: 8, note: 16/20): Très bien. \\
+	
+	\begin{exo}
+		Développement limité de arctan en 0 à l'ordre 6. 
+	\end{exo}
+	
+	\begin{exo}
+		Formule du binôme de Newton pour les matrices?
+	\end{exo}
+
+	\begin{exo}
+		DL en 0 à l'ordre 3 de $x \longmapsto \cos(\sin(x))$ ($= 1 - \frac{x^2}{2} + \frac{5x^4}{24} + x^4 \epsilon(x)$).
+	\end{exo}	
+	
+	\begin{exo}
+		$\begin{pmatrix}
+			\cos(\theta) & -\sin(\theta) \\ 
+			\sin(\theta) & \cos(\theta)
+		\end{pmatrix}^n ?$
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	NACHIN Olivier (cours: 8, exo:9, note: 17/20): Très bien.\\
+	
+	\begin{exo}
+		 Troncature d'un développement limité ;
+	\end{exo}
+
+	\begin{exo}
+		Formule de Bernoulli pour les matrices?
+	\end{exo}
+
+	\begin{exo}
+		$DL_3(0)$ de $\exp(\sqrt{1+x})$ ($= e(1 + \frac{x}{2} + \frac{x^3}{48} + o(x^3)$)
+	\end{exo}
+
+	\begin{exo}
+		\begin{itemize}
+			\item Montrer que la somme et le produit de deux matrices nilpotentes qui commutent sont nilpotentes.
+			\item Soit $M \in \mathcal{M}_{n, n}$ nilpotente: $M^p = 0$, $p \in \mathbb{N}^*$. Montrer que $I_n$ - $M$ est inversible et déterminer son inverse. \\
+			Indice: formule de Bernouilli pour les matrices qui commutent? 
+		\end{itemize}
+	\end{exo}
+				
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	BELLONCLE (cours: 7, exo: 6, note: 13/20): petite erreur dans le DL\\
+	PANIER Estelle (cours: 4, exo: 4, note: 8/20): dit que $A^n$ est obtenue en mettant à la puissance $n$ chaque coefficient. Ne connaît pas $I_3$. Ne connaît pas la formule du binôme.\\
+	
+	\begin{exo}
+		Inversibilité d'une matrice carrée de taille 2.
+	\end{exo}
+
+	\begin{exo}
+		Quelle est la transposée de $AB$?
+	\end{exo}
+
+	\begin{exo}
+		$DL_3(0)$ de $\sin(\exp(x) - 1)$?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $A^n$, où:
+		$$A = \begin{pmatrix}
+			1 & 1 & 1 \\ 
+			0 & 1 & 1 \\ 
+			0 & 0 & 1
+		\end{pmatrix}$$
+	\end{exo}
+	
+\end{document}

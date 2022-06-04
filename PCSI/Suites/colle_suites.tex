@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 15: suites.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	MARION Caroline (10/20): Trop d'hésitations dans le cours. Ecrit 2*$3^n$ = $6^n$.\\
+	SPADETTO (13/20) : Assez bien.\\
+	
+	\begin{exo}
+		Théorème de comparaison (première version)
+	\end{exo}
+	
+	\begin{exo}
+		Théorème composition limites.
+	\end{exo}
+	
+	\begin{exo}
+		Terme général de $u_{n+1} = 3 u_n + 2$, $u_0 = 1$?
+	\end{exo}
+
+	\begin{exo}
+		On définit $u_0 \in [0, \frac{\pi}{2}]$, $u_{n+1} = \sin(u_n)$. Est-ce que $u_n$ a une limite? laquelle?
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	TURCK Bertrand (15/20): Bien.\\
+	DHIFAOUI (13/20): erreurs de calculs.\\
+	
+	\begin{exo}
+		Théorème des suites adjacentes (en admettant dans un premier temps que $\forall (p, q) \in \mathbb{N}^2, \, u_p \leq v_q$ ; le colleur pourra en demander la preuve
+	\end{exo}
+
+	\begin{exo}
+		Théorème des gendarmes?
+	\end{exo}
+
+	\begin{exo}
+		Terme général de $2u_{n+2} = 6 u_{n+1} + 8 u_n$, $u_1 = 5$, $u_0 = -1$?
+	\end{exo}
+		
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	MIGOT Thomas (14/20): Bien.\\
+	STEFFANN Axelle (12/20): Ecrit 2*$3^n$ = $6^n$.\\
+	
+	\begin{exo}
+		Unicité de la limite d'une suite convergente
+	\end{exo}
+	
+	\begin{exo}
+		Thm limite monotone
+	\end{exo}	
+	
+	\begin{exo}
+		Limite de $u_0 \in \mathbb{R}^+$, $u_{n+1} = \frac{1}{2} (u_n +\frac{a}{u_n})$?
+	\end{exo}
+	
+\end{document}

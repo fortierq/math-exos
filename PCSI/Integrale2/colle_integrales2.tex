@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 11: intégrale.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	TONDU (cours: 6/10, exo: 6/10, note: 12/20): très lent mais sinon ok.\\
+	LINIGER (Cours: 8/10, Exo: 5/10, Note: 13/20): bien sur le cours mais un peu perdu sur l'exo (et pas mal d'erreurs de calculs).\\
+	
+	\begin{exo}
+		IPP
+	\end{exo}
+	
+	\begin{exo}
+		Méthode variation de la constante?
+	\end{exo}
+	
+	\begin{exo}
+		$\int_{0}^{\pi} \exp(t) \sin(3t) dt$?
+	\end{exo}	
+	
+	\begin{exo}
+		Soit $I_{p, q} = \int_{0}^{1} t^p (1 - t)^q dt$. 
+		\begin{itemize}
+			\item Mq $$I_{p, q} = \frac{q}{p+1} I_{p+1, q-1}$$
+			\item Mq $$I_{p, q} = \frac{p! q!}{(p+q+1)!}$$
+			\item Calculer $$\sum_{k=0}^{q} \binom{q}{k} \frac{(-1)^k}{p+k+1}$$
+		\end{itemize}
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	SAULDUBOIS (cours: 5/10, exo: 7/10, note: 12/20): erreur primitive de $1/x^2$. Erreur formule chgt variable et dérivée de $\cos$.\\
+	LAGNEAUX (cours: 3/10, exo: 5/10, note: 8/20): ne connaît pas la démonstration de cours. Beaucoup de bêtises.\\
+	
+	\begin{exo}
+		Eq diff homogène y' - a y = 0
+	\end{exo}
+
+	\begin{exo}
+		Méthode de calcul d'une primitive $\frac{1}{P(x)}$, $P$ de degré 2.
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\int_{-1}^{1} t^2 \sqrt{1 - t^2} dt$ (= $\frac{\pi}{8}$)
+	\end{exo}
+			
+	\begin{exo}
+		Wallis:
+		$$I_n = \int_{0}^{\pi} \sin^n t dt$$
+		\begin{itemize}
+			\item Mq $I_n = \int \cos^n t dt$.
+			\item Mq $I_{n+2} = \frac{n+1}{n+2} I_n$.
+			\item $I_n = ?$
+			\item Mq $n I_n I_{n-1} = \frac{\pi}{2}$.
+		\end{itemize}
+	\end{exo}
+			
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	STUDER (cours: 5/10, exo: 6/10, Note: 11/20): ne connaît pas la définition de la dérivée. Dit continue $\implies$ dérivable. Très brouillon.\\
+	
+	\begin{exo}
+		Unicité des primitives, à addition d'une constante près.
+	\end{exo}
+
+	\begin{exo}
+		Formule de chgt de variable?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\lim_0 \frac{1}{x} \int_{0}^{x} f(t)dt$? Interprétation? 
+	\end{exo}
+	
+	\begin{exo}
+		Primitive de $x \longmapsto \frac{1}{x^2 - x - 1}$?
+	\end{exo}
+
+\end{document}

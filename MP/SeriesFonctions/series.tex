@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 8: Séries}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	BOUHELIER (note: 11): manque d'initiative\\
+	Calley Théo (note: 10): preuve incomplète.\\
+		
+	\begin{exo}
+		Critère de D'Alembert.
+	\end{exo}
+	
+	\begin{exo}
+		Convergence puis équivalent de $\sum_{2}^{\infty} \frac{1}{k\ln(k)}$? 
+	\end{exo}
+
+	\begin{exo}
+		Convergence puis calcul de $\sum_{2}^{\infty} \frac{1}{k(k+1)}$? 
+	\end{exo}
+%	\begin{exo}
+%		Convergence de $\sum \frac{1}{{p_n}^{p_n}}$, où $p_n$ = nb de chiffres dans l'écriture décimale de $n$?
+%	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MARGUIER Agathe (16): très bien\\
+	CHARRIERE Baptiste (10): oublie l'hypothèse que la différence des suites adjacentes doit tendre vers 0. preuve approximative. beaucoup d'imprécisions.
+	
+	\begin{exo}
+		Critère spécial des séries alternées.\\
+		Montrer que chaque condition est nécessaire. (considérer $u_n = \frac{1}{n}$ si $n$ pair, $\frac{1}{2n}$ sinon)
+	\end{exo}
+
+	\begin{exo}
+		Calcul de $\sum_{2}^{\infty} \ln(1 - \frac{1}{n^2})$? 
+	\end{exo}
+	
+	\begin{exo}
+		Convergence puis calcul de $\sum_{k=1}^{\infty} \frac{k}{3^k}$?
+	\end{exo}
+%	\begin{exo}
+%		Adhérence et intérieur des matrices diagonalisables de $\mathcal{M}_n(\mathcal{C})$.
+%	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	DESHAYES P (15): bien\\
+	LEBEDEV (11): dit $\frac{1}{n\ln(n)} \sim \frac{1}{n}$. Ne connaît pas de primitive de $\frac{u'}{u}$.\\
+	SAGET (11): dit $\ln(1 - \frac{1}{n^2}) \sim \ln(- \frac{1}{n^2})$.\\
+	
+	\begin{exo}
+		Comparaison série-intégrale. Contre exemple si $f$ n'est pas décroissante?
+	\end{exo}
+	
+	\begin{exo}
+		3 premiers termes du dvp asymptotique de la série harmonique.
+	\end{exo}
+
+	\begin{exo}
+		\begin{itemize}
+			\item Calculer $\sum_{k=0}^{n} sin(k)$.
+			\item En déduire que $\sum_{k=0}^{n} \vert \sin(k) \vert \rightarrow \infty$ et que $\sum \frac{\sin^2(k)}{k}$ converge.
+			\item (Abel) Mq $\sum \frac{sin(k \theta)}{k}$ converge.
+		\end{itemize}			
+	\end{exo}
+
+\end{document}

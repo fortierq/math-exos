@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle MP 3: réduction}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	CAIREY-REMONNAY Solène (18): cours parfait. Exercice aussi.\\
+	PIERRE Alexandre (16): cours très bien. Exercice aussi.\\
+	
+	\begin{exo}
+		Tout endo en dim finie admet un poly annulateur. Contre-exemple en dim infinie?
+	\end{exo}
+
+	\begin{exo}
+		Soient $u, v$ deux endo d'un EV $E$.
+		\begin{enumerate}
+			\item Si $\lambda \neq 0$ est v.p de $u \circ v$ mq $\lambda$ est aussi v.p de $v \circ u$.
+			\item Soient $E =\mathbb{R}[X]$ et $u, v$ deux endo définis par $u(P) = P'$ et $v(P)$ = primitive de $P$ s'annulant en 0.
+			Déterminer $Ker(u \circ v)$ et $Ker(v \circ u)$.
+			\item Mq (1) reste vrai si $\lambda = 0$ en dimension finie.
+		\end{enumerate}
+	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MARTIN Manon (11): ne se souvient pas bien de la démo. Confusion entre endomorphisme/vecteur/réel/polynome.\\
+	Colin CHAISE (15): bien pour la démo de cours. Erreur dans le thm du rang.\\
+	
+	\begin{exo}
+		Théorème des noyaux.\\
+		A t-on besoin qu'ils soient premiers entre eux.
+	\end{exo}
+
+	\begin{exo}
+		Soit $E$ $\mathbb{K}$-EV de dimension finie, $u \in \mathcal{L}(E)$ et $P$ annulateur de $u$. Supposons que $P = QR$ avec $Q$, $R$ premiers entre eux. Mq $Im Q(u) = Ker R(u)$.
+	\end{exo}
+%	\begin{exo}
+%		Trouver $u_n$ et $v_n$ tq:
+%		$$u_{n+1} = u_n - v_n$$
+%		$$v_{n+1} = 2u_n + 4 v_n$$
+%		$$u_0 = 2$$
+%		$$v_0 = 1$$
+%	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	JACQUOT Juliette (10): ne se souvient pas bien de la démo, ni des méthodes pour trouver des valeurs propres.\\
+	GAUBERT Baptiste (10): ne se souvient pas bien de la démo. Confusion entre endomorphisme/vecteur/réel/polynome.
+	
+	\begin{exo}
+		Spectre et racines d'un polynôme annulateur, du polynôme minimal
+	\end{exo}
+	
+	\begin{exo}
+		Valeurs propres de $\begin{pmatrix}
+		0 & ... & 0 & 1 \\ 
+		&  &  & ... \\ 
+		0 &  & 0 & 1 \\ 
+		1 & ... &  & 1
+		\end{pmatrix} $ ?
+	\end{exo}
+	
+	\begin{exo}
+		Soit $E$ $\mathbb{K}$-EV de dim $n$ et $p$, $q$ deux projecteurs de $E$ qui commutent.
+		Mq:
+		\begin{enumerate}
+			\item $p \circ q$ est un projecteur.
+			\item $Im(p \circ q) = Im(p) \cap Im(q)$
+			\item $Ker(p \circ q) = Ker(p) + Ker(q)$
+		\end{enumerate}
+	\end{exo}
+	 
+\end{document}

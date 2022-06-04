@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 10: Fonctions et intégrales	.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	GUES Flora (cours: 6/10, exo: 6/10, note: 12/20): erreur dans les dérivées et primitives de $\frac{1}{x}$.\\
+	HENRY(cours: 6/10, exo: 6/10, note: 12/20): ne sait pas mettre deux fractions au même dénominateur... peu rigoureux.
+	
+	\begin{exo}
+		Dérivabilité de la fonction $\arcsin$. 
+	\end{exo}
+	
+	\begin{exo}
+		Méthode de calcul d'une primitive $\frac{1}{P(x)}$, $P$ de degré 2.
+	\end{exo}
+
+	\begin{exo}
+		Mq $\forall x \geq 0$, $ \arctan(x) \geq \frac{x}{x^2 + 1}$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $I_{p, q} = \int_{0}^{1} t^p (1 - t)^q dt$. 
+		\begin{itemize}
+			\item Mq $$I_{p, q} = \frac{q}{p+1} I_{p+1, q-1}$$
+			\item Mq $$I_{p, q} = \frac{p! q!}{(p+q+1)!}$$
+			\item Calculer $$\sum_{k=0}^{q} \binom{q}{k} \frac{(-1)^k}{p+k+1}$$
+		\end{itemize}
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MARGUERITE Léa (cours: 6/10, exo: 7/10, note: 13/20): dessine arcsin avec deux images pour le même argument.\\
+	GUILLAUME-SAGE (cours: 5/10, exo: 5/10, note: 10/20): ne sait pas changer de variable, écrit que $\sin(1) = 0$.\\
+	Commentaire mythique: ah mais la formule de linéarisation s'applique aussi si on a $2x$ au lieu de $x$!\\
+	
+	\begin{exo}
+		Théorème d'intégration par parties
+	\end{exo}
+
+	\begin{exo}
+		Dessin de $\sin$ et $\arcsin$.
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\int_{-1}^{1} t^2 \sqrt{1 - t^2} dt$ (= $\frac{\pi}{8}$)
+	\end{exo}
+			
+	\begin{exo}
+		Résoudre $\arcsin(\tan(x)) = x$.
+	\end{exo}
+			
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	MOUILLEFARINE Paul (cours: 6/10, exo: 8/10, note: 14/20): erreurs ds la formule de chgt de variable.\\
+	FRICK (cours: 7/10, exo: 7/10, note: 14/20): erreur de primitive de $\exp(3t)$.\\
+	
+	\begin{exo}
+		Unicité des primitives, à addition d'une constante près.
+	\end{exo}
+
+	\begin{exo}
+		Formule de chgt de variable?
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\arcsin \cos \frac{7 \pi}{4}$ (= $\frac{\pi}{4}$).
+	\end{exo}
+	
+	\begin{exo}
+		Primitive de $x \longmapsto \frac{1}{x^2 - x - 1}$?
+	\end{exo}
+
+	\begin{exo}
+		$\int_{0}^{\pi} \exp(t) \sin(3t) dt$?
+	\end{exo}	
+\end{document}

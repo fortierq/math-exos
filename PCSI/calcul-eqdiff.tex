@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI: Techniques de calcul, Équations différentielles}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Karim Malmaud 11\\
+	Léa Schamberger 11\\
+	\begin{exo}
+			Donner le théorème de décomposition en facteurs premiers, et expliquer comment en déduire le PGCD et le PPCM de deux nombres. Calculer le PGCD et PPCM de 966 et 980.
+	\end{exo}
+
+	\begin{exo}
+		Résoudre le système suivant:
+		\[ \begin{cases} 
+		x_1 + x_2 + x_3 + x_4 = 0 \\
+		2 x_1 + x_2 + x_3 = 1 \\
+		x_1 - x_4 = 1 \\
+		3 x_1 + x_2 + x_3 - x_4 = 2 
+		\end{cases}
+		\]	
+	\end{exo}
+	
+	\begin{exo}
+		Soient $A$ et $B$ deux sous groupes d'un groupe $G$. Soit $AB = \lbrace ab \in G : a \in A, b \in B \rbrace$. \\
+		\begin{question}
+			Est-ce que $AB$ est forcément un sous groupe de $G$?
+		\end{question}
+		\begin{question}
+			Démontrer que $AB$ est un sous groupe de $G$ ssi $AB = BA$.
+		\end{question}
+		\begin{question}
+			Démontrer que, si $AB = BA$, $AB$ est le sous groupe de $G$ engendré par $A \cup B$.
+		\end{question}
+	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Christian Morello 14\\
+	Fournier Julie 15\\
+	\begin{exo}
+			Quels sont les sous groupes de (Z, +)? Preuve?
+	\end{exo}
+	\begin{exo}
+			Démontrer que, pour tout $x \in ]0, \frac{\pi}{2}$, $\frac{2}{\pi}] \leq \frac{\sin(x)}{x} \leq 1$.
+	\end{exo}
+	
+
+	 
+\end{document}

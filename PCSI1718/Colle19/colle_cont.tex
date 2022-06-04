@@ -1,0 +1,47 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 19: continuité}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	PETIT Laurine (11): ne connaît pas bien les définitions de limite et continuité (mélange les variables et quantificateurs)\\
+		
+	\begin{exo}
+		Montrer que si $f : \R \longrightarrow \R$ continue a une limite 1 en $\infty$ et -1 en $-\infty$ alors $f$ s'annule.
+ 	\end{exo}
+
+	\section*{Colle 2}
+	PATTE Rémi (15): trouve tout seul le 1er exo. Manque de rigueur sur les quantificateurs. \\
+	Arthur THEPENIER (16): bien\\
+	
+	\begin{exo}
+		$f : [0, 1] \rightarrow [0, 1]$ continue $\Longrightarrow$ $f$ a un point fixe
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Ruben (11): inverse croissant et décroissant. Pense que la fonction doit être injective/surjective pour appliquer le TVI.\\
+	TRONCIN Thibaud (13): inverse croissant et décroissant. Pense qu'une fonction de R dans R doit prendre toutes les valeurs réelles (être surjective).\\
+	
+	\begin{exo}
+		Equivalent de $\tan(x)$ en 0?
+	\end{exo}
+	
+	\begin{exo}
+		$f$ continue décroissante sur $\R$ $\implies$ $f$ a un point fixe
+	\end{exo}
+	
+\end{document}

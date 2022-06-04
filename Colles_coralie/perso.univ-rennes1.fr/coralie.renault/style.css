@@ -1,0 +1,194 @@
+/*** Liens ***/
+
+a:link, a:active
+{
+	color: #407DAB;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:visited
+{
+	color: #2d5188;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:hover
+{
+	color: #009100;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+/*** Puces ***/
+
+ul
+{
+  list-style-image: url('Images/icon_noiraude.gif');
+}
+
+
+/*** COULEURS ***/
+/*
+Ventre : #e1db9d
+Ventre ombre: #a9a357
+Poils gris : #72715f
+Poils gris ombre : #48463a
+bordure : #1b1b16
+*/
+
+
+/*** Body ***/
+body
+{
+ font-family: Arial, Helvetica, sans-serif;
+ color: #48463a;
+ width: 900px;
+ margin: auto;
+ margin-top: 0px;
+ padding-right: 8px;
+ padding-top: 600px;
+ margin-bottom: 200px;
+ background: no-repeat scroll transparent;
+ background-image: url("Images/totoro.png"), url("Images/totoro_bas.png");
+ background-position: center top, center bottom;
+}
+
+
+/*** En-tête ***/
+
+header
+{
+  display: block;
+  height: 151px;
+  margin-top: 0px;
+}
+
+#titre
+{
+  display: block;
+  width: 300px;
+  margin: auto;
+  text-align:center;
+}
+
+#titre h1
+{
+  color: #407DAB;
+}
+/*** Navigation ***/
+
+#langage
+{
+  display: none;
+}
+
+nav
+{
+  font-size: small;
+  width: 150px;
+  float: right;
+  background: no-repeat scroll transparent;
+  background-image: url("Images/petitblanc.png"), url("Images/petitblanc2.png");
+  background-position: center top, center bottom;
+}
+
+#table
+{
+  margin-top: 134px;
+  margin-bottom: 60px;
+  background-color: white;
+  border-left: 2px solid #48463a;
+  border-right: 2px solid #48463a;
+  box-shadow: inset -44px 0px 0px #ccc; 
+}
+
+/*** Photo ***/
+
+#photo
+{
+  float: left;
+  margin-top: 80px;
+  text-align: center;
+  width: 130px;
+  height: 140px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid #48463a;
+  border-radius: 10px;
+}
+
+/*** Section ***/
+section
+{
+  box-shadow: inset 3px 0px 0px #a9a357; 
+  width: 554px;
+  background-color: #e1db9d;
+  margin: auto;
+  margin-top: 0px;
+  border-left: 2px solid #48463a;
+  border-right: 2px solid #48463a;
+}
+
+section h1
+{
+  font-size: 1.6em;
+  text-align: center;
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999;
+  color: #48463a;
+}
+section h2
+{
+  padding-left: 15px;
+  color: #48463a;
+}
+section h3
+{
+  padding-left: 15px;
+  margin-left: 20px;
+  color: #72715f;
+}
+
+section p
+{
+   text-indent: 20px;
+}
+
+article
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.cont
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+aside
+{
+    display: none;
+    vertical-align: top;
+    text-align: justify;
+    width: 19%;
+    border-left: 1px dashed #999;
+}
+
+/*** Footer ***/
+footer
+{
+  box-shadow: inset 3px 0px 0px #a9a357; 
+  margin: auto;
+  padding-top: 10px;
+  width: 554px;  
+  border-left: 2px solid #48463a;
+  border-right: 2px solid #48463a;
+  border-top: 1px dotted black;
+  background-color: #e1db9d;
+  font-size: 70%;
+  text-align: center;
+}

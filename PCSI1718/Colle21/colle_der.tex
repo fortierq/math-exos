@@ -1,0 +1,52 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 21: dérivabilité}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	KHALIL (14): se trompe dans des dérivées simples ($(u^n)'$)\\
+	Guillaume (10): très lent, connaissances fragiles. Ne connaît pas le TVI.\\
+	
+	\begin{exo}
+		Dérivée $n$ème de $\frac{1}{1 - x}$? $\frac{1}{1 + x}$?
+ 	\end{exo}
+
+	\begin{exo}
+		$f$ continue décroissante sur $\R$ $\implies$ $f$ a un point fixe
+	\end{exo}
+	
+	\section*{Colle 2}
+	Marion (14): se trompe dans la dérivée de $e^u$.\\
+	Thibaud (14): oublie l'hypothèse que l'extremum ne doit pas être une borne pour le thm d'extremum local.
+
+	\begin{exo}
+		Donner une expression simple pour la dérivée $n$ème de $\cos(t) e^t$?
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Antonin VERJUS (13): oublie l'égalité des accroissements finis.\\
+	Réjane (11): ne connais pas bien le thm d'égalité des accroissements finis, ni le théorème des extremums locaux.\\
+	
+	\begin{exo}
+		Montrer que si $f$ dérivable sur $[a, b]$, $f'(a) < 0$ et $f'(b) > 0$ alors $f'$ s'annule.
+	\end{exo}
+		
+	\begin{exo}
+		Si $f \longrightarrow \infty$ en $-/+ \infty$ alors la dérivée de $f$ s'annule.
+	\end{exo}
+	
+\end{document}

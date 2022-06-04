@@ -1,0 +1,3217 @@
+\documentclass[a4paper,12pt,francais]{article}
+ 
+\textheight=250mm   % AVANT 230
+
+\textwidth=175mm     % 180
+\topmargin  -1mm
+\footskip  0 mm	% avant 14mm
+\headheight  0mm  %6mm
+\headsep 0 mm    %7.5
+\oddsidemargin -7mm    %-5mm
+\evensidemargin -7mm
+\voffset 3mm
+\hoffset 0mm
+
+\abovedisplayskip=2mm
+\belowdisplayskip=2mm
+\abovedisplayshortskip=0mm
+\belowdisplayshortskip=2mm
+\leftskip=-5mm %marge à gaucheé&œ('e"za	EZSQ<*ml;k,junhybgtedcszx"qé $⁼)PÀÇ_È-('_ÇÀ&)!)
+\rightskip=-5mm % marge à droite!
+
+\usepackage{amsmath,amssymb}  % attention a4wide empêche de descendre "bas" dans la feuille.
+\frenchspacing
+\usepackage[utf8]{inputenc} 
+\usepackage{amsfonts}%
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\N}{\field{N}}
+\newcommand{\Z}{\field{Z}}
+\newcommand{\R}{\field{R}}
+\newcommand{\Q}{\field{Q}}
+\newcommand{\C}{\field{C}}
+\newcommand{\K}{\field{K}}
+\newcommand{\id}{\mbox{Id}}
+\newcommand{\im}{\mbox{Im}}
+\newcommand{\rg}{\mbox{rg}}
+\newcommand{\tH}{\mbox{th}}
+\newcommand{\e}{\mbox{e}}
+\newcommand{\Vect}{\mbox{Vect}}
+\newcommand{\card}{\mbox{card}}
+\newcommand{\ch}{\mbox{ch}}
+\newcommand{\sh}{\mbox{sh}}
+\newcommand{\tr}{\mbox{tr}}
+\newcommand{\dis}{\displaystyle}
+
+\begin{document}
+\pagestyle{empty}
+\noindent
+\section*{1. Révisions oraux : Groupes}
+\noindent
+{\bf Exercice 1.1 [X].} Soit $E$ un ensemble fini muni d'une loi interne
+associative. Montrer qu'il existe alors au moins un élément $s$ de $E$
+vérifiant $s^2=s$.\\
+
+\noindent
+{\bf Exercice 1.2 [Centrale 07].} Caractériser les groupes dont l'ensemble des
+sous-groupes est fini.\\
+{\it Indications: Le groupe $[\Z;+]$ en fait-il partie? Que dire du
+sous-groupe engendré par un élément d'un tel groupe? }\\
+
+\noindent
+{\bf Exercice 1.3 [Ulm].} Soit $f$ un endomorphisme d'un groupe
+fini. Vérifier l'équivalence entre les égalités $\ker f= \ker f^2$ et $\im f= \im f^2$.\\ 
+{\it Indications: trouver une relation entre les cardinaux de $G$,
+  $\ker g$ et $\im \, g$ pour un endomorphisme $g$ du groupe fini $G$.}\\
+
+\noindent
+{\bf Exercice 1.4 [TPE 06].} Soit $E$ un $\C$-espace vectoriel et $G$
+un sous-groupe fini du groupe $GL(E)$ des automorphismes de $E$. On note $\displaystyle f=\sum_{g \in G} g$.\\
+\indent
+{\bf a)} Montrer que $f^2=\card(G)\; f$\\
+\indent
+{\bf b)} Montrer que $\tr(f)=0$ impose $f=0$.\\
+
+\noindent
+{\bf Exercice 1.5 [Centrale 2012].} Soit $[G;\cdot]$ un groupe fini de cardinal $n\geqslant 2$, d'élément neutre $e$ et $p$ un nombre premier divisant $n$.\\
+On note $E=\{(x_1;\dots,x_p)\in G^p \; |\; x_1 \cdot \dots \cdot x_p=e\}$, et pour tout $\gamma \in S_p$ et tout $X=(x_1;\dots;x_p)\in G^p$, on note $\gamma\cdot X= (x_{\gamma(1)};\dots;x_{\gamma(p)})$.\\
+On définit alors $\sigma \in S_p$ par $\sigma(i)=i+1$ pour tout $i$ de $1$ à $p-1$ et $\sigma(p)=1$, et on pose $o(X)=\{\sigma^k\cdot X \; | \; k \in \Z \}$ pour tout $X$ dans $G^p$.\\
+\indent
+{\bf 1)} Vérifier que $E$ a pour cardinal $n^{p-1}$.\\
+\indent
+{\bf 2)} Montrer que l'orbite $o(X)$ de $X\in E$ est incluse dans $E$.\\
+\indent
+{\bf 3)} Montrer que si $X$ et $Y$ sont dans $E$ alors $Y \in  o(X)$ impose $o(X)=o(Y)$.\\
+\indent
+{\bf 4)} Montrer qu'il existe $m\in \N$ et une famille $(X_1;\dots;X_m)\in E^m$ telle que $\left({o(X_i)}\right)_{i=1\dots m}$ forme une partition de $E$. Vérifier que pour tout $X$ de $E$, l'ensemble $o(X)$ a pour cardinal $1$ ou $p$.\\
+\indent 
+{\bf 5)} En déduire que $G$ admet un élément d'ordre $p$.\\
+
+\newpage
+\section*{2. Révisions oraux : Anneaux}
+
+\noindent
+{\bf Exercice 2.1 [Ulm].} Un anneau $A$ est dit {\bf principal} quand tout idéal est du type $aA=\{ax\,|\, x \in A\}$.\\
+\indent
+{\bf a)} Montrer que
+$\Z[X]$ n'est pas un anneau principal.\\
+{\it Indications : comment montre-t-on que $K[X]$ est un anneau
+  principal pour tout corps $K$?}\\
+\indent
+{\bf b)} Soit $A$ un anneau commutatif intègre. A quelle condition (nécessaire
+et suffisante) $A[X]$ est-il un anneau principal?\\
+
+\noindent
+{\bf Exercice 2.2 [X].} Montrer que l'ensemble des nombres décimaux est
+un anneau principal (i.e. tout idéal est engendré par un singleton).\\
+
+\noindent
+{\bf Exercice 2.3 [Mines 05].} Montrer que l'ensemble $E$ suivant est un
+corps isomorphe à $\C$ :
+$$E=\left\{ {
+\left({\begin{array}{cc}
+x&y\\
+-5y&x+4y
+\end{array} }\right) \mbox{ avec } (x;y) \in \R^2} \right \}$$
+
+\noindent
+{\bf Exercice 2.4 [TPE 06].} Soit $A$ un anneau commutatif et $I$ un
+idéal premier de $A$, $J$ et $K$ des idéaux de $A$. Un idéal $I$ est
+premier quand $xy\in I$ avec $(x;y)\in A^2$ impose $x$ ou $y$ dans
+$I$.\\
+{\bf a)} Montrer que si $I=J\cap K$ alors $I=J$ ou $I=K$.\\
+{\bf b)} Montrer que $A$ est un corps dès que tout idéal de $A$ est premier. On pourra considérer l'idéal
+$a^2A$.\\
+
+\noindent
+{\bf Exercice 2.5 [Centrale 07].} Soit $A$ un élément de $M_n(\Q)$ et $\mu_A$ son polynôme minimal supposé irréductible dans $\Q[X]$.\\
+\indent
+{\bf 1)} Montrer que $\Q[A]=\{P(A)| P\in \Q[X]\}$ est un corps.\\
+\indent
+{\bf 2)} Trouver tous les sous-espaces vectoriels de $\Q^n$ stables par $A$ en supposant $\mu_A$  de degré $n$.\\
+\indent
+{\bf 3)} Soit $\mu_A=X^n-2$.\\
+\indent \indent {\bf a)} Quelles sont les valeurs propres de $A$?\\
+\indent \indent {\bf b)} Montrer que $X^n-2$ est irréductible dans $\Q[X]$.\\
+\indent
+{\bf 4)} Déterminer les matrices de $M_n(\Q)$ dont le polynôme caractéristique $X^n-2$.\\
+
+\noindent
+{\bf Exercice 2.6 [CCP 07].} Soit $E=\{ M(a;b) | (a;b) \in \R^2 \}$ avec 
+$\displaystyle M(a;b)=\left( \begin{array}{cc}
+a&b\\
+-b&a
+\end{array} \right)\cdot$\\
+{\bf 1)} Vérifier que $E$ est un sous-espace vectoriel et un sous-anneau de $M_2(\R)$. Quelle est sa dimension?\\
+{\bf 2)} Montrer que $\varphi : z \in \C \mapsto M(\mbox{Re}(z);\im (z)) \in E$ est un isomorphisme d'espaces vectoriels. Est-ce un isomorphisme d'anneaux?\\
+
+\noindent
+{\bf Exercice 2.7 [CCP 07].} {\bf 1)} Déterminer toutes les fonctions de classe $C^1$ de $\R$ dans $\R$ vérifiant $f(x+y)=f(x)+f(y)$ pour tout $(x;y)$ de $\R^2$.\\
+{\bf 2)} Montrer que $\displaystyle E=\left\{ \left( \begin{array}{ccc}
+1&a&b\\
+0&1&c\\
+0&0&1 \end{array} \right)\; \; \right\}$ est un groupe. Est-il commutatif?\\
+{\bf 3)} Déterminer les morphismes de groupes de classe $C^1$ de $\R$ dans $E$.\\
+
+\noindent
+{\bf Exercice 2.8.} Montrer qu'il n'existe pas d'application $f:\N \to \N$ vérifiant $(f\circ f)(n)=2007+n$ pour tout entier naturel $n$.\\
+
+\noindent
+{\bf Exercice 2.9.} Montrer que pour tout entier $p$ premier, il existe un entier naturel $n$ non nul pour lequel $6n^2+5n+1=0 [p]$.\\
+
+\noindent
+{\bf Exercice 2.10 [Centrale 08].} Soit $A$ un anneau commutatif. Montrer l'équivalence entre :\\
+(i) Toute suite croissante d'idéaux de $A$ est stationnaire.\\
+(ii) Pour tout idéal $I$ de $A$, il existe un nombre fini d'éléments $a_1$, ... $a_n$ de $A$ avec $I=a_1A+\cdots +a_nA$.\\
+
+\noindent
+\noindent
+{\bf Exercice 2.11 [X 13].} Montrer que $19$ divise un nombre de la forme $222\dots 22$.\\
+
+\newpage
+\section*{3. Révisions oraux : Polynômes} %3
+
+\noindent
+{\bf Exercice 3.1 [Centrale 05].} Soit $x_1$, $x_2$ et $x_3$ les racines
+d'un polynôme unitaire de degré $3$ de $\C[X]$. Donner en fonction de
+ses coefficients la valeur de la somme 
+$$S=\frac{x_1}{x_2+x_3}+
+\frac{x_2}{x_1+x_3}+
+\frac{x_3}{x_1+x_2} \cdot$$
+
+\noindent
+{\bf Exercice 3.2.} Déterminer tous les polynômes de $\R[X]$ vérifiant
+$P(X^2)=P(X) P(X+1)$.\\
+
+\noindent
+{\bf Exercice 3.3 [Centrale 05].} Soit $K$ un sous-corps de $\C$. On
+définit les ensemble de polynômes 
+$$A(K)=\{P\in \C[X] \; |\; P(K)\subset K\} \mbox{ et } B(K)=\{P\in
+\C[X]\; |\; P(K)=K\}.$$
+Montrer que $A(K)=K[X]$ puis déterminer $B(\C)$, $B(\R)$ et $B(\Q)$.\\ 
+{\it Indications : rappeler sommairement pourquoi $K$ contient
+  $\Q$. On pourra alors observer que les coefficients de $P$ (supposé
+  élément de $A(K)$) vérifient un système de Cramer.}\\
+
+\noindent
+{\bf Exercice 3.4 [X].} Dans quels corps a-t-on l'égalité
+$X^4-X^2+1=(X^2-5X+1)(X^2+5X+1)$?\\
+
+\noindent
+{\bf Exercice 3.5.} Déterminer les polynômes à coefficients complexes
+$P$ pour lesquels il existe deux entiers naturels $p$ et $q$ tels que
+$(P')^p$ divise $P^q$.\\
+
+\noindent
+{\bf Exercice 3.6 [Mines 07-15].} %Simon Neves
+ Montrer que pour tout entier naturel $n$, il existe un polynôme $P_n$ de $\R[X]$ tel que $X^n$ divise $X+1-P_n^2$. {\it On pourra penser au développement limité de $\sqrt{1+x}$.}\\
+Soit $N$ une matrice nilpotente de $M_n(\R)$, montrer que $I+N$ est le carré d'une matrice.\\
+
+\noindent
+{\bf Exercice 3.7 [TPE 07].} Que dire de l'application qui à tout polynôme $P$ associe le reste de la division euclidienne de $P$ par $A$ où $A$ est un polynôme fixé.\\
+
+\noindent
+{\bf Exercice 3.8 [X 07].} Soient $A$ et $B$ deux matrices de $M_n(\R)$ pour lesquelles il existe $n+1$ valeurs de  $\lambda$ telles que $A+\lambda B$ est nilpotente. Montrer que $A$ et $B$ sont alors nilpotentes.\\
+
+\noindent
+{\bf Exercice 3.9 [Mines 07].} {\bf a)} Montrer qu'il existe un unique polynôme $A_n$ de $\C[X]$ tel que\\ $\displaystyle A_n\left( X+\frac{1}{X} \right) = X^n+ \frac{1}{X^n}\cdot$\\
+\indent
+{\bf b)} Déterminer les racines de $A_n$, 
+\indent
+{\bf c)} Décomposer $\frac{1}{A_n}$ en éléments simples.\\
+
+\noindent
+{\bf Exercice 3.10 [CCP 07].} Factoriser $P_n= X^{2n}-2 \cos(na) X^n+1$ dans $\C[X]$ puis $\R[X]$.\\
+
+\noindent
+{\bf Exercice 3.11 [X].} Déterminer tous les couples $(P;Q)\in \C[X] \times \C[X]$ vérifiant $P^2=1+(X^2-1)Q^2$.\\
+
+\noindent
+{\bf Exercice 3.12 [X].} Soit $P$ dans $\R[X]$. Montrer que $P(x)\geqslant 0$ pour tout $x$ réel si et seulement si $P$ s'écrit $A^2+B^2$ avec $A$ et $B$ dans $\R[X]$.\\
+
+\noindent
+{\bf Exercice 3.13 [X].} Soit $P$ dans $\R[X]$ avec $P(x)\geqslant 0$ pour tout $x$ dans $[-1;1]$.\\
+{\bf 1)} On suppose ici que $P$ est de degré au plus $2$. Montrer qu'alors $P$ s'écrit $\alpha(X-a)^2+\beta(1-X^2)$ avec $\alpha \geqslant 0$, $\beta \geqslant 0$ et $a \in [-1;1]$.\\
+{\bf 2)} On revient au cas général. Montrer l'existence de deux polynômes $A$ et $B$ dans $\R[X]$ tels que $P=A^2+(1-X^2)B^2$.\\ 
+
+\noindent
+{\bf Exercice 3.14 [X 2009]} Soit $f:t\mapsto \frac{1}{ \sqrt{1+t^2\;} }\cdot$ Montrer que pour tout $n\in \N$, il existe un polynôme $P_n$ dans $\R[X]$ avec $f^{(n)}(t) =\frac{P_n(t)}{(1+t^2)^{n+1/2}}$ pour tout $t$. Quel est le degré de $P_n$? Vérifier que $P_n$ n'admet que des racines simples.\\
+
+\noindent
+{\bf Exercice 3.15 [{\it 1/3 sujet} Centrale 2011]} Soit $E$ l'ensemble des polynômes unitaires à coefficients dans $\Z$ dont les racines sont toutes de module inférieur ou égal à $1$, et $E_n$ l'ensemble des éléments de $E$ de degré $n$.\\
+{\bf 1)} Soit $\displaystyle P_n=X^n+\sum_{k=1}^n a_k X^{n-k}$ un élément de $E_n$. Montrer que pour tout $k$, on a $|a_k| \leqslant \binom{n}{k}\cdot$\\
+{\bf 2)} Démontrer que les ensembles $E_n$ sont finis et déterminer $E_1$.\\
+{\bf 3)} Montrer que les racines non nulles d'un élément de $E_n$ sont toutes de module $1$. {\it On pourra utiliser le produit des telles racines.}\\
+
+\noindent
+{\bf Exercice 3.16 [Mines 2012].} Soit $n\geqslant 1$. Trouver l'unique $n$-uplet $(a_0;\cdots;a_{n-1})\in \R^n$ tel que pour tout $P$ de $\C_{n-1}[X]$, on a 
+$$P(X+n)=\sum_{k=0}^{n-1} \; a_k P(X+k)$$
+
+\noindent
+{\bf Exercice 3.17 [X16].} % Gaël Macherel
+Soit $P \in \R[X]$ scindé. Prouver $P'^2 \geqslant P P''$.\\
+
+%\noindent
+%{\bf Exercice 3.17 [Mines 2013}, exo 1{\bf ]}. Soit $P=X^{n+1}+aX^n+a$.\\
+%{\bf 1)} Déterminer à quelles conditions sur $(a;b)$ le polynôme $(X-1)^2$ divise $P$.\\
+%{\bf 2)} Dans ce cas, déterminer le quotient $Q$ de la division.\\
+%{\bf 3)} Calculer $\displaystyle \prod_{\omega \in U_n \backslash
+% \{1\}} \frac{1}{Q(\omega)}$\\ 
+
+\newpage
+\section*{4. Révisions oraux : Algèbre linéaire} %4
+
+\noindent
+{\bf Exercice 4.1 [Lyon].} Déterminer les sous-algèbres de dimension
+finie de ${\cal{C}}^0(\R,\R)$.\\ 
+{\it Indication : Que dire de l'espace vectoriel engendré par les
+  puissances d'une fonction $f$? Que peut-on en déduire sur $f$?}\\
+
+\noindent
+{\bf Exercice 4.2 [X].} Résoudre l'équation $X+^tX=\tr
+(X)
+\, A$ d'inconnue $X \in M_n(\R)$ avec $A \in M_n(\R)$.\\
+ 
+\noindent
+{\bf Exercice 4.3 [Mines 05].} Soit $A$ une matrice carrée réelle non
+nulle d'ordre $3$ vérifiant $A^3=-A$. Vérifier que $A$ est semblable à
+la matrice
+$$B=\left( {
+\begin{array}{ccc}
+0&0&0\\
+0&0&-1\\
+0&1&0
+\end{array}} \right)$$
+
+\noindent
+{\bf Exercice 4.4 [Mines 05].} Soit une matrice $M$ dans $M_n(\R)$
+vérifiant $M^2+M+I=0$. Montrer que $n$ est nécessairement pair. Que
+vaut le déterminant de $M$?\\
+
+\noindent
+{\bf Exercice 4.5 [Centrale 05].} Soit les matrices 
+$$A=\left({
+\begin{array}{ccc}
+-1&0&1\\
+1&-1&0\\
+0&1&-1
+\end{array}
+}\right)
+\mbox{ et }
+B=\left( {
+\begin{array}{ccc}
+-1&1&0\\
+0&-1&1\\
+1&0&-1
+\end{array}
+} \right)$$
+\indent
+{\bf a)} Vérifier que $A$ et $B$ commutent.\\
+\indent
+{\bf b)} Montrer que $A$ et $B$ sont semblables sur $\R$.\\
+\indent
+{\bf c)} Montrer que l'espace vectoriel engendré par $I$, $A$ et $B$
+est un anneau. Est-ce un corps?\\
+
+\noindent
+{\bf Exercice 4.6 [CCP 06].} Calculer $A^n$ pour la matrice 
+$\displaystyle A=\left(\begin{array}{cc}
+1&-1\\
+2&4
+\end{array}
+\right)$\\
+
+\noindent
+{\bf Exercice 4.7 [Mines 06].} Soit $P\in \R[X]$. Montrer qu'il existe
+un polynôme $Q$ vérifiant $Q(X+1)-Q(X)=P(X)$. Est-il unique?\\
+
+\noindent
+{\bf Exercice 4.8 [Mines 06].} Résoudre $X^2=\left(\begin{array}{ccc}
+0&1&0\\
+0&0&1\\
+0&0&0
+\end{array} \right)$ {\it On pourra remarquer que $X$ est nilpotente.}\\
+
+\noindent
+{\bf Exercice 4.9 [Mines 06].} Soit $A\in M_n(\C)$ vérifiant
+$3A^3=A^2+A+I$. Montrer que $(A^n)_{n \in \N}$ converge vers une
+matrice de projection $L$. Calculer $L$ en fonction de $A$.\\
+
+\noindent
+{\bf Exercice 4.10 [CCP 06].} Soit $E$ un $K$-espace vectoriel et $f$
+un endomorphisme de $E$ pour lequel il existe un polynôme $P\in K[X]$
+avec $P(f)=0$, $P(0)=0$ et $P'(0)\neq 0$. Montrer que $\im(f)$ et
+$\ker(f)$ sont en somme directe.\\
+ 
+\noindent
+{\bf Exercice 4.11 [TPE 06].} Soit $B=\left(\begin{array}{cc}
+0&2A\\
+-A&3A
+\end{array}
+\right)$ avec $A$ matrice carrée diagonalisable.\\
+\indent
+{\bf a)} Déterminer le polynôme caractéristique de $B$.\\
+\indent
+{\bf b)} Montrer que $B$ est diagonalisable.\\
+
+\noindent
+{\bf Exercice 4.12 [Centrale 06].} Calculer $A^q$ avec $q$ dans $\Z$
+et $a\in \C$ pour $A \in M_{n+1}(\C)$ donnée par
+$$A=\left(
+\begin{array}{ccccc}
+1&a&\cdots& \cdots  &a^n\\
+0&1&a&\cdots &a^{n-1}\\
+&&\ddots& \ddots&\\
+&(0)&&1&a\\
+&&&&1
+\end{array}
+\right) $$
+
+\noindent
+{\bf Exercice 4.13 [Centrale 06].} Soit $A$ une matrice de
+$M_n(\R)$. On veut montrer qu'il existe des droites ou des plans de
+$\R^n$ stables par $A$.\\
+{\bf 1)} Cas où $A$ admet une valeur propre réelle.\\
+{\bf 2)} Dans le cas contraire, en considérant $A$ comme matrice à
+coefficients complexes, montrer qu'il existe un complexe $\lambda$ et
+deux vecteurs $X$ et $Y$ de $\R^n$ tels que
+$A(X+iY)=\lambda(X+iY)$ avec $X\neq 0$. En déduire qu'il existe des
+réels $\alpha$ et $\beta$ vérifiant $A^2X=\alpha A X+\beta X$. Conclure.\\  
+
+\noindent
+{\bf Exercice 4.14 [CCP12].} Montrer qu'une matrice de rang $1$ est
+diagonalisable si et seulement si sa trace est non nulle.\\
+
+\noindent
+{\bf Exercice 4.15 [TPE 06].} Montrer que la matrice $A$ de
+coefficients $a_{i,j}=\frac{i}{j}$ est diagonalisable et déterminer
+ses éléments propres.\\
+
+\noindent
+{\bf Exercice 4.16 [TPE 06].} Les deux matrices $A$ et $B$ écrites
+ci-dessous sont-elles semblables? Calculer $A^n$ pour tout $n$ de
+$\Z$.
+$$A=\left(
+\begin{array}{ccc}
+0&1&0\\
+0&0&1\\
+1&-3&3
+\end{array}
+\right)
+\mbox{ et } 
+B=\left(
+\begin{array}{ccc}
+1&1&0\\
+0&1&1\\
+0&0&1\\
+\end{array}
+\right)$$
+
+\noindent
+{\bf Exercice 4.17 [CCP 06].} Montrer que deux endomorphismes diagonalisables
+qui commutent, admettent une base commune de vecteurs propres. Que
+pensez-vous de la réciproque?\\
+
+\noindent
+{\bf Exercice 4.18 [CCP 06].} Soit $E$ l'espace vectoriel des polynômes
+réels de degré au plus $2$. On note ${\cal{E}}=(e_1;e_2;e_3)$ la base duale de
+la base canonique de $E$.\\
+\indent
+{\bf a)} Montrer que $v:P \mapsto P(1)$ et $w:P\mapsto \int_0^1 P(t)
+\, dt $ sont des éléments du dual $E^*$ de $E$.\\
+\indent
+{\bf b)} Vérifier que ${\cal{E}}'=(e_1;v;w)$ est base de $E^*$.\\
+\indent
+{\bf c)} Donner la matrice de passage de $\cal{E}$ à ${\cal{E}}'$ et
+la base pré-duale de ${\cal{E}}'$.\\
+
+\noindent
+{\bf Exercice 4.19.} Soient $A$ et $B$ dans $K[X]$ et $f$ un endomorphisme d'un $K$-espace vectoriel. On note $U=A \wedge B$ le pgcd de $A$ et $B$, et $V=A \vee B$ son ppcm. Exprimer $\ker(U(f))$, $\im(U(f))$, $\ker(V(f))$ et $\im(V(f))$ à l'aide des noyaux et images de $A(f)$ et $B(f)$.\\
+
+\noindent
+{\bf Exercice 4.20.} Soit $A \in M_{3n}(\R)$ de rang $2n$ vérifiant $A^3=-A$. Montrer que $0$ est valeur propre de $A$ de multiplicité $n$ et que $A$ est semblable à la matrice
+$$\left( \begin{array}{ccccc}
+0&&0&&0\\
+0&&0&&I_n\\
+0&&-I_n&&0\\
+\end{array} \right)$$
+
+\noindent
+{\bf Exercice 4.21.} {\bf a)} Soit $P\in \R[X]$ unitaire. Montrer que $P$ est scindé dans $\R[X]$ si et seulement si pour tout complexe $z$, on a $|P(z)|\geqslant |\im z|^{\deg P}$.\\
+{\bf b)} Soit $E$ un $\R$-espace vectoriel de dimension finie. Soit $(u_m)_{m\in \N}$ une suite d'endomorphismes diagonalisables de $E$ convergeant vers $u\in L(E)$. L'endomorphisme $u$ est-il diagonalisable? trigonalisable?\\
+
+\noindent
+{\bf \it Exercice 4.22.} Soit $E=M_p(\R)$ muni d'une norme d'algèbre $\|.\|$ Soient $A$ et $B$ deux éléments de $E$ et $K=\max \{\|A\|;\|B\|\}.$ Prouver : $\forall n \in \N^*,\; \; \| A^n-B^n \| \leqslant n K^{n-1} \| A-B \|$. En déduire la limite de $(\exp(A/n) \exp(B/n))^n$.\\
+
+\noindent
+{\bf Exercice 4.23.} Soit $E={\cal{C}}^\infty$ et $D:f\in E \mapsto f'\in E$. Existe-il $T$ dans $L(E)$ avec $D=T \circ T$?\\
+
+\noindent
+{\bf Exercice 4.24 [Centrale 98]=4.35.} Soit $u$ un endomorphisme de $E$, $K$-espace vectoriel de dimension finie. \'Etablir l'équivalence entre les propositions\\
+\indent
+(i) Les seuls sous-espaces vectoriels de $E$ stables par $u$ sont $\{0\}$ et $E$.\\
+\indent
+(ii) Le polynôme caractéristique de $u$ est irréductible dans $K[X]$.\\
+
+\noindent
+{\bf Exercice 4.25 [ENS 06].} Pour $A$ et $B$ dans $M_n(\C)$, on pose $[A,B]=AB-BA$. On donne $U$ et $V$ dans $M_n(\C)$ vérifiant $[U,[U,V]]=0$.\\
+\indent
+{\bf a)} Montrer $[U,V]^k=[U,V[U,V]^{k-1}]$ pour tout $k$ de $\N^*$.\\
+\indent
+{\bf b)} En déduire que $[U,V]$ est nilpotente.\\
+\indent
+{\bf c)} Vérifier $[U^k,V]=k[U,V]U^{k-1}$ pour tout $k$ de $\N^*$.\\
+\indent
+{\bf d)} On suppose de plus $U$ nilpotente. Montrer que $UV$ est nilpotente.\\
+
+\noindent
+{\bf Exercice 4.26 [ENS 06].} Soit $A=(a_{i,j})_{1\leqslant i,j \leqslant n} \in M_n(\R)$ avec $a_{i,j}\geqslant 0$ pour tout $(i,j)$ et $\displaystyle \sum_{j=1}^n  a_{i,j}=1$ pour tout $i$.\\
+\indent
+{\bf a)} Vérifier que $1$ est valeur propre de $A$.\\
+\indent
+{\bf b)} Montrer que les valeurs propres de $A$ dans $\C$ sont toutes de module au plus $1$.\\
+\indent
+{\bf c)} Montrer que les valeurs propres de $A$ de module $1$ sont des racines de l'unité.\\
+
+\noindent
+{\bf Exercice 4.27 [ENS 06].} Soit $A \in M_n(\R)$. Montrer que les propositions $\rg(A)=\rg(A^2)$ et $a(A+aI_n)^{-1}$ admet une limite quand $a$ tend vers $0$, sont des propositions équivalentes.\\
+
+\noindent
+{\bf Exercice 4.28 [CCP 06].} Soit $E$ un $\R$-espace vectoriel de dimension $n$ et $G$ un sous-groupe fini de $GL_\R(E)$ de cardinal $r$.\\
+{\bf 1)} Soit $f \in L_\R(E)$, montrer que $\displaystyle \tilde{f}=\frac{1}{r} \sum_{g \in G} g f g^{-1}$ est un endomorphisme de $E$ commutant avec tout élément de $G$.\\
+{\bf 2)} Vérifier que $f=\tilde{f}$ si et seulement si $f$ commute avec tous les éléments de $G$.\\
+{\bf 3)} Soit $V$ un sous-espace vectoriel de $E$ stable par $G$ i.e. par tous les éléments de $G$. Montrer que $V$ admet un supplémentaire $G$-stable. {\it On pourra introduire $p$ un projecteur sur $V$ et montrer que $\tilde{p}$ est aussi un projecteur.}\\
+
+\noindent
+{\bf Exercice 4.29 [Centrale 07].} Soient $p_1$, $\dots$, $p_n$ des endomorphismes de $E$, $K$-espace vectoriel (avec $K$ un sous-corps de $\C$), et $x_1$, $\dots$, $x_n$ des scalaires distincts deux à deux. On considère un endomorphisme $f$ de $E$ vérifiant $\displaystyle f^m=\sum_{i=1}^n x_i^m p_i$ pour tout entier naturel $m$, 
+$\displaystyle f^m=\sum_{i=1}^n x_i^m p_i$\\
+\indent
+{\bf 1)} Montrer que pour tout polynôme $Q$ de $K[X]$, on a $Q(f)= \displaystyle \sum_{i=1}^n Q(x_i) \, p_i$. Que dire de $f$?\\
+\indent
+{\bf 2)} Calculer $p_k \circ p_l$ pour tout $(k;l)$ de $\N_n^2$ ({\it On pourra utiliser des polynômes interpolateurs.)}
+.\\
+\indent
+{\bf 3)} Quel est le spectre de $f$?\\
+\indent
+{\bf 4)} Montrer que $p_k$ est le projecteur sur $\ker(f-x_k \id_E)$ parallèlement à $\oplus_{i \in I_k} \ker(f-x_j \id_E)$ où $I_k$ est $\N_n$ privé de $k$.\\
+
+\noindent
+{\bf Exercice 4.30 [Mines 07].} Soit $u \in L_\C(E)$ avec $E$ un $\C$-espace vectoriel de dimension $n\geqslant 1$.\\
+{\bf 1)} Soit $k \geqslant 2$. Trouver une condition nécessaire et suffisante pour que, si $u^k$ est diagonalisable alors $u$ aussi.\\
+{\bf 2)} Soit $M \in M_n(\C)$ avec $m_{i,j}=a_i$ si $i+j=n+1$ et $m_{i,j}=0$ sinon. Déterminer une condition nécessaire et suffisante pour que $M$ soit diagonalisable.\\
+
+\noindent
+{\bf Exercice 4.31 [Mines 07].} Soit $A\in M_n(\C)$ telle que $\det (A+X)=\det A +\det X$ pour tout $X$ de $M_n(\C)$. On suppose $n\geqslant 2$. Montrer que $A$ n'est pas inversible puis que $A=0$.\\
+
+\noindent
+{\bf Exercice 4.32 [Mines 07].} Soit $B\in M_n(\C)$ dont les valeurs propres sont toutes simples, et soit $P$ un polynôme de $\C[X]$ non nul. On considère l'équation $P(A)=B$ avec $A$ dans $M_n(\C)$. Montrer que cette équation n'admet au plus qu'un nombre fini de solutions, que l'on majorera à l'aide de $n$ est du degré de $P$.\\
+
+\noindent
+{\bf Exercice 4.33 [TPE 07].} {\bf a)} Montrer que si $A$ est une matrice de rang $1$ alors $A$ est diagonalisable si et seulement si sa trace n'est pas nulle.\\
+{\bf b)} Soit $A=\left(\frac{i}{j}\right)_{1\leqslant i,j\leqslant n}$ est-elle diagonalisable?\\  
+
+\noindent
+{\bf Exercice 4.34 [CCP 07].} Soient $(a;b;c)\in \R^3$ et $M=\left(\begin{array}{ccc}
+0&a&a\\
+b&0&b\\
+c&-c&0 \end{array}\right)\cdot$\\
+La matrice $M$ est-elle diagonalisable dans $M_3(\R)$? et dans $M_3(\C)$?\\
+
+\noindent
+{\bf Exercice 4.35 [TPE 07].} Soit $f \in L_K(E)$ avec $E$ un $K$-espace vectoriel de dimension finie. Montrer que $E$ et $\{O_E\}$ sont les seuls sous-espaces vectoriels de $E$ stables par $f$ si et seulement si le polynôme caractéristique de $f$ est irréductible dans $K[X]$.\\
+
+\noindent
+{\bf Exercice 4.36 [Mines 07].} Soit $A$ dans $M_n(\R)$ avec $A^3=^tA \, A$. La matrice $A$ est-elle diagonalisable dans $M_n(\R)$? et dans $M_n(\C)$?\\
+
+\noindent
+{\bf Exercice 4.37 [Centrale 07].} Soit $E$ un $\C$-espace vectoriel de dimension finie $n$. Pour tout $(u;v)$ de $L_\C(E)^2$, on définit le crochet de Lie par $[u,v]=uv-vu$.\\
+\indent
+{\bf 1)} Quelles sont les propriétés de cette loi?\\
+\indent
+{\bf 2)} Si $[u,v]=0$, montrer que $u$ et $v$ sont co-trigonalisables i.e. il existe une base de $E$ dans laquelle les matrices de $u$ et $v$ sont toutes deux triangulaires supérieures.\\
+\indent
+{\bf 3)} Même question si $[u,v]$ est dans $\C u$.\\
+\indent
+{\bf 4)} Même question si $[u,v]$ est dans l'espace vectoriel engendré par $u$ et $v$.\\
+
+\noindent
+{\bf Exercice 4.38 [X - ENS 15].} Soit $E$ un $K$-espace vectoriel de dimension finie $n$, et une famille $(u_i)_{i =1...n}$ d'endomorphismes nilpotents de $E$ commutant deux à deux. Que dire du produit $u_1\circ u_2\circ \cdots \circ u_n$?\\
+
+\noindent
+{\bf Exercice 4.39.} Soient $a$ et $b$ deux endomorphismes de $E$, espace vectoriel de dimension finie $n$.\\
+{\bf 1)} Comparer $\rg(a+b)$ à $\rg(a)+\rg(b)$ et $\rg(a)-\rg(b)$.\\
+{\bf 2)} Prouver l'équivalence
+$\displaystyle \rg(a+b)=\rg(a)+\rg(b) \Longleftrightarrow \left[ { \; \im a \cap \im b =\{0_E\} \mbox { et } \ker a +\ker b=E \; }\right]$\\
+{\bf 3)} Montrer l'inégalité de Sylvester : $\rg(a)+\rg(b)-n \leqslant \rg (a \circ b) \leqslant \min (\rg(a);\rg(b))$.\\
+
+\noindent
+{\bf Exercice 4.40.} Soit $E$ un espace vectoriel de dimension finie et $u$ un endomorphisme de $E$.\\
+{\bf 1)} Montrer qu'il y a équivalence entre les trois assertions suivantes :\\
+\indent
+(i) $\ker u =\ker u^2$ \hspace{1cm} (ii) $\im u =\im u^2$ \hspace{1cm} $E=\ker u+\im u$\\
+{\bf 2)} Donner des exemples d'endomorphismes vérifiant ces conditions.\\
+{\bf 3)} Le résultat subsiste-t-il quand $E$ n'est plus de dimension finie?\\
+
+\noindent
+{\bf Exercice 4.41 [TPE 08].} Soit $u$ et $v$ des endomorphismes de $E$, espace vectoriel de dimension finie.\\
+{\bf 1)} Montrer l'inégalité
+$\displaystyle  \dim ({ \ker (v \circ u) }) \leqslant \dim ({ \ker v })+\dim ({ \ker u })$.\\
+{\it On pourra s'intéresser à $\tilde{v} : x\in \im u \; \mapsto v(x)$.}\\
+{\bf 2)} Montrer que la suite de terme général $\dim ({ \ker u^{k+1} })-\dim ({ \ker u^k) })$ est monotone.\\
+
+\noindent
+{\bf Exercice 4.42 [CCP 08].} Soit $M(a) \in M_n(\R)$ la matrice dont les éléments diagonaux valent $a$ et les autres $1$.\\
+\indent{\bf 1)} Montrer que $\det(M(a))=(a+n-1)(a-1)^{n-1}$ par un calcul direct.\\
+\indent {\bf 2)} Déterminer les valeurs propres de $M(a)$ ainsi que son polynôme minimal.\\
+\indent {\bf 3)} Quel est le rang de $M(a)$?\\
+
+\noindent
+{\bf Exercice 4.43 [TPE 08].} Soit $A$ et $B$ deux matrices de $M_n(\C)$ vérifiant $AB=0$. Montrer qu'il existe une base de $\C^n$ dans laquelle les endomorphismes canoniquement associés à $A$ et $B$ ont des matrices triangulaires supérieures (i.e. $A$ et $B$ sont co-trigonalisables).\\
+
+\noindent
+{\bf Exercice 4.44 [Centrale 08].} Soit $a$ et $b$ deux complexes non nuls. On considère la matrice de $M_n(\C)$ définie par 
+$$  M_n= \left({
+\begin{array}{cccccc}
+a+b & b      &        &        &   & \\
+a   & a+b    & b      &        &   &\\
+0   & \ddots & \ddots & \ddots &  0\\
+    &        & \ddots & \ddots &  b \\
+0   &        &        & a      & a+b
+\end{array}
+}\right)$$
+{\bf 1)} Résoudre $M_n\; X =0$ et montrer que $M_n$ est inversible sauf si $a^{b+1}=b^{n+1}$.\\
+{\bf 2)} Calculer le déterminant de $M_n$. (On vérifiera le résultat pour $n=5$ et $a=b=1$ à l'aide d'un logiciel de calcul formel).\\
+
+\noindent
+{\bf Exercice 4.45 [Ens Lyon 08].} Soit $E=\R^{\N^*}$ et $T$ l'endomorphisme de $E$ défini par 
+$$T : u \in E \mapsto T(u) =\left({ \sum_{k=1}^n k\, u_k   }\right)_{n \in \N^*} \in E$$
+\indent
+{\bf 1)} Déterminer les valeurs propres et les vecteurs propres de $T$.\\
+\indent
+{\bf 2)} Déterminer $\ker((T-p\id)^2)$ pour tout entier naturel $p$ non nul.\\
+
+\noindent
+{\bf Exercice 4.46 [CCP 08].} Soit $E$ un $\C$-espace vectoriel de dimension finie et $u$ un endomorphisme de $E$ non inversible.\\
+{\bf 1)} Montrer l'équivalence des trois propositions :\\
+\indent
+ (i) $\im \; u \oplus \ker u = E$\\
+\indent
+(ii) Il existe une base de $E$ dans laquelle la matrice de $u$ est  
+$\displaystyle \left( {\begin{array}{cc} 
+A& 0\\
+0&0  \end{array} }\right)$ avec $A$ matrice inversible.\\
+\indent
+(iii) Il existe un polynôme $P$ dont zéro est racine simple annulant $u$.\\
+{\bf 2)} Montrer que les propositions précédentes sont équivalentes à $\ker u =\ker u^2$.\\
+
+\noindent
+{\bf Exercice 4.47 [TPE 08].} Diagonaliser la matrice $\displaystyle 
+\left({\begin{array}{cc}
+0&-I_n\\
+I_n&0 \end{array} } \right)\cdot$\\
+
+\noindent
+{\bf Exercice 4.48 [CCP 08].} Soit $J$ la matrice de $M_n(\R)$ dont tous les coefficients sont égaux à $1$, et $E$ le sous-espace vectoriel de $M_n(\R)$ engendré par $J$ et $I_n$.\\
+\indent
+{\bf 1)} Montrer que $E$ est une sous-algèbre de $M_n(\R)$.\\
+\indent
+{\bf 2)} Soit $A=aI_n+bJ$ avec $b\neq 0$. Montrer qu'il existe un unique polynôme $P$ unitaire de degré $2$ annulant $A$. Puis prouver que le polynôme $Q$ annule $A$ si et seulement si $P$ divise $Q$.\\
+
+\noindent
+{\bf Exercice 4.49 [CCP 08].} Soit $E$ un $\C$-espace vectoriel de dimension $n$, et $f$ et $g$ deux endomorphismes de $E$ vérifiant $f\circ g-g\circ f=f$.\\
+\indent
+{\bf 1)} Déterminer $\tr f$ et  $\det f$.\\
+\indent
+{\bf 2)} Montrer que pour tout $k$ de $\N$, on a $f^k \circ g -g \circ f^k =k f^k$. En déduire $\tr f^k$.\\
+\indent
+{\bf 3)} Soit $\lambda_1$, ...,$\lambda_p$ les $p$ valeurs propres distinctes de $f$. Montrer $p=1$, puis que $f$ est nilpotente.\\
+
+\noindent
+{\bf Exercice 4.50 [CCP 08].} Soit $n\in \N^*$ et $\alpha$ un réel. On considère $f$ l'endomorphisme de $\R^3$ de matrice dans la base $(e_1;e_2;e_3)$ de $\R^3$
+$$A(n)=\left({\begin{array}{ccc}
+-n^2&0&0\\
+0&-\alpha&\alpha-n^2\\
+0&1&-1-n^2
+\end{array} }\right)\cdot$$
+{\bf 1)} Déterminer (selon les valeurs de $\alpha)$ le rang, le noyau et l'image de $f$.\\
+{\bf 2)} Quelles sont les valeurs propres de $f$? ses sous-espaces propres? existe-t-il une base de $\R^3$ formée de vecteurs propres de $f$?\\
+
+\noindent
+{\bf Exercice 4.51 [CCP 08].} {\bf 1)} Soit $f$ un endomorphisme de $E$ espace vectoriel de dimension finie. Montrer que si $\lambda$ est une valeur propre de $f$ d'ordre de multiplicité $m$ alors la dimension de $\ker(f-\lambda \, I)$ est comprise entre $1$ et $m$.\\
+{\bf 2)} Trouver le plus simplement possible les valeurs propres de la matrice $A$ suivante. Est-elle diagonalisable?
+$$A=\left( {\begin{array}{cccc}
+1&1&1&1\\
+2&2&2&2\\
+3&3&3&3\\
+4&4&4&4\\
+\end{array} }\right) \cdot$$
+ 
+\noindent
+{\bf Exercice 4.52 [Centrale 08].} Montrer qu'une matrice $M$ de $M_n(K)$ avec $K=\R$ ou $\C$ est nilpotente si et seulement si $\tr(M)=\tr(M^2)=\cdots=\tr(M^n)=0$.\\ 
+
+\noindent
+{\bf Exercice 4.53 [CCP 08].} Soit $\varphi : \R_2[X] \to \R[X]$ définie par :
+$$
+\displaystyle (\varphi(P))(x)=\int_0^{+\infty} (ax^2+bxt+ct^2)P(t)\e^{-t} \, dt \mbox{    } \; \; \; \; \forall P \in \R_2[X], \; \forall x \in \R$$
+\indent
+{\bf 1)} Pour quelle valeur de $x$, le réel $\varphi(P)(x)$ est-il bien défini?\\
+\indent
+{\bf 2)} Montrer que $\varphi$ est un endomorphisme de $\R_2[X]$.\\
+\indent
+{\bf 3)} Quelle est la matrice de $\varphi$ dans la base canonique de $\R_2[X]$?\\
+\indent
+{\bf 4)} Est-ce que $\varphi$ est un automorphisme de $\R_2[X]$?\\
+
+\noindent
+{\bf Exercice 4.54 [CCP 08].} Soit $N : M_n(C)\to \R_+$ vérifiant \\
+\indent $(i) \; N(\lambda A)=|\lambda|\, N(A) \; \; \forall (\lambda;A) \in \C \times M_n(\C),$\\
+\indent $(ii) N(AB)=N(BA) \; \; \; \forall (A;B) \in (M_n(\C))^2$,\\
+\indent $\mbox{ et } (iii) N(A+B)\leqslant N(A)+N(B) \; \; \forall (A;B) \in (M_n(\C))^2.$\\ 
+{\bf 1)} Déterminer $N(E_{i,j}$ pour $i\neq j$ (matrices élémentaires).\\
+{\bf 2)} Montrer par récurrence sur $n$ qu'une matrice de trace nulle est semblable à une matrice à diagonale nulle. On détaillera le cas $n=2$. Montrer qu'alors $N(M)=0$.\\
+{\bf 3)} Montrer qu'il existe $\alpha \in \R_+$ pour lequel $N(A)=\alpha \, |\tr (A)|$ pour tout $A$ de $M_n(\C)$.\\
+
+\noindent
+{\bf Exercice 4.55 [Mines 08].} On munit $E$, le $\C$-espace vectoriel des fonctions continues, $2\pi$-périodique de $\R$ dans $\C$, de la norme $\displaystyle N_1:f\in E \mapsto \frac{1}{2\pi} \int_0^{2\pi} |f(t)|\, dt$. 
+et note $\displaystyle G : f \in E \mapsto \left\{ { x \mapsto \int_0^{+\infty} \e^{-t} f(x+t)\, dt }\right\}.$\\
+\indent
+{\bf 1)} Vérifier que $G$ définit un endomorphisme continu de $E$.\\
+\indent
+{\bf 2)} L'endomorphisme $G$ appartient-il dans $GL(E)$?\\
+
+\noindent
+{\bf Exercice 4.56 [Centrale 08].} Soit $S_n$ le groupe symétrique d'ordre $n$. On définit pour tout $\sigma $ de $S_n$ la matrice $M_\sigma=(\delta_{i,\sigma(j)})_{i,j}\in M_n(\R)$.\\
+\indent
+{\bf 1)} Montrer que $\sigma \in S_n \mapsto M_\sigma \in GL_n(\R)$ est un morphisme.\\
+\indent
+{\bf 2)} En déduire que $S_n$ est isomorphe à un sous-groupe de $O_n(\R)$.\\
+\indent
+{\bf 3)} Montrer que $M_\sigma$ laisse stable la droite vectorielle engendrée par $^t(1 \cdots 1) $ pour tout $\sigma$ de $S_n$.\\
+\indent
+{\bf 4)} Vérifier que $S_n$ est isomorphe à un sous-groupe de $O_{n-1}(\R)$.\\
+
+\noindent
+{\bf Exercice 4.57 [CCP 09} (12 points) {\bf - X 15}(directement c){\bf ].}
+Soit $A$ dans $M_n(\R)$ et $B=\left( \begin{array}{cc} A&A\\ 0&A \end{array} \right)$\\
+{\bf a)} Montrer que pour tout $P$ de $\R[X]$, on a 
+$$P(B)=\left( \begin{array}{cc} P(A)& A\, P'(A)\\ 0&P(A) \end{array} \right) \mbox{ où $P'$ est le polynôme dérivé de } P$$
+{\bf b)} Montrer que si $B$ est diagonalisable alors $A$ aussi puis $A=0$.\\
+{\bf c)} Déterminer une condition nécessaire et suffisante pour que $B$ soit diagonalisable.\\
+
+\noindent
+{\bf Exercice 4.58 [CCP 09} (exercice à 12 points) {\bf ].}
+Soit $M$ dans $M_n(\C)$, on dit que $X$ est une comatrice de $M$ quand elle vérifie $^tMX=X^tM=\det M \, I_n$.\\
+{\bf a)} Soit $A$ et $B$ dans $GL_n(\C)$. Montrer que $Com A \,. Com B = Com (AB)$ et $Com (A^{-1})= (Com A)^{-1}$.\\
+{\bf b)} Pour $A$ et $B$ dans $M_n(\C)$, montrer que $Com A \,. Com B$ est une comatrice de $AB$. Que vaut $Com ^t A$?\\
+{\bf c)} Y-a-t'il toujours unicité de la comatrice?\\
+
+\noindent
+{\bf Exercice 4.59 [TPE 09]. }
+ Trouver toutes les matrices symétriques $B$ pour lesquelles $B^2$ vaut
+$A=\left( \begin{array}{ccc}
+6&5&5\\
+5&6&5\\
+5&5&6
+\end{array} \right)$\\
+
+\noindent
+{\bf Exercice 4.60 [TPE 2009].} Soit $A$ et $B$ dans $M_n(\C)$. Montrer que $\mbox{Sp}(A) \cap \mbox{Sp}(B)=\emptyset$ si et seulement si $\chi_A(B) $ est inversible.\\
+
+\noindent
+{\bf Exercice 4.61 [TPE 2009].} Soit $f$ et $g$ deux endomorphismes de $E$ espace vectoriel de dimension $n$. Montrer que $\dim \ker (g\circ f) \leqslant \dim(\ker f) + \dim(\ker g)$. {\it On pourra s'intéresser à la restriction de $g$ à $\im f$.}\\
+
+\noindent
+{\bf Exercice 4.62 [Mines 2009].} Soit $u$ un endomorphisme de $\R^{3n}$ vérifiant $u^3=0$ et $\rg(u^2)=n$. Déterminer la dimension de $V(u)=\{v \in L_{\R}(\R^{3n})\; | \; v \circ u =u \circ v \}.$\\
+
+\noindent
+{\bf Exercice 4.63. [CCP 2011} (12 points){\bf ].} On pose $M=(m_{i,j}) \in M_n(\C)$ avec $m_{i,i+1}=1$ et $m_{i,j}=0$ dans les autres cas.\\
+{\bf 1)} Montrer que $M$ est nilpotente. Est-elle diagonalisable?\\
+{\bf 2)} Montrer que $M$ est semblable à $2M$.\\
+{\bf 3)} Prouver que toute matrice $A \in M_n(\C)$ telle que $A$ et $2A$ sont semblables, est nilpotente.\\
+
+\noindent
+{\bf Exercice 4.64. [CCP 2011} (12 points){\bf ].}\\
+{\bf 1)} Soit $N$ une matrice nilpotente de $M_n(\R)$. Montrer que $\det(I_n+N)=1$.\\
+{\bf 2)} Soient $A$ et $B$ dans $M_n(\R)$ avec $A$ inversible, $B$ nilpotente. Si $A$ et $B$ commutent, vérifier $\det(A+B)=\det(A)$.\\
+{\bf 3)} Montrer que le résultat précédent reste valable si $A$ n'est pas inversible.\\
+
+\noindent
+{\bf Exercice 4.65 [Centrale 2011].} Soit $F$ l'ensemble des matrices de trace nulle de $M_n(\K)$ et $N$ le sous-espace vectoriel de $M_n(\K)$ engendré par les matrices nilpotentes.\\
+{\bf 1)} Montrer que si $f\in L(\K^n)$ vérifie $(x;f(x))$ est une famille liée pour tout $x$ de $\K^n$, alors $f$ est une homothétie.\\
+{\bf 2)} Montrer que tout élément de $F$ est semblable à une matrice dont la diagonale est nulle.\\
+{\bf 3)} Déterminer la dimension de $N$ en montrant que $N=F$.\\
+{\bf 4)} Montrer que pour tout $M\in N$, il existe $A$ et $B$ de $M_n(\K)$ avec $M=AB-BA$.\\
+
+\noindent
+{\bf Exercice 4.66 [Mines 2012,} exo 2{\bf].} Soit $\lambda$ un réel. trouver tous les sous-espaces vectoriels de $\R^3$ stables par 
+$$B_\lambda=\left( 
+\begin{array}{ccc}
+-1&\lambda& -\lambda \\
+1&-1&0\\
+1&0&-1
+\end{array}
+\right)$$
+
+\noindent
+{\bf Exercice 4.67 [Centrale 2012].} Soit $E$ un espace vectoriel de dimension finie et $G$ un sous-groupe fini de cardinal $n$ de $GL(E)$.\\
+{\bf 1)} Donner un exemple de sous-groupe fini de $GL(\R^2)$ de cardinal $n\in \N^*$.\\
+{\bf 2)}  Montrer que $\displaystyle p=\frac{1}{n}\; \sum_{g \in G} g$  est un projecteur. Exprimer son rang avec des traces d'éléments de~$G$.\\
+{\bf 3)} Vérifier $\displaystyle \frac{1}{n} \; \sum_{g \in G} \tr(g)= \dim \left({ \cap_{g\in G} \ker(g-\id_E)}\right)$.\\
+
+\noindent
+{\bf Exercice 4.68 [CCP 2012}, 8 points{\bf].} Soit $f : M \in M_2(\R)\mapsto AM \in M_2(\R)$ avec $A=\left({\begin{array}{cc}
+1&2\\
+2&4
+\end{array} }\right)$\\
+Déterminer le noyau de $f$. L'application $f$ est-elle surjective? Déterminer une base de $\ker(f)$ et $\im(f)$.\\
+
+\noindent
+{\bf Exercice 4.69 [Petites Mines 2012].} Pour tout $(a;b;c)\in \R^3$, on note 
+$\displaystyle
+M(a;b;c)=\left({\begin{array}{ccc}
+a&b&c\\
+c&a+2c&b\\
+b&2b+c&a+2c
+\end{array}}\right)$\\
+On considère alors $E=\{M(a;b;c)\; |\; (a;b;c)\in \R^3\}$ et $A=M(0;1;0)$.\\
+{\bf 1)} Montrer que $E$ est un sous-espace vectoriel de $M_3(\R)$. En donner une base et la dimension.\\
+{\bf 2)} Montrer que $E=\R[A]=\{P(A)\; |\; P \in \R[X]\}$. En déduire que toute matrice $M$ de $E$ est diagonalisable et donner une matrice diagonale semblable à $M$.\\
+{\bf 3)} Montrer que $M(a;b;c)$ est non inversible si et seulement si le point $(a;b;c)$ de l'espace $\R^3$ appartient à la réunion de 3 plans dont on donnera une équation cartésienne.\\
+
+\noindent
+{\bf Exercice 4.70 [Petites Mines 2012}, exo 1{\bf].} Montrer que $A$ et sa transposée sont semblables avec $A= \left({\begin{array}{ccc}
+1&3&2\\
+2&1&3\\
+3&2&1
+\end{array}}\right)\cdot$\\
+
+\noindent
+{\bf Exercice 4.71 [Mines 2010}, exo 1{\bf.]} Soit $A$ et $B$ deux matrices de $M_n(\R)$ vérifiant $A^2=B^2=I_n$ et $AB=-BA$. Montrer que $A$ et $B$ sont semblables.\\
+
+\noindent
+{\bf Exercice 4.72 [CCP 2013}, 12 points{\bf].} 
+{\bf 1)} Déterminer les réels $a$, $b$ et $c$ pour lesquels la matrice suivante est diagonalisable:
+$$A= \left({
+\begin{array}{ccc}
+1&a&b\\
+0&1&c\\
+0&0&0
+\end{array}}\right)$$
+{\bf 2)} Soit $A\in M_n(\R)$ vérifiant $A(A-{\rm I}_n)^2=0$.\\
+\indent
+{\bf a)} Montrer que $A$ est diagonalisable si et seulement si $A$ est la matrice d'un projecteur.\\
+\indent
+{\bf b)} Vérifier que $A$ est inversible si et seulement si $\tr(A)=n$.\\
+\indent
+{\bf c)} Montrer que si $\tr(A)$ vaut $0$ ou $1$ alors $A$ est diagonalisable.\\
+
+\noindent
+{\bf Exercice 4.73 [X 2013].} Soient $p$ matrices $A_1, \dots,A_p$ de $M_n(\R)$ avec $A_1+\dots +A_p=I_n$. Montrer que $A_i$ est un projecteur pour tout $i$ si et seulement si $A_i\, A_j=0$ pour tout $i\neq j$.\\ 
+
+\noindent
+{\bf Exercice 4.74 [X 2013].} Soit $F$ et $G$ deux sous-espaces vectoriels de même dimension de $E$, espace vectoriel de dimension finie. Existe-t-il un supplémentaire commun à $F$ et à $G$?\\
+
+\noindent
+{\bf Exercice 4.75 [X 2013].} Soit $A$ et $B$ dans $M_n(\C)$ avec $A^2B=A$ et $\rg(A)=\rg(B)$. Prouver $B^2A=B$.\\
+
+\noindent
+{\bf Exercice 4.76 [X 2013].} Soit $A$ dans $M_n(\C)$ telle que $A \overline{A}$ admet une valeur propre $\lambda$ réelle positive. Montrer qu'il existe $v\in \C^n$ avec $v\neq 0$ tel que $A\overline{v}= \sqrt{\lambda}\, v$.\\
+
+\noindent
+{\bf Exercice 4.77 [X 2013].} Soit $A$ dans $M_n(\C)$ avec $A$ non inversible.\\
+{\bf 1)} Montrer $\dim(\ker(A^2))\leqslant 2 \, \dim(\ker(A))$.\\
+{\bf 2)} Prouver l'équivalence entre les propriétés suivantes :\\
+\indent (i) $\dim(\ker(A^2)) = 2 \, \dim(\ker(A))$,
+\hspace{1cm} (ii) $\ker(A) \subset \im A$,
+\hspace{1cm} (iii) $A(\ker A^2) =\ker(A)$,\\
+\indent (iv) $ 
+\rg \left({\begin{array}{cc}
+A&I_n\\
+0&A
+\end{array}}\right)
+=
+\rg \left({\begin{array}{cc}
+A&0\\
+0&A
+\end{array}}\right)
+$\\
+
+\noindent
+{\bf Exercice 4.78 [X 2013].} Soit $a$ un réel. Résoudre avec $A$ dans $M_2(\C)$ :\\
+$$\sin(A) = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!} \, A^{2n+1} = 
+\left({
+\begin{array}{cc}
+1&a\\
+0&1
+\end{array}
+}\right)$$
+
+\noindent
+{\bf Exercice 4.79 [X 2013].} Soit $E$ un $\R$-espace vectoriel. 
+Pour $u$ et $v$ dans $L(E)$, on note $(P)$
+la propriété $\; u\circ v-v \circ u = Id_E$.\\
+{\bf 1)} Montrer que si $E$ est de dimension finie, aucun couple $(u, v)$ ne vérifie $(P )$.\\
+{\bf 2}) Si $E$ est un espace vectoriel normé, montrer qu'aucun couple d'endomorphismes continus ne vérifie~$(P )$.\\
+{\bf 3)} Sur $\R[X]$, vérifier que $u : P \mapsto P^\prime$ et $v : P \mapsto XP$ satisfont $(P)$ et trouver des normes pour lesquelles soit $u$ soit $v$ soit continu.\\
+
+\noindent
+{\bf Exercice 4.80 [X 2013].} Soit $A$ et $B$ dans $M_n(\C)$ avec $n$ impair, vérifiant $AB+BA=A$.\\
+{\bf 1)} Montrer que $A$ et $B$ admettent un vecteur propre en commun.\\
+{\bf 2)} Ce résultat reste-t-il valable si on enlève l'hypothèse $n$ impair?\\
+
+\noindent
+{\bf Exercice 4.81 [X2014].} Soit $V$ un espace vectoriel et $s$ un endomorphisme de $V$ vérifiant $\rg(s-\id)=1$.\\
+{\bf 1)} Donner une expression simple de $s$.\\
+{\bf 2)} On suppose que $G$ est un sous-groupe de $GL(V)$ contenant $s$, tel que les seuls sous-espaces vectoriels de $V$ stables par tous les éléments de $G$ sont $\{0\}$ et $V$. Montrer que l'ensemble des endomorphismes qui commutent avec tous les éléments de $G$ est constitué d'homothéties.\\
+
+\noindent
+{\bf Exercice 4.82 [ENS 2014]} Une matrice de permutation de $M_n(\R)$ est une matrice de la forme $(\delta_{i,\sigma(j)})_{1 \leqslant i,j \leqslant n}$ où $\sigma$ est une permutation de $[\![1;n]\!]$. Déterminer les matrices de $M_n(\R)$ qui commutent avec toutes les matrices de permutation.\\
+
+\noindent
+{\bf Exercice 4.83 [Cent. 2014].} 
+Soit $A \in M_p(\R)$. On pose $ \Delta (M) = AM-MA$ pour tout $M$ de $M_p(\R)$.\\
+{\bf 1)} Montrer que $\Delta $ est un endomorphisme de $M_p(\R)$ puis\\
+\hspace{3cm} $\displaystyle  \forall (M,N) \in M_p(\R),\quad \forall n \in \N \qquad \Delta^n(MN)=\sum_{k=0}^{n} \begin{pmatrix} n\\k \end{pmatrix} \Delta^k(M)\; \Delta^{n-k}(N)$ avec $\Delta^0=\id_{M_p(\R)}$. \\
+\noindent
+{\bf 2)} Soit $B=\Delta(H)$ qui commute avec $A$. Montrer $\Delta^2(H)=0$, en déduire $\Delta^{n+1}(H^n)=0$.\\
+{\bf 3)} Montrer que $\Delta^n(H^n)=n!B^n$.\\
+{\bf 4)} Montrer que $\lim_{n\to + \infty} ||B^n||^{\frac{1}{n}} = 0$.\\
+{\bf 5)} Vérifier que $B$ est nilpotente.\\
+
+\noindent
+{\bf Exercice 4.84 [Cent. 2014].} % Nicolas Deloule
+Soit $n \geqslant 2$. On considère deux sous-espaces vectoriels $V$ et $W$ de $M_n(\R)$, supplémentaires dans $M_n(\R)$, tels que pour toutes matrices $A$ et $B$ appartenant respectivement à $V$ et $W$, on ait $AB=BA$. De plus on pose $\R[A] = \{P(A), P \in \R[X]\}$ et $C(A)= \{B\in M_n(\R), AB=BA\}$.\\
+Soit $J$ la matrice dont tous les coefficients sont nuls, sauf ceux sur la surdiagonale, égaux à $1$.\\
+{\bf 1)} Calculer le polynôme minimal de $J$. Montrer que $\R[J]=C(J)$.\\
+{\bf 2)} On pose alors $J_V$ et $J_W$ des matrices dans $V$ et $W$ telles que $J=J_V + J_W$. 
+Montrer qu'il existe deux uniques polynômes $P$ et $Q$ de $\R[X]$ tels que $J_V=P(J)$ et $J_W=Q(J)$.\\
+{\bf 3)} Que vaut $P+Q$ ?\\
+{\bf 4)} Montrer que $C(J_V)=C(J_V-\lambda I_n)=\R[J]$.\\
+{\bf 5)} Montrer que nécessairement $V$ ou $W$ est égal à ${\rm vect}(I_n)$.\\
+
+\noindent
+{\bf Exercice 4.85 [Telecom Sud-Paris 2015 - exercice 1].} On pose
+$u (P) = P(1)X + P(2)X^2$ pour tout polynôme $P$ à coefficients réels. \'Etudier les valeurs propres et les espaces propres de cet endomorphisme.\\
+ 
+\noindent
+{\bf Exercice 4.86 [CCP 15} (12 points partiel){\bf ].}
+Soit $A\neq 0$ et $B$ inversible deux matrices de $M_n(\C)$ vérifiant $BA=\omega AB$ avec $\omega^n=1$.\\
+{\bf 1)} Vérifier que $A$ est nilpotente si et seulement si ${\rm Sp}_\C(A)=\{0\}$\\
+{\bf 2)} Montrer que $A$ est nilpotente si et seulement si $BA$ l'est.\\
+
+\noindent
+{\bf Exercice 4.87 [Mines 15} (exo 2){\bf]. } %exercice 2 Cécile Klinguer
+Soient $A$, $B$ et $M$ trois matrices de $M_n(\C)$ avec $AM=MB$. Montrer que $A$ et $B$ ont au moins $\rg(M)$ valeurs propres en commun (comptées avec ordre de multiplicité).\\
+
+\noindent
+{\bf Exercice 4.88 [CCP 15 }(12 points){\bf ]. }% Cécile Klinguer
+Soit $E$ un espace vectoriel de dimension finie $n$. Soient $L_1$ et $L_2$ deux sous-espaces vectoriels supplémentaires dans $L(E)$, tels que pour tout $(u,v)$ dans $L_1 \times L_2$, $u \circ v+v\circ u=0$.\\
+{\bf 1)} Montrer qu'il existe deux projecteurs $p_1$ et $p_2$ dans $L_1$ respectivement $L_2$ tels que $\rm{id} = p_1+p_2$.\\
+{\bf 2)} Montrer que $n = \rg(p_1)+\rg(p_2)$.\\
+{\bf 3)} Soit $u$ dans $L_1$.\\ 
+\indent	
+{\bf a)} Pour tout $x$ dans $\im(p_2)$, montrer que $u(x) = 0$.\\
+\indent	
+{\bf b)} Montrer que $\ker(p_2)$ est stable par $u$.\\
+\indent	
+{\bf c)} En déduire que $\dim(L_1) \leqslant (n-\rg(p_2))^2$\\
+\indent	
+{\bf d)} Quelle inégalité peut-on avoir pour $\dim(L_2)$ ?\\
+{\bf 4)} En justifiant que $\dim(L(E)) = \dim(L_1) + \dim(L_2)$, montrer que $\rg(p_1)(n-\rg(p_1)) \leqslant 0$. En déduire que $\rg(p_1) = 0$ ou $\rg(p_1) = n$ puis que $L_1$ ou $L_2$ est réduit au singleton $\{0\}$.\\  
+ 
+ \noindent
+{\bf Exercice 4.89 [X 15]. }% Cécile Klinguer
+Soit $A$ et $B$ deux matrices de $M_n(\R)$ telles que les valeurs propres de $A$ sont de parties réelles strictement négatives et celles de $B$ négatives.\\
+Montrer que pour tout $C$ de $M_n(\R)$, il existe une unique matrice $M$ de $M_n(\R)$ avec $C=AM+MB$.\\
+ 
+\noindent
+{\bf Exercice 4.90 [Télécom 16]. }% Lucie Neves
+Soit $(u;v)\in (L(E;F))^2$ avec $E$ et $F$ deux espaces vectoriels de dimension finie. Montrer 
+$$|{\rm rg}(u)- {\rm rg}(v)| \leqslant {\rm rg}(u+v) \leqslant {\rm rg}(u)+{\rm rg}(v)$$
+
+\noindent
+{\bf Exercice 4.91 [Télécom 16]. } %Donier
+Soit $E$ un espace vectoriel de dimension $3$, dont une base est $(e_1 , e_2 , e_3)$. Soit $f \in L(E)$ défini par :
+$f(e_i ) =\frac{ e_1 + e_2 + e_3}{3}$ pour tout $i$ de $\{1,2,3\}$\\
+{\bf 1)} Montrer que $f$ est un projecteur, et déterminer $\ker(f)$ et ${\rm Im}(f)$.\\
+{\bf 2)} Soit $\varphi_{a,b} = a \, f + b \, {\rm id}_E$ et $S = \{\varphi_{a,b}  | \; (a, b) \in \R^2 \}$. Montrer que $S$ est
+une sous-algèbre de $L(E)$.\\
+{\bf 3)} Déterminer une base de $S$.\\
+{\bf 4)} Quels sont les éléments inversibles de $S$?\\
+
+\noindent
+{\bf Exercice 4.92 [Mines 16]. } %Albert
+Soit $A$ et $B$ de $M_n(\C)$ avec $AB=BA^2$.\\ 
+En supposant que $A$ admet des valeurs propres de module différent de $1$, montrer que $A$ et $B$ ont au moins un vecteur propre commun.\\
+
+\noindent
+{\bf Exercice 4.93 [TPE 16]. } % Bardon Antoine
+La matrice suivante est-elle diagonalisable? Si oui, donner les matrices de passage
+$$\left({
+\begin{array}{ccccc}
+\; 1\;&1& \cdots &1&-1\\
+-1&-1& \cdots &-1&1\\
+1&1& \cdots &1&-1\\
+&&&&\\
+-1&-1& \cdots &-1&1\\
+2&2& \cdots &2&-2
+\end{array}} \right) \in M_{2n+1}(\R)$$
+
+\noindent
+{\bf Exercice 4.94 [Ensea 16]. } % Clément Riasse
+Soit $E$ et $F$ deux espaces vectoriels. Soient $f \in L(E;F)$ et $g \in L(F;E)$ avec $f \circ g \circ f =f$ et $g \circ f \circ g =g$.\\
+{\bf 1)} Montrer $E= \ker f \oplus {\rm Im} g $.\\
+{\bf 2)} Si $E$ est de dimension finie, comparer $\rg(f)$ et $\rg(g)$.\\
+
+\noindent
+{\bf Exercice 4.95 [X 16]. } % Gaël Macherel
+Montrer que pour tout $M \in M_n(\R)$, il existe $M' \in M_n(\R)$ avec $M \, M' \, M=M$.\\
+Soit $U$ dans $M_{n,p}(\R)$ et $A=U ^tU$. Montrer que $W=^t\!U(A'-^t\!A')U=0$.\\
+
+\noindent
+{\bf Exercice 4.96 [Cent 16]. } % Marion Narbeburu
+Soit la matrice $A$ de $M_n(\R)$ définie par $a_{k,k}=0$ pour tout $k$ de $\{1,\dots,n\}$ et $a_{k,j}=j$ pour tout $k \neq j $ de $\{1,\dots,n\}$. On note $P$ le polynôme caractéristique de $A$.\\
+{\bf 1)} Calculer $P(0)$ et $P(-\ell)$ pour tout $\ell$ de $\{1,\dots,n\}$.\\
+{\bf 2)} Déterminer $P$.\\
+{\bf 3)} Que dire des racines de $P$?\\
+{\bf 4)} La matrice $A$ est-elle diagonalisable?\\
+
+\noindent
+{\bf Exercice 4.97 [CCP 16, 12pts]. } % Marion Narbeburu
+Soit $f$ un endomorphisme de l'espace vectoriel $E$ de dimension $n$. On note $T$ l'endomorphisme de $L(E)$ défini par $T(g)=f \circ g -g \circ f $.\\
+{\bf 1)} Si $f$ est nilpotente, montrer que $T$ est aussi nilpotente.\\
+{\bf 2)} Soit $u$, respectivement $v$ un vecteur propre de $f$ pour la valeur propre $a$, respectivement $b$. On choisit $G$ un supplémentaire de $\R u $ dans $E$ et on note $g$ l'endomorphisme de $E$ défini par $g(u)=v$ et sa restriction à $G$ est nulle. Calculer $T(g)(u)$.\\
+{\bf 3)} Si $f$ est diagonalisable, $T$ est-il aussi diagonalisable?\\
+
+%{\bf Exercice 4. [X 2009]} Soit $A$ dans $M_n(\R)$ et $(\lambda_1;\dots;\lambda_k)$ ses valeurs propres %(éventuellement dans $\C$) distinctes. Montrer qu'il existe un polynôme $P$ tel que 
+%$$\forall t \in \R,\; \; \forall x \in \R^n,\; \; \| \e^{tA} x \| \leqslant P(t) \sum_{j=1}^k \e^{t %Re(\lambda_j)} \,\|x\|$$
+
+
+
+\newpage
+\section*{5. Révisions oraux : Espaces euclidiens} %5
+
+\noindent
+{\bf Exercice 5.1 [CCP 06].} Soit $F$ et $G$ deux sous-espaces vectoriels de $E$ euclidien. Montrer\\
+\indent
+{\bf a)} $F^\perp + G^\perp =(F \cap G)^\perp$ 
+\hspace{1cm}
+{\bf b)} $F^\perp \cap G^\perp =(F+G)^\perp$.\\
+
+\noindent
+{\it Exercice 5.2 [Centrale 06].} On considère $[E,(\cdot|\cdot)]$ un espace vectoriel
+euclidien. Un endomorphisme $u$ de $E$ est dit presque-orthogonal
+quand on a : $\forall x \in (\ker u)^\perp,\; \; \|u(x)\|=\|x\|$.\\
+On considère $u$ un endomorphisme presque-orthogonal,\\
+\indent
+{\bf a)} Montrer : $(x|y)=(u(x)|u(y))\; \; \forall (x;y)\in {\left( \left(\ker
+u\right)^\perp \right)}^2 $ .\\
+\indent
+{\bf b)} Vérifier que $u^* \circ u$ est le projecteur orthogonal sur
+$(\ker u)^\perp$.\\
+\indent
+{\bf c)} Montrer que $u^*$ est presque-orthogonal et calculer $u\circ u^*$.\\
+
+\noindent
+{\it Exercice 5.3 [CCP 06].} Soit $E$ un espace euclidien et $u$ et
+$v$ deux endomorphismes de $E$. \\
+{\bf a)} Montrer que $u^* \circ u$ est symétrique et que toutes ses
+valeurs propres sont positives.\\
+{\bf b)} Soit $\lambda_{\min}$ respectivement $\lambda_{\max}$ la plus
+petite, respectivement la plus grande, valeur propre de $u^* \circ
+u$. Montrer que pour tout vecteur $x$ de $E$, on a $\lambda_{\min} \, \|x\|^2
+\leqslant \|u(x)\|^2\leqslant \lambda_{\max} \, \|x\|^2$.\\
+{\bf c)} On note $\mu_{\min}$ et $\mu_{\max}$ la plus
+petite et la plus grande valeur propre de $v^* \circ
+v$. Montrer que toute valeur propre $\alpha$ de $v \circ u$ vérifie 
+$\mu_{\min} \, \lambda_{\min} \leqslant \alpha^2 \leqslant  
+\mu_{\max} \, \lambda_{\max}$.\\
+
+% ancienne version, hors programme 2014
+%\noindent
+%{\bf Exercice 5.4 [CCP 06].} Soit $f$ un endomorphisme symétrique
+%défini positif de $\R^n$.\\
+%\indent
+%{\bf a)} Montrer que pour tout $x\neq 0$ de $\R^n$, on a
+%$(x|f(x))>0$.\\
+%\indent
+%{\bf b)} Pour $u$ fixé dans $\R^n$, on définit $g: x\in \R^n \mapsto
+%\frac{(f(x)|x)}{2}-(u|x)$.\\
+%Montrer que $g$ admet des dérivées partielles, les expliciter. En
+%déduire que $g$ admet un unique point critique et qu'il correspond à
+%un minimum global de $g$.\\
+
+\noindent
+{\bf Exercice 5.4 [CCP].} Soit $f$ un endomorphisme symétrique de $\R^n$ usuel, vérifiant 
+que pour tout $x\neq 0$ de $\R^n$, on a $(x|f(x))>0$.\\
+Pour $u$ fixé dans $\R^n$, on définit $g: x\in \R^n \mapsto
+\frac{(f(x)|x)}{2}-(u|x)$.\\
+Montrer que $g$ admet des dérivées partielles, les expliciter. En
+déduire que $g$ admet un unique point critique et qu'il correspond à
+un minimum global de $g$.\\
+
+\noindent
+{\bf Exercice 5.5 [Mines 06].} Montrer que pour tout entier naturel $n$, il existe un unique polynôme $A\in\R_n[X]$ vérifiant $P(1)=\int_{-1}^1 \frac{A(t)P(t)}{\sqrt{1-t^2}} \, dt$ pour tout $P$ de $\R_n[X]$. Peut-on remplacer $\R_n[X]$ par $\R[X]$?\\
+
+\noindent
+{\it Exercice 5.6  [Mines 06].} Soit $q(M)=\tr(^tMM)+(\tr(M))^2$. Vérifier que $q$ est une forme quadratique sur $M_n(\R)$. Est-elle positive?\\
+
+\noindent
+{\it Exercice 5.7.} Soit $A$ l'ensemble des endomorphismes $f$ d'un espace euclidien $E$ vérifiant $ff^*f=f$.\\
+\indent
+{\bf a)} Montrer que $f$ appartient à $A$ si et seulement si $f^*f$ est un projecteur orthogonal.\\
+\indent
+{\bf b)} Montrer que le groupe orthogonal est à la fois un ouvert et un fermé relatif de $A$.\\
+
+\noindent
+{\bf Exercice 5.8.} On met sur $E=\R_n[X]$  le produit scalaire $(A|B)=\int_0^1 AB$. On définit sur $E$ l'application $u$ par 
+$$(u(P))(x)= \int_0^1(x+t)^n P(t)\, dt$$\\\
+{\bf a)} Montrer que $u$ est un endomorphisme de $E$, symétrique et bijectif.\\
+{\bf b)} Soit $(P_0,\cdots P_n)$ une base orthonormale de vecteurs propres de $u$, $P_i$ étant relatif à la valeur propre $\lambda_i$. Vérifier la relation
+$\displaystyle (x+y)^n=\sum_{k=0}^n \lambda_k P_k(x) P_k(y).$ Calculer $\tr u$. Comment aurait-on pu obtenir ce résultat directement?\\
+{\bf c)}  Calculer $\tr(u^2)$.\\
+
+\noindent
+{\bf Exercice 5.9.} Soit $A \in M_n(\R)$ telle que $\tr (AU) \leqslant \tr A$ pour toute matrice orthogonale $U$. Montrer que $A$ est symétrique positive c'est à dire que $A$ est symétrique et vérifie $\langle AX|X \rangle \geqslant 0$ pour tout vecteur $X$ de $\R^n$. \'Etudier la réciproque.\\
+
+\noindent
+{\bf Exercice 5.10 [X 06].} Soit $E$ un espace euclidien et $p$ et $q$ des projecteurs orthogonaux de $E$. Montrer que $pq$ est diagonalisable et que ses valeurs propres sont comprises entre $0$ et $1$.\\
+
+\noindent
+{\bf Exercice 5.11 [ENS 06].} On pose $\langle X,Y \rangle=\tr (X ^tY)$ pour tout $X$ et tout $Y$ de $M_n(\R)$.\\
+\indent
+{\bf a)} Vérifier que $\langle .,. \rangle$ est un produit scalaire euclidien sur $M_n(\R)$.\\
+\indent
+{\bf b)} Pour $A \in M_n(\R)$, on note $\mbox{ad}_A$ l'endomorphisme de $M_n(\R)$ définit par $\mbox{ad}_A(X)= AX-XA$ pour tout $X$ de $M_n(\R)$. Déterminer l'adjoint de $\mbox{ad}_A$ pour $\langle.,.\rangle$ i.e. l'endomorphisme $\mbox{ad}^*_A$ défini par
+$\langle \mbox{ad}_A(X),Y \rangle= \langle X , \mbox{ad}^*_A(Y) \rangle$ pour tout $X$ et $Y$ de $M_n(\R)$.\\
+\indent
+{\bf c)} Montrer que $A$ est nilpotente si et seulement si $A \in \im \mbox{ ad}_A$.\\ 
+\indent
+{\bf d)} Montrer que $A$ est nilpotente si et seulement si $A$ est semblable à $2A$.\\
+
+\noindent
+{\it Exercice 5.12 [X 06].} Soit $A$ et $B$ des matrices symétriques réelles positives. On définit une matrice $C$ en posant $c_{i,j}=a_{i,j}\, b_{i,j}$ pour tout $(i,j)$. Montrer que $C$ est symétrique positive. Que dire de $C$ si $A$ et $B$ sont définies positives?\\
+
+% ligne environ 770
+\noindent
+{\bf Exercice 5.13 [X 06].} {\bf a)} Soit $A \in M_n(\R)$ une matrice antisymétrique. Montrer que $A$ est orthosemblable à une matrice diagonale par bloc du type 
+$$ diag \left( 
+\left( \begin{array}{cc}
+0&\lambda_1\\
+-\lambda_1&0
+\end{array}
+\right), \; \dots, \;
+\left( \begin{array}{cc}
+0&\lambda_p\\
+-\lambda_p&0
+\end{array}
+\right), \; 
+,0, \dots,0\right) \cdot$$
+{\bf b)} Soit $M\in M_n(\R)$ telle que $2S=M+^tM$ est positive  i.e $^tXSX \geqslant 0$ pour tout $X$. Montrer que $\det M \geqslant \det S$.\\
+
+\noindent
+{\bf Exercice 5.14 [Centrale 06].} Soit $n \geqslant 2$ un entier. Montrer que tout hyperplan de $M_n(\R)$ contient une matrice inversible, et plus précisément une matrice orthogonale.\\
+
+\noindent
+{\bf Exercice 5.15.} Soient $a_0$,..., $a_n$ des réels.\\
+{\bf a)} Montrer que $\displaystyle (P;Q) \mapsto \sum_{k=0}^n P^{(k)}(a_k) Q^{(k)}(a_k)$ est un produit scalaire sur $\R_n[X]$.\\
+{\bf b)} Montrer qu'il existe une unique base $(P_0, \cdots,P_n)$ orthonormale pour ce produit scalaire et telle que chaque $P_i$ est de degré $i$ et de coefficient dominant positif.\\
+{\bf c)} Calculer $P_i^{(k)}(a_k)$.\\
+
+\noindent
+{\bf Exercice 5.16 [Centrale].} Déterminer le plus petit réel $\lambda$ vérifiant 
+$$\forall P \in \R_n[X]\; \; \; \; \int_R (P'(x))^2\, \e^{-x^2/2}\, dx \leqslant 
+\lambda \int_\R (P(x))^2 \, \e^{-x^2/2} \, dx$$
+{\it Indication : Soit $f \in L_\R(E)$ symétrique, quel est le plus petit $\lambda$ vérifiant $<f(x),x>\leqslant \lambda <x,x>$?  On raisonnera à partir des valeurs propres de $f$.}\\
+
+\noindent
+{\bf Exercice 5.17 [Centrale 07].}
+$$\mbox{Soit } A_n=\left( 
+\begin{array}{cccc}
+1&\frac{1}{2} & \cdots & \frac{1}{n}\\
+\frac{1}{2}& \frac{1}{3}&&\vdots\\
+\vdots&&\ddots&\cdots\\
+\frac{1}{n}&\cdot&s \cdots &\frac{1}{2n-1}
+\end{array}
+\right) $$
+\indent
+{\bf 1)} Montrer que $A_n$ est une matrice symétrique définie positive en utilisant $\int_0^1 t^{\alpha}t^{\beta} dt=\frac{1}{1+\alpha+\beta} \cdot$\\
+\indent
+{\bf 2)} Montrer que la série $\sum \det(A_n)$ est convergente. {\it On pourra comparer avec $\tr(A_n)$}.\\
+ 
+\noindent
+{\it Exercice 5.18 [X 07].} Soit $q$ une forme quadratique sur $M_n(\C)$ non nulle vérifiant $q(XY)=q(X)q(Y)$ pour tout $(X;Y)$ de $M_n(\C)^2$. Montrer que $q(X)\neq 0$ équivaut à l'inversibilité de $X$.\\ 
+
+\noindent
+{\bf Exercice 5.19 [CCP 11].} Pour tout $u$ et $v$ de $\R^n$, on pose $u \otimes v : x \in \R^n \mapsto <x|v>\, u$ où $<.|.>$ désigne le produit scalaire canonique de $\R^n$.\\
+{\bf 1.} Soit $u$ et $v$ fixés. Déterminer les valeurs propres et les sous-espaces propres de $u\otimes v$. Quand $u \otimes v$ est-il diagonalisable?\\ %Quel est son adjoint?\\
+{\bf 2.} Déterminer une condition sur $(u_1;v_1;u_2;v_2)$ sous laquelle $u_1 \otimes v_1=u_2 \otimes v_2$.\\
+{\bf 3.} Montrer que l'endomorphisme $g$ de $\R^n$ et $u\otimes v$ commutent si et seulement s'il existe un réel $\alpha$ vérifiant $g(u)=\alpha u$ et $g^*(v)=\alpha v$.\\ 
+
+\noindent
+{\bf Exercice 5.20 [Centrale 07].}  Soit $B$ dans ${\cal{S}}_n^{++}$ i.e. une matrice symétrique avec $^tXBX >0$ pour tout $X\in \R^n$ non nul. Montrer qu'il existe une unique matrice triangulaire supérieure $T$ dont tous les termes diagonaux sont strictement positifs, vérifiant $B=^tT\, T$.\\
+Soit ${\cal{A}}=\{ A \in {\cal{S}}_n^+\; | \; \det A \geqslant \alpha \}$ où $\alpha >0$ est fixé. Montrer que $\min_{A \in {\cal{A}}} (\tr (AS)) \geqslant n \alpha^{1/n} \det(S)^{1/n}$ pour tout $S$ de ${\cal{S}}_n^{++}$.\\
+
+\noindent
+{\bf Exercice 5.21 [Mines 07].} Soit $E=M_n(\R)$ et $\Phi:(A;B)\in E^2 \mapsto \tr(^tA\, B)$.\\
+\indent
+{\bf 1)} Vérifier que $\Phi$ est un produit scalaire.\\
+\indent
+{\bf 2)} Pour tout $A$ de $E$, on pose $f_A: M \in E \mapsto MA$. Donner une condition nécessaire et suffisante pour que $f_A$ soit dans $O(E)$.\\
+
+\noindent
+{\it Exercice 5.22 [Centrale 07].} Soit $u$ et $v$ deux endomorphismes autoadjoints positifs de l'espace euclidien $(E,(.|.))$.\\
+\indent
+{\bf 1)} Montrer que $u+v$ est autoadjoint positif.\\
+\indent
+{\bf 2)} Désormais, $u$ est défini positif. Montrer que $<x|y>=(u(x)|y)$ définit un produit scalaire.\\
+\indent
+{\bf 3)} En posant $w=u^{-1}\circ v$, montrer qu'il existe une base $\cal{B}$ de $E$ dans laquelle, pour tout $x$ de coordonnées $(x_1,\cdots,x_n)$ on a $\displaystyle (u(x)|x)=\sum_{i=1}^n x_i^2$ et $\displaystyle (v(x)|x)=\sum_{i=1}^n t_i x_i^2$.\\ 
+
+\noindent
+{\bf Exercice 5.23 [Mines 07].} Soit $A$ et $B$ dans ${\cal{S}}_n^{++}$ et $\alpha$ dans $]0;1[$.\\
+Montrer que $\det(\alpha A+(1-\alpha)B) \geqslant (\det A)^\alpha \, (\det B)^{1-\alpha}$. {\it On pourra montrer l'existence d'une matrice $P$ avec $A=^t PDP$ et $B=^tP\, P$ où $D$ est une matrice diagonale.}\\
+
+\noindent
+{\it Exercice 5.24 [Centrale 08].} {\bf1)} Montrer que pour toute matrice $A\in S_n(\R)$, il existe un réel $\lambda$ tel que $A+\lambda I_n $ appartienne à $S_n^{++}(\R)$.\\
+{\bf 2)} Soit $A=\displaystyle \sum_{k=1}^p \lambda_kA_k$ avec $(A_k;\lambda_k)\in S_n^{++}\times \R$ pour tout $k$. Notons 
+ $B=\displaystyle \sum_{k=1}^p |\lambda_k| A_k$. Montrer que pour tout $X\in \R^n$, on a $|^tX A X| \leqslant ^tX BX$, en déduire $|\det A|\leqslant \det B$. Que dire du cas d'égalité?\\
+ 
+ \noindent
+ {\it Exercice 5.25 [Mines 08].} Soit $A$ et $B$ deux matrices symétriques réelles vérifiant pour tout $X \in \R^n$, l'inégalité $0 \leqslant ^tXAX \leqslant ^tXBX$. Montrer que $\det A \leqslant \det B$.\\
+ 
+ \noindent
+ {\bf Exercice 5.26 [Mines 08].} On munit $M_n(\R)$ du produit scalaire canonique.\\
+ {\bf 1)} Trouver le supplémentaire orthogonal de ${\cal{A}}_n(\R)$ (sous-espace vectoriel des matrices antisymétriques).\\
+ {\bf 2)} Montrer que pour tout $B \in {\cal{A}}_n(\R)$ et tout réel $x$, la matrice $\exp(xB)$ est orthogonale.\\
+ 
+ \noindent
+ {\bf Exercice 5.27 [Mines 08].} Dans $\R^3$ euclidien usuel, montrer que la matrice $A$ ci-après est une rotation si et seulement si $p$, $q$ et $r$ sont solutions d'une équation du type $x^3-x^2+\lambda=0$ :\\
+  $$A=\left( {\begin{array}{ccc}
+  p&q&r\\
+  r&p&q\\
+  q&r&p
+  \end{array} }\right)$$
+  
+\noindent
+{\bf Exercice 5.28 [Centrale].} Soit $\Phi$ un endomorphisme de $E$, espace euclidien.\\
+{\bf 0)} Montrer qu'il existe un et un seul endomorphisme $\Psi$ vérifiant $\langle \Phi(x),y\rangle= \langle x,\Psi(y) \rangle$ pour tout $(x;y)\in E^2$. Vérifier que $\ker(\Psi)$ a pour orthogonal $\im \Phi$.\\
+{\bf 1)} Exprimer $\ker (\Psi \circ \Phi)$ et $\im (\Psi \circ \Phi)$ à l'aide de $\ker \Phi$ et $\im \Phi$.\\
+{\bf 2)} Montrer que $\Psi \circ \Phi$ est un projecteur orthogonal si et seulement si $\Phi \circ \Psi \circ \Phi =\Phi$.\\
+
+\noindent
+{\it Exercice 5.29 [Cachan 08].} Soit $E$ un espace euclidien. Montrer qu'une matrice $M$ est symétrique positive si et seulement s'il existe $x_1$, ..., $x_n$ dans $E$ avec $M=\mbox{Gram}(x_1;\cdots; x_n)=(<x_i|x_j>)_{i,j}$.\\
+
+\noindent
+{\it Exercice 5.30 [CCP 08].} Soit $E$ un espace euclidien de base orthonormée ${\cal{B}}=(e_1;e_2;e_3)$. Soit $q$ la forme quadratique définie par $q(xe_1+ye_2+ze_3)=x^2+2y^2-z^2+2xy+4xz-2yz$.\\
+\indent
+{\bf 1)} Quelle est la matrice associée à $q$ dans $\cal{B}$?\\
+\indent
+{\bf 2)} Quelles sont les valeurs propres de cette matrice?\\
+\indent
+{\bf 3)} Expliquer comment "rendre plus simple" l'expression de $q$.\\
+
+\noindent
+{\bf Exercice 5.31 [TPE 08].} {\bf 1)} Montrer que $<A|B>=\tr (^tAB)$ est un produit scalaire dans $M_n(\R)$.\\
+{\bf 2)} Calculer la distance de $M$ à $S_n(\R)$, ensemble des matrices symétriques, avec $M$ dans $M_n(\R)$.\\
+
+\noindent
+{\bf Exercice 5.32 [TPE 08].} Donner toutes les matrices symétriques réelles $B$ vérifiant $B^2=A$ avec 
+$$A=\left( {
+\begin{array}{ccc}
+6&5&5\\
+5&6&5\\
+5&5&6
+\end{array}
+}\right)\cdot$$ 
+
+\noindent
+{\bf Exercice 5.33 [TPE 08].} Soient $n$ réels $x_1$, ..$,x_n$ vérifiant $x_1+\dots+x_n=n$
+ et $x_1^2+\dots+x_n^2=n$. Vérifier qu'alors $x_1=\cdots=x_n=1$.\\
+
+\noindent
+{\bf Exercice 5.34 [Centrale 06].} Soit $E=\R_n[X]$.\\
+{\bf 1)} Montrer que $N:P=\displaystyle \sum_{k=0}^n a_k \, X^k \mapsto \left( {\sum_{k=0}^n a_k^2}\right)^{1/2}$ est une norme sur $E$.\\
+On suppose maintenant $n=2$.\\
+{\bf 2)} Montrer que l'ensemble $S$ des polynômes scindés sur $\R_2[X]$ est fermé.\\
+{\bf 3)} Calculer la distance de $X^2+1$ à $S$. En quels points est-elle atteinte?\\
+{\bf 4)} On revient au cas général: $n$ est quelconque. Comparer $N$ et $\displaystyle \sum_{k=0}^n a_k \, X^k \mapsto \sum_{k=0}^n |a_k|$.\\
+
+\noindent
+{\bf Exercice 5.35 [CCP 09].} Soit $A$ un sous-espace vectoriel de $E$ euclidien. Montrer $A \oplus A^\perp =E$ puis $A^{\perp \perp}=A$\\
+
+\noindent
+{\bf Exercice 5.36 [Enstim 09].} Soit $E$ un espace euclidien et $u$, $v$ deux vecteurs non nuls orthogonaux de $E$. On pose $f(x)=\langle u|x\rangle \, v +\langle v |x\rangle \, u$.\\
+{\bf 1)}  Déterminer $\ker f$ et $\im f$. Que remarque-t-on?\\
+{\bf 2)} L'endomorphisme $f$ est-il diagonalisable?\\
+
+\noindent
+{\bf Exercice 5.37 [CCP} (12 points){\bf ].} Soit $p$ et $q$ deux projecteurs orthogonaux de $E$ euclidien tels que $q-p$ est un projecteur orthogonal.\\
+{\bf a)} Montrer : $\forall x \in E,\; \langle p(x)|x \rangle= \|p(x)\|^2$\\
+{\bf b)} En déduire $ \forall x \in \im p,\; \; \langle q(x)|x \rangle =\|x\|^2$\\
+{\bf c)} Montrer que $q\circ p= p$ puis $p \circ q=p$.\\
+
+\noindent
+{\bf Exercice 5.38 [Petites Mines 2011]} (exercice 1/2) {\bf ].} Soit $f$ un endomorphisme d'un espace euclidien $[E,\langle\; | \; \rangle]$. Montrer que si $\langle x | y \rangle=0$ impose $\langle f(x) | f(y) \rangle=0$ alors il existe $k \in \R_+$ tel que $\|f(x)\|=k\|x\|$ pour tout $x \in E$. Que pensez-vous de la réciproque?\\
+
+\noindent
+{\bf Exercice 5.39 [Petites Mines 2012]} (exo 1). Soit $A$ une matrice de $M_n(\R)$ symétrique, positive.\\
+{\bf 1)} Montrer qu'il existe une et une seule matrice $B$ de $M_n(\R)$ symétrique, positive, de carré $A$.\\
+{\bf 2)} Montrer que $B$ est un polynôme en $A$.\\
+
+\noindent
+{\bf Exercice 5.40 [Centrale 2012].} Dans $E$ un espace euclidien, on considère l'ensemble \\
+ $\Gamma=\{u\in L_\R(E)\; | \; \forall x\in E, \|u(x)|\leqslant \|x\|\; \}$.\\
+{\bf 1)} Vérifier que $\Gamma$ est une partie convexe de $L_\R(E)$ contenant le groupe orthogonal $O(E)$.\\
+{\bf 2)} Soit $u$ dans $\Gamma$, s'écrivant $u=\frac{f+g}{2}$ avec $f\neq g $ dans $\Gamma$. Montrer que $u$ n'appartient pas à $O(E)$.\\
+{\bf 3)} Soit $v \in GL(E)$. Montrer qu'il existe $\rho \in O(E)$ et $s$ symétrique avec $v=\rho \circ s$ et $\langle s(x),x \rangle \geqslant 0$ pour tout $x$ de $E$.\\
+{\bf 4)} Même question sans supposer $v$ bijectif.\\
+
+\noindent
+{\bf Exercice 5.41 [Mines 2013}, exo 1{\bf].}\\
+\indent On définit sur $E={\cal{S}}_n(\R)$ la relation d'ordre $A \prec B \Longleftrightarrow [\; \forall X\in \R^n, ^tAX \leqslant ^tXBX\;]$.\\
+{\bf 1)} Vérifier rapidement que cette relation est bien une relation d'ordre sur $E$.\\
+{\bf 2)} Montrer que toute suite croissante majorée de $E$ est convergente dans $E$.\\
+
+\noindent
+{\bf Exercice 5.42 [Mines 2013].} Soit $A$ dans $M_n(\R)$ symétrique avec $^tXAX>0$ pour tout $X \in \R^n \backslash\{0\}$. On note $\widetilde{A}$ la transposée de la co-matrice de $A$.\\
+{\bf 1)} Montrer $0<^tX \widetilde{A} X$ pour tout $X\in \R^n \backslash\{0\}$.\\
+{\bf 2)} Est-ce encore vrai avec des inégalités larges?\\
+
+\noindent
+{\bf Exercice 5.43 [TPE 2014]} on se place sur $E=M_n(\R)$.\\
+{\bf 1)} Montrer que $\varphi :(A;B)\in E^2 \mapsto \tr(^tAB)$ définit un produit scalaire sur $E$.\\
+{\bf 2)} Soit $\Omega \in M_n(\R)$ et $f : M \mapsto \Omega \, M$. Déterminer $\Omega$ pour que $f$ soit un endomorphisme orthogonal.\\
+
+\noindent
+{\bf Exercice 5.44 [Cent1 2015]} % Simon Neves
+On considère l'ensemble $U_n(\C) = \{ M \in M_n(\C) \; | \;  ^t \overline{M}\, M = I_n\}$.\\
+{\bf 1)} Soient u et v deux endomorphismes tels que $u \circ v = v \circ u$, montrer que tout espace propre de l'un est stable par l'autre.\\
+{\bf 2)} Soit $M$ dans $U_n(\C)$ tel que $^tM = M$. Montrer qu'il existe $U$ et $V$ symétriques réelles telles que :\\
+\indent 
+a) $M = U + iV$\\
+\indent
+b) $UV = VU$\\
+\indent
+c) $U^2 + V^2 = I_n$\\
+{\bf 3)} Montrer qu'il existe une matrice $S$ symétrique réelle telle que $M = \exp(iS)$.\\
+{\bf 4)} Montrer que $M$ est dans $U_n(\C)$ si et seulement si il existe $P$ orthogonale (réelle), $S$ symétrique réelle telle que $M = P \exp(iS)$.\\
+
+\noindent
+{\bf Exercice 5.45 [Mines 2016, exo1]} % Gaël Macherel
+Soit $A \in O_n(\R)$, telle que $1$ n'est pas valeur propre de $A$.\\
+{\bf 1)} Convergence de la suite 
+$\displaystyle \left({
+\frac{1}{n+1} \, \sum_{k=0}^n  A^k} \right)_{ n \in \N}$\\
+{\bf 2.} Convergence de $(A^n)_{n \in \N}$\\
+
+
+
+\newpage
+\section*{6. Révisions oraux : Géométrie} %6
+
+\noindent
+{\it Exercice 6.1 [Mines 05].} Caractériser l'application affine qui
+envoie $(0;0;0)$ sur $(2;3;4)$ et dont la partie linéaire a pour
+matrice
+$$A=\frac{1}{9}
+\left({\begin{array}{ccc}
+1&-8&4\\
+4&4&7\\
+-8&1&4
+\end{array}
+}\right)$$
+
+\noindent
+{\it Exercice 6.2 [Mines 05].} Soit $A$ et $A'$ deux points distincts
+d'un plan euclidien $\cal{P}$. On pose $r=AA'/3$ et note
+respectivement $\cal{C}$ le cercle de centre $A$ et rayon $r$, et 
+$\cal{C}'$ celui de centre $A'$ et rayon $2r$. Décrire le lieu
+$\Sigma$ des
+points équidistants de $\cal{C}$ et $\cal{C'}$.\\
+
+\noindent
+{\it Exercice 6.3.} Paramétrer le lieu $\cal{L}$ d'équations
+  $x^2+y^2+z^2=1$ et $x+y+z=1$ ({\it Quelle est sa nature?}). Calculer
+  alors $\int_{\cal{L}} ((y-z)\,dx+(z-x)\,dy+(y-x)\, dz)$ en précisant
+  l'orientation choisie pour $\cal{L}$.\\
+
+\noindent
+{\bf Exercice 6.4 [Mines 06].} Déterminer l'endomorphisme de l'espace
+euclidien de dimension $3$ représenté par la matrice
+$$A=\frac{1}{6}
+\left(
+\begin{array}{ccc}
+-1&-2&1\\
+2&4&-2\\
+-1&-2&1
+\end{array}
+\right)$$
+
+\noindent
+{\bf Exercice 6.5 [Mines 05-07].} Soit $s$ une symétrie orthogonale et $r$
+une rotation vectorielle d'un espace euclidien de dimension $3$. Que
+dire de $s\circ r \circ s$?\\
+
+\noindent
+{\it Exercice 6.6 [Mines 05].} Donner une condition nécessaire et
+suffisante sur la quadruplet $(a;b;c;d)$ pour que le plan d'équation
+$ax+by+cz=d$ soit tangent à la surface d'équation $27 xyz=1$. {\it
+  Pourquoi est-ce bien une surface?}\\
+
+\noindent
+{\it Exercice 6.7 [Mines 06].} Que dire de la conique d'équation
+$(x-y)^2-2x+4y+1=0$. La tracer.\\
+
+\noindent
+{\it Exercice 6.8 [CCP 06].} Tracer le lieu $(E)$ d'équation $x^2+2x+4y^2-8y+1=0$ de $\R^2$. Donner la pente des tangentes de cette courbe aux points d'intersection avec l'axe $(Oy)$.\\
+
+\noindent
+{\it Exercice 6.9 [TPE 06].} Soient $D_1$ et $D_2$ deux droites non coplanaires de $\R^3$. Déterminer le lieu des points équidistants de $D_1$ et $D_2$.\\
+
+\noindent
+{\bf Exercice 6.10.} Soit $\cal{C}$ le cercle trigonométrique, $B$ le point de ce cercle d'abscisse $-1$ et $A$ celui de coordonnées $(0;1)$. On considère un point $M_0$ de ce cercle qui n'est pas sur l'axe des ordonnées. Montrer qu'il existe un unique point $M_1$ sur $\cal{C}$ tels que la droite $(AM_1)$ et la tangente à $\cal{C}$ en $M_0$ se coupent sur l'axe des abscisses. Par récurrence, on construit de même le pont $M_{n+1}$ à partir de $M_n$. La suite $(M_n)_{n \in \N}$ converge-t-elle? vers quelle limite le cas échéant?\\
+
+\noindent
+{\it Exercice 6.11 [CCP 06].} Soit $\cal{C}$ le cercle de centre $O$ et rayon $1$. Soit $M$ un point de $\cal{C}$, on considère $A$ et $B$ les projetés orthogonaux de $M$ sur deux diamètres perpendiculaires fixés de $\cal{C}$, puis $N$ le projeté orthogonal de $M$ sur la droite $(AB)$. Déterminer le lieu des points $N$ quand $M$ décrit $\cal{C}$ puis le construire.\\
+
+\noindent
+{\bf Exercice 6.12 [Centrale 07].} Soit $\cal{C}$ la courbe d'équation $y=x^3-x^2+x+1$. Montrer que les droites coupant $\cal{C}$ en trois points dont un est milieu des deux autres passent par un point fixe.\\
+
+\noindent
+{\it Exercice 6.13 [Mines 07].} Déterminer la nature de la surface d'équation $xy+yz+xz=1$.\\
+
+\noindent
+{\it Exercice 6.14 [Mines 07].} {\bf a)} Soit $M:t \in I \mapsto (x(t);y(t))\in \R^2$ un arc paramétré de classe $C^1$ ne passant pas par $O$. Montrer qu'il existe $\rho :I \to \R_+$ et $\theta : I \to \R$ deux fonctions de classe $C^1$ avec $x(t)=\rho(t)\, \cos(\theta(t))$ et $y(t)=\rho(t) \; \sin (\theta(t))$ pour tout $t$ de $I$.\\
+{\bf b)} Déterminer puis tracer les arcs tels que $M'=V(M)$ où $V$ est le champ de vecteurs défini par $V(x;y)=(y-x(x^2+y^2); -x -y(x^2+y^2))\in \R^2$.\\
+
+% ligne environ 1100
+\noindent
+{\it Exercice 6.15 [CCP 07].} Etude et tracé de $r(\theta)=\tan \theta$.\\
+
+\noindent
+{\bf Exercice 6.16 [TPE 07].} Exprimer analytiquement la rotation d'angle $\theta$ autour de l'axe $\Delta$ d'équations $x=z$ et $y=0$ orienté par $\vec{u}=\vec{\imath}+\vec{k}$ où $(\vec{\imath},\vec{\jmath},\vec{k})$ est une base canonique de $\R^3$.\\
+
+\noindent
+{\bf Exercice 6.17 [TPE 07].} Soit la courbe $t \mapsto (2 \cos(t)+\cos(2t);2\sin (t)- \sin (2t)$. 
+%Déterminer la longueur de cette courbe, son rayon de courbure en tout point régulier, 
+Faire l'étude de la courbe et la tracer.\\
+
+\noindent
+{\it Exercice 6.18 [Int 07].} Soit $E$ un espace préhilbertien réel. On considère un convexe $A$ inclus dans $B_o(O,d+\delta) \backslash B_o(O,d)$. Majorer au mieux son diamètre.\\
+
+\noindent
+{\it Exercice 6.19 [Centrale 07].} Donner l'équation de la parabole de foyer $F(1;1)$ et de directrice $D:x-y+1=0$.\\
+
+\noindent
+{\it Exercice 6.20 [CCP 07].} Etudier la courbe d'équation polaire $\displaystyle \rho(\theta)=\frac{1-\cos(\theta)}{1+\sin(\theta)} \cdot$\\
+
+\noindent
+{\it Exercice 6.21 [Mines 08].} Soit l'ellipse $\cal{E}$ d'équation $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$. Déterminer l'ensemble des points du plan desquels on peut mener deux tangentes à l'ellipse $\cal{E}$ faisant entre-elles un angle de $\pi/2$.\\ 
+
+\noindent
+{\it Exercice 6.22 [CCP 08].} Soit la courbe définie en coordonnées polaires par $r(\theta)=\sqrt{4\cos^2 \theta -1}$.\\
+\indent {\bf 1)} Tracer la courbe.\\
+\indent {\bf 2)} Comment calculer la longueur de cet arc?\\
+\indent {\bf 3)} Calculer l'aire située entre la courbe et le cercle centré en $O$ et de rayon $1$.\\
+
+
+\noindent
+{\bf Exercice 6.23 [Mines 2009]} Soit $\vec{w}$ un vecteur unitaire de $\R^3$ et $\theta\in \R$. On note $r$ la rotation d'axe $\R \vec{w}$ dirigé par $\vec{w}$ et d'angle $\theta$ autour de cet axe.\\
+{\bf a)} Montrer que pour tout $\vec{x}$ de $\R^3$
+$$r(\vec{x})=\cos \theta \, \vec{x} +(1-\cos \theta) \langle \vec{w}|\vec{x}\rangle \vec{w}+\sin \theta (\vec{w} \wedge \vec{x} )$$
+{\bf b)} Soit $(u_n)_{n \in \N}$ la suite définie par $u_0=\vec{x}$ et $u_{n+1}=\vec{a}\wedge u_n$ pour tout $n$ de $\N$ avec $\vec{a}$ fixé dans $\R^3$.\\
+Calculer $u_{2n}$ et $u_{2n+1}$ en fonction de $n$, $\vec{a}$ et $\vec{x}$. Que peut-on dire de $\sum \frac{u_n}{n!}$?\\
+
+\noindent
+{\it Exercice 6.24 [Mines 2013].} Soit $\cal{E}$ d'équation $\displaystyle \frac{x^2}{a^2}+\frac{y^2}{b^2}=1$. Donner l'équation de la normale en un point de l'ellipse.\\
+
+\noindent
+{\it Exercice 6.25 [X 2013].} Soit $\Gamma$ la courbe décrite par $M(\theta)$ de coordonnées polaires $(\rho, \theta)$ avec $\rho=\e^\theta$. Soit $P$ un point du plan différent de l'origine $0$.\\
+{\bf 1)} Montrer qu'il existe une infinité de tangentes à $\Gamma$ passant par $P$. Montrer que les points
+de contact sont sur un cercle qui passe par $0$ et $P$.\\
+{\bf 2)} Calculer la longueur $\ell(\theta,\theta^\prime$ de l’arc de courbe $M(\theta^\prime)\, M(\theta)$. On note $\ell(\theta)$ la limite de $\ell(\theta^\prime,\theta)$ quand $\theta^\prime$ tend vers $-\infty$. Soit $C(\theta)$ le cercle de centre $M(\theta)$ et de rayon $\ell(\theta)$. Montrer
+que $\theta < \theta^\prime$ implique que $C(\theta)$ est intérieur à $C(\theta^\prime)$.\\
+
+\noindent
+{\bf Exercice 6.26 [TPE 2014]} Déterminer l'endomorphisme de $\R^3$ de matrice dans la base canonique 
+$$A= \frac{1}{3}\; 
+\left({ \begin{array}{ccc}
+2&2&1\\
+-2&1&2\\
+-1&2&-2
+\end{array} }\right)
+$$
+
+\noindent
+{\bf Exercice 6.27} Tracé l'arc paramétré $t \mapsto (t-3 \sin(t);3 \cos(t))$.\\
+
+
+% DIVERS ALGEBRE
+\newpage
+\section*{7. Révisions oraux : Algèbre divers} %7
+
+\noindent
+{\bf Exercice 7.1 [Centrale 06].} Donner une condition nécessaire et
+suffisante pour que la matrice suivante soit inversible. Calculer
+alors son inverse.
+$$A=\left(
+\begin{array}{ccc}
+a&&\\
+(b)&\ddots&(b)\\
+&&a
+\end{array}
+\right)$$
+
+\noindent
+{\bf Exercice 7.2 [Mines 06].} Soit $A_n$ la matrice carrée dont les
+coefficients sont donnés par :\\
+$a_{i,i}=2i \; \; \forall i \in
+\{1,..,n\}$, $a_{i,j}=\sqrt{ij} \; \forall (i,j) \,\mbox{ tq } \,
+|i-j|=1$ et $a_{i,j}=0$ sinon.\\
+{\bf a)} Montrer que $\Delta_n=\det(A_n)$ vérifie une relation de
+récurrence linéaire d'ordre $2$ à partir du rang $4$.\\
+{\bf b)} A l'aide de la série entière $\displaystyle \sum \frac{\Delta_n}{n!} t^n$
+déterminer $\Delta_n$ en fonction de $n$.\\
+
+\noindent
+{\bf Exercice 7.3 [Mines 06]}. Soit $n$ dans $\N^*$.\\
+{\bf a)} Montrer que l'on peut trouver des réels $a_0$,..., $a_{n-1}$
+vérifiant pour tout $P\in \R_{n-1}[X]$, la relation $\displaystyle
+P(X+n)+\sum_{k=0}^{n-1}P(X+k)=0.$ {\it On pourra utiliser
+  l'endomorphisme $P \mapsto P(X+1)$ de $\R_{n-1}[X]$.}\\
+{\bf b)} Trouver une telle suite de nombres.\\
+{\bf c)} Rayon de convergence puis somme de la série $\sum
+\frac{x^{3n}}{(3n)!}$\\
+
+\noindent
+{\bf Exercice 7.4.} Soit $E$ l'ensemble des fonctions développables en série entière au voisinage de 0. On note $u(f):x\mapsto f(x)+f(x/2)$ quand $f$ est dans $E$. Montrer que $u$ est un endomorphisme de $E$, inversible, quelles sont ses valeurs propres et ses vecteurs propres?\\ 
+
+\noindent
+{\bf Exercice 7.5 [Mines 06].} Soit $F_n=2^{2^n}+1$. Montrer que si
+$n$ et $m$ sont deux entiers naturels non nuls distincts alors $F_n$
+et $F_m$ sont premiers entre-eux.\\ 
+
+\noindent
+{\bf Exercice 7.6 [TPE 06].} Montrer que la famille $(\ln p)_{p \in
+  \field{P}}$ est $\Q$-libre (où $\field{P}$ est l'ensemble des
+  nombres premiers).\\
+
+\noindent
+{\bf Exercice 7.7 [CCP 06].} Résoudre dans $\C^3$ le système 
+$$\left\{
+\begin{array}{lc}
+x+y+z&=1\\
+x^2+y^2+z^2&=9\\
+\displaystyle 
+\frac{1}{x}+\frac{1}{y}+\frac{1}{z}&=1\\
+\end{array}\\
+\right.$$
+
+\noindent
+{\bf Exercice 7.8.} Déterminer puis dessiner l'ensemble $\{(a;b)\in \R^2 |\; \lim_{n\to \infty} A(a;b)^n =0\}$ où on a posé
+$$A(a;b)=\left( \begin{array}{cccc}
+a^2&ab&ab&b^2\\
+ab&a^2&b^2&ab\\
+ab&b^2&a^2&ab\\
+b^2&ab&ab&a^2
+\end{array}
+\right)$$
+
+\noindent
+{\bf Exercice 7.9.} On considère $1000$ points dans le plan affine. Montrer qu'il existe une droite partageant l'espace en deux demi-espaces contenant chacun $500$ des points considérés.\\
+
+\noindent
+{\bf Exercice 7.10.} Quel est le chiffre des unités de $2004^{2007}$?\\
+
+\noindent
+{\bf Exercice 7.11.} Montrer que pour tout entier naturel $n$, il existe un seul couple d'entiers naturels $(a_n;b_n)$ vérifiant $(1+\sqrt{2})^n=a_n+b_n\, \sqrt{2}$. Montrer qu'alors $(1-\sqrt{2})^n=a_n-b_n \sqrt{2}$ puis que $a_n$ et $b_n$ sont premiers entre eux.\\
+
+\noindent
+{\bf Exercice 7.12 [Centrale 07].}  Calculer avec le minimum de calculs le déterminant
+$$ D_n= \left| 
+\begin{array}{cccccc}
+x&2&3&\cdots&n&1\\
+1&x&3& &n&1\\
+\vdots& 2& x& & \vdots&\vdots\\
+\vdots & \vdots& & \ddots& n& \vdots\\
+\vdots&\vdots& &  & x & 1\\
+1&2& & & n &1
+\end{array} \right|$$
+
+\noindent
+{\bf Exercice 7.13 [Centrale 07].} Donner le rang de $\tilde{A}$ en fonction de celui de $A$ où  $\tilde{A}$ est la comatrice de $A$. Exprimer $\det(\tilde{A})$ à l'aide de $\det A$.\\
+
+\noindent
+{\bf Exercice 7.14.} Montrer qu'un nombre premier distinct de $2$ et de $5$, divise une infinité de nombres dont l'écriture décimale ne contient que le chiffre $1$.\\
+
+\noindent
+{\bf Exercice 7.15 [TPE 08].} Existe-t'il un entier naturel $p$ non nuls, pour lesquels il existe $a\in \N \backslash\{0;1\}$  tel que $ap+1$ et $p$ soient simultanément premiers?\\
+
+\noindent
+{\bf Exercice 7.16 [TPE 08].} Soit $E$ un ensemble fini de cardinal $n$ et $F$ un ensemble fini de cardinal $p$. On note $S_n^p$ le nombre de surjections de $E$ dans $F$. Montrer les égalités:
+$$ S_n^p=p(S_{n-1}^{p-1}+S_{n-1}^p) \mbox{ puis } 
+ S_n^p=\sum_{k=0}^p (-1)^{p-k} \binom{p}{k} \, k^n .$$
+
+\noindent
+{\bf Exercice 7.17 [X].} Montrer que $10^{10^n}=4 \mod 7$ pour tout $n$ de $\N^*$.\\
+
+\noindent
+{\bf Exercice 7.18.} {\bf 1)} Montrer que pour tout entier naturel $n$, la fraction $\displaystyle \frac{5^{n+1}+6^{n+1}}{5^n+6^n}$ est irréductible.\\
+{\bf 2)} Déterminer une condition nécessaire et suffisante sur $(\lambda,\mu,\alpha,\beta)\in (\N^*)^4$ pour que la fraction $\displaystyle \frac{\lambda \, \alpha^{n+1}+\mu \, \beta^{n+1}}{\lambda\, \alpha^n+\mu \beta^n}$ soit irréductible pour tout $n$.\\
+
+\noindent
+{\bf Exercice 7.19 [Petites Mines 2012]} (exercice 1). Résoudre $3x^2-5x+4=0$ dans $\Z/49\Z$.\\
+
+\noindent
+{\bf Exercice 7.20 [X 2013].} Soit $2n$ réels $a_1 \geqslant a_2 \geqslant \dots \geqslant a_n \geqslant 0$ et 
+$b_1 \geqslant b_2 \geqslant \dots \geqslant b_n \geqslant 0$. Trouver $\displaystyle \max_{\sigma \in S_n} \left({
+\sum_{k=1}^n a_k \, b_{\sigma(k)} }\right)$.\\ 
+
+
+\noindent
+{\bf Exercice 7.21 [X 2013].} Soit $\alpha$ et $\beta$ deux réels. On suppose qu'il existe une infinité d'entiers relatifs $n$ tels que $\sqrt{\alpha^2+(\beta-n)^2\,}$ est un entier naturel. Montrer que $\alpha$ est nul et $\beta$ est entier.\\
+
+\noindent
+{\bf Exercice 7.22 [X 2013].} Montrer que pour tout entier $n \in \N^*$, il existe un réel $r_n$ tel que le disque ouvert
+de centre $A=(\sqrt{2},1/3)$ et de rayon $r_n$ contienne exactement $n$ points à coordonnées
+entières.\\
+Peut-on remplacer le point $A$ par un point à coordonnées rationnelles ? Donner un équivalent du rayon~$r_n$.\\
+
+\noindent % Cécile Klinguer
+{\bf Exercice 7.23 [Mines 2014]} Montrer par un raisonnement combinatoire l'égalité $\displaystyle \binom{2n}{n}= \sum_{k=0}^n \left({\binom{n}{k}}\right)^2$. Redémontrer cette relation par une autre méthode.\\
+{\it Indication orale : dériver $n$ fois le polynôme $(X^2-1)^n$ de deux manières différentes.}\\
+
+\noindent % Gabriel Devillers
+{\bf Exercice 7.24 [Mines 2015].} Pour tout entier $n>0$, on note $S(n)$ la somme de ses diviseurs positifs. Montrer l'inégalité $S(n) \leqslant n +n \ln n$.\\
+
+\noindent % Albert Victor
+{\bf Exercice 7.25 [Centrale 2016].}
+Soit $P$ et $Q$ deux polynômes non nuls de $\R[X]$ de degré respectifs $p$ et $q$. On pose $\phi(S,T)=PS+TQ$ pour tout $(S,T)\in \R_{q-1}[X]\times \R_{p-1}[X]$.\\
+{\bf 1)} Donner la matrice $Res$ de $\phi$ dans les bases canoniques de 
+$\R_{q-1}[X]\times \R_{p-1}[X]$ et $\R_{p+q-1}[X]$.\\
+{\bf 2)} Montrer l'équivalence $P \wedge Q=1 \Leftrightarrow  \det(Res) \neq 0$.\\
+
+\noindent
+{\bf Exercice 7.26 [CCP 2015].} 
+On dispose de $9$ jetons numérotés de $1$ à $9$ et considère une matrice carrée de taille $3 \times 3$ composée de ces $9$ jetons.
+On cherche à déterminer la probabilité $p$ pour que le déterminant de la matrice soit impair.\\
+{\bf 1)} Soit $A=(a_{i,j})_{(i;j)\in [\![1;n]\!]} \in M_n(\Z)$, avec $n \geqslant 2$.\\
+Montrer que la classe du déterminant de $A$ modulo $2$ est égale à la classe du déterminant de la matrice dont les coefficients sont les restes $r_{i,j}$ de la division euclidienne de $a_{i,j}$ par $2$.\\
+{\bf 2)} On note $\cal{M}$ l'ensemble des matrices carrées d'ordre $3$ composées des $9$ jetons.
+Déterminer $\card({\cal{M}})$.\\
+{\bf 3)} On définit $\Omega =\{
+M \in {\cal{M}}, \det(M) \; {\rm impair} \}$ et $\Delta$ l'ensemble des matrices carrées d'ordre $3$ dont cinq coefficients sont égaux à $1$, quatre coefficients sont nuls et de déterminant impair.
+Donner une relation entre $\card(\Omega)$ et $\card(\Delta)$.\\
+{\bf 4)} Détermination de $\card(\Delta)$.\\
+\indent
+{\bf a)} Quel est le nombre $K_1$ des matrices de $\Delta$ dont une colonne possède trois coefficients égaux à $1$?\\
+\indent
+{\bf b)} Combien de matrices de $\Delta$ dont $2$  colonnes possèdent exactement un coefficient~nul?\\
+\indent
+{\bf c)} Calculer $\card(\Delta)$ et en déduire $\card(\Omega)$\\
+{\bf 5)} Déterminer la probabilité $p$.\\
+
+
+
+% SUITES ET SERIES NUMERIQUES
+\newpage
+\section*{10. Révisions oraux : Suites et séries numériques} %10
+
+
+\noindent
+{\bf Exercice 10.1 [Mines 05].} Quelle est la nature de la série $\sum
+\sin(\pi \, \sqrt{n^2+1\,})$?\\
+
+\noindent
+{\bf Exercice 10.2 [TPE 05].} Soit
+$u_n=\frac{1}{2n+1}+\frac{1}{2n+3}+\cdots +\frac{1}{4n-1}\cdot$
+Montrer que la suite $(u_n)_{n \in \N^*}$ converge, déterminer sa
+limite $l$ et donner un équivalent de $l-u_n$.\\
+
+\noindent
+{\bf Exercice 10.3 [Mines 05].} Soit $u_n=\ln n+(-1)^nn^\alpha$ avec
+$\alpha$ réel. Nature de la série $\sum u_n$?\\
+
+\noindent
+{\bf Exercice 10.4 [Centrale 01].} Quelle est la nature de la suite de
+terme général 
+$\left({
+\sin \left({\frac{n\pi}{6n+1}}\right)
++\cos\left({\frac{n\pi}{3n+1}}\right)
+}\right)^n$? Donnez, le cas échéant, sa limite.\\
+
+\noindent
+{\bf Exercice 10.5 [Mines 05].} Soit $f:[0;1] \rightarrow \R$
+dérivable. Nature de la suite de terme général $\displaystyle 
+\sum_{k=1}^n f\left({\frac{k}{n^2}}\right)$.\\
+
+\noindent
+{\bf Exercice 10.6 [Mines 05].} Nature de la série $\sum \ln \left({
+1+\frac{(-1)^n}{\sqrt{n}\; \ln n}
+}\right)$.\\
+
+\noindent
+{\bf Exercice 10.7 [Centrale 01].} Nature de la série $\sum \frac{(-1)^{[\sqrt{n}]}}{n}\cdot$\\
+
+\noindent
+{\bf Exercice 10.8 [Mines 06].} Nature de la série de terme général
+$\ln \left(1+\frac{(-1)^n}{\sqrt{n}}\right)$.\\
+
+\noindent
+{\bf Exercice 10.9 [Centrale 06].} Nature de la série de terme général
+$u_n=\sin( \pi \sqrt{n^2+a^2})$ avec $a>0$.\\
+
+\noindent
+{\bf Exercice 10.10 [X].} Soient $f$ et $g$ dans $C^0([0;1];\R_+^*)$. On
+pose pour tout $n$ de $\N$, $u_n=\int_0^1 g(x) \, f(x)^n \,
+dx$. Etudier la suite de terme général $v_n=u_{n+1}/u_n$.\\
+{\it On pourra tout d'abord étudier l'existence, la monotonie de $v$ puis la majorer. Ensuite, grâce au théorème de Césaro, on montrera que $(v_n^{1/n})_{n\in \N}$ converge vers la limite de $v$ que l'on déterminera.}\\
+
+\noindent
+{\bf Exercice 10.11 [X].} Pour $f$ dans $C^1([a;b];\R)$, on pose pour tout
+$n$ de $N^*$, $\displaystyle u_n=\frac{b-a}{n} \sum_{k=1}^n
+f\left({a+k\frac{b-a}{n}}\right)$. Etudier la limite de la suite de
+terme général $v_n=n\left({u_n-\int_a^b f(t) \; dt}\right).$\\
+{\it Indications : introduire une primitive de $f$.}\\
+
+\noindent
+{\bf Exercice 10.12 [X].} Soit $f$ dans $C^0([a;b];\R_+^*)$ et $n$ dans
+$\N^*$.\\
+{\bf a)} Montrer qu'il existe une unique subdivision $(x_0;\dots;x_n)$
+de $[a;b]$ telle que pour tout $k$ de $\{1;\dots;n\}$,
+$$\int_{x_k}^{x_{k+1}} f(t)\, dt =\frac{1}{n} \int_a^b f(t)\, dt.$$
+{\bf b)} Trouver la limite quand $n$ tend vers $+\infty$ de
+$\displaystyle \frac{1}{n}\sum_{k=1}^n f(x_k).$ {\it On introduira la primitive $F$ de $f$ qui s'annule en $a$.}\\
+
+\noindent
+{\bf Exercice 10.13.} On pose $\displaystyle u_n=\int_0^{1/2}
+\frac{\sin^2(\pi n x)}{\tan(\pi x)}\cdot$ Etudier la série
+$\displaystyle \sum \frac{u_n^\alpha}{n^\beta}\cdot$\\
+{\it Indications : déterminer un équivalent de $u_n$ (en deviner un,
+  puis montrer qu'il convient).}\\
+
+\noindent
+{\bf Exercice 10.14.} On pose $\displaystyle u_n=\int_0^1 \frac{x^n}{\sqrt{1+x}} \,dx.$
+Déterminer la limite, puis un équivalent et un développement
+asymptotique à deux termes de $u_n$.\\ 
+
+\noindent
+    {\bf Exercice 10.15 [Mines 06].} Etudier la convergence et donner
+    la somme de la série $\displaystyle \sum \left( \sum_{k=0}^n k^2 \right) ^{-1}$.
+{\it On pourra utiliser les sommes partielles et faire une
+    décomposition en éléments simples}.\\
+
+\noindent
+{\bf Exercice 10.16 [TPE 06].} Nature de la série $\sum \frac{u_n}{n}$
+quand la série de terme général $u_n\geqslant 0$ est convergente?\\
+
+\noindent
+{\bf Exercice 10.17 [Mines 07].} Déterminer un équivalent puis un développement asymptotique de $u_n=\sqrt{n+\sqrt{n-1+\sqrt{n-2+\sqrt{2}+1}}}$.\\
+
+\noindent
+{\bf Exercice 10.18 [CCP 07].} Soit $(u_n)_{n\in \N}$ et $(v_n)_{n\in \N}$ deux suites à termes strictement positifs. Montrer que si $u$ et $v$ sont deux suites équivalentes alors les séries $\sum u_n$ et $\sum v_n$ sont de même nature.\\
+La série $\displaystyle \sum \frac{(i-1) \sin (1/n)}{\sqrt{n}\; -1}$ est-elle absolument convergente?\\
+
+\noindent
+{\bf Exercice 10.19 [Mines 06].} Nature de la série $\displaystyle \sum \cos \left( \frac{\pi (2n^2+n+a \ln n)}{2(n+b)} \right) $ avec $a$ un réel et $b$ un réel non entier relatif.\\
+
+\noindent
+{\bf Exercice 10.20 [Mines 06].} Soit $A_n$ l'ensemble des entiers de $[10^n;10^{n+1}[$ sans le chiffre $5$ dans leur écriture décimale.\\
+\indent
+{\bf a)} Déterminer le cardinal de $A_n$.\\
+\indent
+{\bf b)} Montrer que la série $S_5=\sum \left( \sum_{k \in A_n} \frac{1}{k} \right)$ est convergente et de somme inférieure à $72$.\\
+\indent
+{\bf c)} En définissant de même $S_i$ pour $i=0,1...9$ (un chiffre). Que dire de $S_0+S_1+...S_9$? Que peut-on en conclure?\\
+
+\noindent
+{\bf Exercice 10.21 [Mines 07].} Nature de la série $\displaystyle \sum \sin \left( \pi (3+\sqrt{5})^n \right)$.\\
+
+\noindent
+{\bf Exercice 10.22 [CCP 07].} On pose $a_n=\cos(n \theta)$.\\
+\indent
+{\bf 1)} Trouver $\sum a_n x^n$ pour $x \in ]-1;1[$.\\
+\indent
+{\bf 2)} Montrer que la série $\sum a_n$ diverge.\\
+
+\noindent
+{\bf Exercice 10.23 [Télécom 16].} % Mines 07
+Nature de la série $\displaystyle \sum \frac{(-1)^n}{n^\alpha+(-1)^n}$ où $\alpha$ est un réel strictement positif.\\
+
+\noindent
+{\bf Exercice 10.24 [X 07].} Soit $(u_n)_{n \in \N}$ une suite croissante positive qui diverge vers $+\infty$ et telle que $|u_{n+1}-u_n|$ tend vers $0$. Montrer que $\{u_n-[u_n]\; | n \in \N\}$ est dense dans $[0;1]$.\\
+
+\noindent
+{\bf Exercice 10.25 [TPE 06].} Déterminer un équivalent de $S_n=\displaystyle \sum_{k=n}^{2n} \frac{1}{k^\alpha}$ en fonction du réel $\alpha$. Etudier la continuité de l'équivalent en $\alpha=1$.\\
+
+\noindent
+{\bf Exercice 10.26 [Centrale 06].} Montrer que pour tout entier naturel $n$, il existe un unique réel $x_n$ dans $[n;n+1]$ solution de $\frac{\e^x}{x}=\int_n^{n+1} \frac{\e^t}{t}\, dt$. Déterminer un équivalent pour un développement asymptotique à deux termes de $x_n$.\\
+
+\noindent
+{\bf Exercice 10.27 [CCP 08].} On pose pour tout $n\in \N^*$, $I_n=\displaystyle \int_0^{+\infty} \left({\frac{-1}{1+t^2}}\right)^n \, dt$.\\
+\indent {\bf 1)} Justifier que $I_n$ est bien définie.\\
+\indent
+{\bf 2)} Montrer que $((-1)^n I_n)_{n \in \N^*}$ est une suite monotone. Déterminer sa limite.\\
+\indent
+{\bf 3)} La série $\sum I_n$ est-elle convergente?\\
+
+\noindent
+{\bf Exercice 10.28 [CCP 08].} {\bf a)} Développer à l'ordre $2$ en $0$ la fonction $f: x \mapsto \ln (1+\sin x)$.\\
+{\bf b)} En déduire la nature de la série $\sum \ln \big( { 
+1+ \sin \left(  \frac{(-1)^n}{n^\alpha} \right) } \big)$ suivant la valeur du paramètre réel $\alpha\geqslant 0$.\\
+
+\noindent
+{\bf Exercice 10.29 [Mines 08].} Trouver un équivalent (à l'infini) de la plus petite racine de l'équation 
+$$\sum_{k=0}^n \frac{1}{x-\sqrt{k}} =0$$
+
+\noindent
+{\bf Exercice 10.30 [Mines 08].} Trouver un équivalent (quand $n$ tend vers l'infini) à la plus grande solution réelle de l'équation 
+$\displaystyle \sum_{k=0}^n \frac{1}{x-k}=0.$\\
+
+
+\noindent
+{\bf Exercice 10.31 [CCP 08].} {\bf 1)} Démontrer le critère de D'Alembert pour les séries (dans le cas $\lim \frac{u_{n+1}}{u_n}<1$ avec $u_n>0$ pour tout $n$.)\\
+{\bf 2)} Nature de la série $\displaystyle \sum \frac{n}{(3n+1)!} \cdot$\\
+
+
+\noindent
+{\bf Exercice 10.32 [Centrale 08].} {\bf 1)} Convergence de la suite de terme général $\displaystyle u_n=\prod_{k=1}^n (k!)^{1/k!}$.\\
+{\bf 2)} Soit $\displaystyle u_n(\alpha)= \prod_{k=1}^n (k^\alpha)^{1/k^\alpha}.$
+{\bf (i)} Pour quelle valeur de $\alpha$, la suite $u(\alpha)$ converge-t-elle? 
+{\bf (ii)} Déterminer un équivalent de $u_n(1)$ sous la forme $A\, a_n$ avec $A$ une constante qu'on en cherchera pas à déterminer.\\
+
+\noindent
+{\bf Exercice 10.33 [Mines 08].} Déterminer l'existence et la valeur de $\displaystyle \lim_{+\infty} 
+\left( 
+\prod_{k=1}^{n-1} \sin \left( \frac{k \pi}{n} \right) \right)^{\frac{1}{n}}.$ \\
+
+\noindent
+{\bf Exercice 10.34 [TPE 08].} La série $\sum (n^2+3n)^{-1}$ est-elle convergente? Calculer sa somme.\\
+
+\noindent
+{\bf Exercice 10.35 [TPE 08].} Soit $\sum a_n$ une série réelle convergente. Que dire de $\sum \frac{a_n}{n}$?\\
+
+\noindent
+{\bf Exercice 10.36 [TPE 08].} Soit $\sum u_n$ une série convergente avec $u_n>0$. On pose $S_n=\displaystyle \sum_{k=0}^n u_k$. Que dire de la série $\sum \frac{u_n}{S_n}$?\\
+
+\noindent
+{\bf Exercice 10.37 [TPE 08].} On pose $\displaystyle u_n=\frac{1!+2!+\cdots +n!}{n!}$ pour tout $n$ de $\N^*$.\\
+{\bf 1)} Montrer que $(u_n)_{n\in \N^*}$ est convergente et calculer sa limite $L$.\\
+{\bf 2)} Déterminer un équivalent de $u_n-L$.\\
+{\bf 3)} Pour $p$ dans $\N^*$, généralisation à $\displaystyle v_{n,p}=\frac{p!+(p+1)!+\cdots +(p+n-1)!}{(p+n-1)!} \cdot$\\
+
+\noindent
+{\bf Exercice 10.38 [Mines 08].} Soit $u_n=\displaystyle \sum_{k=1}^n \frac{1}{k} \left({1-\frac{1}{n} }\right)^k.$ Montrer
+$\displaystyle u_n=\ln n -\int_1^{+\infty} \frac{\e^{-t}}{t}\, dt+o(1)$\\
+
+\noindent
+{\bf Exercice 10.39 [Centrale 08].} On pose $u_n=\int_0^1 x^n \, \ln(1-x)\, dx$.\\
+\indent
+{\bf 1)} Démontrer l'existence des $u_n$.\\
+\indent
+{\bf 2)} Calculer $u_0$, $u_1$ et $u_2$.\\
+\indent
+{\bf 3)} Montrer que $(u_n)_n$ converge et trouver sa limite.\\
+\indent
+{\bf 4)} Calculer $(n+1)u_n-nu_{n-1}$.\\
+\indent
+{\bf 5)} Donner la nature de $\sum u_n\, x^n$ et un équivalent de $u_nR^n$ avec $R$ le rayon de convergence de $\sum u_n x^n$.\\
+
+\noindent
+{\bf Exercice 10.40 [Centrale 08].} Nature des séries $\sum \cos(n \pi \sqrt{1+n^2\;} )$ puis de  $\sum x^n \, \cos(n \pi \sqrt{1+n^2\;})$. \\
+
+\noindent
+{\bf Exercice 10.41 [CCP 09} (8 points) {\bf ].} Pour tout $n\in \N$, on pose $\displaystyle  u_n=\int_{n^2}^{n^3} \frac{1}{1+t^2}\, dt$\\
+{\bf a)} Montrer que $u_n \sim \frac{1}{n^2}$\\
+{\bf b)} Donner le domaine des $x$ pour que $\sum u_n x^n$ converge.\\
+
+\noindent
+{\bf Exercice 10.42 [Centrale 09]} Soit $f:[0;1] \to \R$ dérivable avec $f(0)=0$. On pose $u_n=\displaystyle \sum_{k=1}^n f \left( { \frac{k}{n^2}} \right)$.\\ 
+{\bf 1)} Montrer que $(u_n)_{n \in \N^*}$ converge et donner sa limite $\ell$.\\
+{\bf 2)} Déterminer un équivalent de $u_n-\ell$ à l'infini (sous des hypothèses à formuler).\\
+{\bf 3)} Généralisation?\\
+
+\noindent
+{\bf Exercice 10.43 [Centrale 09].}
+Prouver que $\displaystyle \lim_{n\to +\infty} \left( \sum_{p=1}^n \frac{ \sin \left( \frac{p\pi}{n+1} \right)}{p} \right)$ existe et est strictement positive.\\
+Calculer $\displaystyle \lim_{n\to +\infty} \left( \sum_{p=1}^n \sin \left( \frac{n\pi}{n^2+p^2} \right) \right)$\\
+
+\noindent
+{\bf Exercice 10.44 [TPE 09} (2ème exercice) {\bf].} Soit $f_n(x)=\frac{x}{1+nx^2} \cdot$ On définit la suite $(x_n)_{n \in \N^*}$ par $x_1>0$ et $x_{n+1}=f_n(x_n)$.\\
+{\bf a)} Déterminer la limite de la suite $(x_n)_{n \in \N^*}$.\\
+{\bf b)} Montrer que pour tout $n \geqslant 2$, on a $x_n \leqslant 1/n$.\\
+{\bf c)} Montrer que $(n \, x_n)_{n \in \N^*}$ est croissante.\\
+{\bf d)} Déterminer un équivalent de $(x_n)_{n \in \N^*}$.\\
+
+\noindent
+{\bf Exercice 10.45 [Mines 09} (2ème exercice){\bf ].}  
+Soit la suite définie par $u_0>0$ et $u_{n+1}=\mbox{arctan} u_n$ pour tout $n$ de $\N$. Déterminer un équivalent de $u_n$.\\
+
+\noindent
+{\bf Exercice 10.46 [Mines 12} (2ème exercice){\bf ].} Convergence et somme de $\sum \ln \left({ 1+\frac{2}{n(n+3)} }\right)$.\\
+
+\noindent
+{\bf Exercice 10.47 [Petites Mines 12} (2ème exercice){\bf ].} Soit 
+$u_n=\sin \left({\frac{1}{n}}\right) + a \, \tan \left( {\frac{1}{n}} \right) +b \, \ln \left({ \frac{n+1}{n-1} }\right)$ pour tout $n\geqslant 2$. Déterminer la nature de la série $\sum u_n$.\\
+
+\noindent
+{\bf Exercice 10.48 [Mines 2010} (exo 1){\bf ].} Trouver la nature de $\sum \frac{1}{u_n}$ avec $u_n=n \displaystyle \sum_{k=2}^n (\ln k)^\alpha$ où $\alpha>0$.\\
+
+\noindent
+{\bf Exercice 10.49 [Mines 2013}, exo 2{\bf].} Soit $f: x\mapsto \ch(x)-1$ et $x_0>0$. On note $x_{n+1}$ l'abscisse du point d'intersection de l'axe des abscisses et de la tangente au graphe de $f$ au point d'abscisse $x_n$. Etudier la convergence de la série $\sum x_n$.\\
+
+\noindent
+{\bf Exercice 10.50 [Petites Mines 2013}, exo 1{\bf].} Nature de la série de terme général $\displaystyle \sum_{p=1}^n \frac{1}{n^2+(n-p)^2}$\\
+
+\noindent
+{\bf Exercice 10.51 [X 2013].} Déterminer le développement asymptotique à $2$ termes de la suite $(u_n)_{n \in \N}$ définie par $u_0>0$ et $u_{n+1}=u_n+\frac{1}{u_n}$ pour tout $n$ de $\N$.\\
+
+\noindent
+{\bf Exercice 10.52 [X 2013].}: Soit $a_n>0$ pour tout $n$ de $\N$. On pose $b_n =\frac{a_n}{a_0+a_1+\dots +a_n} \cdot$ 
+Montrer que les séries de terme général $a_n$ et $b_n$ sont de même nature.\\
+
+\noindent
+{\bf Exercice 10.53 [X 2013].} Pour tout $n\in \N$, on pose $P_n(x)=1+\frac{x}{1!}+\frac{x^2}{2!}+\dots+\frac{x^n}{n!}$\\
+{\bf 1)} Combien $P_n$ a-t-il de racines réelles?\\
+{\bf 2)} Soit $x_n$ la racine réelle de $P_{2n+1}$. Montrer que la suite $(x_n)_{n \in \N}$ diverge vers $-\infty$.\\
+
+\noindent
+{\bf Exercice 10.54 [X 2013].} Pour tout $n\in \N$, on pose $u_n(z)=\frac{z^n}{1+z^{2n+1}}$\\
+{\bf 1)} Etude de la convergence de la série de fonctions $\sum u_n(z)$\\
+{\bf 2)} On note $U(z)$ la somme de cette série. Montrer que $U$ est paire pour $|z|<1$ et impaire pour $|z|>1$.\\
+
+\noindent
+{\bf Exercice 10.55 [Ensea 16].} % Clément Riasse
+Soit $f:\R_+ \to \R_+^*$ une fonction continue décroissante de limite nulle en $+\infty$. Montrer que la série $\displaystyle \sum \int_{n\pi}^{(n+1)\pi} f(t) \sin (t) \; {\rm d}t$ converge .\\
+
+\noindent
+{\bf Exercice 10.56 [Cent16].} % Marion Narbeburu
+Soit $(a_n)_{n \in \N}$ une suite telle que la série $\sum n a_n$ converge.\\
+On pose pour tout $n$ de $\N$ : $\displaystyle 
+A_n=\sum_{k=0}^n a_k, \;  
+S_n=\sum_{k=0}^n k a_k$ et $\displaystyle 
+S=\sum_{k=0}^\infty k a_k, \; 
+L=\lim_{p \to \infty} \left( \sum_{k=0}^\infty k a_{k+p} \right)$\\
+{\bf 1.} Exprimer $S$ puis $L$ si elle existe pour $a_n=\frac{1}{2^n}$ pour tout $n$.\\
+{\bf 2.} exprimer $A_n$ en fonction des $S_k$ à l'aide d'une somme. En déduire que la série $\sum a_n$ converge.\\
+{\bf 3.} Montrer que $\displaystyle \sum_{n=0}^\infty n a_{n+p}$ existe et vaut $\displaystyle \sum_{n=p}^\infty a_{n}-p \sum_{n=p}^\infty n a_{n}$.\\    
+
+
+
+%{\bf OU SONT LES CORRIGES ?\\
+%\noindent
+%{\bf Exercice 10. [X 07].} Déterminer la nature des séries de terme général $\displaystyle \frac{\e^{i \sqrt{n}}}{n}$ et $\displaystyle \frac{\e^{i \sqrt{n}}}{\sqrt{n}} \cdot$\\
+
+%\noindent
+%{\bf Exercice 10.[Ens 07].} Soient $r\in ]0;1[$ et $A\geqslant 0$. On définit la suite $(u_n)_{n\in \N}$ par $u_0=a$ et la relation de récurrence :
+%$$ \forall n \in \N,\; \; u_{n+1}=r+u_n-\frac{u_n}{\sqrt{1+u_n^2}}\cdot$$
+%Etudier la convergence de la suite $(u_n)_{n \in \N}$.\\
+%}
+
+
+
+% TOPOLOGIE
+\newpage
+\section*{11. Révisions oraux : Topologie} 
+
+\noindent
+{\bf Exercice 11.1 [CCP 12].} Soit $a=(a_n)_{n\in \N}$ une suite
+complexe.\\
+{\bf a)} Pour quelle valeur de $a$, l'application $\displaystyle N_a:P=\sum_{k=0}^n
+p_k X^k \mapsto \sum_{k=0}^n |a_kp_k|$ est-elle une norme sur
+$\C[X]$?\\
+{\bf b)} A quelle condition les normes $N_a$ et $N_b$ sont-elles
+équivalentes?\\
+{\bf c)} Peut-on choisir la suite $a$ de manière à ce que la
+dérivation soit continue?\\
+
+\noindent
+{\it Exercice 11.2 [Mines 05].} Vérifier que $\R$ et $\R^2$ ne sont pas
+isomorphes.\\
+
+\noindent
+{\bf Exercice 11.3 [Mines 05].} Soit $f: \R \to \R$ et $G_f=\{(x;f(x))\, |\, x\in \R\}$ son graphe dans $\R^2$.\\
+\indent
+{\bf a)} Montrer que si $f$ est continue, son graphe $G_f$ est une
+partie fermée de $\R^2$.\\
+\indent
+{\bf b)} Montrer que si $f$ est bornée et $G_f$ fermé alors $f$ est
+continue.\\
+\indent
+{\bf c)} Ce résultat subsiste-t-il si l'on ne suppose plus $f$ bornée?\\
+
+\noindent
+{\bf Exercice 11.4 [Centrale 07].} Soit $E={\cal{C}}^2([0;\pi];\R) \cap \{f|f(0)=f'(0)=0\}$. Pour tout réel $a$, on pose $N_a(f)=\sup_{[0;\pi]} |f''-af|$.\\
+\indent
+{\bf a)} Quelle valeur de $a$, $N_a$ est-elle une norme sur $E$?\\
+\indent
+{\bf b)} La norme $N_a$ et la norme infinie sont-elles équivalentes?\\
+
+\noindent
+{\bf Exercice 11.5 [CCP 07].} Soit le $\R$-espace vectoriel $E=\{f\in {\cal{C}}^2([0;1];\R)\; | f'(0)=f(0)=0\}$. Pour tout $f$ de $E$, on pose $\|f\|_E=\sup_{[0;1]} |f''+2f'+f|$.\\
+\indent
+{\bf a)} Vérifier que $\|.\|_E$ est une norme sur $E$.\\
+\indent
+{\bf b)} Soit $g=f''+2f'+f$. Déterminer $f(x)$ à l'aide d'une intégrale en $g$.\\
+\indent
+{\bf c)} Montrer qu'il existe $a$ tel que $\|f\|_\infty \leqslant a \|f\|_E$ pour tout $f$ de $E$.\\
+\indent
+{\bf c)} Les normes $\|\cdot\|_E$ et $\|\cdot\|_\infty$ sont-elles équivalentes? \\
+
+\noindent
+{\bf Exercice 11.6 [Mines 07].} Soit $\displaystyle f(z)= \sum_{n=0}^\infty a_n z^n$ une série entière de rayon de convergence $R>0$. On note pour tout $0<\rho<R$,
+$$N_{\infty, \rho}(f)=\sup_{|z|=\rho} |f(z)|, \; \; \; \; \; N_{1,\rho}(f)=\sum_{k=0}^\infty |a_n| \rho^n,\; \; \; \; \mbox{ et } N_{2,\rho}(f)=\sqrt{\sum_{n=0}^\infty |a_n|^2 \rho^{2n}\,}$$
+\indent
+{\bf a)} Montrer que l'on a bien des normes.\\
+\indent
+{\bf b)} Démontrer l'inégalité $N_{2,\rho} \leqslant N_{\infty,\rho} \leqslant N_{1,\rho}$.\\
+
+\noindent
+{\bf Exercice 11.7 [Centrale 07].} Soit $E=\{f\in {\cal{C}}^2([0;1];\R)\; | f'(0)=f(0)=0 \}$.\\
+\indent
+{\bf a)} Montrer que $E$ est un $\R$-espace vectoriel.\\
+\indent
+{\bf b)} Montrer que $N_\infty$ est une norme sur $E$, où $N_\infty(f)=\sup_{[0;1]}|f|$.\\
+\indent
+{\bf c)} On pose $N_1(f)=\sup_{[0;1]}|f|+\sup_{[0;1]}|f''|$, et $N(f)=\sup_{[0;1]}|f+f''|$. Montrer que l'on définit ainsi deux normes sur $E$.\\
+\indent
+{\bf d)} Montrer que les normes $N_1$ et $N_\infty$ ne sont pas équivalentes.\\
+\indent
+{\bf e)} Montrer qu'en revanche $N$ et $N_1$ sont équivalentes sur $E$.\\
+
+\noindent
+{\bf Exercice 11.8 [CCP 07].} On munit $M_n(\R)$ de la norme par $\displaystyle \|A\|=\sup_{1\leqslant i,j\leqslant n} |a_{i,j}|$\\
+{\bf 1)} Montrer $\|AB\| \leqslant n \|A\| \, \|B\|$ pour toutes matrice $A$ et $B$, puis $\|A^p\|\leqslant n^{p-1} \|A\|^p$ pour tout $A$ et $p$.\\
+{\bf 2)} Montrer que $\sum \frac{A^p}{p!}$ est absolument convergente. Cette série est-elle convergente dans $M_n(\C)$?\\
+
+\noindent
+{\bf Exercice 11.9 [Centrale 08].} Soit $K$ un compact d'un espace vectoriel normé $E$. Soit $f:K \to K$ une  application 
+%faiblement contractante i.e. 
+vérifiant $\|f(x)-f(y)\|<\|x-y\|$ pour tout $x\neq y$.\\
+{\bf 1)} Montrer que $f$ admet un unique point fixe $a$ dans $K$.\ {\it On pourra poser $\lambda: x \mapsto \|x-f(x)\|\in  \R$.} \\
+{\bf 2)} Montrer que le point fixe $a$ est la limite (simple) des itérés de $f$. {\it On pourra montrer que $\|f^n(x)-a\|$ est le terme général d'une suite décroissante.}\\
+{\bf 3)} \'Etudier les exemples suivants: {\bf a)} $\sin: [0;\pi]\to [0;\pi]$.\\
+ {\bf b)} Soit $g:x \mapsto\sqrt{1+x^2}$. Que dire de la suite de ses itérés? Conclure.\\ 
+
+ \noindent
+ {\bf Exercice 11.10 [Centrale 08].} Soit $E$ un espace vectoriel normé.\\
+ {\bf 1)} Montrer qu'un hyperplan de $E$ est soit dense soit fermé.\\
+ {\bf 2)} Donner deux exemples d'hyperplans fermés, et deux exemples d'hyperplans denses.\\
+ {\bf 3)} Quels sont les sous-espaces vectoriels ouverts de $E$?\\
+ {\bf 4)} Vérifier qu'une forme linéaire sur $E$ est continue si et seulement si son noyau est fermé.\\ 
+
+ \noindent
+ {\bf Exercice 11.11 [Mines 08].} Soit $(s_n)_{n\in \N}$ une suite à valeurs dans $[0;1]$. Pour toutes fonctions $f$ et $g$ continues de $[0;1]$ dans $\R$, on pose $\displaystyle \varphi(f;g)=\sum_{n=0}^{+\infty} \frac{1}{2^n} \, f(s_n)\, g(s_n)$. Déterminer une condition nécessaire et suffisante pour que $\varphi$ définisse un produit scalaire sur $C^0([0;1];\R)$.\\
+ 
+\noindent
+{\bf Exercice 11.12 [Centrale 2009]} % Solène 
+Sur $\R^2$, on définit $\displaystyle N(x;y)=\sup_{t\in \R} \frac{|x+ty|}{1+t+t^2} \cdot$\\
+Montrer que $N$ est bien définie, que c'est une norme et définir la sphère unité.\\
+
+\noindent
+{\bf Exercice 11.13 [Mines 2009]} Soit $[E,\|\cdot\|]$ un espace vectoriel normé. Soient $A$ et $B$ deux compacts (respectivement connexes) non vides de $E$. On note $C=\cup_{(a;b)\in A \times B} [a;b]$. Montrer que $C$ est compact, respectivement connexe.\\
+
+\noindent
+{\bf Exercice 11.14 [CCP 2011} (12 points){\bf ].} Soit $E$ l'ensemble des fonctions de classe $C^2$ de $[0;1]$ dans $\R$ vérifiant $f(0)=f'(0)=0$.\\
+{\bf 1)} Montrer que $\displaystyle \|f\|=\sup_{[0;1]} |f"+2f'+f|$ définit une norme sur $E$.\\
+{\bf 2)} Soit $g=f"+2f'+f$ avec $f$ dans $E$. A l'aide méthode de la variation des constantes, montrer
+$$\forall x\in[0;1;],\; f(x) \e^x=\int_0^x(x-t)g(t)\e^t \; dt$$
+{\bf 3)} Montrer qu'il existe $a>0$ avec $\|f\|\ _{\infty} \leqslant a \|f\|$ pour tout $f$ de $E$.\\
+{\bf 4)} Les normes $\|\cdot\|_{\infty}$ et $\| \cdot\|$ sont-elles équivalentes? {\it On pourra introduire $f_n(x)=\sin(nx^2)$}.\\
+
+\noindent
+\noindent
+{\bf Exercice 11.15 [X 2013].} Soit $E$ un $\R$-espace vectoriel et $\varphi$ une forme linéaire sur $E$. On suppose que la borne supérieure de $ \{ | \varphi(x) | ;\; \|x\|=1 \}$ existe et vaut $1$ mais n'est pas atteinte.\\
+{\bf 1)} Que dire de $E$?\\
+{\bf 2)} Soit $F=\ker \varphi$. Montrer que $\displaystyle \sup \left( \{ {\rm d}(x,F) /\; \|x\|=1 \} \right)$ n'est pas atteint.\\
+{\bf 3)} Donner un exemple d'une telle situation.\\
+
+\noindent
+{\bf Exercice 11.16 [X 2014].} Soit $n$ un entier naturel non nul et $C_n=\{M\in M_n(\C) \; | \; \pi_M=\chi_M\}$.\\
+{\bf 1)} Montrer que $C_n$ est un ouvert dense de $M_n(\C)$.\\
+{\bf 2)} L'application qui à une matrice associe son polynôme minimal est-elle continue?\\
+{\bf 3)} Vérifier que $GL_n(\C)$ est connexe par arcs.\\
+
+\noindent % Nicolas Deloule, cent 1
+{\bf Exercice 11.17 [Centrale 15].} Une valeur absolue $N$ sur un corps $\K$ est une fonction $N: \K \to \R_+$ vérifiant les trois propriétés\\
+\indent
+$(i) \; N(x)=0 \Leftrightarrow x=0_\K$\\
+\indent
+$(ii) \; \forall (x;y)\in \K^2, \, N(x\cdot y) = N(x)\, N(y)$\\
+\indent
+$(iii) \; \forall (x;y)\in \K^2, \, N(x+ y) \leqslant N(x)+N(y)$\\
+Cette valeur absolue est :\\
+\indent
+- ultra-métrique quand elle vérifie :
+$\forall (x;y) \in \K^2,\; N(x+y) \leqslant \max(N(x),N(y))$\\
+\indent
+- non-archimédienne quand  elle vérifie :
+$\forall n \in \Z,\; N(n.1_\K) \leqslant 1$\\
+{\bf 1)} Soit $N$ une valeur absolue. Exprimer $N(1_\K)$ puis  $N(-1_\K)$ et enfin $N\left( \frac{x}{y} \right)$ pour tout $(x;y)\in \K\times\K^*$\\
+{\bf 2)} Prouver que le caractère ultra-métrique d'une valeur absolue implique son caractère non-archimédien.\\
+{\bf 3)} Montrer la réciproque.\\
+
+\noindent
+{\bf Exercice 11.18.} Soit $\rho$ une norme sur $M_n(\R)$. On pose 
+$$\forall A \in M_n(\R),\; \; \rho^*(A)=\sup\left( \{\tr(AB) | B \in 
+M_n(\R) \mbox{ et } \rho(B)=1 \} \right)$$
+{\bf a)} Vérifier que $\rho^*$ définit une norme sur $M_n(R)$.\\
+{\bf b)} Montrer que $f : X \in B_\rho \mapsto \det(X)$ admet un maximum, où $B_\rho$ est la sphère unité pour la norme $\rho$.\\
+{\bf c)} Soit $A_0$ un point où $f$ atteint son maximum. Montrer que $A_0$ est inversible.\\
+
+% SUITES ET SERIES DE FONCTIONS
+\newpage
+\section*{12. Révisions oraux : Suites et séries de fonctions} %12
+
+
+\noindent
+{\bf Exercice 12.1 [Mines 01].} Soit $I_n=\int_0^\infty
+\frac{t^2}{(1+t^4)^n} dt$. Exprimer $I_{n+1}$ en fonction de $I_n$. La
+suite de terme général $I_n$ est-elle convergente? si oui, quelle est
+sa limite? Quelle est la nature de $\sum I_n$?\\
+
+\noindent
+{\bf Exercice 12.2 [Mines 01].} Soit $\displaystyle f(x)=\int_0^\infty \frac{1-\cos
+  t}{x^2+t^2} dt.$
+Déterminer l'ensemble de définition, de continuité de $f$, sa parité éventuelle. La fonction
+  $f$ est-elle de classe $C^1$? Donner la limite de $f$ en
+  $\infty$. \'Enoncer avec précision les théorèmes utilisés.\\
+
+\noindent
+{\bf Exercice 12.3 [Mines 05].} Soit $(a_n)_{n\in \N}$ une suite de réels strictement positifs, croissante, qui diverge vers $+\infty$. Montrer la relation
+$$\displaystyle 
+\int_0^{+\infty}
+\left({
+\sum_{n=0}^{+\infty} (-1)^n \, \e^{-a_n x} }\right)\, dx =
+\sum_{n=0}^{+\infty}\frac{(-1)^n}{a_n} \cdot$$
+
+\noindent
+{\bf Exercice 12.4.} Soit $f_0$ continue de $[a;b]$ dans
+$\R$ avec $a<b$. On définit une suite de fonctions par 
+$$\forall n\in \N, \; \forall x \in [a;b],\; \; f_{n+1}(x)=\int_a^x f_n(t)\,dt$$
+Etudier et évaluer la fonction $\displaystyle g=\sum_{k=0}^\infty
+f_n$. 
+{\it Indication : on pourra raisonner par analyse-synthèse.}\\
+
+\noindent
+{\bf Exercice 12.5 [X]} On note $\displaystyle u_n(x)=\frac{x^n}{1-x^n}$ et
+$\displaystyle f(x)=\sum_{k=1}^{+\infty} u_k(x)$\\
+{\bf 1.} \'Etudier les domaines de définition, de continuité et de
+dérivabilité de $f$.\\
+{\bf 2.} Déterminer un équivalent en $1^-$ de $f$.\\
+
+\noindent
+{\bf Exercice 12.6 [Mines 06].} Soit $f:[0;1] \to \R$
+continue. Etudier la suite de terme général $\int_0^1 f(t^n) dt$.\\
+
+\noindent
+{\bf Exercice 12.7 [CCP 06].} Montrer que $x\mapsto \e^{-x^n}$ avec $n
+\in \N^*$ est intégrable sur $[1;+\infty[$. On note alors
+    $\displaystyle I_n=\int_1^\infty \e^{-t^n} \, dt$ son intégrale. 
+Soit $\displaystyle K=\int_1^\infty \frac{\e^{-t}}{t} \, dt$. Justifier
+rapidement l'existence de $K$ puis montrer que $nI_n$ tend vers $K$ quand $n$
+tend vers $+\infty$.\\
+
+\noindent
+{\bf Exercice 12.8 [Centrale 07].} Soit $z$ un complexe de module strictement inférieur à $1$.\\
+\indent
+{\bf a)} Intégrabilité de $f: t \mapsto \frac{t^{\alpha-1}}{\e^t-z}$ sur $\R_+^*$ en fonction du réel $\alpha$.\\ 
+\indent
+{\bf b)} Vérifier que pour tout $\alpha >0$, on a $\displaystyle \int_0^{+\infty} \frac{z\, t^{\alpha-1}}{\e^t-z}\, dt = \Gamma(\alpha) \, \sum_{k=1}^{+\infty} \frac{z^n}{n^\alpha}\cdot$\\
+
+\noindent
+{\bf Exercice 12.9 [CCP 07].} On pose $u_n(x)=\frac{x}{n(n+x)}$ pour tout $n$ de $\N^*$ et tout réel $x>-1$.\\
+\indent
+{\bf 1)} Montrer la convergence simple et normale de la série $\sum u_n$.\\
+\indent
+{\bf 2)} Soit $S$ la somme de la série. Montrer que $S$ est continue puis de classe ${\cal{C}}^1$ sur $]-1;+\infty[$.\\
+\indent
+{\bf 3)} Montrer que $S$ est croissante, puis déterminer une relation entre $S(x)$ et $S(x+1)$. En déduire $S(n)$ pour tout $n$ de $\N^*$ et un équivalent de $S$ en $-1$.\\
+
+\noindent
+{\bf Exercice 12.10 [CCP 07].} Pour tout $n\in \N^*$, on pose $\displaystyle f_n(x)=(x^2+1)\times \frac{n \e^x+x\e^{-x}}{n+x} \cdot$\\
+\indent
+{\bf 1)} Montrer la convergence uniforme de $(f_n)_{n \in \N^*}$ sur $[0;1]$.\\
+\indent
+{\bf b)} Déterminer la limite de la suite de terme général $\int_0^1 f_n(x)\, dx$.\\ 
+
+\noindent
+{\bf Exercice 12.11 [Mines 07].} 
+On pose $g_0(x)=1$ et $g_{n+1}(x)=\int_0^xg_n(t-t^2)\, dt $ pour $x$ dans $[0;1]$. Montrer que $\sum g_n$ converge normalement sur $[0;1]$.\\
+
+\noindent
+{\bf Exercice 12.12 [TPE 07].} On pose $u_n(x)=x \ln \left( 1+\frac{1}{n} \right)- \ln \left( 1+\frac{x}{n} \right)$ et $S(x)=\displaystyle \sum_{n=1}^\infty u_n(x)$.\\
+\indent
+{\bf 1)} Quel est le domaine de définition de $S$? Que valent $S(0)$ et $S(1)$?\\
+\indent
+{\bf 2)} On pose $T=\exp \circ S$. Montrer que $T(x+1)=(x+1)\, T(x)$.\\
+
+\noindent
+{\bf Exercice 12.13 [CCP 08].} Soit $f_n(x)=\frac{x}{\sqrt{\pi}}\e^{-n^2x^2}$. \\
+\indent {\bf 1)} La suite $(f_n)_{n \in \N}$ converge-t-elle simplement? quelle est sa limite?\\
+\indent {\bf 2)} La suite $(f_n)_{n \in \N}$ converge-t-elle uniformément sur $[a;+\infty[$ et $]-\infty;-a]$ pour tout $a>0$?\\
+\indent
+{\bf 3)} La suite $(f_n)_{n _in \N}$ converge-t-elle uniformément sur $\R+^*$?\\
+
+\noindent
+{\bf Exercice 12.14 [CCP 08].} Soit $f_n(x)=\cos \left(\frac{nx}{n+1}\right)$. \\
+\indent {\bf 1)} Montrer que la suite $(f_n)_{n \in \N}$ converge simplement sur $\R$.\\
+\indent {\bf 2)} Vérifier que $(f_n)_{n \in \N}$ converge uniformément sur $[-a;a]$ pour tout $a>0$.\\
+\indent {\bf 3)} Montrer qu'il n'y a pas convergence uniforme sur $\R$. {\it On pourra utiliser la suite $(n+1)\pi$.}\\
+
+\noindent
+{\bf Exercice 12.15 [Mines 08].} Soit $f_n : x \mapsto nx^2 \e^{-x \sqrt{\pi}}$.\\
+La série $\sum f_n$ converge-t-elle simplement sur $\R_+$? normalement sur $\R_+$?  uniformément sur $\R_+$?\\
+
+\noindent
+{\bf Exercice 12.16 [CCP 08].} On pose $f(x)=\displaystyle \sum_{k=1}^{+\infty} (-1)^{k+1} \frac{\e^{-kx}}{k}$\\
+Quel est le domaine de définition de $f$? Vérifier que la série converge uniformément mais pas normalement sur ce domaine. {\it On pourra penser au critère spécial à certaines séries alternées, critère dont on donnera la trame de la démonstration.}\\
+
+\noindent
+{\bf Exercice 12.17 [ENSEA 08].} Soit $f$ continue et bornée sur $\R_+$. Calculer $\displaystyle \lim_{n\to \infty} \int_0^{+\infty} \frac{n\, f(t)}{1+n^2t^2} \, dt$.\\
+
+\noindent
+{\bf Exercice 12.18 [TPE 08].} On pose $f_0=0$ et $f_{n+1}(x)=f_n(x)+\frac{1}{2} (x-f_n(x)^2)$ pour tout $x$ de $[0;1]$ et $n$ de $\N$. La suite $(f_n)_{n\in \N}$ converge-telle simplement sur $[0;1]$? vers quelle fonction?\\
+
+\noindent
+{\bf Exercice 12.19 [Centrale 2013].} Soit $(f_n)_{n \in \N}$ une suite de fonctions dérivables de $[a;b]$ dans $\R$. On suppose qu'il existe un réel $M$ avec 
+$$\forall n \in \N, \forall x \in [a;b],\; \; |f'_n(x)| \leqslant M$$
+Montrer que si $(f_n)_{n \in \N}$ converge simplement sur le segment $[a;b]$ alors la convergence est uniforme.\\
+
+\noindent
+{\bf Exercice 12.20 [X 15].} Soit $(p_n)_{n\in \N}$ suite strictement croissante d'entiers telle que $(n/p_n)_{n \in \N}$ converge vers $0$. Montrer $\displaystyle (1-x) \sum_{k=0}^\infty x^{p_n}$ tend vers $0$ quand $x$ tend vers $1$ par valeurs inférieures.\\
+{\it On pourra considérer la suite $(nk)_{n \in \N}$ avec $k$ dans $\N^*$ bien, qu'elle ne vérifie pas les hypothèses.}\\
+
+\noindent
+{\bf Exercice 12.21 [CCP 16].} Soit 
+$\displaystyle f: x \mapsto \sum_{n=0}^\infty  \ln \left(1+\e^{-nx} \right)$.\\
+{\bf 1)} Montrer que $f$ est continue.\\
+{\bf 2)} Vérifier que $f$ admet une limite en $+\infty$ que l'on déterminera.\\
+{\bf 3} Montrer que $\displaystyle \int_0^\infty \ln \left( 1+\e^{-xt} \right) {\rm d}t$ existe pour tout $x>0$.\\
+Prouver pour tout $x>0$, l'inégalité
+$ \displaystyle \int_0^\infty \ln \left( 1+\e^{-xt} \right) {\rm d}t \leqslant f(x) \leqslant \ln 2 +\int_0^\infty \ln \left( 1+\e^{-xt} \right) {\rm d}t$\\
+{\bf 4)} En déduire $\displaystyle f(x) \sim_{x \to 0^+} \frac{a}{x}$ avec $a>0$.
+Déterminer $a$ en sachant que $\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}= \frac{\pi^2}{12} \cdot$\\
+
+\noindent
+{\bf Exercice 12.22 [Télécom 16].} % Lucie Neves
+\'Etudier la convergence simple, normale et uniforme de $\sum f_n$ avec 
+$$f_n(x)= n x^2 {\rm e}^{-x \, \sqrt{n}} \;\; \;  \forall n \in \N, \; \;  \forall x\in \R_+$$
+
+\noindent
+{\bf Exercice 12.23 [Mines 16].} % Gaël Macherel
+On note $H_n$ les sommes partielles de la série harmonique.\\
+Montrer que pour tout $n \in \N$, on a  $\displaystyle \int_0^1 x^n \ln(1-x) {\rm d}x = - \frac{H_{n+1}}{n+1}\cdot$\\
+
+\noindent
+{\bf Exercice 12.24 [Mines 16].} % Narbeburu
+Soit $u_n : x\mapsto \arctan(n+x)-\arctan(n)$.\\
+{\bf 1)} \'Etudier la convergence simple et normale de $\sum u_n$.\\
+{\bf 2)} Montrer que $\displaystyle \sum_{n=0}^\infty u_n$ est bien définie, continue et $C^1$ sur $\R$.\\
+
+
+% SERIES ENTIERES
+\newpage
+\section*{13. Révisions oraux : Séries entières} %13
+
+\noindent
+{\bf Exercice 13.1 [Mines 05].} Développer $t \mapsto \arctan (t+1)$ en série entière au voisinage
+de $0$.\\
+
+\noindent
+{\bf Exercice 13.2 [Mines 05].} Développer en série entière
+$\displaystyle x\mapsto
+\int_0^\pi \frac{t}{1-x\sin(t)} dt.$\\
+
+\noindent
+{\bf Exercice 13.3 [Mines 01].} Déterminer $\displaystyle f: x\mapsto
+\sum_{n=0}^\infty \frac{(n^3+1)x^n}{(2n)!} \cdot$\\
+
+\noindent
+{\bf Exercice 13.4 [Mines 01]} Soit $(a_n)_{n\in \N}$ une suite réelle
+bornée non nulle, et les séries entières \\
+$\displaystyle f(x)=\sum_{n=0}^{+\infty} a_n x^n \mbox{ et }
+ g(x)=\sum_{n=0}^{+\infty} \frac{a_n}{n!} x^n$\\
+\indent
+{\bf a)} Donner les domaines de définition de $f$ et $g$.\\
+\indent
+{\bf b)} Vérifier que pour tout $x>1$, on a :  
+$\displaystyle
+ \; \; \; \frac{1}{x}\, f\left(\frac{1}{x} \right) = \int_0^\infty \e^{-tx}
+ g(t)\, dt.$\\
+
+\noindent
+{\bf Exercice 13.5 [X].}
+{\bf a)} Calculer la somme de la série $\displaystyle
+    \sum_{n=0}^{+\infty}\frac{(-1)^n}{2n+1}$\\
+{\bf b)} \'Etudier la convergence et calculer la somme de la série de
+terme général $\displaystyle \frac{(-1)^n}{n+1} \left({\sum_{k=0}^n \frac{1}{2k+1}
+}\right)$.\\
+
+\noindent
+{\bf Exercice 13.6 [X].} Calculer la somme $\displaystyle
+\sum_{k=0}^{\infty} \frac{1}{(5k)!}\cdot$\\
+
+\noindent
+{\bf Exercice 13.7 [X].} Déterminer le domaine de définition et calculer 
+$$f(x)=\sum_{n=1}^{\infty} \frac{1}{n^2} \left({x^n+
+\left({\frac{-x}{1-x}}\right)^n
+}\right) \mbox{ et }
+g(x)=\sum_{n=1}^{\infty} \frac{1}{n^2} \left({x^n+
+(1-x)^n
+}\right)$$
+{\it Indications : pour les domaines de définition, on pourra d'abord
+  chercher une condition nécessaire, puis vérifier qu'elle est
+  suffisante. On pourra aussi introduire la série entière
+  $\displaystyle \varphi(x)=\sum_{k=1}^\infty \frac{x^k}{k^2}\cdot$}\\
+
+\noindent
+{\bf Exercice 13.8 [Un théorème de Bernstein].} Soit $a<b$ deux réels et
+$f:]a;b[ \rightarrow \R$ de classe $C^\infty$. On dit que
+$f$ est absolument monotone sur $]a;b[$ si $f$ et toutes ses dérivées
+  sont positives sur $]a;b[$.\\
+{\bf 1.} Donner des exemples de fonctions absolument monotones.\\
+{\bf 2.} Montrer qu'une fonction absolument monotone est analytique
+(i.e. développable en série entière)\\
+%{\it Indications : utiliser la formule de Taylor avec reste intégral.}\\
+
+\noindent
+{\bf Exercice 13.9 [X].} Soit $a<b$ deux réels et $f:]a;b[\rightarrow \R$ développable en série entière. On suppose que $f$
+      admet une infinité de zéros dans un segment de $]a;b[$. Montrer
+      que $f$ est identiquement nulle.\\
+{\it Indications : vérifier qu'il existe un point où $f$ s'annule
+  ainsi que toutes ses dérivées. En considérant l'ensemble de tels
+  points, montrer alors la nullité de $f$.}\\
+
+\noindent
+{\bf Exercice 13.10 [Mines 06].} Déterminer le rayon de convergence de
+la série $\displaystyle \sum \exp(\sqrt{2n+1\,}) x^{3n+1}$ en
+précisant les théorèmes utilisés.\\
+
+\noindent
+{\bf Exercice 13.11 [CCP 06].} Décomposer en éléments simples
+$f:x\mapsto \frac{1}{2+x-x^2}\cdot$ Montrer que $f$ est développable
+en série entière au voisinage de zéro (avec quel rayon de
+convergence). Donner un développement limité de $f$ à l'ordre $3$ en
+$0$.\\
+ 
+\noindent
+{\bf Exercice 13.12 [CCP 06].} Montrer que les séries entières $\sum
+a_n x^n$ et $\sum n \, a_n x^n$ ont même rayon de convergence
+$R$. Montrer alors que si $R\neq 0$ alors $\displaystyle x\mapsto \sum_{k=0}^\infty
+a_n x^n$ est dérivable sur $]-R;R[$.\\
+
+\noindent
+{\bf Exercice 13.13 [CCP 06].} Donner le domaine de définition de
+$\displaystyle f:x\mapsto \frac{\arcsin x}{\sqrt{1-x^2}}\cdot$\\
+Déterminer une équation différentielle linéaire du premier ordre dont
+$f$ est solution.\\
+Montrer alors que $f$ est développable en série entière, en précisant
+le développement et le rayon de convergence de ce dernier.\\ 
+
+\noindent
+{\bf Exercice 13.14 [CCP 06].} Développer en série entière la fonction
+$\displaystyle x \mapsto \int_{-\infty}^x \frac{1}{1+t^2+t^4} \, dt .$\\
+
+\noindent
+{\bf Exercice 13.15.} Soit $\displaystyle f:x\mapsto \sum_{n=1}^\infty
+\frac{x^n}{n^2}$ et $g=\exp \circ f$.\\
+\indent
+{\bf 1)} Donner les domaines de définition, continuité et dérivabilité
+de $g$.\\
+\indent
+{\bf 2)} Montrer que $g$ est développable en série entière sur
+l'intérieur de son domaine de définition.\\
+
+\noindent
+{\bf Exercice 13.16 [TPE 07].} Soit la suite définie par récurrence par $u_0=1$ et $\displaystyle u_{n+1}=\sum_{k=0}^n u_k \, u_{n-k}$ pour tout entier naturel $n$. Calculer $u_n$ pour tout $n$.\\
+
+\noindent
+{\bf Exercice 13.17 [Centrale 07].} On pose $\displaystyle L(x)=\sum_{n=1}^\infty \frac{x^n}{n^2}\cdot$ Déterminer l'ensemble de définition de $L$, son domaine de continuité et de dérivabilité. Que valent $L'$, $L(0)$ et $L(1)$?\\
+
+\noindent
+{\bf Exercice 13.18 [Centrale 06].} Soit $(a_n)_{n\in \N}$ une suite de réels positifs. On suppose que le rayon de convergence $R$ de la série entière $\sum a_n x^n$ est strictement positif, et que la série $\sum a_n R^n$ diverge.\\
+\indent
+{\bf 1)} Montrer que $f:x\mapsto \displaystyle \sum_{k=0}^\infty a_k x^k$ tend vers $+\infty$ quand $x$ tend vers $R$.\\
+\indent
+{\bf 2)} Montrer que $\arcsin$ est développable en série entière et donner son développement sur $[-1;1]$.\\
+\indent
+{\bf 3)} Même question avec $x\mapsto \ln \left( x+\sqrt{1+x^2\;} \right)$.\\
+
+\noindent
+{\bf Exercice 13.19 [Mines 08].} Pour tout $n\in \N^*$, calculer $I_n=\int_0^\infty t^{2n} \e^{-t^2}\, dt$. En déduire que pour tout $z$ de $\C$, $\int_0^\infty e^{-t^2} \cos(zt)\, dt$ existe et déterminer sa valeur.\\  
+
+\noindent
+{\bf Exercice 13.20 [ENSEA 08].} En utilisant un développement en série entière, montrer que pour tout $x$ de $[0;1]$, on a 
+$0 \leqslant \e^x-1-x \leqslant (\e-2) \,x^2$. En déduire la limite de la suite de terme général $\displaystyle \left( 
+\sum_{k=1}^n \e^{\frac{1}{n+k}} \right) -n$.\\
+
+\noindent
+{\bf Exercice 13.21 [CCP 09} (8 points){\bf].}  Développer en série entière et donner le rayon de convergence de $f(x)=\ln \left( \frac{1+x}{1-x}\right)$\\
+
+\noindent
+{\bf Exercice 13.22 [CCP 09].} 
+Soit $f:x\mapsto \dis \e^{-x^2}\; \int_0^x \e^{t^2}\, dt$\\
+{\bf a)} Montrer que $f$ est développable en série entière sur un disque à préciser.\\
+{\bf b)} Vérifier que $f$ satisfait une équation différentielle simple.\\
+{\bf c)} En déduire le développement en série entière de $f$.\\
+
+\noindent
+{\bf Exercice 13.23 [Mines 07-11].} On considère $\displaystyle f(x)=\sum_{k=0}^\infty (-1)^k x^{2^k}$.\\
+\indent
+{\bf a)} Quel est le rayon de convergence de cette série entière?\\
+\indent
+{\bf b)} Donner une relation entre $f(x)$ et $f(x^2)$.\\
+\indent
+{\bf c)} Que dire de la limite de $f$ en $1$ si elle existe?\\
+\indent
+{\bf d)} S'il existe $x_0\in]-1;1[$ tel que $f(x_0)>1/2$, montrer que $f$ n'a pas de limite en $1$.\\
+\indent
+{\bf e)} On a $f(0,995)>0,5008$. Qu'en conclure? Comment a-t-on pu vérifier cette inégalité?\\
+
+\noindent
+{\bf Exercice 13.24 [Centrale 13].} On pose $ a_n=\frac{1\! \times \!3 \times \cdots \times(2n-1)}{2 \! \times \! 4 \times \cdots \times (2n)}$ pour tout $n\geqslant 1$.\\
+{\bf 1)} Trouver une relation entre $a_{n+1}$ et $a_n$ et montrer pour tout $n\geqslant 1$, la relation $a_n \leqslant \frac{1}{\sqrt{2n+1}}$\\
+{\bf 2)} Soit $f: x\mapsto \displaystyle \sum_{n=1}^{+\infty} \frac{a_n}{n} \, x^{2n}$.
+Déterminer l'ensemble de définition et de continuité de $f$.\\
+{\bf 3)} Déterminer $\displaystyle S : x \in ]-1;1[\mapsto 1+\sum_{n=1}^{+\infty} a_n x^{2n}$ à l'aide d'une équation différentielle linéaire d'ordre~$1$.\\
+{\bf 4)} Exprimer une primitive de $x\mapsto \frac{1}{x\, \sqrt{1-x^2}}-\frac{1}{x}$ à l'aide d'un seul logarithme (logiciel à disposition).\\
+{\bf 5)} Montrer $\displaystyle \sum_{n=1}^\infty \frac{a_n}{n}= 2\ln(2)$.\\
+{\bf 6)} Calculer $\displaystyle \sum_{n=1}^{\infty} (-1)^n \frac{a_n}{n} \cdot$\\
+  
+\noindent
+{\bf Exercice 13.25 [CCP 16].} % Emmanuel Morello
+Déterminer le rayon de convergence des séries entières 
+
+\indent
+{\bf 1)} $\sum n\, x^n$,
+\indent
+{\bf 2)} $\sum 2n x^{2n}$,
+\indent
+{\bf 3)} $\sum  
+n^{(-1)^n} x^n$\\
+
+\noindent
+{\bf Exercice 13.26 [Mines 16].} % Joshua LAMBOLEY
+On pose $\displaystyle f(x)=\sum_{n=1}^\infty \frac{x^n}{\binom{2n}{n}}$\\
+{\bf 1)} Déterminer le rayon de convergence de la série entière.\\
+{\bf 2)} Montrer que $f$ est solution de l'équation $x(4-x)y'-(2+x)y=x$.\\
+{\bf 3)} Résoudre cette équation différentielle (sur un intervalle bien choisi).\\
+{\bf 4)} En déduire la valeur de  $\displaystyle \sum_{n=1}^\infty \frac{1}{\binom{2n}{n}}$\\
+
+\noindent
+{\bf Exercice 13.27 [TPE 16].} % Antoine Bardon
+Déterminer le rayon de convergence de la série entière $\sum a_n x^{2n+1}$  à l'aide de celui de $\sum a_n x^n$.\\
+
+\noindent
+{\bf Exercice 13.28 [Cent16].} % Clément Riasse
+Soit $\displaystyle S: x \mapsto \sum_{n=1}^\infty \frac{x^n}{\sqrt{n}}\cdot$\\
+{\bf 1)} Trouver $I$.\\
+{\bf 2)} \'Etudier les variations de $S$ sur $I\cap \R_+$ et les limites (existence et valeur) de $S$ aux bornes de $I\cap \R_+$.\\
+{\bf 3)} Exprimer $(1-x)S'(x)$ sous la forme d'une somme d'une série.\\
+{\bf 4)} Montrer que $S$ est strictement croissante sur $I$ tout entier.\\
+
+ 
+% SERIES DE FOURIER
+\newpage
+\section*{14. Révisions oraux : séries de Fourier}  %14
+
+\noindent
+{\bf Exercice 14.1 [X].} Développer en série de Fourier la fonction 
+$$f:x\longmapsto \frac{1+\cos(x)}{4-2\cos(x)}$$
+{\it Indication : Exprimer $f$ comme série entière en
+  $e^{ix}$ et en déduire le développement en série de Fourier.}\\
+
+\noindent
+{\bf Exercice 14.2 [Centrale 07].} Soit $\displaystyle K_r(x)=1+2\, \sum_{n=1}^\infty r^n \cos(nx)$.\\
+\indent
+{\bf 1)} Existence et valeur de $K_r(x)$.\\
+\indent
+{\bf 2)} Pour tout $f$ de $E$, ensemble des fonctions continues, $2\pi$ périodiques de $\R$ dans $\R$, on définit 
+$$T_r(f) : x \in \R \mapsto \frac{1}{2\pi} \int_0^{2\pi} K_r(x-t) f(t) \, dt$$
+\indent
+{\bf a)} Montrer que $T_r$ est un endomorphisme de $E$.\\
+\indent
+{\bf b)} Développer $T_r(f)$ en série de Fourier; exprimer ses coefficients trigonométriques en fonction de ceux de $f$.\\
+  
+\noindent
+{\bf Exercice 14.3 [X].} On pose
+$f(x,\theta)=\arctan\left(\frac{1-x}{1+x} \tan \theta
+\right).$\\
+\indent
+{\bf a)}  Déterminer le domaine de définition de $f$.\\
+\indent
+{\bf b)} Pour $\theta$ dans $]0;\pi/2[$, développer en série entière
+      $x\mapsto f(x,\theta)$.\\
+\indent
+{\bf c)} Soit $x$ dans $]-1;1[$. Développer $\theta\mapsto f(x,\theta)$
+      en série de Fourier.\\
+{\it Indications : pour b), on pourra commencer par développer en série
+  entière $\frac{\partial f}{\partial x}\cdot$ Pour c), on utilisera au maximum la question b).}\\
+
+\noindent
+{\bf Exercice 14.4 [CCP 07].} Soit $f$ impaire, $2\pi$ périodique, avec $f(x)=x(\pi-x)$ pour $x$ dans $[0;\pi]$.\\
+\indent
+{\bf 1)} Donner les valeurs de $f$, $f'$, $f''$ et $f^{(3)}$ sur $[0;\pi]$.\\
+\indent
+{\bf 2)} Développer $f$, $f'$, $f''$ et $f^{(3)}$ en série de Fourier.\\
+  
+\noindent
+{\bf Exercice 14.5 [ENSIIE 07].} Soit $K(x;y) \in [0;\pi]^2 \to \R$ avec $K(x;y)=x(\pi-y)$ si $x\leqslant y$ et $K(x;y)=y(\pi-x)$ sinon. Montrer que l'on a 
+$$K(x;y)=2 \, \sum_{n=1}^\infty \frac{\sin(nx)\; \sin(ny) }{n^2} $$
+
+\noindent
+{\bf Exercice 14.6 [Mines 08].} Soit $r\in ]0;1[$ et $E$ le $\C$-espace vectoriel des fonctions continues $2\pi$-périodique de $\R$ dans $\C$.\\
+{\bf 1)}
+Montrer qu'il existe une fonction $P_r$ vérifiant : 
+$$\displaystyle \forall f \in E,\; \; \forall \theta \in \R,\; \; \sum_{n\in \Z} r^{|n|} \, c_n(f)\, \e^{in\theta}=\frac{1}{2\pi} \int_{-\pi}^{\pi} f(t) \, P_r(\theta-t) \, dt.$$
+{\bf 2)} Calculer $\displaystyle \frac{1}{2\pi} \int_{-\pi}^{\pi} P_r(t) \, dt.$\\
+{\bf 3)} Soit $f$ dans $E$, montrer qu'alors $\displaystyle f_r:\theta \mapsto \sum_{n\in \Z} r^{|n|} \, c_n(f)\, \e^{in\theta}$ admet une limite quand $r$ tend vers $1$ par valeurs inférieures.\\
+
+\noindent
+{\bf Exercice 14.7 [Centrale 09].} Soit $f$ paire, $2\pi$-périodique avec $f(t)=\sqrt{t}$ pour $t\in [0;\pi]$.\\
+{\bf 1)} Montrer que les coefficients de Fourier de $f$ vérifiant $a_n(f)=O(n^{-3/2})$.\\
+{\bf 2)} La fonction $f$ est-elle $C^1$ par morceaux sur $\R$? \\
+{\bf 3)} Montrer que la série de Fourier de $f$ converge uniformément sur $\R$ et que sa limite vaut $f$.\\
+{\bf 4)} Que nous apprend ce résultat?\\
+
+\noindent
+{\bf Exercice 14.8 [TPE 09].} Soit $a\in ]-1;1[$. Déterminer la série de Fourier de 
+$$f(x)=\arctan \left( \frac{a \sin x}{1-a \cos x} \right)$$
+
+\noindent
+{\bf Exercice 14.9 [Petites Mines 2011} (exercice 2/2){\bf ].} Soit $a$ un réel distinct de $1$ et $-1$. Déterminer la série de Fourier de 
+$$f(x)=\frac{1-a \cos x}{1-2a \cos x + a^2}$$\\
+
+\noindent
+{\bf Exercice 14.10 [ENSEA 2011].} Soit $\lambda$ un réel. Déterminer toutes les fonctions $2\pi$-périodiques, dérivables de $\R$ dans $\R$, vérifiant :
+\indent $\forall x\in \R,\; \; f'(x)=f(x+\lambda)$\\
+
+\noindent
+{\bf Exercice 14.11 [Mines 2012].}  Soit $\in \R \backslash \Z$, et $f(x)=\cos (tx)$ pour tout $x \in [-\pi;,\pi]$.\\
+{\bf 1)} Développer la périodicisée de $f$ en série de Fourier.\\
+{\bf 2)} Montrer que pour tout $t \in \R \backslash \Z$, on a $\displaystyle \frac{\pi}{\tan(t\pi)}=\frac{1}{t}+\sum_{p=1}^\infty \frac{2t}{t^2-p^2}$\\
+{\bf 3)} En déduire $\displaystyle \frac{\pi^2}{\sin^2(t\pi)}=\sum_{n=-\infty}^\infty \frac{1}{(t-n)^2}\cdot$\\
+
+\noindent
+{\bf Exercice 14.12 [Mines 2012].} Soit $f$ une fonction de $C^1([0;\pi];\R)$ telle que $f(0)=f(\pi)=0$ et $\displaystyle  \int_0^\pi (f'(t))^2\, dt=1$. Montrer qu'il existe une suite $(a_n)_{n\geqslant 1}$ de réels vérifiant 
+$$\sum_{n=1}^\infty a_n^2=\frac{2}{\pi} \mbox{ et } f(t)=\sum_{n=1}^\infty \frac{a_n}{n}\, \sin(nt) \; \forall t \in [0;\pi]$$
+
+% INTEGRATION
+\newpage
+\section*{15. Révisions oraux : intégration} %15
+
+\noindent
+{\bf Exercice 15.1.} Calculer $\displaystyle \int_0^{\pi/4} \ln(1+\tan
+x)\, {\rm d}x$. {\it On fera intervenir $\displaystyle \int_{0}^{\pi/4} \ln (\cos(u)) {\rm d}u$.} \\
+\vspace{0.1cm}
+
+\noindent
+{\bf Exercice 15.2.} Montrer l'existence et trouver la valeur de 
+$\displaystyle \lim_{x\rightarrow +\infty} x \, \exp \left({
+-\int_0^x \frac{dt}{3+\sqrt{t^2+4t}}
+}\right)$.\\
+\vspace{0.3cm}
+
+\noindent
+{\bf Exercice 15.3.} Soit $E$ l'ensemble des fonctions de $C^1([0;1];\R)$
+qui s'annulent en $0$ et $1$.\\
+{\bf a)} Montrer que pour toute fonction $f$ de $E$, les intégrales
+$I_1=\int_0^1 \,  f(t) \, f'(t) \, \mbox{cotan} (\pi t) \, dt$ et \\
+$\displaystyle I_2=\int_0^1
+\frac{(f(t))^2 }{(\tan(\pi t))^2 }\,(1+(\tan(\pi t))^2) dt$
+existent. Les comparer.\\
+{\bf b)} En déduire que toute fonction $f$ de $E$ vérifie l'{\bf
+  inégalité de Wirtinger} :  
+$\displaystyle \int_0^1 (f')^2 \geqslant \pi^2 \, \int_0^1 f^2.$\\
+%{\it Indication : on pourra penser à l'inégalité de Cauchy-Schwarz.}\\
+{\bf c)} Quels sont les cas d'égalité?\\
+
+\noindent
+{\bf Exercice 15.4 [X].} Soit $f$ dans $C^0([0;1];\R_+^*)$. Pour
+tout $\alpha>0$, on pose
+$\displaystyle I(\alpha)={
+\left({ \int_0^1 (f(t))^\alpha \, dt }\right)
+}^{1/\alpha}$\\
+Etudier les limites de $I(\alpha)$ quand $\alpha$ tend vers $0$ par
+valeurs supérieures et quand $\alpha$ tend vers $+\infty$·\\
+%{\it Indications : pour le comportement en $0$, on pourra s'intéresser à la fonction $\alpha \mapsto \int_0^1 (f(t))^\alpha \, dt$. 
+%Quand $\alpha$ tend $+\infty$, on pourra esquisser le graphe de $(f/M)^\alpha$ avec $M$ le maximum de $f$}.\\
+
+\noindent
+{\bf Exercice 15.5 [X].} Soit $f$ dans $C^0([0;1],\R)$ avec $f(0)\neq
+0$.\\
+{\bf a)} Donner un équivalent en $+\infty$ de $\displaystyle \int_0^1
+\frac{f(x)}{1+tx} \, dx$.\\
+{\bf b)} Majorer la différence entre $g$ et cet équivalent quand $f$
+est de classe $C^1$.\\
+
+\noindent
+{\bf Exercice 15.6 [X].} Chercher un équivalent en $+\infty$ de
+$\displaystyle \Phi(t)=\int_0^1 \frac{dx}{(1+x+x^2)^t} \cdot$\\
+
+\noindent
+{\bf Exercice 15.7 [X].} Soit $\varepsilon$ dans $]0;1[$.\\
+{\bf 1.} On pose $\displaystyle I(\varepsilon)=\int_0^{\pi/2}
+\frac{\cos x}{\sqrt{\sin^2x+\varepsilon \cos^2 x}} \, dx.$ Calculer
+$I$ et en donner un équivalent en $0$.\\
+{\bf 2.} On pose  $\displaystyle J(\varepsilon)=\int_0^{\pi/2}
+\frac{1}{\sqrt{\sin^2x+\varepsilon \cos^2 x}} \, dx.$ Déterminer les
+deux premiers termes du développement asymptotique de $J$ quand
+$\varepsilon$ tend vers  $0$.\\
+
+\noindent
+{\bf Exercice 15.8 [Mines 06].} Calculer une primitive de
+$\displaystyle  x \mapsto
+\frac{1}{\cos(x)+\cos(3x)}\cdot$\\
+
+\noindent
+{\bf Exercice 15.9 [Mines 06].} Soit $f$ une fonction continue sur
+$\R_+$, à valeurs dans $\R_+$, décroissante et de limite nulle en
+$+\infty$.\\
+\indent
+{\bf a)} Montrer que la série $\sum a_n$ converge avec $\displaystyle
+a_n=\int_{n\pi}^{(n+1)\pi} f(t) \sin(t) \, dt$.\\
+\indent
+{\bf b)} Vérifier que l'intégrale $\displaystyle \int_0^{+\infty}
+f(t)\sin(t)\, dt$ est bien définie.\\
+\indent
+{\bf c)} Démontrer l'équivalence entre l'intégrabilité de $t\mapsto 
+f(t)\sin(t)$ sur $\R_+$ et celle de $f$ sur $\R_+$.\\
+
+\noindent
+{\bf Exercice 15.10 [Mines 07].} {\bf a)} Calculer pour tout $z$ de module non égal à $1$, la valeur de $\displaystyle \int_0^{2\pi} \frac{dt}{z+\e^{it}}\cdot$\\
+{\bf b)} En déduire $\displaystyle \int_0^{2\pi} \frac{dt}{Q(\e^{it})}$ où $Q \in \C[X]$ est à racines simples qui n'appartiennent pas au cercle unité.\\
+
+\noindent
+{\bf Exercice 15.11 [Mines 07].} L'intégrale $\displaystyle \int_0^{+\infty} \left(\frac{\arctan t}{t}\right)^2\, dt$ est-elle convergente?\\
+
+\noindent
+{\bf Exercice 15.12 [Mines 07].} Soit $f$ continue de $\R_+$ dans $\R$. On suppose qu'il existe un réel $s_0$ pour lequel l'intégrale $\int_0^{+\infty} f(t) \e^{-s_0t}\, dt$ est convergente. Montrer qu'alors $\int_0^{+\infty} f(t) \e^{-s t}\, dt$ est convergente pour tout $s>s_0$.\\
+
+\noindent
+{\bf Exercice 15.13 [TPE 07].} Soit $\displaystyle G:x\mapsto \int_0^{+\infty} \frac{\e^{-xt^2}}{1+t^2}\, dt\cdot$\\
+\indent
+{\bf a)} Vérifier que $G$ est continue sur $\R_+$ puis de classe ${\cal{C}}^1$.\\
+\indent
+{\bf b)} Montrer que pour tout $x>0$, on a $\displaystyle G(x)-G'(x)=\frac{1}{\sqrt{x}}\, \int_0
+^{+\infty} \e^{-t^2}\, dt$.\\
+\indent
+Quelle est la limite de $G$ en $+\infty$?\\
+\indent
+{\bf c)} En déduire la valeur de $\displaystyle \int_0^{+\infty} \e^{-t^2}\, dt$.\\
+
+\noindent
+{\bf Exercice 15.14 [Mines 07].} Existence et calcul de $\displaystyle \int_0^{\pi/2} \frac{\ln ( 1+x \cos t)}{\cos t}\, dt$ pour tout $x$ de $]-1;1[$.\\
+
+\noindent
+{\bf Exercice 15.15 [Mines 07].} Soit $a>0$ et $b>0$. Montrer que $\displaystyle \int_0^1 \frac{t^{a-1}}{1+t^b} \, dt =\sum_{n=0}^{+ \infty} \frac{(-1)^n}{a+nb} \cdot$\\
+En déduire $\displaystyle \sum_{n=0}^{+ \infty} \frac{(-1)^n}{1+3n} \cdot$\\
+
+\noindent
+{\bf Exercice 15.16 [Centrale 07].} Soit $\displaystyle f(x)=\int_0^{+\infty} \e^{-t|x|} \frac{\sin t }{t} \, dt.$\\
+\indent
+{\bf 1)} Montrer que $f$ est définie sur $\R$.\\
+\indent
+{\bf 2)} Vérifier que $f$ est de classe ${\cal{C}}^1$ sur $\R_+^*$.\\
+\indent
+{\bf 3)} Pour tout $x>0$, montrer $f(x)-f(0)=x \displaystyle \;  \int_0^{+\infty} \left( \int_{+\infty}^u \e^{-ux} \frac{\sin t}{t}\, dt\right) \, du$.\\
+\indent
+{\bf 4)} La fonction $f$ est-elle continue en $0$?\\
+\indent
+{\bf 5)} Calculer $f'(0)$.\\
+
+\noindent
+{\bf Exercice 15.17 [Mines 08].} Soit $P=\displaystyle \sum_{k=0}^n a_k X^k \in \R[X]$. Montrer $\displaystyle \int_{-1}^1 P^2(x) \, dx = -i \, \int_0^{\pi} P^2(\e^{i\theta}) \, \e^{i\theta}\, d\theta$. 
+En déduire $\displaystyle \sum_{0\leqslant k,l \leqslant n} \frac{a_k\, a_l}{k+l+1} \leqslant \pi \; \sum_{k=0}^n a_k^2$.\\
+
+\noindent
+{\bf Exercice 15.18 [TPE 08].} Déterminer un équivalent en $0$ de $\displaystyle \int_{x^3}^{x^2} \frac{\e^t}{\arcsin t}\, dt.$\\
+
+\noindent
+{\bf Exercice 15.19 [Mines 08].} 
+%Pour $a$ et $b$ strictement positifs, on pose $\displaystyle I(a;b)=\int_0^{+\infty}\frac{\exp(-at)-\exp(-bt)}{t} \, dt$.\\
+%{\bf 1)} Calculer $I$ en utilisant une intégrale double.\\
+%{\bf 2)} 
+Soit $F: x\mapsto \int_x^{x^2}\frac{dt}{\ln t} \cdot$ Déterminer le domaine de définition $D$ de $F$; $F$ y-est-elle continue? dérivable? Déterminer la limite de $F$ en $0$. Montrer que $F$ est en fait $C^1$ sur son domaine définition prolongeable en une fonction de classe $C^1$ sur $\R_+$ tout entier.\\ %Calculer $F(1)$ à l'aide de la question 1).\\ 
+
+\noindent
+{\bf Exercice 15.20 [Mines 08].} Déterminer $\displaystyle  f:x \in ]-1;1[ \mapsto \int_0^{\pi} \ln (1+x \sin t) \, dt$, en calculant $f'$.\\
+
+\noindent
+{\bf Exercice 15.21 [TPE 08].} Soit $\displaystyle f(x)=\int_0^{\pi} \frac{dt}{x-\cos t} \cdot$ Montrer que $f$ est impaire et calculer $f$.\\ 
+
+\noindent
+{\bf Exercice 15.22 [Centrale 08].} {\bf 1)} Soit $I_n=\int_0^{\pi/2} \, (\cos u)^n \, du$.\\
+\indent
+{\bf a)} Trouver une relation entre $I_n$ et $I_{n-2}$, et calculer $I_0$.\\
+\indent
+{\bf b)} Exprimer $I_n I_{n+1}$ à l'aide de $I_n I_{n-1}.$\\
+\indent
+{\bf c)} Montrer que $I_n\sim \sqrt{\frac{\pi}{2n} \; }\cdot$\\
+{\bf 2)} Montrer que la série $\displaystyle \sum \int_0^{\pi} (n\pi+u)|\cos (u) |^{(n\pi+u)^5} \, du$ converge.\\
+{\bf 3)} Quelle est la nature de l'intégrale $\displaystyle \int_0^{+\infty} x|\cos(x)|^{x^5} \, dx$?\\
+{\bf 4)} Quelle est la nature de l'intégrale $\displaystyle \int_0^{+\infty} |\sin(x)|^{x^4} \, dx$?\\
+
+\noindent
+{\bf Exercice 15.23 [Centrale 08].} Soit $f$ une fonction continue sur $\R_+$ et $0<a<b$.\\
+{\bf 1)} Calculer $\displaystyle \lim_{\varepsilon \to 0^+} \int_{a\varepsilon}^{b\varepsilon} \frac{f(t)}{t}\, dt$.\\
+{\bf 2)} En déduire l'existence et la valeur de $\displaystyle \lim_{x\to +\infty} \int_0^x \frac{\cos(at)-\cos(bt)}{t}\, dt$.\\
+
+\noindent
+{\bf Exercice 15.24 [Centrale 2011].} Pour tout $n \in \N$, on pose
+$\displaystyle u_n=\sum_{k=0}^n \frac{n^k}{k!} \mbox{ et } v_n=\sum_{k=n+1}^\infty \frac{n^k}{k!}$\\
+{\bf 1)} Montrer que $v_n$ est bien défini et calculer $u_n+v_n$.\\
+{\bf 2)} Vérifier la relation
+$\displaystyle \e^n-u_n=\frac{n^{n+1}}{n!} \, \int_0^1 (1-u)^n \e^{nu}\, du$\\
+{\bf 3)} Sachant que $\displaystyle \int_0^\infty \e^{-x^2}\, dx =\frac{\sqrt{\pi}}{2}$, montrer 
+$\displaystyle \int_0^1 (1-u)^n \e^{nu}\, du \sim \sqrt{\frac{\pi}{2n}}$ pour $n$ tendant vers $\infty$.\\
+{\bf 4)} En déduire un équivalent de $v_n$ et de $u_n$.\\
+
+\noindent
+{\bf Exercice 15.25 [Mines 2012].} On pose $F(x)=\int_0^x (|\sin(t)|-a)\, dt$.\\
+{\bf 1)} Trouver $a$ tel que $F$ soit $\pi$-périodique.\\
+{\bf 2)} Montrer qu'il existe un réel $b$ tel que $\displaystyle \int_0^x \frac{|\sin(t)|}{t}\, dt = a \ln x + b+o_\infty(1)$\\
+
+\noindent
+{\bf Exercice 15.26 [Centrale 2012].}\\
+{\bf 1)} Montrer l'existence de $\displaystyle a=\int_0^{\pi/2} \frac{1-\e^{-t}}{\sin(t)}\, dt \cdot$\\
+{\bf 2)} On pose pour tout $\lambda>0$ :
+$$I(\lambda)=\int_0^{\pi/2} \frac{1}{1+\lambda \e^t \sin(t)}\, dt \; \; \mbox{ et }\; \; 
+K(\lambda)=\int_0^{\pi/2} \frac{1}{1+\lambda \sin(t)}\, dt $$
+Soit $(\lambda_n)_{n \in \N}$ une suite de réels strictement positifs divergeant vers $+\infty$. Trouver un équivalent de $I(\lambda_n)-K(\lambda_n)$ à l'aide de $\lambda_n$ et de $a$.\\
+{\bf 3)} On admet $\displaystyle K(\lambda)=\frac{1}{\sqrt{\lambda^2-1\,}} \ln \left({
+\frac{\sqrt{\lambda^2-1\,}-\lambda-1}{\sqrt{\lambda^2-1\,}+\lambda+1}\times \frac{\sqrt{\lambda^2-1\,}+\lambda}{\sqrt{\lambda^2-1\,}-\lambda}
+}\right)$ pour $\lambda>1$.
+Montrer que $K(\lambda)$ est équivalent à $\ln(\lambda)/\lambda$ quand $\lambda$ tend vers l'infini.\\
+
+\noindent
+{\bf Exercice 15.27 [Centrale 2013].} Soit $f$ continue par morceaux sur $[a;b]$ à valeurs réelles, prolongée par $0$ sur $\R$.\\
+{\bf 1)} Montrer que pour $n$ assez grand, on a $\displaystyle \int_a^b \, f(t)\, \e^{int} \, {\rm d}t 
+=\frac{1}{2} \int_\R \left({
+f(t)-f \left({ t+\frac{\pi}{n} }\right) }\right) \, \e^{int}\, {\rm d}t$\\
+{\bf 2)} Si $f$ est croissante sur $[a;b]$, montrer pour $n$ assez grand, $\displaystyle 
+\left|{ \int_a^b \, f(t)\, \e^{int} \, {\rm d}t \; }\right| 
+\leqslant \frac{2\pi}{n} \, \max(|f(a)|,|f(b)|)$.\\
+
+\noindent
+{\bf Exercice 15.28 [X 2013].} Soit $f$ dans $C^1([a;b];\R)$. Existence (et valeur dans le cas d'existence) de la limite quand $n$ tend ver s$+\infty$ de la suite de terme général $\displaystyle \int_a^b \frac{f(t)\, \sin(nt)}{t} \, {\rm d}t.$\\
+
+\noindent
+{\bf Exercice 15.29 [X 2013].} Pour $x>1$, on pose $f(x)=\displaystyle \int_1^\infty \e^{it^x}\, {\rm d}t$\\
+{\bf 1)} \'Etudier l'existence de l'intégrale impropre.\\
+{\bf 2)} Déterminer un équivalent de $f(x)$ quand $x$ tend vers $+\infty$.\\
+
+\noindent %Cécile Klinguer
+{\bf Exercice 15.30 [Mines 2014].}(exercice 2) Nature de l'intégrale $\displaystyle \int_0^\infty \frac{1}{1+x^2\, (\sin x)^2 } \, {\rm d}x$ \\
+
+\noindent  % Nicolas Deloule
+{\bf Exercice 15.31 [ENS dossier 2015].}
+Soit $g:\R \to \R$, de classe ${\cal{C}}^2$, telle que $g$ et $g''$ sont de carrés intégrables sur $\R$.\\
+{\bf 1)} Soit $t>0$, montrer que
+$\displaystyle g'(t)\, g(t)=g'(0)\, g(0)+\int_0^t (g'(s))^2 {\rm d}s +\int_0^t g''(s) \, g(s) {\rm d}s$\\
+En déduire l'existence de $\displaystyle \ell=\lim_{t \to +\infty} \left( g(t)\, g'(t) \right)$.\\
+{\bf 2)} Montrer que $\ell=0$.{\it On pourra raisonner par l'absurde et étudier la limite en $+\infty$ de $\displaystyle \int_0^t g'(s) \, g(s){\rm d}s$.}\\
+{\bf 3)} Montrer que $\displaystyle \int_0^{+\infty} (g'(s))^2 {\rm d}s= -g'(0)\, g(0) - \int_0^{+\infty} g's)\, g''-s) {\rm d}s$.\\
+En déduire une formule similaire pour $\displaystyle \int_{-\infty}^0 (g'(s))^2 {\rm d}s$.\\
+{\bf 4)} Montrer que $g'$ est de carrée intégrable sur $\R$ puis la relation 
+$$\left( \int_{\R} (g'(s))^2 {\rm d}s \right)^2 \leqslant \left( \int_{\R} (g(s))^2 {\rm d}s \right) \,  \left( \int_{\R} (g''(s))^2 {\rm d}s \right)$$
+
+
+\noindent  % Sébastien Vançon
+{\bf Exercice 15.32 [CCP 15}(12 points){\bf ].}
+Soit $\displaystyle J_n= \int_0^{+\infty} f_n(t) \, {\rm d}t$ avec $\displaystyle f_n:t \in  \R_+ \mapsto \frac{\e^{-t}}{(1+t)^n}$ pour tout entier naturel $n$.\\
+{\bf 1)} Existence de la suite $(J_n)_{n \in \N}$ et limite en $+\infty$.\\
+{\bf 2)} Calculer $f_n'$ et en déduire une relation simple entre $J_n$ et $J_{n+1}$ pour tout $n$. En déduire un équivalent de $J_n$ en $+\infty$.\\
+{\bf 3)} Déterminer le rayon de convergence de la série entière d'un variable complexe $\sum J_n \, z^n$. Montrer que la somme de cette série peut se mettre sous la forme d'une intégrale.\\
+
+\noindent  % Cécile Klinguer
+{\bf Exercice 15.33 [Mines 15].} Pour tout $x>0$, on pose $\displaystyle f(x)=\int_0^1 (\ln t)\left( \ln ( 1-t^x) \right) \, {\rm d}t$.\\
+{\bf 1)} Montrer que $f$ est bien définie et que $f$ est la somme d'une série de fractions rationnelles.\\
+{\bf 2)} Trouver la limite de $f$ en $0$ et un équivalent de $f$ en $+\infty$.\\
+
+\noindent  % Cécile Klinguer
+{\bf Exercice 15.34 [X 15].} Trouver un équivalent de $\displaystyle \int_{-1}^1 \e^{-\lambda(x^2+x^4)} \, {\rm d}t$ quand $\lambda$ tend vers $+\infty$.\\
+
+\noindent  % Lucie Neves
+{\bf Exercice 15.35 [CCP16 12pts].}
+Pour tout $x$ de $\R_+$, on pose $F(x) =\displaystyle \int_0^{+\infty} \frac{\e^{-xt}}{1+t^2} {\rm d} t$\\
+{\bf 1.} Donner le domaine de définition de $F$.\\
+{\bf 2.} Montrer que $F$ est continue sur $\R_+$.\\
+{\bf 3.} Montrer que $F$ est de classe $C^1$ sur $]0;+\infty[$ et donner l'expression de $F'$ sous forme intégrale.\\
+{\bf 4.} On admet que l'on montrerait de même que $F'$ est $C^1$ sur $\R_+^*$. Donner l'expression de $F''$ sous forme intégrale.\\
+{\bf 5.} Vérifier que $F''(x)+F(x)=\frac{1}{x}$ pour tout $x>0$.\\
+
+\noindent  % Etienne Donier-Meroz
+{\bf Exercice 15.36 [Magistère ENS 16].}
+Soit $\displaystyle f(x)= \int_0^\infty \frac{\sin(xt)}{\e^t-1} {\rm d}t$\\
+{\bf 1)} Montrer que $f$ est définie sur $\R$\\
+{\bf 2)} Trouver $a$ et $b$ tels que $\displaystyle f(x)=\sum_{n=1}^\infty \frac{a}{b+n^2}$\\
+{\bf 3)} Donner un équivalent de $f$ en $0$.\\
+
+\noindent  % Joshua Lamboley
+{\bf Exercice 15.37 [Centrale 16].}\\
+{\bf 1)} On pose :
+$\displaystyle \forall x \in \left] - \e^{-\pi/2}; +\infty \right[,\; \;
+f(x)= \int_0^{\pi/2} \frac{1}{1+x \e^t \sin(t)} {\rm d}t
+$\\
+Montrer que $f$ est définie, de classe $C^\infty$, décroissante et convexe.\\
+{\bf 2)} On pose : 
+$\displaystyle \forall x>0, \; g(x)= \int_0^{\pi/2} \frac{1}{1+x t} {\rm d}t
+$\\
+Montrer que $\displaystyle f(x)-g(x)= O_{+\infty}\left( \frac{1}{x} \right)$ puis en déduire un équivalent de $f$ en $+\infty$.\\
+
+\noindent  % Victor Albert
+{\bf Exercice 15.38 [Mines 16].}\\
+Soient $f$ et $g$ deux fonctions continues de $[0;1]$ dans $\R_+^*$.
+On définit : 
+$\displaystyle \forall n \in \N,\; U_n= \int_0^1 g(x) (f(x))^n {\rm d}x$
+Etudier la monotonie et la convergence de la suite de terme général $\frac{U_{n+1}}{U_{n}} \cdot$
+{\it On pourra penser à utiliser un produit scalaire.}\\
+
+% EQUATIONS DIFFERENTIELLES
+\newpage
+\section*{16. Révisions oraux : \'Equations différentielles} %16
+
+
+\noindent
+{\bf Exercice 16.1 [Mines 05].} Résoudre sur $\R$ l'équation $t^2
+x'+(1-2t)x-t^2=0$.\\
+ 
+\noindent
+{\bf Exercice 16.2.} Résoudre sur $\R$ l'équation $x(1-x)y''+(1-3x)y'-y=0$.\\
+
+\noindent
+{\it Exercice 16.3.} Soit le système différentiel
+$$(S) \left\{ {\begin{array}{l}
+\displaystyle
+\frac{dx}{dt} = 2 x y \\
+\displaystyle 
+\frac{dy}{dt}=y^2-x^2
+\end{array} } \right.$$
+\indent
+{\bf a)} Montrer que le symétrique par rapport à l'origine d'une
+trajectoire de $(S)$ est encore une trajectoire de $(S)$.\\
+\indent
+{\bf b)} Soit $P$ une solution non constante de $(S)$. Déterminer une condition
+nécessaire et suffisante sur $(\lambda;\mu)$ pour que $t\mapsto
+\lambda\, P(\mu t)$ soit solution de $(S)$.\\
+
+\noindent
+{\bf Exercice 16.4 [CCP 06].} Résoudre $y''+y=\cos(x)$ par la
+méthode de variation des constantes.\\
+
+\noindent
+{\bf Exercice 16.5 [TPE 2].} Résoudre le système différentiel
+$$\left\{ \begin{array}{l}
+x'=-x-y+\e^t\\
+y'=-x-3y+\e^{-t}
+\end{array}
+\right.$$
+
+\noindent
+{\bf Exercice 16.6 [Mines 06].} Résoudre $x(1-x)y'+y=x$ puis regarder
+s'il existe une solution sur $]-\infty;1[$.\\
+
+\noindent
+{\bf Exercice 16.7 [CCP 07].} Résoudre $y'-\frac{x}{x^2-1}\, y=2x$.\\
+
+\noindent
+{\bf Exercice 16.8 [Mines 08].} Soit $E=\{f\in {\cal{C}}^1([-1;1];\R) \; |\;; f(0)=0\}$. On note $T(f)(x)=\int_0^x \frac{f(t)}{t}\, dt$.\\
+{\bf 1)} Montrer que $T$ est un endomorphisme de $E$.\\
+{\bf 2)} Quels sont les éléments propres de $T$?\\
+{\bf 3)} L'endomorphisme $T$ est-il continu pour la norme $N(f)=\sup\{ |f'(t)| ,t\in [-1;1]\}$?\\
+
+\noindent
+{\bf Exercice 16.9 [Centrale 08].} Résoudre $\displaystyle (1+x^2)y''+2xy'+\frac{1}{1+x^2}\, y=1.$ {\it On pourra poser $x=\tan t$.}\\
+
+\noindent
+{\it Exercice 16.10 [TPE 2009]} Soit $y'=\frac{1}{1+xy}$ et $y(0)=0$. Montrer l'existence et l'unicité d'une telle fonction. Montrer qu'elle est impaire, croissante et définie sur $\R$ tout entier.\\
+
+\noindent
+{\bf Exercice 16.11 [Centrale 2011].} Soit $f$ une fonction continue sur $\R$ et $(E)$ l'équation différentielle $y''+y=f$.\\
+{\bf 1)} Soit $h$ une solution de $(E)$. Exprimer $h$ en fonction de $f$ et d'une intégrale.\\
+{\bf 2)} Montrer qu'il existe une unique solution de $(E)$ vérifiant $h(0)=h'(0)=0$. Exprimer cette solution.
+
+Soit $f_0:x \mapsto \int_0^x f(t) \sin(x-t)\; dt$ \\
+\noindent
+{\bf 3)} On suppose $f$ paire ou impaire, discuter de la parité de $f_0$.\\
+{\bf 4)} On suppose $f$ $2 \pi$-périodique, trouver une condition nécessaire et suffisante pour que $f_0$ le soit.\\
+% hors prgramme
+%{\bf 5)} Si $f$ est paire et $2 \pi$-périodique, exprimer les coefficients de Fourier de $f_0$ à l'aide de ceux de $f$.\\
+
+\noindent
+{\bf Exercice 16.12 [CCP 2011} (12 points){\bf ].} On considère l'équation différentielle $(E)$ suivante $$x(x-1)y''+3xy'+y=0$$
+{\bf 1)} Trouver les solutions de $(E)$ développables en série entière.\\
+{\bf 2)} Déterminer les solutions de $(E)$ respectivement sur $]-\infty;0[$, $]0;1[$ et $]1;+\infty[$.\\
+{\bf 3)} Résoudre $(E)$ sur $\R_+^*$.\\
+
+\noindent
+{\bf Exercice 16.13 [Petites Mines 2012].} Résoudre sur $\R$ l'équation différentielle $|x|y'+(x-1)y=x^2$.\\
+
+\noindent
+{\bf Exercice 16.14 [Mines 2015 - exercice 1].}
+On souhaite résoudre (E) : $xy''+y'+xy = 0$ dans $\R$.\\
+{\bf 1)} Montrer que $\displaystyle x \mapsto \frac{1}{\pi}\; \int_0^\pi \cos(x \sin(t)) {\rm d}t $ est solution de (E) sur $\R$.\\
+{\bf 2)} Déterminer les solutions développable en série entière en $0$.\\
+{\bf 3)} Si $f_0$ est solution de (E) avec $f_0(0)=1$ et $f$ est une solution de (E),
+montrer que $(f,f_0)$ est une famille libre de l'espace vectoriel des solutions de (E) si et seulement si
+$f$ est non bornée.\\
+
+\noindent
+{\bf Exercice 16.15 [ENS 2016].} % Gaël Macherel
+Soit $f : [1, +\infty[ \to  \R$ continue, telle que $f (r) = O_{+\infty}(r^{ -b-2})$ avec $b > 0$.\\
+Soit $u:[1, +\infty[ \to \R$ bornée, vérifiant :$\forall r \in [1, +\infty[, \; -u'' (r) - \frac{u'(r)}{r} + \frac{u(r)}{r^2} = f (r)$. Montrer que $u$ tend vers $0$ en $+\infty$.\\
+
+\noindent
+{\bf Exercice 16.16 [Télécom 16].} % Clément Riasse
+Pour $a\in \R$, on pose 
+$E_a=\left\{ f\in C^1(\R) | \; \forall x, \frac{f(x)-f(a)}{x-a}=\frac{f'(x)-f'a)}{2} \right\}\cdot$\\
+{\bf 1)} Si $f$ est dans $E_a$, montrer que $g=f-f(a)$ vérifie une équation différentielle.\\
+{\bf 2)} Résoudre cette équation et en déduire l'ensemble $E_a$.\\
+
+
+% ANALYSE DIVERS
+\newpage
+\section*{17. Révisions oraux : analyse divers} %17
+
+\noindent
+{\bf Exercice 17.1.} Soit $f$ continue de $[0;1]$ dans $\R$ et de moyenne
+nulle. On note $\alpha$ respectivement $\beta$ son minimum,
+respectivement maximum, sur $[0;1]$. Montrer 
+$\int_0^1 f(t)^2 \, dt \leqslant - \alpha \beta$.\\
+
+\noindent
+{\bf Exercice 17.2 [X].} Soit $f$ une fonction continue, concave sur
+$[0;1]$ avec $f(0)=1$. Montrer qu'on a 
+$$\int_0^1 xf(x)dx\leqslant \frac{2}{3} {\left({\int_0^1 f(x)\, dx
+}\right)}^2$$
+
+\noindent
+{\bf Exercice 17.3 [X].} Soit $f$ une fonction réelle continue sur
+$[0;1]$. On pose $F(0)=f(0)$ et pour tout $t$ de $]0;1]$,
+    $F(x)=\frac{1}{x} \, \int_0^x f(t) \,dt$. Montrer que 
+$$\int_0^1 F^2(x) \, dx \leqslant 4\, \int_0^1 f^2(x)\, dx$$
+{\it Indications : Exprimer $F'$ en fonction de $F$ et $f$, en déduire
+  une majoration de $\int_0^1 F^2$ à l'aide d'une intégrale faisant
+  intervenir $f$ et $F$ et utiliser l'inégalité de Cauchy-Schwarz}.\\
+
+\noindent
+{\bf Exercice 17.4 [X].} Déterminer le minimum de $\|f''\|_2^2$ dans
+l'ensemble des fonctions $f$ de $C^2([0;1];\R)$ vérifiant
+$F(0)=f(1)=0$ et $f'(0)=a$ avec $a$ un réel donné.\\
+{\it Indications: estimer $f(1)$ à l'aide d'une formule de Taylor et
+  utiliser l'inégalité de Cauchy-Schwarz pour comparer $a$ et $\|f''\|_2$.}\\
+
+\noindent
+{\bf Exercice 17.5 [X].} Soient $a<b$ deux réels, $E$ l'ensemble des
+fonctions réelles continues sur $[a;b]$, et $F$ l'ensemble des
+fonctions de $C^2([a;b];\R)$ qui s'annulent ainsi que leurs dérivées
+en $a$ et $b$.\\
+{\bf a)} Soit $f$ dans $E$. Montrer $\displaystyle \exists g \in F,\;
+g''=f\Longleftrightarrow \int_a^b f(t)\, dt =\int_a^b t\,f(t) dt =0.$\\
+{\bf b)} Soit $h$ dans $E$ avec $\int_a^b h(t)f''(t)\, dt=0$ pour tout
+$g$ de $F$. Montrer que $h$ est affine.\\
+{\it Indication : interpréter le résultat obtenu à la question 1 à l'aide
+  d'un produit scalaire, et démontrer le résultat de la question $2$
+  en utilisant cette interprétation.}\\
+
+\noindent
+{\bf Exercice 17.6 [X].} Soit $f$ dans $C^0([0;1],\R)$.\\
+{\bf a)} On suppose que pour tout $k$ de $\{0;\dots ,n\}$, on a
+$\int_0^1 x^kf(x)\, dx=0$. Montrer que $f$ admet au moins $n+1$ zéros
+dans $[0;1]$.\\
+{\bf b)} Montrer que si pour tout entier naturel $k$, $\int_0^1 x^k
+f(x) \, dx=0$ alors $f$ est identiquement nulle.\\
+{\it Indications : utiliser le théorème de Weierstrass d'approximation
+  des fonctions continues.}\\
+
+\noindent
+{\bf Exercice 17.7 [Mines 07].} Développez $f(x)= \displaystyle {
+\left( 
+\tan \left( x+\frac{\pi}{4} \right) 
+\right) }^{-\frac{1}{\tan 2x}}$ en $0$ à l'ordre $4$.\\
+  
+\noindent
+{\bf Exercice 17.8 [Majoration de l'erreur dans la méthode des trapèzes].}
+  Soit $f$ dans $C^2([a;b],\R)$. Montrer la majoration
+$$\left| \int_a^b f(t)\,dt -\frac{b-a}{2}(f(a)-f(b))
+\right| \leqslant \frac{(b-a)^3}{12} \|f''\|_\infty$$
+
+% FONCTIONS D'UNE VARIABLE REELLE
+\newpage
+\section*{18. Révisions oraux : Fonctions d'une variables réelle} %18
+
+
+\noindent
+{\bf Exercice 18.1.} Trouver les couples de fonctions réelles $f$ et $g$
+définies et de classe $C^1$ sur un intervalle réel $I$, vérifiant pour
+tout $x$ de $I$ 
+$$\left\{ {
+\begin{array}{l}
+f(x)\, g(x) =x\\
+f'(x)\, g'(x)=1
+\end{array}
+}\right.$$
+
+\noindent
+{\bf Exercice 18.2 [CCP 05].} Trouver les fonctions de $C^1(\R;\R)$
+avec $(f\circ f )(x)=3+x/2$ pour tout réel~$x$.\\
+
+\noindent
+{\bf Exercice 18.3 [CCP 06.]} Soit $f$ une fonction numérique continue
+sur $[0;+\infty[$ admettant une limite finie $l$ en $+\infty$. Montrer
+    que $f$ est uniformément continue sur $[0;+\infty[$.\\
+
+\noindent
+{\bf  Exercice 18.4 [Mines 06].} Calculer pour $x$ dans $[0;\pi]$, la
+valeur de $\int_0^1 \frac{1}{t} \; \ln(t^2-2t \cos(x) +1)\, dt$.\\
+
+\noindent
+{\bf Exercice 18.5 [X 07].} Représenter $\arctan \circ \tan$ et $\tan \circ \arctan$.\\
+ Calculer $\arctan \frac{1}{2}+\arctan \frac{1}{5}+\arctan \frac{1}{8} \cdot$\\
+
+ \noindent
+ {\bf Exercice 18.6 [TPE 08].} Soit $f$ une fonction croissante de $[a;b]$ dans lui-même. Montrer que $f$ admet au moins un point fixe. {\it On pourra considérer l'ensemble $E=\{x\in [a;b]\, | \, f(x)\geqslant x\}$.}\\ 
+ 
+ \noindent
+ {\bf Exercice 18.7 [TPE 08].} Pour $f$ dans ${\cal{C}}^0(\R;\R)$, on pose $F(x)=\frac{1}{2x}\, \int_{-x}^x f(t)\, dt$ pour $x\neq 0$.\\
+ {\bf 1)} Rappeler pourquoi $F$ est continue sur $\R^*$. Est-elle prolongeable par continuité en $0$?\\
+ {\bf 2)} Prouver que $F$ est dérivable sur $\R_+^*$.\\
+ {\bf 3)} Montrer que si $f$ est dérivable en $0$ alors $F$ est continûment dérivable sur $\R$.\\
+ 
+\noindent
+{\bf Exercice 18.8 [X 2013].} Soit $f$ dans $C^2([0;1];\R)$ avec $f(0)=f'(0)=0$, $f(1)=1$ et $f'(1)=0$. Vérifier que $\displaystyle \max_{[0;1]} |f''| \geqslant 4$.\\
+
+\noindent
+{\bf Exercice 18.9 [X 2013].}
+Trouver toutes les applications $f$ et $g$ continues de $\R_+^*$ dans $\R$ telles que \\
+$$\forall (t;x)\in (\R_+^*)^2,\; f(tx)=f(x)\, g(t)$$ 
+
+\noindent
+{\bf Exercice 18.10 [X 2013].} Soit $f$ continue de $\R$ dans $\R$, minorée. Montrer qu'il existe un réel $x_0$ avec 
+$$ \forall x \in \R, x\neq x_0 \Longleftrightarrow f(x_0)-f(x) <|x-x_0|$$ 
+
+\noindent
+{\bf Exercice 18.11 [Mines 2016].}
+Déterminer les fonctions $f : \R \to \R$ continues vérifiant \\
+$\forall (x, y) \in \R^2,\; \;  f (x + y) = f (x) + f (y)$\\
+
+\noindent
+{\bf Exercice 18.12 [CCP 2016 (12 pts)].}
+Soit $E$ l'espace vectoriel ${\cal{C}}([0,1];\R)$. On définit pour tout $f$ de $E$ la fonction $F : [0,1] \to \R$ par : pour tout $x$ de $]0,1]$ on a 
+$F(x)=\frac{1}{x}\int_0^x f(t) {\rm d}t $ et $F(0)=f(0)$.\\
+{\bf 1)} Montrer que l'application définit un endomorphisme $\phi$ sur $E$.\\
+{\bf 2)} On suppose $f$ vecteur propre de $\phi$ associé à la valeur propre $\mu$. Montrer que $f$ satisfait une équation différentielle et la résoudre.\\
+{\bf 3)} En déduire les vecteurs propres et valeurs propres de $\phi$.\\
+
+% PLUSIEURS VARIABLES
+\newpage
+\section*{19. Fonctions de plusieurs variables} %19
+
+\noindent
+{\it Exercice 19.1 [CCP 06].} Calculer $\int\int_D (x^2+y^2+1)dx \,
+dy$ où $D=\{(x;y)\in \R^2 \; |\; x^2+y^2-1<0\}$.\\
+
+\noindent
+{\bf Exercice 19.2 [CCP 06].} Soit $f:\R^2 \to \R$ définie par
+$f(0;0)=0$ et $f(x;y)=\frac{x^2\, y^2}{x^2+y^2}$ si $(x;y)\neq
+(0;0)$. Montrer que $f$ est différentiable sur $\R^2$.\\
+
+\noindent
+{\it Exercice  19.3 [CCP 06].} Soit $C(R)$ le quart de disque défini
+par $x \geqslant0$, $y\geqslant 0$ et $x^2+y^2\leqslant R^2$.\\
+{\bf 1)} Vérifier l'inégalité 
+$$\int \int_{C(R)} \exp(-x^2-y^2) \, dx \, dy \leqslant 
+\left(\int_0^R \e^{-t^2}\,dt\right)^2
+\leqslant
+\int \int_{C(\sqrt{2} \, R)} \exp(-x^2-y^2) \, dx \, dy$$
+{\bf 2)} Calculer $\int \int_{C(R)} \exp(-x^2-y^2) \, dx \, dy$ en
+fonction de $R$.\\
+{\bf 3)} En déduire la valeur de l'intégrale de Gauss $\displaystyle
+\int_0^\infty \exp(-t^2) \, dt$.\\
+
+\noindent
+{\bf Exercice 19.4 [Mines 07].} Soit $f$ de classe ${\cal{C}}^1$ de $\R^2$ dans $\R$ avec $\frac{\partial f}{\partial x }=-\frac{\partial f}{\partial y} \cdot$ On définit $\Phi(t)=f(t;0)$ si $t \geqslant 0$, et $f(0;-t)$ sinon. Montrer que $\Phi$ est dérivable sur $\R$ puis que $\Phi(x-y)=f(x;y)$ pour tout $(x;y)$ de $\R^2$.\\
+
+\noindent
+{\bf Exercice 19.5 [Petites Mines 07].} Etudier $\displaystyle f:(x;y)\in \R^2 \mapsto \arctan x+\arctan y -\arctan \left( \frac{x+y}{1-xy} \right) \cdot$\\ 
+
+\noindent
+{\bf Exercice 19.6 [Centrale 06].} Soit $f:(x;y) \mapsto \frac{\cos x- \cos y}{x-y}$ si $x\neq y$.\\
+\indent
+{\bf 1)} Montrer qu'il existe une fonction $\hat{f}$ continue sur $\R^2$ qui prolonge $f$. On donnera $\hat{f}(x;x)$.\\
+\indent
+{\bf 2)} Montrer que $\hat{f}$ est en fait ${\cal{C}}^\infty$ sur $\R^2$. On poura penser à écrire $\hat{f}$ à l'aide de séries entières.\\
+
+\noindent
+{\it  Exercice 19.7 [TPE 08].} Soit $f(x;y)=2x(y-1)dx-(x^2-1)dy$.\\
+{\bf a)} La forme $f$ est-elle exacte?\\
+{\bf b)} Trouver $\phi$ ne dépendant que de $x$ telle que $\phi f$ soit une forme fermée sur des ouverts à préciser.\\
+
+\noindent
+{\bf Exercice 19.8 [Mines 08].} Etudier la différentiabilité de $P\displaystyle \in \R_n[X]\mapsto \int_0^1 \sin (t+P(t))\, dt$.\\
+
+\noindent
+{\bf Exercice 19.9 [TPE 08].} Trouver toutes les fonctions de classe $C^1$ vérifiant $2\frac{\partial f}{\partial x}-3\frac{\partial f}{\partial y}=0$. {\it On pourra penser à un changement de variables affine.}\\ 
+
+\noindent
+{\it  Exercice 19.10 [CCP 08].} Soit $f$ une fonction continue sur $[a;b]$ et $x_0$ dans $]a;b[$.\\
+{\bf 1)} Montrer que $\displaystyle  \int_{x_0}^x \left({ \int_{x_0}^u (u-v)^n \, f(v) \, dv }\right) \, du = \int_{x_0}^x \frac{(x-u)^{n+1}}{n+1} \, f(u) \, du$.\\
+{\bf 2)} En déduire que $\displaystyle g:x \mapsto \frac{1}{(n-1)!} \, \int_{x_0}^x (x-v)^{n-1} \, f(v) \, dv$ est une primitive d'ordre $n$ de $f$.\\
+
+\noindent
+{\it  Exercice 19.11 [CCP 08].} On considère $f(x;y)=\sqrt{4-x^2-y^2\,}$.\\
+{\bf 1)} Déterminer les extremas de $f$.\\
+{\bf 2)} Retrouver le résultat précédent en considérant la surface d'équation $z^2=4-x^2-y^2$.\\
+
+\noindent
+{\it  Exercice 19.12 [CCP 08].} Calculer $\int \! \!  \int_D (x^2+y^2+1)\, dx\, dy$ avec $D=\{(x;y)\in\R^2\, | \, x^2+y^2<1\}$.\\
+
+\noindent
+{\bf Exercice 19.13 [TPE 09].} Soit $E=\{(x;y;z)\in \R^3 \, | \, x> 0, y> 0, x+y+z-1=0\}$. Déterminer les extremas de $g:(x;y;z)\in E \mapsto x^2+2y^2+3z^2$.\\
+
+\noindent
+{\bf Exercice 19.14 [Petites Mines 2012].} Soit $F: (x;y)\in ]0;+\infty[ \times \R \mapsto \varphi(y/x)$ avec $\varphi$ de classe $C^2$ sur $\R$. Trouver toutes les fonctions $F$ de laplacien nul.\\
+
+\noindent
+{\bf Exercice 19.15 [Mines 2013} - 1er exercice{\bf].} Soit $f: (x;y) \in \R^2 \mapsto 2xy^2+\ln(4+y^2)$.\\
+{\bf 1)} Montrer que $f$ est de classe $C^1$.\\
+{\bf 2)} Déterminer les extremums de $f$.\\
+
+\noindent
+{\bf Exercice 19.16 [Ecoles Mines 2014]} : Soit $\varphi \in {\cal{C}}^2(\R;\R)$ et $f:(x;y) \in \R^2 \mapsto \varphi \left({ \frac{\cos x}{ch y}}\right)$\\
+Déterminer les fonctions $\varphi$ telles que $f$ soit harmonique i.e. $\Delta f = \frac{\partial^2 f}{\partial x^2}+ \frac{\partial^2 f}{\partial y^2}=0$\\
+
+\noindent
+{\bf Exercice 19.20 [TPE 2016]} : extrêmums (locaux) de $f:(x;y) \mapsto x^4+y^4-2(x-y)^2$.\\
+
+
+
+% DIVERS
+\newpage
+\section*{20. Révisions oraux : divers}
+
+\noindent
+{\bf Exercice 20.1.} Dans $\R^n$ muni de sa structure euclidienne
+canonique (avec $n\geqslant 2$), donner un équivalent du nombre de
+points de $Z^n$ de norme inférieure à $r$ quand $r$ tend vers
+$+\infty$.\\
+{\it Indication : on pourra faire intervenir le volume de la boule
+  unité.}\\
+  
+\noindent
+{\bf Exercice 20.2} Soit $\theta$ dans $]0;\pi/2[$.\\
+\indent
+{\bf 1)} Pour tout entier $n$, trouver un polynôme $P_n$ (indépendant de $\theta$) tel que 
+$$\frac{\sin((2n+1)\theta)}{ (\sin \theta)^{2n+1}}=P_n(\mbox{cotan}^2 \theta)$$
+\indent
+{\bf 2)} Déterminer les racines de $P_n$ et la somme de ces dernières.\\
+\indent
+{\bf 3)} Montrer que $\mbox{cotan}^2 \theta < \frac{1}{\theta^2} <1+\mbox{cotan}^2 \theta$.\\
+\indent
+{\bf 4)} En déduire la valeur de $\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} \cdot$
+
+
+% PROBABILITES
+\newpage
+\section*{30. Révisions oraux : Probabilités} %30
+
+\noindent
+{\bf Exercice 30.1.}
+Un étudiant s'habille très vite le matin et prend, au hasard dans son placard un pantalon, une chemise et une paire de chaussettes; l'armoire contient ce jour-là $5$ pantalons dont 2 noirs, 6 chemises dont 4 noires et 8 paires de chaussettes dont 5 paires noires. Quelle probabilité l'étudiant a-t-il d'être tout de noir vêtu? D'avoir exactement une pièce noire sur les trois?\\
+
+\noindent
+{\bf Exercice 30.2.} Dans un jeu de $52$ cartes, on prend une carte au hasard : les événements "tirer un pique" et "tirer une roi" sont-ils indépendants? Quelle est la probabilité de "tirer un pique ou un roi"?\\
+
+\noindent
+{\bf Exercice 30.3.} En cas de migraine, trois patients sur cinq prennent de acide acétylsalicylique (plus connu sous le nom d'aspirine) et deux sur cinq un médicament $M$. Avec l'acide acétylsalicylique, 75\% des patients sont soulagés alors qu'avec le médicament $M$, 90 \% le sont.\\
+{\bf 1)} Quel est le taux global de personnes soulagées?\\
+{\bf 2)} Quelle est la probabilité qu'un patient ait pris le médicament $M$ sachant qu'il est soulagé?\\
+
+\noindent
+{\bf Exercice 30.4.} Un constructeur aéronautique équipe ses avions d'un moteur central de type $C$ et de deux moteurs (un par aile) de type $A$; chaque moteur tombe en panne indépendamment des autres et on estime à $p$ la probabilité qu'un moteur de type $C$ tombe en panne et à $q$ pour un moteur de type $A$. L'avion ne peut voler que si le moteur central ou les deux moteurs des ailes fonctionnent. Quelle est la probabilité que l'avion puisse voler?\\
+
+\noindent
+{\bf Exercice 30.5.} On suppose qu'il y a une probabilité $p$ d'être contrôlé quand on prend le tram. Monsieur Loco fait $n$ voyages par an avec ce tram. On prendra $p=0,1$ et $n=700$.\\
+{\bf 1)} Quelle est la probabilité que Monsieur Loco soit contrôlé entre $60$ et $80$ fois dans l'année?\\
+{\bf 2)} Monsieur Loco voyage toujours sans ticket. Le prix d'un ticket pour un voyage est de $1,12$ euros. Quelle amende minimale la compagnie de tram doit-elle fixer pour que, sur une année, Monsieur Loco est une probabilité supérieure à $75$\% d'être perdant?\\
+
+\noindent
+{\bf Exercice 30.6.} %HEC 2014
+On lance indéfiniment un dé équilibré et, pour tout $n\in\N^*$, on note $X_n$ le numéro sorti au $n$-ième tirage. Les variables aléatoires $X_n$, définies sur un espace probabilisé $(\Omega, {\cal{A}},P)$ sont donc supposées indépendantes et de même loi uniforme sur $[\![1, 6]\!]$.\\
+Pour tout $i \in [\![1, 6]\!]$, on note $T_i$ le temps d'attente de la sortie du numéro $i$.\\
+{\bf 1)} Donner la loi de $T_1$ ainsi que son espérance et sa variance.\\
+{\bf 2)} Déterminer l'espérance des variables aléatoires $\inf(T_1 , T_2)$ et $\sup(T_1 , T_2 )$.\\
+{\bf 3)} Justifier l'existence de la covariance de $T_1$ et de $T_2$, que l'on notera ${\rm Cov}(T_1 , T_2 )$.\\
+{\bf 4)} \'Etablir pour tout $i \in [\![2, 6]\!]$, la relation : $E(T_1 \; |\; X_1 = i) = 7$.\\
+{\bf 5)} Montrer que pour tout $i \in [\![3, 6]\!]$, on a : $E(T_1 T_2 \; |\; X_1 = i) = E \left({(1 + T_1 )(1 + T_2 )}\right)$.\\
+{\bf 6)} Calculer $E(T_1 T_2 )$. En déduire ${\rm Cov}(T_1 , T_2 )$.\\
+{\bf 7)} Trouver un réel $\alpha$ tel que les variables aléatoires $T_1$ et $T_2 + \alpha T_1$ soient non corrélées.\\
+{\bf 8)} Les variables aléatoires $T_1$ et $T_2 + \alpha T_1$ sont-elles indépendantes ?\\
+
+\noindent
+{\bf Exercice 30.7.} %HEC 2014
+Soit $X$ une variable aléatoire définie sur un espace probabilisé $(\Omega,{\cal{A}},P)$, suivant la loi de Poisson de paramètre $\lambda>0$.\\
+{\bf 1)} Montrer que pour tout entier $n>\lambda-1$, on a : $P(X \geqslant n) \leqslant P (X = n) \times \frac{n+1}{n+1-\lambda} \cdot$\\
+{\bf 2)} En déduire que $ P (X > n) = o_{ n \to \infty} \left( P (X = n) \right)$.\\
+{\bf 3)} Soit $Y$ une variable aléatoire indépendante de $X$, telle que $Y-1$ suit une loi de Bernoulli de paramètre $1/2$. Quelle est la probabilité que $XY$ prenne des valeurs paires ?\\
+
+\noindent
+{\bf Exercice 30.8.} %ESSEC 2013
+Soient $n$ et $p$ deux entiers supérieurs ou  égaux à $2$. On considère $np$ variables aléatoires mutuellement indépendantes
+$X_1, \dots, X_{np}$. Pour tout $k$, la variable
+aléatoire $X_k$ suit une loi de Poisson de paramètre $\lambda_1$ si $k \leqslant p$ et $\lambda_2$ sinon. On pose 
+$\displaystyle S_n=\sum_{k=1}^{np} X_k,\; \, A=\sum_{k=1}^{p} X_k, \mbox{ et } B_n=\sum_{k=1+p}^{np} X_k$.\\
+{\bf 1)} Déterminer les lois des variables aléatoires $A$ et $B_n$.\\
+{\bf 2)} Quelle est la loi de $S_n$ ?\\
+{\bf 3)} Soit $\ell \in \N$. Expliciter et reconnaître les lois des variables aléatoires $Y_\ell$ et $Z_\ell$ avec\\
+$\displaystyle P(Y_\ell = m) = P_{(S_n =\ell)} (A = m) \; \mbox{ et }
+P(Z_\ell = m) = P_{(S n =\ell)} (B_n = m) \; \; \mbox{ pour tout } m \in \N.$\\
+{\bf 4.} On fixe $p$. Montrer que la suites des variables aléatoires $U_n=\frac{\lambda_1}{\lambda_1+(n-1)\lambda_2}S_n$ converge en probabilité vers une variable aléatoire constante à déterminer.\\
+On dit que $(X_n)_{n \in \N}$ converge en probabilité vers $X$ quand la suite de terme général $P(|X_n-X|\geqslant \varepsilon)$ converge vers $0$ pour tout $\varepsilon>0$.\\
+
+\noindent
+{\bf Exercice 30.9.} %ESSEC 2013
+Soit $X$ une variable aléatoire sur l'espace probabilisé $(\Omega,{\cal{A}},P)$ suivant une loi de Poisson de paramètre $\lambda>0$.\\
+{\bf 1)} Montrer $P(|X - \lambda|\geqslant \lambda) \leqslant \frac{1}{\lambda}$ et en déduire 
+$P (X \geqslant 2\lambda) \leqslant \frac{1}{\lambda}\cdot$\\
+{\bf 2)} Soit $Z$ une variable aléatoire discrète sur $(\Omega,{\cal{A}},P)$, centrée et de variance $\sigma^2$.\\
+\indent
+{\bf a)} Montrer $\forall a>0, \forall x \geqslant 0,\; \; P(Z \geqslant a) \leqslant P\left( {
+(Z+x)^2 \geqslant (a+x)^2 }\right)$\\
+\indent
+{\bf b)} Vérifier $\forall a>0, \forall x \geqslant 0,\; \; P(Z \geqslant a) \leqslant \frac{\sigma^2+x^2}{(a+x)^2}$ puis 
+$\forall a>0,\; \; P(Z \geqslant a) \leqslant \frac{\sigma^2}{\sigma^2+ a^2}$ \\
+\indent
+{\bf c)} En déduire $P(X \geqslant 2 \lambda) \leqslant \frac{1}{1+\lambda}$\\
+{\bf 3)} Montrer que la fonction génératrice $G_X$ de $X$  vérifie : $\forall t \geqslant 1, \forall a>0,\; P(X \geqslant a) \leqslant \frac{G_X(t)}{t^a}$\\
+En déduire $P(X \geqslant2 \lambda) \leqslant \left(\frac{\e}{4}\right)^\lambda$.\\
+
+\noindent
+{\bf Exercice 30.10.} %ESSEC 2014
+Soit $X$ une variable aléatoire sur l'espace probabilisé $(\Omega,{\cal{A}},P)$ ayant un moment d'ordre $2$.\\
+{\bf 1.} Déterminer la valeur qui minimise l'application $x \in \R \mapsto E((X - x)^2 )$ où $E$ désigne l'espérance.\\
+On suppose maintenant $\Omega$ fini et ${\cal{A}}$ est l'ensemble de ses parties. Pour tout réel $t$, on définit
+$$P_t : A \in {\cal{P}}(\Omega) \longrightarrow  \frac{E(\mathbf{1}_A \times \e^{tX})}{E(\e^{tX})} \in \R  \; \mbox{où $\mathbf{1}_A$ est la fonction indicatrice de }A.$$
+{\bf 2.} Montrer que $P_t$ est une probabilité sur $\Omega$.\\
+{\bf 3.} Soit $Y$ une variable aléatoire définie sur $(\Omega,{\cal{A}},P_t)$. Calculer son espérance $E_t (Y)$. Que peut-on en dire si $X$ et $Y$ sont indépendantes ?\\
+{\bf 4.} Montrer $\displaystyle
+4 E_t( (X-E_t(X))^2 ) \leqslant \left( \sup_\Omega X - \inf_\Omega X \right)^2$.\\
+
+
+\end{document}
+
+
+
+
+{\bf Attente}\\
+\noindent
+{\bf Exercice  [Mines 05].} Pour $n$ dans $\N^*$, on note $K=[-1;1]^n$ et
+$S=\{-1;1\}^2$ et $O$ l'ensemble $\{f\in O_n(\R)\; |\; f(K)=k\}$.\\
+\indent
+{\bf a)} Vérifier que si $f$ est dans $O$ alors $f(S)=S$.\\
+{\it Question subsidiaire : et réciproquement, si $f$ est dans
+  $O_n(\R)$ et $f(S)=S$, a-ton $f$ dans $O$?}\\
+\indent
+{\bf b)} Déterminer $O$ et son cardinal.\\

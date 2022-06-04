@@ -1,0 +1,23 @@
+Chapitre 3 Réduction des endomorphismes
+§ 1 Révision d'algèbre linéaire de MPSI
+§ 2 Polynômes d'endomorphismes, de matrices
+§ 3 Éléments propres
+Démonstrations au programme :
+§ 1.3 Deux matrices semblables ont même déterminant et même trace (n° 1)
+§ 1.4.e Si u et v commutent, Ker(u) et Im(u) stables par v (n° 3)
+§ 2.2 Morphisme entre K[X] et L(E) (n° 5)
+§ 2.4.a Existence d'un polynôme annulateur non nul (n° 8) 
+§ 2.4.e Base de K[u] (n°14)
+§ 2.7 Lemme de décomposition des noyaux (n°17)
+§ 3.1.c a est valeur propre <-> (u-aId) n'est pas bijectif (n°19)
+§ 3.2 P 1 : toute somme de sous-espaces propres est directe (n°21)
+§ 3.2 P 3 : card(Sp(u)) <= n (n°21)
+§ 3.3.b Spectre, racines d'un polynôme annulateur, du polynôme minimal (n°23)
+Rappel :
+Les numéros des démos correspondent aux points encadrés en jaune dans mon cours
+
+Précisions :
+Attention : le polynôme caractéristique sera défini seulement lundi.
+Profiter de cette colle pour réviser les points importants de l'algèbre linéaire de MPSI (cf. § 1 : ne pas aller au-delà).
+Bien connaître le cours et les démos ci-dessus.
+Demander par exemple une définition et deux démonstrations (une seule pour les numéros 5, 17 et 23 qui sont plus longues...)

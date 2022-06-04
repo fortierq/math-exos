@@ -1,0 +1,61 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 18: arithmétique et dénombrement}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	GODEAUX Victor (14): assez bien\\
+	El Abbassi Myriam (16): très rapide. Quelques confusions sur la quantification des variables.\\
+	
+	\begin{exo}
+		Déterminer les nb premiers $\leq 50$ avec la méthode d'Eratosthène.
+	\end{exo}
+	
+	\begin{exo}
+		Combien y a t-il de sous-ensembles de taille pair d'un ensemble à $n$ éléments? Et de taille un multiple de 3?
+	\end{exo}
+
+	\section*{Colle 2}
+	Monteil Alicia (10): ne connait pas du tout le thm de décomposition en facteur premier. lente.\\
+	FERNANDEZ Henri (10): ne connaît pas la méthode de résolution d'une équation sur des entiers\\
+	
+	\begin{exo}
+		Énoncer le thm de décomposition facteurs premiers.
+	\end{exo}
+			
+	\begin{exo}
+		soient $a$ et $b$ premiers entre eux et $c\in  \Z$.\\
+		Mq PGCD$(a, bc)$ = PGCD$(a, c)$
+	\end{exo}	
+
+	\begin{exo}
+		Soit $E = \lbrace 1, ..., n \rbrace$. Calculer $\sum_{X \subset E} \vert X \vert$, $\sum_{X, Y \subset E} \vert X \cap Y \vert$
+	\end{exo}	
+
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	GOUX Alexandre (15): ne se souvient pas de l'algo d'Euclide étendu. Écrit $n 2^n = 2^{n+1}$. Mais aussi de très bonnes idées.\\
+	DERRAR Youri (11): lent et connaissances imprécises.\\
+	\begin{exo}
+		Résoudre $37x+23y = 1$
+	\end{exo}
+	
+	\begin{exo}
+		Soient $a$, $b$ deux entiers premiers entre eux. Mq $a+b$ et $ab$ sont premiers entre eux.
+	\end{exo}
+	
+\end{document}

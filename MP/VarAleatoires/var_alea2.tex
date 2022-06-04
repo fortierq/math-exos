@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+
+\title{Colle MP: Variables aléatoires et fonctions vectorielles}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	GUY Matthias (14): petite erreur sur les espaces de départs et d'arrivées (intervalle de R et non pas EV) des fonctions lors de la composition. Un peu lent sur l'exo.\\
+	Audrey (16): très bien\\
+
+	\begin{exo}
+		Composée de fonctions dérivables.
+	\end{exo}
+
+	\begin{exo}
+		En faisant apparaître une somme de Riemann, donner un équivalent de $\sum_{k=0}^{n} \sqrt{k}$.
+	\end{exo}
+
+	\begin{exo} (exo 15)
+		\begin{enumerate}
+			\item Mq $E(X) = \sum_{k=1}^\infty P(X \geq k)$
+			\item Si $X$, $Y$ sont uniformes sur $\lbrace 1,..., n \rbrace$, quelle est l'espérance de $min(X, Y)$ et $max(X, Y)$?
+		\end{enumerate}
+	\end{exo}	
+	
+%	\begin{exo} (erreur dans la méthode des rectangles)
+%		Soit $f$ $C^1$ sur $[a, b]$. Soit $a_k = a + k\frac{b-a}{n}$.\\ Mq il existe une constante $M$ tq:
+%		$$\vert \int_{a}^{b} f - \frac{b-a}{n} \sum_{k=0}^{n-1} f(a_k) \vert \leq M \frac{(b-a)^2}{2n}$$
+%	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	GUILLET Lucas (16): très bien\\
+	Emma (14): ne reconnaît pas le développement de $-\ln(1-x)$. 
+	\begin{exo}
+		Inégalité de Bienaymé-Tchebychev
+	\end{exo}
+	
+%	\begin{exo} (22)
+%		Soit X et Y deux variables aléatoires indépendantes suivant des lois géométriques de paramètres $p, q \in ]0 ; 1[$.
+%		Calculer $P(X < Y)$.
+%	\end{exo}
+
+	\begin{exo}
+		Soit X une variable aléatoire suivant une loi géométrique de paramètre p. Calculer $E(\frac{1}{X})$.
+	\end{exo}
+	
+	\begin{exo}
+		Trouver la limite de:
+		$$\sum_{k=1}^{n} \sin(\frac{k}{n}) \sin(\frac{k}{n^2}) ~~(= \int t \sin(t))$$
+		Aide: $\sin(\frac{k}{n^2}) \approx \frac{k}{n^2}$.
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Pierre (13): confusion dans la loi de Poisson\\
+	Lisa (13): ne pense pas à utiliser la formule de dérivation des fonctions composées\\
+
+	\begin{exo}
+		Inégalité de Cauchy-Schwarz
+	\end{exo}
+
+	\begin{exo}
+		Soit $X$ loi géométrique de paramètre $1/n$. Mq $P(X \geq n^2) \leq \frac{1}{n}$ puis $P(\vert X - n \vert \geq n) \leq 1 - \frac{1}{n}$.
+	\end{exo}
+
+	\begin{exo}
+		Mq la somme de 2 variables de Poisson indépendantes est une variable de Poisson.
+	\end{exo}
+
+	\begin{exo}
+	Soit I un intervalle, E un espace vectoriel euclidien et $f:I \longmapsto E$ dérivable. On suppose de plus que $f$ ne s'annule pas et on pose, pour tout $t\in I$, $g(t)= \parallel f(t) \parallel$. Démontrer que g est dérivable et donner g'.
+	\end{exo}
+
+%	\begin{exo}
+%		Une urne contient 4 boules rapportant 0, 1, 1, 2 points. On y effectue n tirages avec remise et l'on note S le score total obtenu.\\
+%		Déterminer la fonction génératrice de S et en déduire la loi de S .
+%	\end{exo}
+%	
+\end{document}

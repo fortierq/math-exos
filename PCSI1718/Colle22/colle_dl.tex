@@ -1,0 +1,63 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 22: DL}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	Myriam EL Abassi (17): excellent\\
+	Loris (16): très bien.\\
+	\begin{exo}
+		Question de cours
+	\end{exo}
+	
+	\begin{exo}
+		Dérivée $n$ème de $\frac{1}{1 - x}$? $\frac{1}{1 + x}$?
+ 	\end{exo}
+
+	\begin{exo}
+		$DL_0$ ordre 3 de $\cos(x) e^x$
+	\end{exo}
+
+	\begin{exo}
+		calcul de limite
+	\end{exo}
+	
+	\section*{Colle 2}
+	Henri FERNANDEZ (15): n'utilise pas un DL à un ordre assez grand. Erreurs de calculs simples.  \\
+	DIEULOT Agathe (11): ne sait pas utiliser le DL de $(1+x)^\alpha$\\
+	
+	\begin{exo}
+		Question de cours
+	\end{exo}
+	
+	\begin{exo}
+		$DL_0$ ordre 4 de $(\ln(1+x))^2$ 
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Youri DERRAR (7): ne connaît pas le DL de $\ln(1-x)$ et n'arrive pas à le retrouver.\\
+	JACQUEMARD Steven (15): Bien.\\
+	
+	\begin{exo}
+		Question de cours
+	\end{exo}
+			
+	\begin{exo}
+		$DL_0$ ordre 4 de $(\ln(\cos(x)))$ 
+	\end{exo}
+	
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+
+\title{Colle PCSI 27: applications linéaires}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+
+	\setcounter{exo}{0}
+	EL Abbassi (16): très bien\\
+	Mathilde (13): manque de pratique dans le développement par ligne (oublie les signes, prend la mauvaise sous-matrice...)
+	
+	\begin{exo}
+		Définition du déterminant d'une matrice
+	\end{exo}
+
+	\begin{exo}
+		Calculer un déterminant (0 sur la diagonale, 1 au dessus, -1 en dessous), par récurrence.
+	\end{exo}	
+
+	\section*{Colle 2}
+
+	\setcounter{exo}{0}
+	FERNANDEZ (13): dit que $det(A+B) = det(A) + det(B)$. Bien sinon.\\
+	Cléo (15): bien.\\
+	
+	\begin{exo}
+		Toutes les propriétés que tu connais sur le déterminant.
+	\end{exo}
+		
+	\begin{exo}
+		Calculer un déterminant (0 sur la diagonale, 1 ailleurs), par récurrence.
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Youri (11): beaucoup d'erreurs, manque de pratique.\\
+	Alex (12): oubli pas mal de choses.\\
+	
+	\begin{exo}
+		Définition du déterminant d'un endomorphisme
+	\end{exo}
+
+	\begin{exo}
+		Calculer un déterminant (a+b sur la diagonale, a juste en bas, b juste en haut), par récurrence.
+	\end{exo}
+\end{document}

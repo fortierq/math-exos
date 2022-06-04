@@ -1,0 +1,72 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern,textcomp}
+\title{Colle PCSI 7: Sommes et produits}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	DEMET Louis (8): se souvient de la formule de cours mais pas de la démo. Ecrit $\sum a_k b_k = (\sum a_k) (\sum b_k)$. A déjà oublié les racines de l'unité... \\
+	DERRAR Youri (8): ne se souvient pas de la formule ni de la preuve. Ne sait pas appliquer la formule de la somme d'une suite géométrique.
+	
+	\begin{exo}
+		Formule de Bernouilli.
+	\end{exo}
+	
+	\begin{exo}
+		Somme et produit des racines n ième de l'unité. Somme des distances des racines nièmes à 1?
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\sum_{k=1}^{n} cos(k x)$, $\sum \binom{n}{k} \cos(kx)$, $\sum_{k=1}^{n} k cos(k x)$.
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Réjane GRADELET (10): se souvient de la formule de cours mais pas de la démo. Ne se souvient pas de la formule de la somme des termes d'une suite géométrique.\\
+	
+	
+	\begin{exo}
+		Somme des termes d'une suite arithmétique?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer: $\sum x^{k}$ puis $\sum k 2^{k-1}$. 
+	\end{exo}
+
+	\begin{exo}
+		Calculer: 
+		$$\sum k k!$$ 
+	\end{exo}	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	DIEULOT Agathe (18): parfait: se souvient bien de la preuve du binôme, de la méthode pour $\sum k^2$...\\
+	DERET Simon (8): Ne connaît pas la formule du binôme et ne sait pas la démontrer. Ecrit $\sum k^2 = (\sum k)(\sum k)$.
+	
+	\begin{exo}
+		Formule du binome de Newton?
+	\end{exo}
+	\begin{exo}
+		Calculer ($\sum (k+1)^3 - k^3$ puis) $\sum k^2$.
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\sum_{k\text{ pair}} \binom{n}{k}$.
+	\end{exo}
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern,textcomp}
+\title{Colle PCSI 10: primitives et ED}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	PATTE Rémi (12): bcp d'erreurs de calcul, de formules...\\
+	GUYOT Marion (15): $e^{ab} = e^a e^b$.
+	
+	\begin{exo}
+		Primitive de $\frac{1}{3x^2+6x+3}$?
+	\end{exo}
+	
+	\begin{exo}
+		Primitive de $\sin^4$?
+	\end{exo}	
+
+	\begin{exo}
+		Equa diff.
+	\end{exo}	
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	NESPOULOUS Bastien (14): assez bien\\
+	JACQUEMARD (12): ne sait plus comment primitiver $sin^4$.
+	
+	\begin{exo}
+		Primitive de $\frac{1}{xln(x)}$?
+	\end{exo}
+
+	\begin{exo}
+		Equa diff.
+	\end{exo}	
+	\begin{exo}
+		$\int_{0}^{\pi} \exp(t) \sin(3t) dt$?
+	\end{exo}	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	LABEIRA Ruben (13): assez bien\\
+	KHALIL ANAS (15): Bien\\
+	
+	\begin{exo}
+		Primitive de $x \longmapsto \frac{1}{x^2 - x - 1}$?
+	\end{exo}
+
+	\begin{exo}
+		$\int t^2 \sqrt{1 - t^2}$ avec changement de variable $t = cos(u)$.
+	\end{exo}
+
+	\begin{exo}
+		Equa diff.
+	\end{exo}	
+\end{document}

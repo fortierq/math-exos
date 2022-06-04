@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle MP : Structures, convexité}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	JEUFFRAULT Kévin (14): bien pour le cours. Assez bien pour l'exo.\\
+	CHOPARD Etienne (15): bien.\\
+	_entropy
+	\begin{exo}
+			Sous-groupes de Z
+	\end{exo}
+
+	\begin{exo}
+		Soit $x_1$, ..., $x_n$ tq $\sum x_i = K$. Valeur minimum de $\sum x_i^2$?
+	\end{exo}
+	
+	\begin{exo}
+		Donner une preuve ou un contre-exemple:\\
+		\begin{itemize}
+			\item La réunion de deux parties convexes est convexe.
+			\item L'intersection de deux parties convexes est convexe.
+			\item Une fonction convexe sur un intervalle ouvert est continue.
+			\item Une fonction convexe sur un intervalle ouvert est dérivable.
+		\end{itemize}
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Nathan DURY (12): ne sait pas bien interpréter la convexité sur un dessin. TB pour l'exo.\\
+	Réda (12): un peu lent\\
+	
+	\begin{exo}
+			Définition et diverses inégalités de convexité.\\
+			Propriété des cordes
+	\end{exo}
+	
+	\begin{exo}
+		Démontrer que, pour tout $x \in ]0, \frac{\pi}{2}]$, $\frac{2}{\pi} \leq \frac{\sin(x)}{x} \leq 1$.
+	\end{exo}
+	
+	\begin{exo}
+		Soit $G$ groupe tq $x^2 = e$ $\forall x \in G$. Mq $G$ est abélien.
+	\end{exo}
+
+	\begin{exo}
+		Soit G un groupe d'ordre pair. Montrer qu'il existe un élément $x \in G$, $x \neq e$ tel que $x^2 = e$.
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	AZIZI Marouane (12): bien pour le cours mais manque important de rigueur/clarté.\\
+	Julien (13): un peu lent.\\
+	
+	\begin{exo}
+		Idéaux de K[X] 
+	\end{exo}
+
+	\begin{exo}
+		Exo option info: mq $x \longmapsto x \log_2(x)$ est convexe puis en déduire par récurrence que la somme des profondeurs des $n$ feuilles d'un arbre binaire est au moins $n \log_2(n)$.
+	\end{exo}
+	\begin{exo}
+		Soit $G$ un groupe abélien et $x, y \in G$ d'ordres $p, q$. \\
+		\begin{question}
+			Si $p$ et $q$ sont premiers entre eux, montrer que l'ordre de $xy$ est le ppcm de $p$ et $q$.
+		\end{question}
+		\begin{question}
+			Est-ce toujours vrai si $p$ et $q$ ne sont pas premiers entre eux?
+		\end{question}
+	\end{exo}
+		
+	 
+\end{document}

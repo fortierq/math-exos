@@ -1,0 +1,30 @@
+Chapitre 1 : convexité
+Connaître essentiellement :
+§ 2.1 Définition et diverses inégalités de convexité
+§ 2.2 Propriété des cordes
+§ 2.4 Propriétés des pentes des cordes
+§ 2.6 Cas des fonctions deux fois dérivables
+§ 3 Exemples d'utilisation de la convexité
+
+Démonstrations exigibles seulement sur les exemples du § 3
+
+
+Chapitre 2 : structures algébriques
+Démonstrations à connaître
+(le numéro indiqué correspond au numéro jaune sur le cours)
+§ 1.1 Propriétés (n°1)
+§ 1.3 Propriétés (n°5)
+§ 1.4 Sous-groupes de Z (n°8)
+§ 1.7.c Propriété 1 (n°10)
+§ 1.7.c Propriété 2 (n°11)
+§ 1.7.c Propriété 4 (n°13)
+§ 1.7.c Propriété 5 (n°14)
+§ 2.3 Groupe des inversibles (n°15)
+§ 5.3 Idéaux de K[X] (n°27)
+x
+1) Donner la définition de l'image et du noyau d'un morphisme et un théorème du cours donnant une condition d'injectivté d'un morphisme
+2)
+3) Soient A et B deux sous groupes d'un groupe G. Soit AB = {ab \in G : a \in A, b \in B}. 
+- Est-ce que AB est forcément un sous groupe de G?
+- Démontrer que AB est un sous groupe de G ssi AB = BA
+- Démontrer que, si AB = BA, AB est le sous groupe de G engendré par A \cup B

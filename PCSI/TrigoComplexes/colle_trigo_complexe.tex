@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 3: Étude de fonctions et trigonométrie}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	Clément GUILLAUME-SAGE (cours:7, exo:7, note: 14): bien, a besoin d'aide pour les exos.\\
+	MARTI Sébastien (cours: 5, exo:6, note: 11): écrit $\forall z, ~\vert z + z' \vert = \vert z \vert + \vert z' \vert$, n'arrive pas à finir la preuve du thm de cours.\\
+	\begin{exo} 
+		\begin{itemize}
+			\item Compatibilité du module avec les opérations (§ II.2)
+			\item Enoncer l'inégalité triangulaire et cas d'égalité. Dessin. 
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\cos(\frac{\pi}{8})$.
+	\end{exo}
+	
+	\begin{exo}
+		Résoudre l'équation:
+		$$\cos(x) - \sqrt{3} \sin(x) = 1$$
+	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	FRICK Jonas (cours: 6, exo: 5, note: 11): n'a aucune idée de comment prouver $\ln(x) \leq x - 1$. Ne sais pas faire un tableau de variations...\\
+	MARION Caroline (cours: 5, exo: 5, note: 10): écrit $lim_{+\infty} (x-ln(x)) = - \infty$, puis $0$, ne sais pas faire un tableau de variations. écrit $(ln(x))^n = n ln(x)$.
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Compatibilité de la conjugaison avec les opérations (§ I.4)
+			\item Tout ce que tu sais sur l'argument d'un nombre complexe? Définitions, propriétés...
+		\end{itemize}
+	\end{exo}
+
+	\begin{exo}
+		Montrer que $\ln(x) \leq x - 1$ $\forall x > 0$, puis que $e \geq (1 + \frac{1}{n})^n$ pour tout $n \geq 2$.
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Henry Quentin (cours: 6, exo: 7, note: 13): écrit $arg(z^n) = arg(z)^n$, sinon correct.\\
+	VICOMTE Romaric (cours: 3, exo: 5, note: 8): ne connaît pas $arg(z z') = arg(z)arg(z')$, ni sa preuve. écrit $cos(a+ib)$, des égalités sans aucun sens.
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Argument d'un produit et corollaire (inverse et quotient seulement) (§ II.3)
+			\item Tout ce que tu sais sur l'exponentielle d'un nombre complexe? Définitions, propriétés...
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		Résoudre l'équation:
+		$$\cos(2x) = \cos^2(x)$$
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que, pour tout $x \in [0, \frac{\pi}{2}]$:
+		$$x \geq \sin(x) \geq x - \frac{x^2}{\pi} ~ (*)$$
+		Ensuite, montrer que $(*)$ reste vraie pour tout $x \in [0, {\pi}]$, sans nouvelle étude de fonction.
+	\end{exo}
+\end{document}

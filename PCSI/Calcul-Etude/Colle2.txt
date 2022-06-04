@@ -1,0 +1,11 @@
+Bertrand TURCK:
+Thm decomposition fact premiers: écrit une somme au lieu d'un produit, manque l'unicité.
+Eq diff degré 2
+Résoudre dans R x^6 + x^3 + 1 = 0
+Thm division euclidienne? oublié l'unicité et r < d
+Domaine de définition et dérivabilité de x \longmapsto ln(sqrt(x))? La dériver.
+
+Arthur VERMOT:
+Tout sur les dérivées: déf, opérations sur les dérivées 
+Systeme 3 éq 5 inconnues à résoudre
+Méthode eq diff degré 1?

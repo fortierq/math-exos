@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP: Équations différentielles et intégration}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}	
+	Lilian (14): erreurs de calcul. Pense qu'il faut raccorder les solutions particulières (au lieu des solutions complètes)\\
+	Célia (13): démonstration de cours en partie oubliée\\
+
+	\begin{exo}
+		Variance de la somme de VA
+	\end{exo}
+
+	\begin{exo} (22)
+		Soit X et Y deux variables aléatoires indépendantes suivant des lois géométriques de paramètres $p, q \in ]0 ; 1[$.
+		Calculer $P(X \leq Y)$.
+	\end{exo}
+	
+	\begin{exo}
+		$ty' + 2y = \frac{t}{t^2+1}$ (avec raccords).
+	\end{exo}
+			
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Bastien (14): a du mal à retrouver le développement en série entière de $\frac{1}{(1-t)^2}$\\
+	Charlotte (13): a du mal à retrouver le développement en série entière de $\frac{1}{(1-t)^2}$\\
+
+	\begin{exo}
+		Question de cours
+	\end{exo}
+
+	\begin{exo}
+		Soient $X$ et $Y$ deux lois géométriques indépendantes de paramètres $p$.\\
+		Donner la loi de $X + Y$ (2 méthodes: avec ou sans série génératrice).
+	\end{exo}
+	
+	\begin{exo}
+%		$(t^2 + 1)y'' + 2ty + 1 = 0$
+		Résoudre $(1 - t)y' - y = t$ (avec raccords).
+	\end{exo}
+	\newpage
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Kévin (17): oubli de solution dans l'ED. Très bien sinon.\\
+	Nolwenn (14): oubli de justifier le fait qu'une fonction génératrice caractérise la loi \\
+
+	\begin{exo}
+	Cours: Si X et Y sont indépendantes, alors $f ( X )$ et $g ( Y )$ sont indépendantes.
+	\end{exo}
+
+	\begin{exo}
+%		(83) Montrer que $\int_{x}^{\infty} \frac{e^{-t}}{t} \sim \frac{e^{-x}}{x}$.
+		Calculer $G_{X + Y}$ où $X$ et $Y$ sont deux VA de Poisson indépendantes. En déduire la loi de $X + Y$.
+	\end{exo}
+
+	\begin{exo}
+		$yy' + y^2 = \frac{exp(-2x)}{2}$ (poser $z = y^2$)
+	\end{exo}
+	
+	\begin{exo}
+		Problème du coupon collector.
+	\end{exo}
+
+\end{document}

@@ -1,0 +1,7 @@
+
+1) Donner la définition de l'image et du noyau d'un morphisme et un théorème du cours donnant une condition d'injectivté d'un morphisme
+2)
+3) Soient A et B deux sous groupes d'un groupe G. Soit AB = {ab \in G : a \in A, b \in B}. 
+- Est-ce que AB est forcément un sous groupe de G?
+- Démontrer que AB est un sous groupe de G ssi AB = BA
+- Démontrer que, si AB = BA, AB est le sous groupe de G engendré par A \cup B

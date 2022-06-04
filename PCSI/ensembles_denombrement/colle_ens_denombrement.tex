@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 19: ensembles, applications, dénombrement.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	Couriol Clément (cours: 5, exo: 6, note: 11/20): ne se souvient pas bien des arrangements. Moyen pour l'exo.\\
+	MAMEDOV (cours: 6, exo: 5, note: 11/20): ne se souvient pas bien des arrangements. dit qu'une fonction injective de E dans E est bijective\\
+	
+	\begin{exo}
+		La composée de deux applications injective (resp. surjective, bijective) est injective (resp. surjective, bijective).
+	\end{exo}
+	
+	\begin{exo}
+		Arrangement: définition, nombre de $p$-arrangements, nombre d'injection de $E$ dans $F$ est le nombre de $\vert E \vert$ - arrangements sur $F$, 2-arrangements de $\lbrace 1, 2, 3 \rbrace$.
+	\end{exo}
+
+	\begin{exo}
+		Mq si $f : E \longrightarrow E$ vérifie $f \circ f = f$ et $f$ injective ou surjective alors $f = id$. 
+	\end{exo}
+
+	\begin{exo}
+		Combien y a t-il de sous-ensembles de taille pair d'un ensemble à $n$ éléments? Utiliser 2 méthodes.
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Mathieu Collilieux (cours: 6, exo: 6, note: 12): parle de réciproque d'une fonction sans se soucier de savoir si elle est bijective. Peu rigoureux.\\
+	BROUILLARD Alizée (cours: 7, exo: 4, note: 11): se noie dans le brouillard avec ses notations.\\
+	
+	\begin{exo}
+		Caractérisation des applications injectives
+	\end{exo}
+	
+	\begin{exo}
+		Formule de Poincaré.
+	\end{exo}		
+
+	\begin{exo}
+		Si $f \circ f \circ f = f$ alors $f$ surjective $\Longleftrightarrow$ $f$ injective.
+	\end{exo}	
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	GUES Flora (cours: 8, exo: 7, note: 15/20): bien, mais manque d'initiative pour l'exo. \\
+	Bouaza Yakoub (cours: 6, exo:6, note: 12): confonds cardinal et ensemble\\
+	
+	\begin{exo}
+		Cardinal d'une réunion d'ensembles deux à deux disjoints
+	\end{exo}
+	
+	\begin{exo}
+		Permutations et combinaisons.
+	\end{exo}	
+
+	\begin{exo}
+		Si $h \circ g \circ f$ et $g \circ f \circ h$ surjectives et $f \circ h \circ g$ est injective alors $f, g, h$ sont bijectives.
+	\end{exo}		
+
+	
+\end{document}

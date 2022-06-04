@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 7: EVN + Séries}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Océane TOPENOT (14): Démo de cours bien. Exo correct.\\
+	CHOPARD Etienne (11): Démo de cours assez bien. Très hésitant sur les exos, ne connaît pas bien le cours.\\
+	
+	\begin{exo}
+		f continue, A connexe par arc $\implies$ $f(A)$ connexe par arc
+	\end{exo}
+
+	\begin{exo}
+		Equivalent de $\ln(n!)$?
+	\end{exo}
+	
+	\begin{exo}
+		Soit $E$ un ensemble fini de $\mathbb{R}^2$. Mq $\mathbb{R}^2 - E$ est connexe par arc.
+	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Héloise (12): Démo de cours bien. qques petites erreurs de raisonnement\\
+	TEMIZYUREK Muhammed (13): Démo de cours assez bien, ainsi que l'exo.\\
+	
+	\begin{exo}
+		fct linéaire continue en dim finie?
+	\end{exo}
+
+	\begin{exo}
+		Convergence/Equivalent de $\sum \frac{1}{n\log(n)}$?
+	\end{exo}
+	
+	\begin{exo}
+		$GL_n(\mathbb{R})$ est-il connexe par arc?
+		Est-ce qu'il existe une norme sur $M_n(\mathbb{C})$?\\
+		Mq $GL_n(\mathbb{C})$ ouvert dense connexe par arc dans $M_n(\mathbb{C})$. 
+	\end{exo}
+
+%	\begin{exo}
+%		Adhérence et intérieur des matrices diagonalisables de $\mathcal{M}_n(\mathcal{C})$.
+%	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Lily (11): Démo de cours assez bien mais ne connaît pas la démo pour trouver un équivalent de la série harmonique et n'est pas à l'aise avec les techniques standards.\\
+	Armand (14): petit bug dans la démo de cours mais bien sinon (jolis dessins).\\
+	
+	\begin{exo}
+		Série Riemann.
+	\end{exo}
+
+	\begin{exo}
+		Montrer que l’union de deux connexes par arcs non disjoints est connexe par arcs.
+	\end{exo}
+	\begin{exo}
+		Mq $\sum_{k=1}^{n} \vert \sin(k) \vert$ diverge (aide: montrer que $\sin(k)^2 = \frac{1 - cos(2k)}{2}$, puis borner $\sum cos(2k)$).
+	\end{exo}
+
+\end{document}

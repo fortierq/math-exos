@@ -1,0 +1,65 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+
+\title{Colle PCSI 30: probabilités}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	GODEAU Victor (14): erreurs dans la formule de Markov. bien sinon.\\
+	NESPOULOS (17): bien, bonnes manipulations de sommes\\
+	
+	\setcounter{exo}{0}
+	
+	\begin{exo}
+		formules de Markov et Bienaymé-Tchebichev
+	\end{exo}
+	\begin{exo}
+		Soit $X$ une variable aléatoire à valeur dans $\s{0, ..., N}$. Montrer que $E(X) = \sum_{k=0}^{N-1} P(X > k)$.\\
+		En déduire la loi de  $min(X, Y)$ si $X$ et $Y$ sont deux lois uniformes.
+	\end{exo}
+
+	\section*{Colle 2}
+	MONTEIL Alicia (12): a du mal à dénombrer toutes les possibilités.\\
+	LEROY (15): a mal appliqué la formule du binome de newton. Bien sinon.\\
+	
+	\setcounter{exo}{0}
+
+	\begin{exo}
+		Thm de transfert.
+	\end{exo}
+
+	\begin{exo}
+		On lance 2 dés. Est-ce que << un des dés tombe sur 1 >> et << la somme des 2 dés vaut 7 >> sont indépendant? Et si on remplace 1 par 6? 
+	\end{exo}	
+		
+	\begin{exo}
+		Est-ce qu'un évènement peut etre indépendant de lui-même?
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	GOUX Alexandre (15): bien\\
+	MOTTET (14): ne se souvient pas de la formule de Markov. Assez bien sinon.\\
+	
+	\begin{exo}
+		Définition, espérance et variance d'une loi binomiale.
+	\end{exo}
+
+	\begin{exo}
+		Soit X et Y deux variables aléatoires indépendantes suivant des lois de
+		Bernoulli de paramètres p et q . Déterminer la loi de la variable
+		Z = max(X, Y ) .
+	\end{exo}
+	
+\end{document}

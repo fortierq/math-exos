@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 22: dérivabilité, analyse asymptotique, polynômes.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	TONDU Camille (cours: 6, exo: 6, note: 12): mieux que la dernière fois! \\
+	DETHOMASIS Léna (cours: 5, exo: 7, note: 12): ne se souvient pas de la condition nécessaire pour les extrema locaux\\
+	
+	\begin{exo}
+		Nombre de racines d'un polynôme et corollaires
+	\end{exo}
+
+	\begin{exo}
+		Tout ce que tu connais sur les extremum locaux?
+	\end{exo}
+	
+	\begin{exo}
+		Mq $x \in \mathbb{R} \longmapsto x^2 \sin(\frac{1}{x})$ (0 en 0) est dérivable mais pas $C^1$. 
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	SAULDUBOIS Robin (cours: 6, exo: 8, note: 14é): ne se souvient plus de la condition nécessaire pour les extrema locaux. Mais fait de très beaux dessins.\\
+	SEJOURNET Baptiste (cours: 7, exo: 7, note: 14): assez bien\\	
+		
+	\begin{exo}
+		Théorème de la limite de la dérivée
+	\end{exo}		
+
+	\begin{exo}
+		Division euclidienne des polynômes?
+	\end{exo}
+
+	\begin{exo}
+		(Darboux) Soit $f : I \longrightarrow \mathbb{R}$ dérivable, $a, b \in I$.\\
+		
+		\begin{enumerate}
+			\item On suppose $f'(a) < 0 < f'(b)$ . Mq $\exists c$, $f'(c) = 0$.
+			\item Soit $f'(a) <  \lambda < f'(b)$. Soit $g(x) = f(x) - \lambda x$.\\
+			Considérer un minimum de $g$ pour montrer que $\exists c$, $f'(c) = \lambda$.  
+		\end{enumerate}	
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	FOLCO Thomas (cours: 8, exo: 8, note: 16): très bien sauf pour l'écriture et la relative désinvolture.\\
+	
+	\begin{exo}
+		Lien entre racines et factorisation, avec son lemme : division euclidienne d'un polynôme par X-a
+	\end{exo}		
+	
+	\begin{exo}
+		Thm de Rolle?
+	\end{exo}
+	
+	\begin{exo}
+		$f : [-1, 1] \longrightarrow \mathbb{R}$ $C^1$ sur $[-1, 1]$, 2 fois dérivable sur $]-1, 1[$ tq $f(-1) = -1$, $f(0) = 0$, $f(1) = 1$.\\
+		Mq $\exists c \in ]-1, 1[$, $f''(c) = 0$.
+	\end{exo}	
+\end{document}

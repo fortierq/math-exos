@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 5: Trigonométrie et nombres complexes}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	BELLONCLE (cours: 7, exo: 6, note: 13): assez bien\\
+	LINIGER Kylian (cours: 7, exo: 4, note: 11): très lent sur les exos. 
+	
+	\begin{exo} 
+		\begin{itemize}
+				\item Argument d'un produit et corollaire: $arg(\frac{z}{z'})$
+			\item Enoncer l'inégalité triangulaire et cas d'égalité. Dessin. 
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\cos(\frac{\pi}{8})$.
+	\end{exo}
+
+	\begin{exo}
+		Résoudre $e^z + 2 e^{-z} = i$ (je les aide en disant de multiplier par $e^z$ et de poser $Z = e^z$).
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	BONNOT (cours: 7, exo: 6, note: 12): Clair dans sa présentation. Ecrit $sin(ix)$. Me dit que $\forall x \in \mathbb{R}$, $x^2 \geq x$. \\
+	LAGNEAUX Nicolas (cours: 7, exo: 8, note: 15): Très bien. 
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Formulaire des équations du deuxième degré à coefficient complexes
+			\item Tout ce que tu sais sur l'argument d'un nombre complexe? Définitions, propriétés...
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\int_{-\pi}^{\pi} \sin^5(t)dt$.
+	\end{exo}
+	\begin{exo}
+		\begin{enumerate}
+			\item Montrer $\forall n \in \mathbb{N}$, $x \notin \pi \mathbb{Z}$ :
+			$$\sum_{k=0}^{n} \cos(2kx) = \frac{\sin((n+1)x) \cos(nx)}{\sin(x)}$$
+			\item Montrer:
+			$$\vert \sin(x) \vert \geq \frac{1 - cos(2x)}{2}$$
+			\item Déduire:
+			$$\sum_{k=1}^{n} \vert \sin(k) \vert \geq \frac{n}{2}  - \frac{1}{2 \sin(1)}$$
+		\end{enumerate}
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	PONCOT Thomas (cours: 3, exo: 7, note: 10): ne connait pas les racines nièmes, ni la démo. Ecrit vraiment à l'arrache. Bien sur les exos.\\
+	JAGHRI Théo (cours: 6, exo: 5, note: 11): mauvais compréhension des congruences. 
+	
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Liste des racines n-ièmes de l'unité
+			\item Tout ce que tu sais sur l'exponentielle d'un nombre complexe? Définitions, propriétés...
+		\end{itemize}
+	\end{exo}
+
+	\begin{exo}
+		Trouver les $n \in \mathbb{N}$ tq $(1 + i)^n \in \mathbb{R}$.
+	\end{exo}
+
+	\begin{exo}
+		Résoudre l'équation:
+		$$\cos(x) - \sqrt{3} \sin(x) = 1$$
+	\end{exo}
+%	
+%	\begin{exo}
+%		Résoudre l'équation:
+%		$$\cos(2x) = \cos^2(x)$$
+%	\end{exo}
+\end{document}

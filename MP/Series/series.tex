@@ -1,0 +1,85 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 8: Séries}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	MAUBLANC Paul (14): assez bien\\
+	Lise (15): bien\\
+	
+	\begin{exo}
+		Critère de D'Alembert.
+	\end{exo}
+	
+	\begin{exo}
+		Convergence puis équivalent de $\sum_{2}^{\infty} \frac{1}{k\ln(k)}$? 
+	\end{exo}
+
+	\begin{exo}
+		Calcul de $\sum_{2}^{\infty} \ln(1 - \frac{1}{n^2})$? 
+	\end{exo}
+%	\begin{exo}
+%		Convergence de $\sum \frac{1}{{p_n}^{p_n}}$, où $p_n$ = nb de chiffres dans l'écriture décimale de $n$?
+%	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Rémi (12): Ne connaît pas bien la preuve. Ok pour l'exo.\\
+	Eloïse (15): Bien. \\
+ 	
+	\begin{exo}
+		Critère spécial des séries alternées.\\
+		Montrer que chaque condition est nécessaire. (considérer $u_n = \frac{1}{n}$ si $n$ pair, $\frac{1}{n^2}$ sinon)
+	\end{exo}
+
+	\begin{exo}
+		Convergence puis calcul de $\sum_{2}^{\infty} \frac{1}{k(k+1)}$? 
+	\end{exo}
+	
+	\begin{exo}
+		Convergence puis calcul de $\sum_{k=1}^{\infty} \frac{k}{2^k}$?
+	\end{exo}
+%	\begin{exo}
+%		Adhérence et intérieur des matrices diagonalisables de $\mathcal{M}_n(\mathcal{C})$.
+%	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	ANDRIEU Grégoire (8): ne connaît pas du tout la preuve. Dit que $A^k = (a_{i,j}^k)$.\\
+	Julie (14): Assez bien.\\
+	
+	\begin{exo}
+		Exponentielle de matrice.
+	\end{exo}
+	
+	\begin{exo}
+		Equivalent de $\ln(n!)$ quand $n \longrightarrow \infty$?
+	\end{exo}
+
+	\begin{exo}
+		\begin{itemize}
+			\item Calculer $\sum_{k=0}^{n} sin(k)$.
+			\item En déduire que $\sum_{k=0}^{n} \vert \sin(k) \vert \rightarrow \infty$ et que $\sum \frac{\sin^2(k)}{k}$ converge.
+			\item (Abel) Mq $\sum \frac{sin(k \theta)}{k}$ converge.
+		\end{itemize}			
+	\end{exo}
+
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 20: continuité}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	PRIORESCHI (note: 14): bien pour la question cours.\\
+	BINET Mathilde (note: 12): ne sait pas bien utiliser les définitions\\
+		
+	\begin{exo}
+		Montrer que si $f : \R \longrightarrow \R$ continue a une limite 1 en $\infty$ et -1 en $-\infty$ alors $f$ s'annule.
+ 	\end{exo}
+
+	\begin{exo}
+		$f$ continue décroissante sur $\R$ $\implies$ $f$ a un point fixe
+	\end{exo}
+	
+	\section*{Colle 2}
+	DERET Simon (note: 14): rapide sur le premier exo, mais manque de précision.\\
+	BASTIEN Cléo (note: 13): manque de précisions.\\
+	
+	\begin{exo}
+		$f : [0, 1] \rightarrow [0, 1]$ continue $\Longrightarrow$ $f$ a un point fixe
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	François Léonard (13): bonnes idées mais reste très vague, ne définit pas ses variables.\\
+	BONNOT Alex (13): manque d'assurance mais assez bien.\\
+	
+	\begin{exo}
+		Si $f \longrightarrow \infty$ en $-/+ \infty$ alors la dérivée de $f$ s'annule.
+	\end{exo}
+	
+\end{document}

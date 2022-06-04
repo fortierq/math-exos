@@ -1,0 +1,82 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 8: Séries}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	
+	Réda (14): petite erreur dans l'application du produit de Cauchy.\\
+	Marouane (12): erreurs dans le produit de Cauchy. Assez bien mais confus.\\
+	
+	\begin{exo}
+		Fubini.
+	\end{exo}
+	
+	\begin{exo}
+		Convergence et calcul de $\sum_{n=0}^{\infty} \sum_{k\geq n}^{\infty} \frac{1}{k!}$ (=2e)? 
+	\end{exo}
+
+\begin{exo}
+	Convergence puis calcul de $\sum_{k=1}^{\infty} \frac{k}{2^k}$? (en utilisant produit de Cauchy et dérivée)
+\end{exo}
+%	\begin{exo}
+%		Convergence de $\sum \frac{1}{{p_n}^{p_n}}$, où $p_n$ = nb de chiffres dans l'écriture décimale de $n$?
+%	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Etienne (16): bien\\
+	Nathan (14): bien mais lent\\
+	
+	\begin{exo}
+		Q et D dénombrable.
+	\end{exo}
+
+	\begin{exo}
+		En utilisant le thm de sommation par paquet, déterminer pour quels $\alpha \in \mathbb{R}$ $(\frac{1}{(m+n)^\alpha})_{m, n}$ est sommable.
+	\end{exo}
+	
+%	\begin{exo}
+%		Adhérence et intérieur des matrices diagonalisables de $\mathcal{M}_n(\mathcal{C})$.
+%	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Julien (12): ne connaît pas bien la preuve. Inverse mal deux sommes. Dit que $\ln$ est décroissante (!!).\\
+	Kévin (14): petit oubli dans la preuve. Oubli du thm de Fubini. Bien sinon.\\
+	
+	\begin{exo}
+		Théorème de Cauchy.
+	\end{exo}
+	
+	\begin{exo}
+		\begin{enumerate}
+			\item Si $\alpha >$ 1, trouver un équivalent de $\sum_{k=n}^\infty \frac{1}{k^\alpha}$.
+			\item Pour quelles valeurs $\sum_{n=0}^\infty \sum_{k=n+1}^\infty \frac{1}{k^\alpha}$ converge?
+			\item Montrer que $\sum_{n=0}^\infty \sum_{k=n}^\infty \frac{1}{k^\alpha} = 	\sum_{p\geq1} \frac{1}{p^{\alpha - 1}}$. 
+		\end{enumerate}	
+	\end{exo}
+
+	\begin{exo}
+		Equivalent de $\ln(n!)$ quand $n \longrightarrow \infty$?
+	\end{exo}
+
+\end{document}

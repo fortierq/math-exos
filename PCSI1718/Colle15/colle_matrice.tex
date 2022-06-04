@@ -1,0 +1,64 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 15: matrices}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+RIONDET Baptiste (16): bien pour $AB$ nilpotente. Petite erreur dans la formule du binôme de Newton.\\
+ROMAND Erwyn (17): ne se souvient pas bien de Bernouilli pour les rééls, mais fait l'analogie matrice/réel.\\
+
+\begin{exo}
+	\begin{itemize}
+		\item Montrer que le produit et la somme de deux matrices nilpotentes qui commutent sont nilpotentes. Contre exemple si les matrices ne commutent pas?
+		\item Mq si $A$ et $B$ commutent alors $A^n - B^n = (A - B)(A^{n-1} + A^{n-2}B + ... + B^{n-1})$.
+		\item Soit $M \in \mathcal{M}_{n, n}$ nilpotente: $M^p = 0$, $p \in \mathbb{N}^*$. Montrer que $I_n$ - $M$ est inversible et déterminer son inverse.
+	\end{itemize}
+\end{exo}
+
+	\section*{Colle 2}
+	PERRET Emeline (15): oublie l'initialisation de la récurrence. TB sinon.\\
+	VENNE Loris (16): petite erreur de signe dans l'inverse d'une matrice $2\times2$. TB sinon.\\
+	
+	\begin{exo}
+		$\begin{pmatrix}
+		\cos(\theta) & -\sin(\theta) \\ 
+		\sin(\theta) & \cos(\theta)
+		\end{pmatrix}^n ?$
+	\end{exo}	
+
+	\begin{exo}
+		Calculer $A^{10}$, où:
+		$$A = \begin{pmatrix}
+		-1 & 0 \\ 
+		3 & 2 
+		\end{pmatrix}$$
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Oliver Killan (12): a la bonne idée de calculer les 1ères puissances et conjecturer le résultat. un peu lent.\\
+	Antonin VERJUS (12): a la bonne idée de calculer les 1ères puissances et conjecturer le résultat. un peu lent.\\
+		
+	\begin{exo}
+		Calculer $A^n$, où:
+		$$A = \begin{pmatrix}
+		1 & 1 & 1 \\ 
+		0 & 1 & 1 \\ 
+		0 & 0 & 1
+		\end{pmatrix}$$
+	\end{exo}
+
+\end{document}

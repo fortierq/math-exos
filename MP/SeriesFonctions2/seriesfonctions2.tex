@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 10: Séries et séries de fonctions}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	SALIMI Mehdy (Note: 15): Bien.\\
+	GUILLOT Jeanne (Note: 12): ne pense pas à comparer à une série de Riemann pour montrer CVS. Reste bloquée sur l'exo.\\
+	
+	\begin{exo}
+		Propriétés de convergence uniforme d'une série de fonctions. Contre exemple pour la réciproque?
+	\end{exo}
+
+	\begin{exo}
+		Soit $f : ]0, \infty[ \longrightarrow \mathbb{R}$, $f(x) = \sum_{k=1}^{\infty}	\frac{1}{sh(kx)}$.\\
+		Donner un équivalent de $f$ en $\infty$.
+	\end{exo}
+
+	\begin{exo}
+		Etudier la convergence simple et uniforme de $\phi : t \longmapsto 2 t (1-t)$ sur $[0, 1]$.\\
+		Montrer que toute fonction constante sur $[a, b] \subset ]0, 1[$ est limite d'une suite de polynômes à coefficients relatifs, puis que ce résultat subsiste pour toute fonction continue sur $[a, b]$.
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	ZOUGGARI Raphaël (Note: 9): problèmes dans la preuve de cours, manque de rigueur (écrit $\vert \vert f_n \vert \vert$ au lieu de $\vert \vert f_n(x) \vert \vert$ par exemple). Dit que $u_n \leq v_n$, $v_n$ diverge $\implies$ $u_n$ diverge.\\
+	MAULET Louis (note: 15): Bien.\\
+
+	\begin{exo}
+		CV normale $\implies$ CV unif. Contre exemple pour la réciproque?
+	\end{exo}
+
+	\begin{exo}
+		Convergence simple, uniforme, normale sur $\mathbb{R}$ de:
+		$$\sum (-1)^{n-1} \frac{n}{n^2 + x^2}$$
+	\end{exo}
+		
+	\begin{exo}
+		Montrer que $$\int_{0}^{1/2}\frac{1}{1-x} dx = \sum_{k=1}^{\infty} \frac{1}{k 2^k}$$
+		En déduire $\sum_{k=1}^{\infty} \frac{1}{k 2^k}$.
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Marion Begey (Note: 12): ne se souvient pas de la CV normale, peu rigoureuse. \\
+	PONS Ariane (Note: 12): ne sait pas que f' = g' $\implies$ f = g + constante. \\  
+	
+	\begin{exo}
+		CV absolue $\implies$ CV simple. Réciproque?
+	\end{exo}
+
+	\begin{exo}
+		(Étudier la convergence de $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$? regularité de $f_n$ et de $f$?)\\
+		Calculer $\lim_\infty \int_{-1}^{1} f_n(x) dx$.	
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que $\forall x \in ]-1, 1[$, $\arctan(x) = \sum_{k=0}^{\infty} (-1)^k \frac{x^{2k + 1}}{2k + 1}$. On rappelle que $\arctan'(x) = \frac{1}{1+x^2}$.
+	\end{exo}
+	
+\end{document}

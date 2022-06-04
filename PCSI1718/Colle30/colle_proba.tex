@@ -1,0 +1,61 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+
+\title{Colle PCSI 30: probabilités}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	MONNIN Guillaume (8): ne connaît pas les définitions/théorèmes du cours, propose des solutions un peu au pif à base de $n!$, $\binom{n}{k}$...\\
+	TRONCIN (12): ne connait pas bien les définitions du cours. bien pour l'exo.\\
+	
+	\setcounter{exo}{0}
+	
+	\begin{exo}
+		Formule probas totales
+	\end{exo}
+	\begin{exo}
+		Proba que 2 élèves aient leur anniversaire le même jour?
+	\end{exo}
+
+	\section*{Colle 2}
+
+	\setcounter{exo}{0}
+	MONTHILLIER Thibaud (note: 13): propose des solutions un peu au pif à base de $n!$, $\binom{n}{k}$... assez bien sinon.\\
+	Arthur (18): très bien.\\
+	
+	\begin{exo}
+		Définition et propriété des probas conditionnelles.
+	\end{exo}
+		
+	\begin{exo}
+		Est-ce qu'un évènement peut etre indépendant de lui-même?
+	\end{exo}	
+	
+	\begin{exo}
+		On lance 2 dés. Est-ce que << un des dés tombe sur 1 >> et << la somme des 2 dés vaut 7 >> sont indépendant? Et si on remplace 1 par 6? 
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Réjane(14): bien.\\
+	
+	\begin{exo}
+		Formule de Bayes
+	\end{exo}
+
+	\begin{exo}
+		Proba d'obtenir 2 as au poker?	
+	\end{exo}
+	
+\end{document}

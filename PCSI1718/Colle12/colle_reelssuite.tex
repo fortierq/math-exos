@@ -1,0 +1,72 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 11: bornes, partie entiere, inégalités}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	PETIT Laurine (13): Erreurs de calcul\\
+	BONNOT ALex (11): beaucoup d'erreurs de calcul\\
+	
+	\begin{exo}
+		Terme général de $u_{n+1} = 3 u_n + 2$, $u_0 = 1$?
+	\end{exo}	
+	
+	\begin{exo}
+		mq Inf $\floor{x} + \floor{\frac{1}{x}}$ = 1.
+	\end{exo}
+	
+	\begin{exo}
+		Borne inf et sup de $E = \lbrace \frac{1}{2^n} + \frac{(-1)^n}{n} \rbrace$?
+	\end{exo}
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	PRIORESCHI Armand (14): bien \\
+	BASTIEN Cléo (12): étourderies\\
+	
+	\begin{exo}
+		Convertir 0,20172017...
+	\end{exo}
+
+	\begin{exo}
+		Soit $f : \mathbb{R} \longmapsto \mathbb{R}$ continue tq $f(x + y) = f(x) + f(y)$.  mq $f(x) = C x$.
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	LOMAZZI (14): bien\\
+	BINET Mathilde (13): assez bien\\
+	BOUGHAMMOURA (14): bien\\
+	
+	\begin{exo}
+		Terme général de $u_{n+2} = u_{n+1} + u_{n-1}$, $u_0 = 0$, $u_1 = 1$?
+	\end{exo}	
+	
+	\begin{exo}
+		limite de $u_0 = 3$, $u_{n+1} = \frac{1}{u_n} + \frac{un}{2}$?
+	\end{exo}
+	
+	\begin{exo}
+		Sup $\s{\vert x - y \vert, ~~x, y \in A}$?
+	\end{exo}
+
+	\begin{exo}
+		Borne inf et sup de $E = \lbrace \frac{1}{n^2} + {(-1)^n} \rbrace$?
+	\end{exo}
+	
+	\begin{exo}
+		trouver $u$ tq $u_0 =0$, $u_1 = 0$ et $u_{n+2} = 5u_{n+1} - 6u_n + 2n^2$: chercher solution particulière $v_n = n^2 + an + b$ puis poser $w_n = u_n - v_n$.
+	\end{exo}		
+\end{document}

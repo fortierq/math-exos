@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle MP 4: réduction 2}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	JAUAD Reda (note: 10): preuve de cours mal expliqué et peu rigoureuse\\
+	Borgeois Slava (note: 14): Très bien sur le cours mais exo décevant.\\
+	GUILLEMAUD Tom (note: 13): petits oublis dans la preuve\\
+	Abdel (note: 16): bien mais confond vecteur et endomorphisme dans les espace de fonctions\\
+	
+	\begin{exo}
+		Démo cours
+	\end{exo}
+
+	\begin{exo}
+		Soient $u, v$ deux endo d'un EV $E$.
+		\begin{enumerate}
+			\item Si $\lambda \neq 0$ est v.p de $u \circ v$ mq $\lambda$ est aussi v.p de $v \circ u$.
+			\item Mq (1) reste vrai si $\lambda = 0$ en dimension finie.
+			\item Soient $E =\mathbb{R}[X]$ et $u, v$ deux endo définis par $u(P) = P'$ et $v(P)$ = primitive de $P$ s'annulant en 0.
+			Déterminer $Ker(u \circ v)$ et $Ker(v \circ u)$.
+		\end{enumerate}
+	\end{exo}
+	
+
+
+	\begin{exo}
+		Montrer $\chi_{AB} = \chi_{BA}$ pour $A \in GL$ puis $A$ quelconque.\\
+		Indice: mq pour $p$ assez grand, $A + \frac{1}{p} I_n$ $\in$ $GL_n$.  
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Nimo Champion (note: 10): preuve de cours mal expliqué et peu rigoureuse\\
+	SCHMIDT Arthur (note: 14): bien sur le cours, exo correct.\\
+	DAUDEY Clément (note: 14): Bien sauf erreur de calcul\\
+	LEMEDEF Stepan (note: 14): assez bien sauf quand il dit que $\det(A+B) = \det(A) + \det(B)$.\\
+	
+	\begin{exo}
+		Démo cours
+	\end{exo}
+	
+	\begin{exo}
+		Diagonaliser 
+		$$\begin{pmatrix}
+		1 & -1 \\ 
+		2 & 4
+		\end{pmatrix}$$ 
+		puis résoudre: 
+		$$x' = x - y$$
+		$$y' = 2x + 4y$$
+	\end{exo}
+	
+	\begin{exo}
+		Soit $E$ $\mathbb{K}$-EV de dim $n$ et $p$, $q$ deux projecteurs de $E$ qui commutent.
+		Mq:
+		\begin{enumerate}
+			\item $p \circ q$ est un projecteur.
+			\item $Im(p \circ q) = Im(p) \cap Im(q)$
+			\item $Ker(p \circ q) = Ker(p) + Ker(q)$
+		\end{enumerate}
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Prost Vincent (note: 13): preuve cours à peu près ok mais peu rigoureuse\\
+	Elsa Maillot (note: 13): bien sur le cours mais bof sur les exos.\\
+	Bonnetain Baptiste (13): petits manques de rigueurs (ensemble = entier...)\\
+	AMRANE Paul (15): bien, mais ne se souvient pas bien du thm de décomposition en projecteurs\\
+	NADAL Julien (12): confond Sp et Rac. Pas bonne colle pour un 5/2\\
+	
+	\begin{exo}
+		Démo cours
+	\end{exo}
+	
+	\begin{exo}
+		Polynome minimal d'un projecteur?
+	\end{exo}
+
+	\begin{exo}
+		\begin{enumerate}
+			\item $$J = \begin{pmatrix}
+			0 & 1 & 0  & ... \\ 
+			0 & 0 & 1 & ...\\ 
+			... & ... & ...  & 1\\
+			1 & 0 & ...  & 0\\
+			\end{pmatrix}$$ Calculer $J^2, ..., J^n$ puis montrer que $J$ est diagonalisable, quelle sont ses v.p?
+			\item En déduire la valeur de:
+			$$\Delta_n = \begin{vmatrix}
+			a_1 & a_2 & ... & a_n \\ 
+			a_n & a_1 & ... & a_{n-1} \\ 
+			... & ... & ... & ...\\
+			a_2 & a_3 & ... & a_1\\
+			\end{vmatrix}$$
+		\end{enumerate}
+	\end{exo}
+
+	\begin{exo}
+		Soit $M \in M_2(\mathbb{R})$ tq $M^2 + M = U_2$. Quelles sont les vp possibles de $M$?
+	\end{exo}
+		 
+\end{document}

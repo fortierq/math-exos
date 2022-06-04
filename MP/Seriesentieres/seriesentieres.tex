@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 12: Séries entières}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Jawed (14): Assez bien.\\
+	Laura (15): Bien. Se souvient de la démo de $\sin(n) \not\longrightarrow 0$.\\
+		
+	\begin{exo}
+		Lemme d'Abel.
+	\end{exo}
+
+%	\begin{exo}
+%		Rayon et calcul de $\sum_{n=1}^{\infty} (1 + \frac{1}{2} + ... + \frac{1}{n}) t^n$ ($= \frac{\ln(1 - t)}{t - 1})$.
+%	\end{exo}
+
+	\begin{exo}
+		Rayon de CV de $\sum \sin(n)z^n$?
+	\end{exo}
+	\begin{exo}
+		%DSE de $\frac{1}{(1-z)^{k+1}}$?
+		Soit $\sum a_n z^n$ série entière de rayon R. Quel est le rayon de CV de $\sum a_n^2 z^n$?
+	\end{exo}
+			
+	\begin{exo}
+		Mq si une série entière est nulle sur un voisinage de 0, elle est identiquement nulle.
+	\end{exo}
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Achille (12): confusions et erreurs multiples dans la formule du produit de Cauchy\\
+	
+	\begin{exo}
+		Règle de D'Alembert.
+	\end{exo}
+	
+	\begin{exo}
+		DSE et rayon de CV de $\ln(1 + x - 2x^2)$?
+	\end{exo}
+	\begin{exo}
+		Rayon et calcul de $\sum \frac{x^n}{n(n+1)(n+2)}$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $a_0 = 1$ et $a_{n+1} = \sum_{k=0}^{n} a_k a_{n-k}$.
+		\begin{itemize}
+			\item Calculer $S(x) = \sum_{k=0}^{\infty} a_k x^k$, en mq $xS(x)^2 = S(x) - 1$.
+			\item En déduire $a_n$, $\forall n$.
+		\end{itemize}
+	\end{exo}
+
+	\begin{exo}
+		Montrer que si $\alpha \in \mathbb{R}$, $f(t) =\cos(\alpha \arcsin(t))$ est développable en série entière sur un voisinage de 0 et trouver son rayon de convergence.\\
+		Aide: montrer que $f$ vérifie l'ED $(1 - t^2) y'' - t y' + \alpha^2 y = 0$.
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Julien (15): Petite erreur de calcul. Bien sinon.\\
+	
+	\begin{exo}
+		Règle de D'Alembert.
+	\end{exo}
+	
+	\begin{exo}
+		DSE et rayon de CV de $\ln(1 + x - 2x^2)$?
+	\end{exo}
+	\begin{exo}
+		Rayon et calcul de $\sum \frac{x^n}{n(n+1)(n+2)}$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $a_0 = 1$ et $a_{n+1} = \sum_{k=0}^{n} a_k a_{n-k}$.
+		\begin{itemize}
+			\item Calculer $S(x) = \sum_{k=0}^{\infty} a_k x^k$, en mq $xS(x)^2 = S(x) - 1$.
+			\item En déduire $a_n$, $\forall n$.
+		\end{itemize}
+	\end{exo}
+
+	\begin{exo}
+		Montrer que si $\alpha \in \mathbb{R}$, $f(t) =\cos(\alpha \arcsin(t))$ est développable en série entière sur un voisinage de 0 et trouver son rayon de convergence.\\
+		Aide: montrer que $f$ vérifie l'ED $(1 - t^2) y'' - t y' + \alpha^2 y = 0$.
+	\end{exo}
+		
+	\section*{Colle 4}
+	\setcounter{exo}{0}
+	Alex (10): ne connaît pas bien la démo. Manque de pratique.\\
+	Pauline (14): ne pense pas à utiliser la propriété fondamental de $\ln$. Un peu lent dans les calculs mais bien sinon.\\
+
+	\begin{exo}
+		Règle de d'Alembert.
+	\end{exo}
+	
+	\begin{exo}
+		DSE de $\ln(1 + x -2x^2)$?.
+	\end{exo}
+
+	\begin{exo}
+		Quels sont les $z$ pour lesquels $\sum \frac{z^n}{n}$ converge?
+	\end{exo}
+
+	\begin{exo}
+		Soit $B_n$ le nombre de partitions de $\lbrace 1, 2, ..., n \rbrace$.
+		\begin{enumerate}
+			\item Calculer $B_1$, $B_2$, $B_3$.
+			\item Mq $$B_{n+1} = \sum_{k=0}^{n} \binom{n}{k} B_k$$
+			\item Soit $S_n = \frac{1}{e} \sum_{k=0}^{\infty} \frac{k^n}{k!}$. Mq $B_n = S_n$.
+			\item Montrer que $\sum \frac{B_n}{n!} x^n$ a un rayon de CV infini, et calculer sa somme.
+		\end{enumerate}
+	\end{exo}
+
+\end{document}

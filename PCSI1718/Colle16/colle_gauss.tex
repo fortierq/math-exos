@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 16: matrices}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	Youri (10): Bien pour l'application du pivot de Gauss. ne connaît pas la définition d'une transposée.\\
+	Hugo M (16): petits soucis sur les indices d'une matrice. Bien sinon
+	
+	\begin{exo}
+		Formules que tu connais avec la transposée?
+	\end{exo}
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Montrer que le produit et la somme de deux matrices nilpotentes qui commutent sont nilpotentes. Contre exemple si les matrices ne commutent pas?
+			\item Mq si $A$ et $B$ commutent alors $A^n - B^n = (A - B)(A^{n-1} + A^{n-2}B + ... + B^{n-1})$.
+			\item Soit $M \in \mathcal{M}_{n, n}$ nilpotente: $M^p = 0$, $p \in \mathbb{N}^*$. Montrer que $I_n$ - $M$ est inversible et déterminer son inverse.
+		\end{itemize}
+	\end{exo}
+
+	\section*{Colle 2}
+	Myriam (16): Bien pour l'application du pivot de Gauss.\\
+	Adrien LEROY (16): Bien\\
+	\begin{exo}
+		Formule que tu connais avec ${}^{-1}$?
+	\end{exo}
+		
+	\begin{exo}
+		$\begin{pmatrix}
+		\cos(\theta) & -\sin(\theta) \\ 
+		\sin(\theta) & \cos(\theta)
+		\end{pmatrix}^n ?$
+	\end{exo}	
+
+	\begin{exo}
+		Calculer $A^{10}$, où:
+		$$A = \begin{pmatrix}
+		-1 & 0 \\ 
+		3 & 2 
+		\end{pmatrix}$$
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	FERNANDEZ (10): beaucoup d'erreurs de calculs dans l'application du pivot de Gauss.\\
+	Bastien (14): petits soucis de logique pour le raisonnement par analyse/synthese. assez bien sinon.
+	\begin{exo}
+		Mq toute matrice s'écrit comme mat sym. + mat antisym.
+	\end{exo}
+
+	\begin{exo}
+		Calculer $A^n$, où:
+		$$A = \begin{pmatrix}
+		1 & 1 & 1 \\ 
+		0 & 1 & 1 \\ 
+		0 & 0 & 1
+		\end{pmatrix}$$
+	\end{exo}
+
+\end{document}

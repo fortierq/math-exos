@@ -1,0 +1,61 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern,textcomp}
+\title{Colle PCSI 9: primitives}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	Oliver Killian (7): ne sait pas développer $(a+b)^3$. très faible en calcul.\\
+	GODEAU Victor (13): assez bien\\
+	
+	\begin{exo}
+		Primitive de $\frac{1}{3x^2+6x+3}$?
+	\end{exo}
+	
+	\begin{exo}
+		Primitive de $\sin^4$?
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	PENNET Emeline (14): bien\\
+	GAFFET Axelle (12): écrit $\int \cos^3 = \frac{\sin^4}{4}$\\
+	
+	\begin{exo}
+		Primitive de $x \longmapsto \frac{1}{x^2 - x - 1}$?
+	\end{exo}
+	
+	\begin{exo}
+		$\int_{0}^{\pi} \exp(t) \sin(3t) dt$?
+	\end{exo}	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	RIONDET Baptiste (14): bien\\
+	GOUX Alexandre (14): bien\\
+	
+	\begin{exo}
+		Primitive de $\frac{1}{xln(x)}$?
+	\end{exo}
+
+	\begin{exo}
+		$\int t^2 \sqrt{1 - t^2}$ avec changement de variable $t = cos(u)$.
+	\end{exo}
+	
+\end{document}

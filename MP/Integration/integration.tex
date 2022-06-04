@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP: Intégration et fonctions vectorielles}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Mathilde (14): assez bien\\
+	Eva (11): utilise une comparaison série-intégrale alors que la fonction n'est pas monotone. Pas mal d'imprécisions.
+
+	\begin{exo}
+		Étudier la convergence de $\int_{0}^{\infty} {\sin(x)}$, $\int_{0}^{\infty} \frac{\c{\sin(x)}}{x}$, $\int_{0}^{\infty} \frac{\sin(x)}{x}$.
+	\end{exo}
+
+%	\begin{exo}
+%		Trouver la limite de:
+%		$$\sum_{k=1}^{n} \sin(\frac{k}{n}) \sin(\frac{k}{n^2}) ~~(= \int t \sin(t))$$
+%		Aide: $\sin(\frac{k}{n^2}) \approx \frac{k}{n^2}$.
+%	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Lilou (12): erreurs dans la formule de changement de variable. Assez lente.\\
+	Théo (13): assez lent\\
+
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		$$\int_{0}^{\frac{\pi}{2}} \ln(\sin(x))dx?$$
+	\end{exo}
+
+	\begin{exo}
+		Déterminer l'intégrabilité de certaines fonctions.
+	\end{exo}
+
+%	\begin{exo} (erreur dans la méthode des rectangles)
+%		Soit $f$ $C^1$ sur $[a, b]$. Soit $a_k = a + k\frac{b-a}{n}$.\\ Mq il existe une constante $M$ tq:
+%		$$\vert \int_{a}^{b} f - \frac{b-a}{n} \sum_{k=0}^{n-1} f(a_k) \vert \leq M \frac{(b-a)^2}{2n}$$
+%	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Gabriel (15): erreur dans la définition de la limite. Bonne prise d'initiative sinon.\\
+	Mylène (14): bien.
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		Calculer, par récurrence, $\int_0^1 \ln(x)^n dx$
+	\end{exo}
+
+	\begin{exo}
+		Soit $f$ continue intégrable sur $\R$. Est-ce que $f \longrightarrow 0$? Et si $f$ décroissante? Et $xf(x)$?
+	\end{exo}
+
+\end{document}

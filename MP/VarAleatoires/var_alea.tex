@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+
+\title{Colle MP 17: Variables aléatoires + séries entières}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Mélanie (14): écrit une inégalité entre complexes. Bien sinon.\\
+	CECE Gaetan (14): ne se souvient pas bien du critère des séries alternées ni du DSE de $\ln(1+x)$. Bien sinon.
+
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		Quels sont les $z$ pour lesquels $\sum \frac{z^n}{n}$ converge?
+	\end{exo}
+	
+	\begin{exo}
+		\begin{enumerate}
+			\item Mq $E(X) = \sum_{k=1}^\infty P(X \geq k)$
+			\item Si $X$, $Y$ sont uniformes sur $\lbrace 1,..., n \rbrace$, quelle est l'espérance de $min(X, Y)$ et $max(X, Y)$?
+		\end{enumerate}
+	\end{exo}	
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Damien (10): pense que $\mathcal{P}$ et $\mathbb{P}$ désignent la même chose. Se trompe dans le DSE et le rayon de convergence de $\ln$. Écrit $\ln(-2)$.\\
+	Léa (16): très bien.
+	
+	\begin{exo}
+		Cours: Si X est une v.a.d., alors pour tout $A \in \mathcal{P}(X(\Omega))$, $X^{-1}(A) \in \mathcal{T}$
+	\end{exo}
+	\begin{exo}
+		DSE et rayon de CV de $\ln(1 + x - 2x^2)$?
+	\end{exo}
+	
+	\begin{exo}
+		Une variable aléatoire X suit une loi binomiale de taille n et de paramètre p .
+		Quelle est la loi suivie par la variable Y = n - X?
+	\end{exo}
+
+	\begin{exo}
+		Soit X une variable aléatoire suivant une loi géométrique de paramètre p. Calculer $E(\frac{1}{X})$.
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	CORNUEZ Charlotte (15): quelques erreurs de calcul. TB sinon.\\
+	POISOT Lucas (13): correct mais assez lent dans les exercices
+
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\sum_{n=0}^{\infty} \frac{n}{3^n}$ (en utilisant une série entière dérivée).
+	\end{exo}
+
+	\begin{exo}
+		Mq la somme de 2 variables de Poisson indépendantes est une variable de Poisson.
+	\end{exo}
+	
+	\begin{exo}
+		Soit X et Y deux variables aléatoires indépendantes suivant des lois de
+		Bernoulli de paramètres p et q . Déterminer la loi de la variable
+		Z = max(X, Y ) .
+	\end{exo}
+	
+\end{document}

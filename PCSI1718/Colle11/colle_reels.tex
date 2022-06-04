@@ -1,0 +1,56 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 11: bornes, partie entiere, inégalités}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	MFAUKA Tomessa (13): écrit réel $\leq$ ensemble\\
+	VENNE (14): bien\\
+	
+	\begin{exo}
+		mq Inf $\floor{x} + \floor{\frac{1}{x}}$ = 1.
+	\end{exo}
+	
+	\begin{exo}
+		Borne inf et sup de $E = \lbrace \frac{1}{2^n} + \frac{(-1)^n}{n} \rbrace$?
+	\end{exo}
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	LEROY Adrien (14): bien\\
+	VERJUS Antonin (12): trop lent, hésitant\\
+	
+	\begin{exo}
+		Convertir 0,20172017...
+	\end{exo}
+
+	\begin{exo}
+		Soit $f : \mathbb{R} \longmapsto \mathbb{R}$ continue tq $f(x + y) = f(x) + f(y)$.  mq $f(x) = C x$.
+	\end{exo}	
+	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	MONTEL Alicia (10): écrit $(-1)^n n^2 = n^{n+2}$...\\
+	ROMAND Erwyn (14): Bien\\
+	
+	\begin{exo}
+		Sup $\s{\vert x - y \vert, ~~x, y \in A}$?
+	\end{exo}
+
+	\begin{exo}
+		Borne inf et sup de $E = \lbrace \frac{1}{n^2} + {(-1)^n} \rbrace$?
+	\end{exo}		
+\end{document}

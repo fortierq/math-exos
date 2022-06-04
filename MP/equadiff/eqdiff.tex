@@ -1,0 +1,76 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP: Équations différentielles et intégration}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}	
+	Bérangère (13): oubli de la méthode générale pour trouver les v.p d'une matrice, et (en partie) pour résoudre un système d'éq linéaires. \\
+	Maël Fanjoux (15): fait le raccordement d'une ED sur la solution de l'équation homogène, pas de l'équation générale.\\
+	
+	\begin{exo}
+		Système d'eq linéaire.
+	\end{exo}
+
+	\begin{exo}
+		$$\int_{0}^{\frac{\pi}{2}} \ln(\sin(x))dx?$$
+	\end{exo}
+	
+	\begin{exo}
+		$ty' + 2y = \frac{t}{t^2+1}$
+	\end{exo}
+
+	\begin{exo}
+		Syst d'ED
+	\end{exo}	
+			
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Eloise Girardet (13): compose des équivalents (ici $\ln$) sans justification\\
+	Meriton (14): petites erreurs de calcul.\\
+	
+	\begin{exo}
+		Question de cours
+	\end{exo}
+
+	\begin{exo}
+		Syst d'ED
+	\end{exo}
+	
+	\begin{exo}
+		$(t^2 + 1)y'' + 2ty + 1 = 0$
+	\end{exo}
+			
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Maeva Henry (16): bien\\
+	Mickael (14): oubli de justification pour le thm d'intégration des relations de comparaison.\\
+	
+	\begin{exo}
+		(83) Montrer que $\int_{x}^{\infty} \frac{e^{-t}}{t} \sim \frac{e^{-x}}{x}$.
+	\end{exo}
+
+	\begin{exo}
+		Syst d'ED
+	\end{exo}	
+
+	\begin{exo}
+		$yy' + y^2 = \frac{exp(-2x)}{2}$ (poser $z = y^2$)
+	\end{exo}
+	
+	\begin{exo}
+		résoudre $f'(x) f'(-x) = 1$ (poser $g(x) = f(x) f(-x)$)
+	\end{exo}
+
+\end{document}

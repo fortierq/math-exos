@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{lmodern,textcomp}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP: Séries et suites de fonctions}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Colin (14): bien\\
+	Solène (17): Très bien\\
+	
+	\begin{exo}
+		Comparaison modes convergences.
+	\end{exo}
+
+	\begin{exo}
+		Convergence simple et uniforme de $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$?\\
+		Calculer $\lim \int_{-1}^1 \sqrt{x^2 + \frac{1}{n}} dx$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $f:[a,b] \longrightarrow \mathbb{R}$ une fonction continue. On suppose que, pour tout $k\geq0$, on a $\int_a^b f(t)t^kdt=0$.\\
+		Démontrer que $\int_a^bf(t)^2dt=0$.\\
+		En déduire que f est la fonction nulle.		
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	\noindent PIERRE Alexandre (14): petites confusions de quantificateurs, dans la démonstration \\
+	Manon (12): des difficultés pour trouver un contre-exemple (pourtant assez simple)\\
+	
+	\begin{exo}
+		Conservation continuité. Contre exemple si la CV n'est pas uniforme?
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que $$\int_{0}^{1/2}\frac{1}{1-x} dx = \sum_{k=1}^{\infty} \frac{1}{k 2^k}$$
+		En déduire $\sum_{k=1}^{\infty} \frac{1}{k 2^k}$.
+	\end{exo}
+	
+	\begin{exo}
+		Soit $f_n(x) = n^2 x (1 - nx)$ si $x \in [0,1/n]$ et $f_n(x)=0$ sinon.\\
+		Étudier la limite simple de la suite $(f_n)$.\\
+		Calculer $\int_0^1f_n(t)dt$. Y-a-t-il convergence uniforme sur [0,1]?
+		Étudier la convergence uniforme sur $[a,1]$ pour $a \in ]0,1]$.
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	GAUBERT Baptiste (13): erreurs de calcul\\
+	Juliette (13): erreurs de calcul\\
+	
+	\begin{exo}
+		Théorème : limite d'une suite d'intégrales. Contre-exemple si la convergence n'est pas uniforme?
+	\end{exo}
+	
+	\begin{exo}
+		Convergence simple et uniforme sur $\mathbb{R}$ de $fn(x) = \frac{nx}{1+n^2 x^2}$
+	\end{exo}
+
+\end{document}

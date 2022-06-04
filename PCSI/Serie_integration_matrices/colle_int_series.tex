@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 29: Séries et intégration.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+% TODO: exo 95 MPSIDDL Applications linéaires
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	MARION Caroline (cours: 3, exo: 6, note: 9): ne connaît pas la méthode de comparaison série-intégrale, et mal les théorèmes de comparaison.\\
+	Clément SPADETTO (cours: 8, exo: 7, note: 15): bien\\
+	
+	\begin{exo}
+		 Croissance de l'intégrale
+	\end{exo}
+
+	\begin{exo}
+		Cours: Comparaison de deux séries?
+	\end{exo}
+
+	\begin{exo}
+		Sommes de Bertrand: CV de $\sum \frac{1}{n \log(n)}$?
+	\end{exo}	
+	
+	\begin{exo}
+		CV et limite de $\sum{\frac{k}{2^k}}$ (avec indications)
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	TURCK Bertrand (exo: 8, cours: 7, note: 15): Bien\\
+	DHIFAOUI Mohamed (exo: 7, cours: 8, note: 15): Bien\\
+	
+	\begin{exo}
+			Formule Taylor reste intégral
+	\end{exo}		
+	
+	\begin{exo}
+		Somme Riemann?
+	\end{exo}		
+	
+	\begin{exo}
+		Limite de $\sum_{k=n}^{2n} \sin(\frac{\pi}{k})$?
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Thomas MIGOT (cours: 6, exo: 8, note: 14): ne se souvient plus du thm $\int f = 0$, $f \geq 0$ $\implies$ $f = 0$\\
+	STEFFANN Axelle (cours: 3, exo: 5, note: 8): ne connaît pas la méthode de comparaison série/intégrale. dit que $u_n \longrightarrow 0$ $\implies$ $\sum u_n$ CV car "on a déjà utilisé ce résultat en TD". Bonne blague! Et dit aussi que $ln(n) \longrightarrow 0$ en $\infty$... \\
+	
+	\begin{exo}
+		$\sum u_n$ CV $\implies$ $u_n \longrightarrow 0$
+	\end{exo}		
+	
+	\begin{exo}
+		Formule Taylor?
+	\end{exo}
+
+	\begin{exo}
+		Mq $\sum \frac{n}{2^n}$ CV et déterminer sa somme.
+	\end{exo}
+	
+	\begin{exo}
+	Soit $f : [0,1] \longrightarrow [0, 1]$ continue tq $\int f^2 = \int f$. Mq $f = 1$.
+	\end{exo}
+	
+\end{document}	

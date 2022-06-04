@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP 12: endomorphismes symétriques}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Rauch Julien (12): manque de clarté, beaucoup de confusions. oubli de $tr(AB) = tr(BA)$\\
+	Arnaud (9): erreur dans la définition d'une matrice associée à un endomorphisme. a complètement oublié comment l'étude pratique d'endomorphisme orthogonaux en dimension 3.\\
+	Stepan (14): oubli de $tr(AB) = tr(BA)$\\
+	
+	\begin{exo}
+		équivalence matrice symétrique et endo symétrique
+	\end{exo}
+
+	\begin{exo}
+		Soit u un endomorphisme symétrique d'un espace euclidien E vérifiant, pour tout $x\in E$, $⟨u(x),x⟩=0$. Mq $u = 0$.		
+	\end{exo}
+
+%	\begin{exo}
+%		Soit $E = C ([−1, 1] , R)$ muni du produit scalaire $\int_{-1}^{1} fg$.\\
+%		Quel est l'orthogonal des fonctions nulles sur $[-1, 0]$? Sont-ils supplémentaires?
+%	\end{exo}
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	ARRIGONI Valentin (14): Assez bien.\\
+	Tom (16): Bien\\
+	
+	\begin{exo}
+		Stabilité pour les endo orthogonaux.
+	\end{exo}
+
+	\begin{exo}
+		Soit $A \in M_n(\mathbb{R})$. Démontrer que la matrice $^tAA$ est diagonalisable et que ses valeurs propres sont des réels positifs.
+	\end{exo}
+	
+	\begin{exo}
+		(57) Mq $S_n$ et $A_n$ sont supplémentaire orthogonaux pour le prod canonique. Distance d'une matrice ... à $S_3$?
+	\end{exo}
+		
+	\begin{exo}
+		(39) Soit $f$ endo d'un espace euclidien tq $(f(x) \vert x) = 0$, $\forall x$. Mq $Ker f = Im f ^\perp$.
+	\end{exo}
+	
+\section*{Colle 3}
+	\setcounter{exo}{0}
+	Achille (15): oubli d'une petite partie de la démo\\
+	Lily (16): Bien.\\
+	
+	\begin{exo}
+		1ers lemme du thm spectral
+	\end{exo}
+
+	\begin{exo}
+		Caractériser la nature géométrique d'une matrice orthogonale.
+	\end{exo}
+	
+	\begin{exo}
+		Mq $O_n(\mathbb{R})$ est un compact non connexe par arc. Quelles sont ses composantes connexes par arcs?
+	\end{exo}
+	
+	\begin{exo}
+		Soit $A \in O_n(\mathbb{R})$. Mq:
+		$$\vert \sum a_{i,j} \vert \leq n$$ 
+		Indice: utiliser vecteur avec que des 1.
+	\end{exo}
+	
+	\begin{exo}
+		Soit $M \in O_n(\mathbb{R})$. Mq:
+		$$\sum \vert m_{i,j} \vert \leq n \sqrt{n}$$ 
+		Indice: utiliser $(A, B) \longmapsto tr({}^t A B)$.
+	\end{exo}
+
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 3: Étude de fonctions et trigonométrie}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	Robin Sauldubois (cours: 5, exo: 6, note: 11): écrit $cos(a + b) = cos(a) + cos(b)$, puis une deuxième fois alors que je lui ai dit d'utiliser une formule d'addition du cours (!) et $(u^n)' = n (u')^{n-1}$\\
+	FOLCO Thomas (cours: 8, exo: 9, note: 17): excellent, il a résolu 4 exos (dont deux difficiles) avec assez peu d'indications 
+	
+	\begin{exo}
+		$ln(ab) = ln(a)+ln(b)$?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer $\cos(\frac{\pi}{8})$.
+	\end{exo}
+	
+	\begin{exo}
+		Résoudre l'équation:
+		$$\cos(x) - \sqrt{3} \sin(x) = 1$$
+	\end{exo}
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Ulysse Studer (cours: 6, exo: 6, note: 12):  arrive 5-10min en retard... écrit $ln(a^n) = ln(n a)$, des équivalences entre des trucs sans rapport, écrit $h(x)$ est dérivable. Peu clair dans ses explications. \\
+	FINET Céline (cours: 6, exo: 5, note 11): écrit ln(a+b) = ln(a)+ln(b). Reste bloquée devant l'exo sans rien faire. 
+	\begin{exo}
+		Formule (et démonstration) d'addition pour $\tan$.
+	\end{exo}
+
+	\begin{exo}
+		Montrer que ($\ln(x) \leq x - 1$ $\forall x > 0$, puis que) $e \geq (1 + \frac{1}{n})^n$ pour tout $n \geq 2$.
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Tondu Camille (cours: 4, exo: 4, note: 8): écrit énormément de bêtises: $(a+b)^2 = a^2 + b^2$, besoin de 30min de réflexion et de l'aide pour résoudre $\sin^2(x) = 0$, erreurs de signes, écrit $\cos^2(x) - \sin^2(x) = 1$, ne sait pas montrer $\sin(x) \leq x$ pour $x \geq 0$... \\
+	FRECHARD Dorian (cours: 4, exo: 6, note: 10): n'a pas été capable de m'énoncer le théorème de cours demandé (inégalité triangulaire). Erreur dans la dérivé de $u^n$. 
+	
+	\begin{exo}
+		Inégalité triangulaire et démonstration.
+	\end{exo}
+	
+	\begin{exo}
+		Résoudre l'équation:
+		$$\cos(2x) = \cos^2(x)$$
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que, pour tout $x \in [0, \pi]$:
+		$$x \geq \sin(x) \geq x - \frac{x^2}{\pi}$$
+	\end{exo}
+\end{document}

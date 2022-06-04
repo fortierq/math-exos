@@ -1,0 +1,76 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 8: Sommes, fonctions trigonométriques et hyperboliques.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	MFOUKA Tomessa (14): écrit $y^2 = x^2 \implies y = x$ sans plus de justifications. Sinon bien\\
+	GAFFET Axelle (11): ne se souvient pas de la formule de la dérivée de la composée\\
+	
+	\begin{exo}
+		Dessin de $\sin$ et $\arcsin$. Dérivabilité et dérivée de la fonction $\arcsin$. 
+	\end{exo}
+
+	\begin{exo}
+		Minimum de $x \longmapsto x \ln(x)$ sur $\mathbb{R}^{+*}$?
+	\end{exo}
+
+	\begin{exo}
+		Calculer $(1 + i\sqrt{3})^9$
+	\end{exo}
+
+
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	LEROY Adrien (16): Très bien sauf pour trouver l'inverse d'une fonction.\\
+	GOUX Alexandre (13): connaît la définition d'une fct surj mais ne sais pas bien la manipuler en pratique\\
+	
+	\begin{exo}
+	    Définition d'une fonction inj, surj, bij. Dérivée de la réciproque?
+	\end{exo}
+		
+	\begin{exo}
+		Montrer que $\arctan(x) + \arctan(\frac{1}{x}) = \frac{\pi}{2}$, $\forall x > 0$.
+	\end{exo}
+	
+	\begin{exo}
+		Montrer que $f: x \longmapsto \frac{x}{1-x^2}$ est bijective de $]-1, 1[$ dans $\mathbb{R}$ et exprimer sa bijection réciproque.
+	\end{exo}	
+			
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	MONTEIL Anicia (8): ne maitrise pas bien la notion de dérivée ni celle de majorant/minorant. Fait des erreurs très basiques genre dérivée de ln(1+x), 1+x $<$ 1 $\Leftrightarrow$ x $<$ 1...\\
+	GODEAU Victor (15): bien sauf pour trouver l'inverse d'une fonction\\
+	
+	\begin{exo}
+		Définition minorant, majorant, max, min. Mq $sin x \leq x$ 
+	\end{exo}
+
+	\begin{exo}
+		Minimum de $x \longmapsto x + \frac{1}{x}$ sur $\mathbb{R}^{+*}$?
+	\end{exo}
+
+	\begin{exo}
+		Mq $\ln(1+x) \leq x$ puis: $$(1 + \frac{1}{n})^n \leq e$$
+	\end{exo}
+	
+\end{document}

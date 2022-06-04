@@ -1,0 +1,81 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 24: polynômes et EV.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	MAMEDOV Djémali (cours: 4, exo: 7, note: 11): dit que $K[X]$ est un ensemble de matrices. Ne se souvient pas des relations coeff-racines.\\
+	MARTI Sébastien (cours: 6, exo: 7, note: 13): confond degré et multiplicité. 
+	
+	\begin{exo}
+		 L'intersection de deux sous-espaces vectoriels est un sous-espace vectoriel. 
+	\end{exo}
+
+	\begin{exo}
+		Donner des exemples d'EV.
+	\end{exo}
+	
+	\begin{exo}
+		Calculer la somme des racines $n$ième de l'unité
+	\end{exo}	
+	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	BROUILLARD Alizée (cours: 8, exo: 7, note: 15): Bien\\
+	MARGUERITE Léa (cours: 7, exo: 5, note: 12): écrit $(0, X, X^2, ...)$ comme base de $\mathbb{R}[X]$.\\
+			
+	\begin{exo}
+		 Propriété fondamentale des familles libres : possibilité d'identifier les coefficients dans les combinaisons linéaires. 
+	\end{exo}		
+
+	\begin{exo}
+		Tout ce que tu connais sur les bases?
+	\end{exo}
+
+	\begin{exo}
+		\begin{enumerate}
+			\item Si $x_0$ est racine de $P$ avec multiplicité $m$, mq $x_0$ est racine de $P'$ avec multiplicité $m - 1$.
+			\item Mq si $P$ est scindé et deg($P$) $\geq 2$ alors $P'$ est scindé.
+		\end{enumerate}
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	BOUAZA Yakoub (cours: 5, exo: 6, note: 11): ne se souvient pas des relations coefficients-racines\\
+	MOUILLEFARINE Paul (cours: 7, exo: 8, note: 15): oublie l'hypothèse scindé pour les relations coefficients-racines.\\
+	
+	\begin{exo}
+		$K_n$[X] est un sous-espace vectoriel de K[X]
+	\end{exo}		
+	
+	\begin{exo}
+		Relations entre coefficients et racines.
+	\end{exo}
+		
+	\begin{exo}
+		Trouver les $P \in C[X]$ vérifiant
+		$P (X^2 ) = P (X)P (X + 1)$.\\
+		
+		Indice: quelles sont les racines possibles?
+	\end{exo}	
+\end{document}

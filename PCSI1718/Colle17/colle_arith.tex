@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{base}
+\title{Colle PCSI 17: arithmétique}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+\section*{Colle 1}
+\setcounter{exo}{0}
+	TRONCIN Thibaud (16): bien mais ne pense pas assez à simplement utiliser les définitions \\
+	
+	
+	\begin{exo}
+		Déterminer les nb premiers $\leq 50$ avec la méthode d'Eratosthène.
+	\end{exo}
+	
+	\begin{exo}
+		Soient $f_n$ les termes de la suite de Fibonacci.
+		\begin{enumerate}
+			\item Mq $f_{n+1} f_{n-1} - f_n^2 = (-1)^n$
+			\item Mq $f_{n+1}$ et $f_n$ sont premiers entre eux
+		\end{enumerate}
+	\end{exo}
+
+	\section*{Colle 2}
+	
+	GUYOT Marion (13): $a \vert b$ et $a \vert c$ $\implies$ $a \vert PGCD(b, c)$ mal connu. Du mal sur l'exo.\\
+	
+	\begin{exo}
+		Énoncer le thm de décomposition facteurs premiers.
+	\end{exo}
+			
+	\begin{exo}
+		soient $a$ et $b$ premiers entre eux et $c\in  \Z$.\\
+		Mq PGCD$(a, bc)$ = PGCD$(a, c)$
+	\end{exo}	
+
+	\begin{exo}
+		mq $n \geq 2$ et $2^n - 1$ premier $\implies$ $n$ premier.
+	\end{exo}	
+
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Arthur Thépenier (16): bien mais essaie des choses parfois trop compliquées. Écrit $d \vert a + b \Longleftrightarrow d \vert a$ et $d \vert b$.\\
+	VERJUS Antonin (13): écrit $d \vert a + b \Longleftrightarrow d \vert a$ et $d \vert b$. Des difficultés sur l'exo.
+	
+	\begin{exo}
+		Résoudre $37x+23y = 1$
+	\end{exo}
+	
+	\begin{exo}
+		Soient $a$, $b$ deux entiers premiers entre eux. Mq $a+b$ et $ab$ sont premiers entre eux.
+	\end{exo}
+	
+\end{document}

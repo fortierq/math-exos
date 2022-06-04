@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+
+\title{Colle PCSI 24: EV 2}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	GODEAU Victor (10): ne sait pas définir $F + G$\\
+	Adrien (11): rajoute l'hypothèse $F$ et $G$ supplémentaire dans la formule de Grassmann. Dit que $\dim(\s{0}) = 1$. Ne connaît pas la définition de $F + G$\\
+	
+	\begin{exo}
+		Formule de Grassman.
+	\end{exo}
+		
+	\begin{exo}
+		Mq l'ens des $x \longmapsto (ax^2 + bx + c)\cos(x)$ forme un EV et déterminer sa dimension
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MONTEIL Alicia (12): ne fait pas attention avant de multiplier une inégalité par une constante\\
+	Hugo MOTTET (16): Bien\\
+	
+	\begin{exo}
+		Thm de la base incomplète
+	\end{exo}
+
+	\begin{exo}
+		Montrer que ... est une base de $R^3$	
+	\end{exo}
+
+	\begin{exo}
+		L'ens. des suites croissantes est-il un EV? 
+	\end{exo}	
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	GOUX Alexandre (11): ne sait pas définir le fait d'être supplémentaire. Dit que l'ens des suites est un SEV de $R^2$. Ne pense pas à utiliser la définition de SEV au lieu de EV.\\
+	Bastien (13): Ne connaît pas la définition d'une somme directe.\\
+	
+	\begin{exo}
+		Propriétés équivalentes pour être supplémentaire.
+	\end{exo}
+
+	\begin{exo}
+		Soit $E$ l'ensemble des suites réelles $p$-périodiques.
+		Montrer que E est un espace vectoriel de dimension finie et déterminer celle-ci.
+	\end{exo}	
+
+\end{document}

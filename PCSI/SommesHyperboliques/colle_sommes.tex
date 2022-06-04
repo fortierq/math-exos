@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 8: Sommes, fonctions trigonométriques et hyperboliques.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	SEJOURNET Baptiste (cours: 5, exo: 4, note: 9): racine nièmes oubliées. Très lent.\\
+	DJEBRA Ines (cours: 5, exo: 5, note: 10): racine nièmes oubliées. ne connait pas les règles de l'exponentielle
+	
+	\begin{exo}
+		Formule de Bernouilli. Propriété des sommes?
+	\end{exo}
+	
+	\begin{exo}
+		Somme et produit des racines n ième de l'unité. 
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\sum k^2$ puis $\sum k^3$.
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	SPADETO Clément (cours: 8, exo: 7, note: 15): bien\\
+	DHIFAOUI Mohamed (cours: 6, exo: 7, note: 13): se trompe dans l'interversion de sommes doubles. Sinon bien.
+	
+	\begin{exo}
+		Étude complète des fonctions ch et sh. Qu'est ce que le principe de récurrence?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer:
+		$$\sum k k!$$ $$\sum k 2^{k-1}$$ $$\prod_{0}^{n} \sin(\frac{x}{2^k})$$
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Agathe:
+	
+	\begin{exo}
+		Formule de Pascal. Autres propriétés du coeff binomial?
+	\end{exo}
+	\begin{exo}
+%		\begin{enumerate}
+%			\item Soit $S$ un ensemble de taille $n$. Quel est le nombre de sous ensembles de $S$ de taille $k$? Retrouver la formule de Pascal.
+%			\item Montrer qu'il y a autant de sous ensembles de taille pair que de sous ensembles de taille impair, dans $S$.
+%			\item Combien y a t-il de sous ensembles de $S$ de taille un multiple de 3?
+%		\end{enumerate}
+		Calculer $\sum k \binom{n}{k}$, $\sum (-1)^k\binom{n}{k}$, $\sum k(k-1) \binom{n}{k}$...
+	\end{exo}
+	
+\end{document}

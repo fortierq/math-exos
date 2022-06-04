@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 7: Sommes et produits}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+
+	\section*{Colle 1}
+	
+	\begin{exo}
+		Formule de Bernouilli. Propriétés sur les sommes?
+	\end{exo}
+	
+	\begin{exo}
+		Somme et produit des racines n ième de l'unité. Somme des distances des racines nièmes à 1?
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\sum \binom{n}{k} \cos(kx)$, $\sum_{k=1}^{n} k cos(k x)$.
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	NACHIN (cours: 8, exo: 9, note: 17): très bien.
+	
+	\begin{exo}
+		Formule pour $\sum_p^q \lambda^k$. Somme des $k$? somme des $k^2$?
+	\end{exo}
+	
+	\begin{exo}
+		Calculer:
+		$$\sum k k!$$ $$\sum k 2^{k-1}$$
+	\end{exo}
+	\begin{exo}
+		\begin{enumerate}
+			\item Montrer $\forall n \in \mathbb{N}$, $x \notin \pi \mathbb{Z}$ :
+			$$\sum_{k=0}^{n} \cos(2kx) = \frac{\sin((n+1)x) \cos(nx)}{\sin(x)}$$
+			\item Montrer:
+			$$\vert \sin(x) \vert \geq \frac{1 - cos(2x)}{2}$$
+			\item Déduire:
+			$$\sum_{k=1}^{n} \vert \sin(k) \vert \geq \frac{n}{2}  - \frac{1}{2 \sin(1)}$$
+		\end{enumerate}
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Clément Couriol (cours: 4, exo: 5, note: 9): ne connait pas la formule du binôme de Newton. Ecrit $\sin(i)$ \\
+	
+	PANIER Estelle (cours: 6, exo: 5, note: 11): pas mal de petites bêtises pour les exos, mais connaît bien son cours.
+	
+	\begin{exo}
+		Formule de Pascal. Autres propriétés du coeff binomial?
+	\end{exo}
+	\begin{exo}
+		\begin{enumerate}
+			\item Soit $S$ un ensemble de taille $n$. Quel est le nombre de sous ensembles de $S$ de taille $k$? Retrouver la formule de Pascal.
+			\item Montrer qu'il y a autant de sous ensembles de taille pair que de sous ensembles de taille impair, dans $S$.
+			\item Combien y a t-il de sous ensembles de $S$ de taille un multiple de 3?
+		\end{enumerate}
+	\end{exo}
+	
+\end{document}

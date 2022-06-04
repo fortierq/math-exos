@@ -1,0 +1,64 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 1: ED, équations}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	PERRET Emeline (note: 14): assez bien mais ne pense pas à diviser par 2 pour résoudre 2y' + y = 0\\
+	DERET Simon (note: 9): ne connaît pas du tout le thm des solutions des ED d'ordre 2. Dérive par rapport à la mauvaise variable... dit que (C u)' = 0 si C est constant... ne sait pas résoudre une éq du 2nd degré.
+	
+	\begin{exo}
+		Ensemble des solutions d'une ED ordre 2?
+	\end{exo}
+	\begin{exo}
+		Résoudre $x_1 + x_2 =4$, $x_1 x_2 = -1$.
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	OLIVER Killian (note: 8): n'a aucune idée de ce qu'est une dérivée. Ne sait pas faire de tableau de variation, dit plusieurs fois que sin(0) =0, que $\sin' = - \cos$, ne sait pas dessiner $\sin$... Dit $f' \geq 0 \implies f \geq 0$\\
+	DIVOUX Gaëlle (note: 13): assez bien sur la def de dérivée. Dit $f' \geq 0 \implies f \geq 0$ mais se rattrape
+	
+	\begin{exo}
+		Définition dérivée? Géométriquement?
+	\end{exo}
+
+	\begin{exo}
+		Etudier $f(x) = x - sin(x)$ puis montrer que $x \leq sin(x)$ $\forall x \geq 0$
+	\end{exo}	
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	RIONDET Baptiste (note: 15): bien mais ne pense pas à diviser par 2 pour résoudre 2y' + y = 0\\
+	DERRAR Youri (note: 12): ne pense pas à diviser par 2 pour résoudre 2y' + y = 0
+	
+	\begin{exo}
+		Toutes les opérations sur les dérivées?
+	\end{exo}
+
+	\begin{exo}
+		ED du 1er ordre.
+	\end{exo}	
+	
+	\begin{exo}
+		Solution de $yy' + y^2 = 1$. Indice: poser $z = y'$ puis trouver $z$.
+	\end{exo}	
+	 
+\end{document}

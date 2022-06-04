@@ -1,0 +1,103 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle MP 3: réduction}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	MOUROT Jeanne (8): très faible. Ne connaît pas la définition de valeur propre, confond scalaire et vecteur.\\
+	CORDIER Pauline (12): confusion sur le polynome caractéristique ($\det(\chi_u)$...). Un peu lente.\\
+	
+	\begin{exo}
+		Question de cours.
+	\end{exo}
+	
+	\begin{exo}
+		Trouver les suites vérifiant:
+		$$u_{n+1} = u_n - v_n$$
+		$$v_{n+1} = 2u_n + 4v_n$$
+	\end{exo}
+
+	\begin{exo}
+		Soient $u, v$ deux endo d'un EV $E$.
+		\begin{enumerate}
+			\item Si $\lambda \neq 0$ est v.p de $u \circ v$ mq $\lambda$ est aussi v.p de $v \circ u$.
+			\item Mq (1) reste vrai si $\lambda = 0$ en dimension finie.
+			\item Soient $E =\mathbb{R}[X]$ et $u, v$ deux endo définis par $u(P) = P'$ et $v(P)$ = primitive de $P$ s'annulant en 0.
+			Déterminer $Ker(u \circ v)$ et $Ker(v \circ u)$.
+		\end{enumerate}
+	\end{exo}
+	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Ysaline (13): assez bien. \\
+	GUICHON Joannes (14): démonstration incomplète. Bien sur les exos.\\
+	
+	\begin{exo}
+		Question de cours.
+	\end{exo}
+
+	\begin{exo} (268)
+		Soit $A \in GL_n(\mathbb{C})$ et $p \in N^*$. Mq $A$ diagonalisable $\Longleftrightarrow$ $A^p$ diagonalisable.
+	\end{exo}
+	
+	\begin{exo}
+		\begin{enumerate}
+			\item $$J = \begin{pmatrix}
+			0 & 1 & 0  & ... \\ 
+			0 & 0 & 1 & ...\\ 
+			... & ... & ...  & 1\\
+			1 & 0 & ...  & 0\\
+			\end{pmatrix}$$ Calculer $J^2, ..., J^n$ puis montrer que $J$ est diagonalisable, quelle sont ses v.p?
+			\item En déduire la valeur de:
+			$$\Delta_n = \begin{vmatrix}
+			a_1 & a_2 & ... & a_n \\ 
+			a_n & a_1 & ... & a_{n-1} \\ 
+			... & ... & ... & ...\\
+			a_2 & a_3 & ... & a_1\\
+			\end{vmatrix}$$
+		\end{enumerate}
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Laura (12): lente pour diagonaliser une matrice.\\
+	Layla (17): Très bien.\\
+	Théophane (13): assez bien mais un peu brouillon.\\
+	
+	\begin{exo}
+		Question de cours.
+	\end{exo}
+
+	\begin{exo}
+		Trouver le polynome minimal de:
+		$A = \begin{pmatrix}
+		-1 & 1 & 1 \\ 
+		1 & -1 & 1 \\ 
+		1 & 1 & -1
+		\end{pmatrix}$
+	\end{exo}
+		
+	\begin{exo}
+		Trouver toutes les suites $u_n$ telles que:
+		$$\forall n, u_{n+3} = 2 u_{n+2} + u_{n+1} - 2u_n$$
+	\end{exo}
+	 
+\end{document}

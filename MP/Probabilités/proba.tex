@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP: Probabilités}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Théophane DUCRET (14): bien mais ne se souvient pas de la formule de Pascal\\
+	Layla (15): bien\\
+	
+	_collison 240 math crypto
+	\begin{exo}
+		Demo cours
+	\end{exo}
+
+	\begin{exo}
+		Mq (par récurrence) il existe $\binom{n+p-1}{n}$ $p$-uplets de $\mathbb{N}^p$ dont la somme est égal est à $n$.
+	\end{exo}
+	
+	\begin{exo}
+		Combien y a-t-il d'applications strictement croissantes de $\s{1, ..., n}$ vers $\s{1, ..., p}$ ?
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Guichon Joannes (12): confusion sur l'union/intersection\\
+	Laura (11): ne connaît pas bien la définition d'une tribu. Écrit $P(A) \cup P(B)$.\\
+	
+	\begin{exo}
+	   Demo cours
+	\end{exo}
+
+	\begin{exo}
+		%T = $\lbrace A \subset  E A ou \bar{A}$ est dénombrable $\rbrace$
+		Montrer que T = $\s{ A \subset \Omega \tq A ~ou~ \bar{A}~ est~ denombrable}$ est une tribu sur $\Omega$.
+	\end{exo}
+		
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Pauline (11): confusion entre $\cup$ et +. Considère deux ensembles $A$, $B$ pour montrer la stabilité par complémentaire (et regarde $\bar{A \cup B}$).\\
+	Jeanne (9): ne se souvient pas du tout de la définition d'une tribu\\
+	Ysaline (14): bien\\
+	
+	\begin{exo}
+		Demo cours
+	\end{exo}
+
+	\begin{exo}
+		Mq l'intersection de deux tribus est une tribu.
+	\end{exo}
+	
+	\begin{exo}
+		\begin{enumerate}
+			\item On tire uniformément au hasard un sous-ensemble de $\lbrace 1, ..., n \rbrace$. Quelle est la probabilité qu'il soit de taille pair? 
+			\item On tire uniformément au hasard deux sous-ensembles $A$ et $B$ de $\lbrace 1, ..., n \rbrace$. Quelle est la probabilité que $A \subseteq B$? Que $A \cap B = \emptyset$?
+		\end{enumerate}
+	\end{exo}
+	
+	\begin{exo}
+		(Coupon collector)\\
+		Un enfant collectionne des cartes. Il y a $n$ cartes et l'enfant les veut tous. A chaque achat d'une carte, il obtient une carte uniformément au hasard parmi les $n$ possibles. Combien d'achats devra t-il faire pour avoir toutes les cartes? (réponse: $\sim n \ln(n)$).\\
+		Indice: Si l'enfant a $k$ cartes, quelle est la proba qu'il doive faire $p$ achats pour obtenir une nouvelle carte? (réponse: $\frac{k}{n}^{p-1} (1 - \frac{k}{n}$))\\
+		Application numérique: estimer le nombre d'achats nécessaires pour avoir les 150 cartes de Pokémon.
+	\end{exo}
+
+\end{document}

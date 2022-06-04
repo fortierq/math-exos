@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 14: dvp limités et suites.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	STEFFANN (cours: 5, exo: 4, note: 9/20): erreur dans le DL de $\exp$ (oubli du terme en $x$). Ne connaît pas du tout la méthode pour trouver $u_n$ dans l'exo 3.\\
+	
+	\begin{exo}
+		DL$_5$(0) de $\tan$.
+	\end{exo}
+	
+	\begin{exo}
+		$DL_3(0)$ de $\sin(\exp(x) - 1)$?
+	\end{exo}
+	
+	\begin{exo}
+		Terme général de $u_{n+1} = 3 u_n + 2$, $u_0 = 1$?
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Bouaza Yakoub (cours: 6, exo: 4, note: 10/20): erreur dans le DL de $\exp(x)$ (oubli du terme en $x$). Connaît à peu près la méthode pour résoudre une récurrence d'ordre 2, mais n'a pas compris les "valeurs initiales".\\
+	Spadetto (cours: 6, exo: 6, note: 12/20): Mélange suite arithmetico-géométrique et suite récurrente linéaire d'ordre 2. Plusieurs erreurs dans le DL. \\
+	
+	\begin{exo}
+		 Suites, exercice 2 : prouver la bonne définition de la suite récurrente définie par $u_{n+1} = 1 + \sqrt{u_n}$, $u_0 = 0$.
+	\end{exo}
+
+	\begin{exo}
+		$DL_3(0)$ de $\exp(\sqrt{1+x})$ ($= e(1 + \frac{x}{2} + \frac{x^3}{48} + o(x^3)$)
+	\end{exo}
+
+	\begin{exo}
+		\begin{itemize}
+			\item Terme général de $u_{n+2} = 5 u_{n+1} - 6 u_n$, $u_1 = 0$, $u_0 = 0$?
+			\item Déterminer $v_n = a n^2 + bn + c$ telle que:
+			$$v_{n+2} = 5 v_{n+1} - 6 v_n + 2n^2$$
+			\item Soit $w_n$ solution de $w_{n+2} = 5 w_{n+1} - 6 w_n + 2n^2$. Quel 
+		\end{itemize}
+	\end{exo}
+				
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	BROUILLARD Alizee (cours: 7, exo: 6, note: 13/20): assez bien, perdue sur l'exo.\\
+	SEJOURNET Baptiste (cours: 7, exo: 6, note: 13/20): un peu perdu sur l'exo.\\
+	
+	\begin{exo}
+		Bonne def de la suite des solutions dans ]0, 1] de $x - \ln(x) = n$.
+	\end{exo}
+	
+	\begin{exo}
+		DL en 0 à l'ordre 3 de $x \longmapsto \cos(\sin(x))$ ($= 1 - \frac{x^2}{2} + \frac{5x^4}{24} + x^4 \epsilon(x)$).
+	\end{exo}	
+	
+	\begin{exo}
+		Soit $H_n = \sum \frac{1}{k}$.
+		\begin{enumerate}
+			\item Soit $p \in \mathbb{N}$. Montrer que $H_{2^{p+1}} - H_{2^p} \geq \frac{1}{2}$.
+			\item En déduire que $H_n \longrightarrow \infty$.
+		\end{enumerate}
+	\end{exo}
+	
+\end{document}

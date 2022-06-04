@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle PCSI 28: Probas et dimension finie 2.}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+% TODO: exo 95 MPSIDDL Applications linéaires
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	DE THOMASIS Léna (cours: 7, exo: 6, note: 13): ne connaît pas la définition de $E + F$\\
+	GUILLAUME-SAGE Clément (cours: 7, exo: 8, note: 15): parle de $dim(f)$, $f$ endomorphisme.\\
+	
+	\begin{exo}
+		  Propriétés des projecteurs
+	\end{exo}
+
+	\begin{exo}
+		Enoncer le thm du rang.
+	\end{exo}
+
+	\begin{exo}
+		Soient E un K -espace vectoriel et p, q deux projecteurs de E qui commutent.
+		Montrer que p $\circ$ q est un projecteur de E . En déterminer noyau et image. (Ker (p $\circ$ q) = Ker(p) + Ker(q) et Im(p $\circ$ q) = Im(p) $\cap$ Im(q)).
+	\end{exo}	
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	SEJOURNET Baptiste (cours: 5, exo: 7, note: 12): met beaucoup de temps à se souvenir de la démo de cours.\\
+	HENRY(cours: 7, exo: 8, note: 15): parle de $f^{-1}$ sans vérifier que $f$ est bijective.\\
+	
+	\begin{exo}
+		   Rang de composées d'applications linéaires. 
+	\end{exo}		
+
+	\begin{exo}
+		Formule de Bayes?
+	\end{exo}
+
+	\begin{exo}
+		Quelle est la proba d'obtenir une paire au poker? (32 cartes)
+	\end{exo}
+	
+	\begin{exo}
+		Soient f, g $\in$ L(E).\\
+		Mq $\vert rg(f ) - rg(g) \vert \leq rg(f + g) \leq rg(f ) + rg(g)$
+	\end{exo}	
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	FOLCO Thomas (cours: 5, exo: 8, note: 13): ne connaît pas le thm des probabilités totales.\\
+	
+	\begin{exo}
+		  Caractérisation des bases utilisant la dimension,
+	\end{exo}		
+	
+	\begin{exo}
+		Formule des probas totales?
+	\end{exo}
+
+	\begin{exo}
+		Soit $f$ endo de $E$ fini tq $rg(f^2) = rg(f)$. Mq $Im(f^2) = Im(f)$, puis $ker(f^2) = ker(f)$ et enfin $ker(f) + im(f) = dim(E)$.
+	\end{exo}
+	
+\end{document}	

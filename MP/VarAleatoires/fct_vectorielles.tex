@@ -1,0 +1,76 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP 16: Fonctions vectorielles}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Solène (16): très bien.\\
+	PIERRE Alexandre (12): preuve incomplète\\
+	
+	\begin{exo}
+		Propriétés fonctions génératrices.
+	\end{exo}
+
+	\begin{exo} (erreur dans la méthode des rectangles)
+		Soit $f$ $C^1$ sur $[a, b]$. Soit $a_k = a + k\frac{b-a}{n}$.\\ Mq il existe une constante $M$ tq:
+		$$\vert \int_{a}^{b} f - \frac{b-a}{n} \sum_{k=0}^{n-1} f(a_k) \vert \leq M \frac{(b-a)^2}{2n}$$
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	MARTIN Manon (12): problèmes d'indices dans les sommes. dérive au lieu d'intégrer pour trouver une primitive.\\
+	GAUBERT Baptiste (11): ne connaît pas du tout le théorème sur les sommes de Riemann.\\
+	
+	\begin{exo}
+		Fonctions génératrices usuelles.
+	\end{exo}
+
+	\begin{exo}
+		En faisant apparaître une somme de Riemann, donner un équivalent de $\sum_{k=0}^{n} \sqrt{k}$.
+	\end{exo}
+	
+	\begin{exo}
+		Donne un développement asymptotique à 2 termes de la suite des solutions de $\exp(x) + x = n$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $f$ une fonction $\mathcal{C}^2$ et $c$ tel que $f(c) = 0$, $f'(c) \neq 0$.\\
+		Alors, si $u_0$ est assez proche de $c$, la suite $u_n$ obtenue par la méthode de Newton converge vers $c$.\\
+		De plus il existe une constante $K$ telle que:
+		$$\vert u_{n} - c \vert \leq K \vert u_{n-1} - c \vert^2$$
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Juliette (14): petite confusion entre $f$ et $f(x)$.\\
+	Colin (14): inverse hypothèse et conclusion dans la démo de cours.\\
+	
+	\begin{exo}
+		Thm limite de la dérivé.
+	\end{exo}
+
+	\begin{exo}
+		Trouver la limite de:
+		$$\sum_{k=1}^{n} \sin(\frac{k}{n}) \sin(\frac{k}{n^2}) ~~(= \int t \sin(t))$$
+		Aide: $\sin(\frac{k}{n^2}) \approx \frac{k}{n^2}$.
+	\end{exo}
+	\begin{exo}
+		Trouver un équivalent de la suite définie par:
+		$$u_0 \in ]0, \pi[$$
+		$$u_{n+1} = \sin(u_n)$$
+		($u_n \sim \sqrt{\frac{6}{n}}$)
+	\end{exo}
+
+\end{document}

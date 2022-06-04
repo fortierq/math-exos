@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP 11: Espaces préhilbertiens}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Célia (15): bonne connaissance du cours et des méthodes \\
+	Kévin (16): Très bien.\\	
+
+	
+	\begin{exo}
+		Thm spectral
+	\end{exo}
+
+	\begin{exo}
+		Soit u un endomorphisme symétrique d'un espace euclidien E vérifiant, pour tout $x \in E$, $⟨u(x),x⟩=0$. Mq $u = 0$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $u:E \longmapsto$ E tel que, pour tous $x,y \in E$, on a $⟨u(x),y⟩=⟨x,u(y)⟩$. Démontrer que $u$ est linéaire.
+
+	\end{exo}
+%	\begin{exo}
+%		Pour $a, b \in \mathbb{R}$, valeur minimale de l'intégrale:
+%		$$\int_{0}^{\pi} (t - a \cos(t) - b \sin(t))^2 dt$$ 
+%	\end{exo}
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Nolwenn (13): oubli du théorème spectral.\\
+	Lilian (13): assez bien
+
+	\begin{exo}
+		Caract endo symétrique par sa matrice
+	\end{exo}
+
+%	\begin{exo}
+%		Donner une base orthonormale de $\mathbb{R_2[X]}$ pour $(P \vert Q) = \int_{-1}^1 P(t)Q(t) dt$.
+%	\end{exo}
+%	
+%	\begin{exo}
+%		(57) Mq $S_n$ et $A_n$ sont supplémentaire orthogonaux pour le prod canonique. Distance d'une matrice ... à $S_3$?
+%	\end{exo}
+
+	\begin{exo}
+		Soit $A \in M_n(\mathbb{R})$ symétrique. On suppose qu'il existe $p \in \mathbb{N}$ tel que $A^p=0$. Mq $A = 0$.
+	\end{exo}
+
+	\begin{exo}
+		Soient u,v deux endomorphismes symétrique d'un espace euclidien qui commutent.
+ Soit $\lambda$ une valeur propre de u. On pose $F=ker(u−\lambda id)$. Démontrer que $F$ et $F^\bot$ sont stables par v.\\
+ Puis démontrer qu'il existe une base orthonormale de E diagonalisant simultanément u et v.
+	\end{exo}
+
+	\begin{exo}
+		(39) Soit $f$ endo d'un espace euclidien tq $(f(x) \vert x) = 0$, $\forall x$. Mq $Ker f = Im f ^\perp$.
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Charlotte (11): grosses erreurs dans le polynôme caractéristique. Erreurs de calculs. \\
+	Bastien (14): Bien.
+
+	\begin{exo}
+		Pythagore
+	\end{exo}
+
+	\begin{exo}
+		Soit E un espace vectoriel euclidien. Pour $f \in L(E)$, on note $\rho(f) = max \lbrace \vert \lambda \vert; \lambda \textnormal{ valeur propre de f }\rbrace$. \\
+		On pose également $\parallel f \parallel=\sup \lbrace \parallel f(x) \parallel; \parallel x \parallel \leq 1 \rbrace$. Démontrer que si f est symétrique, alors $\parallel f \parallel=\rho(f)$.
+	\end{exo}
+
+	\begin{exo}
+		Soit $E = C ([−1, 1] , R)$ muni du produit scalaire $\int_{-1}^{1} fg$.\\
+		Quel est l'orthogonal des fonctions nulles sur $[-1, 0]$? Sont-ils supplémentaires?
+	\end{exo}
+
+%	\begin{exo}
+%		Mq $O_n(\mathbb{R})$ est un compact non connexe par arc. Quelles sont ses composantes connexes par arcs?
+%	\end{exo}
+%	
+%	\begin{exo}
+%		Soit $A \in O_n(\mathbb{R})$. Mq:
+%		$$\vert \sum a_{i,j} \vert \leq n$$ 
+%		Indice: utiliser vecteur avec que des 1.
+%	\end{exo}
+%	
+%	\begin{exo}
+%		Soit $M \in O_n(\mathbb{R})$. Mq:
+%		$$\sum \vert m_{i,j} \vert \leq n \sqrt{n}$$ 
+%		Indice: utiliser $(A, B) \longmapsto tr({}^t A B)$.
+%	\end{exo}
+%	
+%	\begin{exo}
+%		Mq si $(x \vert y) = 0$ $\implies$ $(f(x) \vert f(y)) = 0$ alors $\exists \lambda$, $\parallel f(x) \parallel = \lambda \parallel x \parallel$.
+%	\end{exo}
+
+\end{document}

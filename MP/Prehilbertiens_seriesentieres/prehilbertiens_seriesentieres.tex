@@ -1,0 +1,97 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\title{Colle MP 12: Espaces préhilbertiens et séries entières}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	MAJOET Pierre (8/20): ne se souvient pas du tout du thm spectral (ni l'énoncé, ni la preuve). Un peu perdu sur l'exercice.\\
+	Abdel (14/20): ne se souvient plus de la preuve de cours, mais bien pour l'exo. A de l'assurance.
+	
+	\begin{exo}
+		Théorème spectral pour les endomorphisme symétriques
+	\end{exo}
+%
+%	\begin{exo}
+%		Soit $D_n$ le nombre de partitions de $\lbrace 1, 2, ..., n \rbrace$.
+%		\begin{itemize}
+%			\item Calculer $D_1$, $D_2$, $D_3$.
+%			\item Mq $$D_{n+1} = \sum_{k=0}^{n} \binom{n}{k} D_k$$
+%			\item Soit $S_n = \frac{1}{e}$
+%		\end{itemize}
+%	\end{exo}
+
+	\begin{exo}
+		Montrer que si $\alpha \in \mathbb{R}$, $f(t) =\cos(\alpha \arcsin(t))$ est développable en série entière sur un voisinage de 0 et trouver son rayon de convergence.\\
+		Aide: montrer que $f$ vérifie l'ED $(1 - t^2) y'' - t y' + \alpha^2 y = 0$.
+	\end{exo}
+			
+	\begin{exo}
+		$O_n(\mathbb{R})$ est-il compact? connexe par arc?
+	\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	BRUGGER Martin (13/20): Ecrit $r \leq min(R_a, R_b)$ au lieu de $r \geq min(R_a, R_b)$.\\
+	NADAL Julien (11/20): Très lent.\\
+	
+	\begin{exo}
+		Somme et produit de Cauchy
+	\end{exo}
+
+	\begin{exo}
+		Soit $a_0 = 1$ et $a_{n+1} = \sum_{k=0}^{n} a_k a_{n-k}$.
+		\begin{itemize}
+			\item Calculer $S(x) = \sum_{k=0}^{\infty} a_k x^k$.
+			\item En déduire $a_n$, $\forall n$.
+		\end{itemize}
+	\end{exo}
+	
+	\begin{exo}
+		\begin{itemize}
+			\item Soit $A \in O_n(\mathbb{R})$. Mq:
+			$$\vert \sum a_{i,j} \vert \leq n$$ 
+			Indice: utiliser vecteur avec que des 1.
+			\item Que connait tu comme produit scalaire sur les matrices? Quels sont ses propriétés?
+			\item Soit $M \in O_n(\mathbb{R})$. Mq:
+			$$\sum \vert m_{i,j} \vert \leq n \sqrt{n}$$ 
+			Indice: utiliser $(A, B) \longmapsto tr({}^t A B)$.
+		\end{itemize}
+	\end{exo}
+	
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Xavier (14/20): Bien\\
+	Schwarz Thibaut (12/20): pas très rigoureux. \\
+	
+	\begin{exo}
+		Lemme d'Abel.
+	\end{exo}
+	
+	\begin{exo}
+		Soit $u$ un endomorphisme symétrique positif. Montrer que $u$ a une unique racine carré.\\
+		Aide pour l'unicité: montrer que si $u = v^2$ alors $v$ stabilise les espaces propres de $u$.
+	\end{exo}
+
+	\begin{exo}
+		Calculer $\sum_{n=0}^{\infty} \frac{n}{3^n}$.
+	\end{exo}
+
+\end{document}

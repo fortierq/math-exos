@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP 18: théorèmes d'intégration}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Stepan (15): petite confusion sur les variables ($x$ et $t$)\\
+	Valentin (16): petite confusion sur les variables ($x$ et $t$)\\
+	
+	\begin{exo}
+		TCD
+	\end{exo}
+
+	\begin{exo}
+		Mq $\lim_{n \rightarrow \infty} \int_0^n (1 - \frac{x^2}{n^2})^{n^2}$ = $\int_0^\infty e^{-x^2}dx$.
+	\end{exo}
+
+	\begin{exo} (131)
+		\begin{enumerate}
+			\item Mq $\int_0^\infty \frac{sin(t)}{t} dt$ est bien définie.
+			\item Soit $F(x) = \int_{0}^{\infty} \frac{e^{-xt} \sin t}{t}$. Quelle est $\lim_{\infty} F(x)?$
+			\item Calculer $F'$ sur $]0, \infty[$.
+			\item En supposant $F$ continue en 0, calculer $I$.
+		\end{enumerate}
+	\end{exo}
+		
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Tom (16): bien\\
+	Achille (14): ne pense pas à utiliser les questions précédentes de l'exercice\\
+	
+	\begin{exo}
+		intégration terme à terme d’une série de fonctions	\end{exo}
+
+	\begin{exo}
+		Soit $f(x) = \int_{0}^{x} e^{-t^2}$ et $g(x) = \int_{0}^{1} \frac{e^{-x^2 (1+t^2)}}{1+t^2}$.\\
+		Mq $g$ est dérivable et $g'(x) = -2f'(x) f(x)$.\\
+		Mq $g(x) + f(x)^2 = \frac{\pi}{4}$
+		En déduire $\lim_\infty f(x)$.
+	\end{exo}
+	
+	\begin{exo}
+		Calcul de $\int_0^{\infty} \frac{\sin(t)}{t} e^{-tx} dt$, $\forall x > 0$.
+	\end{exo}
+		
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Lily (16): bien\\
+	Julien Rauch (13): majore par une fonction constante sur $\mathbb{R}$ (en disant qu'elle est intégrable). Manque parfois de rigueur (écrit par exemple $\lim f(x) \longrightarrow ...$). \\
+	Arnaud (13): bien mais lent\\
+	
+	\begin{exo}
+		dérivabilité sous le signe intégrale
+	\end{exo}
+
+	\begin{exo} (29)
+		Mq $\int_0^\infty \frac{t}{e^t - 1} dt$ = $\sum_1^\infty \frac{1}{n^2}$.
+	\end{exo}
+	
+	\begin{exo}
+		Limite puis équivalent de $\int_{1}^{\infty} e^{-x^n} dx$? (poser $t = x^n$)
+	\end{exo}
+
+	\begin{exo}
+		Calcul de $\int_0^{\infty} e^{-t^2} \cos(xt) dt$?
+	\end{exo}
+
+\end{document}

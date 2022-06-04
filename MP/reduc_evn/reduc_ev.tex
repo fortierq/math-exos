@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Colle MP: réduction et EVN}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	\setcounter{exo}{0}
+	Eloise (11): Un peu trop hésitante. Quelques confusions sur les valeurs/vecteur propres, élément/ensemble...\\
+	Mael (16): Très bien.\\
+	
+	
+	\begin{exo}
+		Question de cours. Une intersection infinie d'ouverts est-elle forcément ouverte?
+	\end{exo}
+	
+	\begin{exo} %(278)
+		Mq $u$ est nilpotent ssi $Sp(u) = \lbrace 0 \rbrace$.\\
+		Mq $u$ est nilpotent ssi $Tr(u^k) = 0$ , $\forall 1 \leq k \leq n$.
+	\end{exo}
+	
+	\section*{Colle 2}
+	Bérangère (15): Bon travail.\\
+	Michael (13): ne se souvient pas de la formule d'inversion d'une matrice 2x2. Bien sinon.\\
+	
+	\begin{exo}
+		Question de cours.
+	\end{exo}
+	
+	\begin{exo}
+		Trouver les suites vérifiant:
+		$$u_{n+1} = u_n - v_n$$
+		$$v_{n+1} = 2u_n + 4v_n$$
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Maeva (15): Confusion sur ce qu'est un polynôme scindé à racine simple.\\
+	Meriton (14): Confusion sur ce qu'est un polynôme scindé à racine simple. Un peu lent.\\
+	
+	\begin{exo}
+		Question de cours.
+	\end{exo}
+
+	\begin{exo} %(268)
+		Soit $A \in GL_n(\mathbb{C})$ et $p \in N^*$. \\
+		Mq $A$ diagonalisable $\Longleftrightarrow$ $A^p$ diagonalisable.\\
+		Est-ce que ce résultat reste vrai si $A \notin GL_n(\mathbb{C})$?
+	\end{exo}
+	 
+\end{document}

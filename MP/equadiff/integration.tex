@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{base}
+\title{Colle MP 17: Intégration}
+
+\newcounter{question}
+\newcommand{\initQ}{\setcounter{question}{0}}
+\newenvironment{question}{\addtocounter{question}{1}
+	\noindent {\it {Question} \thequestion.\ }}
+{\par}
+\newcounter{exo}
+
+\newcommand{\initE}{\setcounter{exo}{0}}
+\newenvironment{exo}{\vspace{0.5cm}\setcounter{question}{0}\addtocounter{exo}{1} \noindent \textbf{Exercice \theexo}. \normalsize }{\par}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Colle 1}
+	Ysaline (15): petit oubli de la comparaison série-intégrale.\\
+	Théophane DUCRET (13): oubli des méthodes de DL. écrit $\ln(ab) = \ln(a)\ln(b)$.\\
+	
+	\begin{exo}
+		Cours
+	\end{exo}	
+
+	\begin{exo}
+		$$\int_{0}^{\frac{\pi}{2}} \ln(\sin(x))dx?$$
+	\end{exo}
+	%\begin{exo}
+	%	Trouver un équivalent en $\infty$ de $F(x) = \int_{0}^{x} e^{\frac{t^2}{2}}dt$.\\
+	%	Méthode de "correction de la dérivée".
+	%\end{exo}
+	
+	\section*{Colle 2}
+	\setcounter{exo}{0}
+	Laura (12): erreur dans les DL (de $\sin$, de $\ln$)\\
+	Joannès (16): dit que $f$ intégrable $\implies$ $f \longrightarrow 0$, quel que soit $f$. Bien sinon.\\
+	
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		Calcul d'intégrales.
+	\end{exo}
+	\begin{exo}
+		(14) Soit $f$ continue intégrable sur $\R$. Est-ce que $f \longrightarrow 0$? Et si $f$ décroissante? Et $xf(x)$?
+	\end{exo}
+
+	\section*{Colle 3}
+	\setcounter{exo}{0}
+	Jeanne (11): oubli dans la méthode de décomposition en éléments simples. \\
+	Pauline (11): écrit $\frac{1}{a+b} = \frac{1}{a} + \frac{1}{b}$...oubli dans la méthode de décomposition en éléments simples.\\
+	
+	\begin{exo}
+		Cours
+	\end{exo}
+
+	\begin{exo}
+		Calcul d'intégrales.
+	\end{exo}
+		
+	\begin{exo}
+		Etudier l'intégrabilité de $\int_{0}^{\infty} {\sin(x)}$, $\int_{0}^{\infty} \frac{\c{\sin(x)}}{x}$, $\int_{0}^{\infty} \frac{\sin(x)}{x}$.
+	\end{exo}
+
+\end{document}
